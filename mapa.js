@@ -140,3 +140,5 @@ doubleLine: false,
 fill: 'fill',
     showSubunits: false
 }).addTo(map);
+
+map.attributionControl.addAttribution('©<a href="https://www.planet.com/" target="_blank"> Planet</a>');
