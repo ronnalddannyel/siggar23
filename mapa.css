@@ -1,0 +1,523 @@
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box; 
+  }
+
+  div.bt button#bt1{
+    width: 150px;
+    height: relative;
+    float: right;
+    margin-top: 110px;
+    -webkit-transform:rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg); 
+    transform-origin: 100% 100%;
+    background-color: rgb(93, 67, 59);
+    border: none;
+    font-size: 20px;
+  }
+  
+  div.bt button#bt2{
+    width: 150px;
+    height:  relative;
+    float: right;
+    margin-top: 261px;
+    margin-right:-150px;
+    -webkit-transform:rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg); 
+    transform-origin: 100% 100%;
+    background-color: 	rgb(28, 132, 83);
+    border: none;
+    font-size: 20px;
+    }
+
+    div.bt button#bt3{
+    width: 150px;
+    height: relative;
+    float: right;
+    margin-top: 412px;
+    margin-right:-150px;
+    -webkit-transform:rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg); 
+    transform-origin: 100% 100%;
+    border: none;
+    font-size: 20px;
+  }
+
+  div.bt button#bt4{
+    height: relative;
+    float: right;
+    margin-top: 605px;
+    margin-right:-150px;
+    border: none;
+    font-size: 20px;
+  }
+
+  div.offcanvas-header img {
+    max-width:100px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+    position: absolute;
+  }
+
+  div#menu h5{
+    margin-left: 60px;
+  }
+
+  div#dropd a {
+    color: black;
+  }
+
+  div#canv1 {
+    background-color: 	rgb(93, 67, 59);
+  }
+
+  div#canv1 h5{
+    color: white;
+  }
+
+  div#canv2 {
+    background-color: 	rgb(28, 132, 83);
+  }
+
+  div#canv2 h5{
+    color: white;
+  }
+
+
+  div#canv3 {
+    background-color: 	rgb(13, 110, 253);
+  }
+
+  div#canv3 h5{
+    color: white;
+  }
+
+  div#canv4 {
+    background-color: 	rgb(200, 79, 79);
+  }
+
+  div#canv4 h5{
+    color: white;
+  }
+
+  div#log {
+    display: flex;
+  }
+
+  img#fem {
+    max-width:300px;
+    max-height:200px;
+  }
+
+  img#fem1 {
+    max-width:300px;
+    max-height:250px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  a#leg {
+    background-color: transparent;
+    margin-top:6px;
+    border-color: #729B65;
+  }
+
+  a#leg:hover {
+    background-color: #729B65;
+    color:white;
+  }
+
+  input#remLay {
+    color:black;
+    background-color: transparent;
+    margin-top:6px;
+    border-color: #729B65;
+  }
+
+  input#remLay:hover {
+    background-color: #729B65;
+    color:white;
+  }
+
+  img#fem4 {
+    max-width:100px;
+    max-height:50px;
+  }
+
+  div#map {
+    position:absolute;
+    width: 100%; 
+    height: 90%;
+    z-index: -1;
+   
+  }
+
+  div.mn nav {
+    position: relative;
+  }
+
+  a#coord {
+    padding: 6px 6px 6px 0px;
+    margin: 15px 15px 15px 10px;
+  }
+
+  input#coor {
+    float: right;
+    margin-right: 5px;
+    margin-top: 9px;
+  }
+
+  #teste {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  input.coor {
+    float: right;
+    margin-right: 5px;
+    margin-top: 9px;
+  }
+
+  input#coor2 {
+    float: right;
+    margin-right: 5px;
+    margin-top: 9px;
+  }
+
+  #teste5 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste1 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste2 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste3 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste4 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste5 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste6 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste7 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste8 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste9 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #lim {
+    display: block;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste11 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste12 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste13 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste14 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste15 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste16 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste17 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste18 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste19 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste20 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste21 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste22 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste23 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste24 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste25 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste10 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste26 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste27 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste28 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste29 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste30 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste31 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste32 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  img#coor1 {
+    max-width:50px;
+    max-height:30px;
+    float:right;
+    padding:5px;
+    border:2px;
+  }
+
+  #offcanvasDarkNavbar {
+    width: 440px;
+  }
+
+  div#dropd1 {
+    display: none; 
+  }
+
+  div#dropd2 {
+    display: none; 
+  }
+
+  input#remLay1 {
+    color:black;
+    background-color: transparent;
+    border-color: black;
+  }
+
+  input#remLay1:hover {
+    background-color: #729B65;
+    color:white;
+  }
+
+  #aaa {
+    overflow:auto;
+    max-height:600px;
+  }
+
+  button#aProj {
+    color:black;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 5px
+  }
+
+  button#aProj:hover {
+    background-color: #729B65;
+    color:white;
+  }
+
+  button#mom {
+    color:black;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 5px
+  }
+
+  button#mom:hover {
+    background-color: #729B65;
+    color:white;
+  }
+
+table#comBordaSimples {
+    border-collapse: collapse;
+    
+}
+ 
+table#comBordaSimples td {
+    padding: 7px;
+    text-align: center;
+    border: 1px solid black;
+}
+ 
+table#comBordaSimples td#linha1 {
+    background: #89be89;
+}
+
+button#avaliacao {
+  color:black;
+  background-color: transparent;
+  border-color: black;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+button#avaliacao:hover {
+  background-color: #729B65;
+  color:white;
+}
+
+div.card{
+  max-width:25%;
+  max-height:82%;
+  overflow:auto;
+  position:fixed;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 500px) {
+  li.nav-item a{
+    font-size: 15px;
+  }
+
+  div.card h5{
+    font-size: 10px;
+  }
+
+  div.card div{
+    font-size: 10px;
+  }
+
+  div.card{
+    max-width:96%;
+    max-height:20%;
+    overflow:auto;
+    position:fixed;
+    margin-top: 113%;
+    margin-left: 2%;
+  }
+}
