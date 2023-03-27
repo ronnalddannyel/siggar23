@@ -124,6 +124,10 @@ include('verifica_login.php')
                       MAPAS
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
+                      <li><a id="coord">Mosaico Planet 02/2023 <input type="RADIO" name="op" onclick=" plan()" id="coor"></a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
                       <li><a id="coord">Google Satélite <input type="RADIO" name="op" onclick=" gSat()" id="coor"></a></li>
                       <li>
                           <hr class="dropdown-divider">
@@ -916,6 +920,7 @@ include('verifica_login.php')
             map.removeLayer(googleStreets);
             map.removeLayer(googleHybrid);
             map.removeLayer(googleTerrain);
+            map.removeLayer(planet);
           }
         }
 
@@ -930,6 +935,7 @@ include('verifica_login.php')
             map.removeLayer(googleStreets);
             map.removeLayer(googleHybrid);
             map.removeLayer(googleTerrain);
+            map.removeLayer(planet);
           }
         }
 
@@ -944,6 +950,7 @@ include('verifica_login.php')
             map.removeLayer(googleStreets);
             map.removeLayer(googleHybrid);
             map.removeLayer(googleTerrain);
+            map.removeLayer(planet);
           }
         }
 
@@ -960,6 +967,7 @@ include('verifica_login.php')
             map.removeLayer(googleStreets);
             map.removeLayer(googleHybrid);
             map.removeLayer(googleTerrain);
+            map.removeLayer(planet);
           }
         }
 
@@ -976,6 +984,7 @@ include('verifica_login.php')
             map.removeLayer(googleSat);
             map.removeLayer(googleHybrid);
             map.removeLayer(googleTerrain);
+            map.removeLayer(planet);
           }
         }        
 
@@ -992,6 +1001,7 @@ include('verifica_login.php')
             map.removeLayer(googleSat);
             map.removeLayer(googleStreets);
             map.removeLayer(googleTerrain);
+            map.removeLayer(planet);
           }
         }        
 
@@ -1008,11 +1018,28 @@ include('verifica_login.php')
             map.removeLayer(googleSat);
             map.removeLayer(googleStreets);
             map.removeLayer(googleHybrid);
+            map.removeLayer(planet);
           }
         }        
 
-        var teste = L.tileLayer('https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_2022_12_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK1454f802d1244d79a9e76e5e3ca95ace', {});
+        var planet = L.tileLayer(
+        'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_2023_02_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK2206c6a40b354674ba665f299716d9e4',
+        {
+          id: 'global_monthly',
+        });
 
+        function plan(){
+          if(!map.hasLayer(planet)){
+            map.addLayer(planet);
+            map.removeLayer(basemap);
+            map.removeLayer(satelite);
+            map.removeLayer(NatGeo);
+            map.removeLayer(googleSat);
+            map.removeLayer(googleStreets);
+            map.removeLayer(googleHybrid);
+            map.removeLayer(googleTerrain);
+          }
+        }
     </script>
 
     <script src="mapa.js"></script>
@@ -1792,6 +1819,7 @@ include('verifica_login.php')
             map.removeLayer(googleSat);
             map.removeLayer(googleStreets);
             map.removeLayer(googleHybrid);
+            map.removeLayer(planet);
             map.addLayer(googleTerrain);
             map.addLayer(limitesMunic);
 
