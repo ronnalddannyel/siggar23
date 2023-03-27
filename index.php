@@ -289,11 +289,11 @@ session_start();
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-azul3.png" style="max-width:20px;max-height:20px;"> Outorgas Superficiais <a href="Download/ana_user_corpo_hidrico_outorgas_superf.zip" download="outorgas_superficiais" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outSuper1('teste28')" id="22"></a></li>
+                      <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-azul3.png" style="max-width:20px;max-height:20px;"> Outorgas Superficiais <a href="Download/ana_user_corpo_hidrico_outorgas_superf.zip" download="Outorgas_Superficiais" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outSuper1('teste28')" id="22"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-marrom.png" style="max-width:20px;max-height:20px;"> Outorgas Subterrâneas <a href="Download/ana_user_corpo_hidrico_outorgas_subter.zip" download="outorgas_subterraneas" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outSub1('teste29')" id="23"></a></li>
+                      <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-marrom.png" style="max-width:20px;max-height:20px;"> Outorgas Subterrâneas <a href="Download/ana_user_corpo_hidrico_outorgas_subter.zip" download="Outorgas_Subterraneas" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outSub1('teste29')" id="23"></a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -913,8 +913,12 @@ session_start();
         
 
 
-        var teste = L.tileLayer('https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_2022_12_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK1454f802d1244d79a9e76e5e3ca95ace', {});
-
+        var planet = L.tileLayer(
+        'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_2018_02_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK1454f802d1244d79a9e76e5e3ca95ace',
+        {
+          id: 'global_monthly',
+        });
+        
     </script>
 
     <script src="mapa.js"></script>
