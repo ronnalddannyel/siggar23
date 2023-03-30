@@ -1,10 +1,12 @@
 <?php
+$host = "sql818.main-hosting.eu";
+$username = "u531117276_femarh";
+$password = "Femarh@ci22";
+$dbname = "u531117276_femarh";
 
-
-
-
-
-$con_string = "host=172.16.2.9 port=5432 dbname=femarh_bdg user=ronnald password=1234";
-$conn = pg_connect($con_string);
+$conn = mysqli_connect($host, $username, $password, $dbname);
+if (!$conn) {
+	die("Connection failed: " . mysqli_connect_error());
+}
 
 ?>

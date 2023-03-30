@@ -75,19 +75,6 @@ body {
     margin-left: 60px;
   }
 
-  div#dropd {
-    display: block;
-    
-  }
-
-  div#dropd1 {
-    display: none; 
-  }
-
-  div#dropd2 {
-    display: none; 
-  }
-
   div#dropd a {
     color: black;
   }
@@ -132,7 +119,6 @@ body {
   img#fem {
     max-width:300px;
     max-height:200px;
-    float: right;
   }
 
   img#fem1 {
@@ -165,28 +151,6 @@ body {
     color:white;
   }
 
-  input#remLay1 {
-    color:black;
-    background-color: transparent;
-    border-color: black;
-  }
-
-  input#remLay1:hover {
-    background-color: #729B65;
-    color:white;
-  }
-
-  a#leg1 {
-    background-color: transparent;
-    margin-top:6px;
-    border-color: #729B65;
-  }
-
-  a#leg:hover1 {
-    background-color: #729B65;
-    color:white;
-  }
-
   img#fem4 {
     max-width:100px;
     max-height:50px;
@@ -197,7 +161,7 @@ body {
     width: 100%; 
     height: 90%;
     z-index: -1;
-
+   
   }
 
   div.mn nav {
@@ -213,6 +177,12 @@ body {
     float: right;
     margin-right: 5px;
     margin-top: 9px;
+  }
+
+  #teste {
+    display: none;
+    padding: 5px;
+    border: 2px;
   }
 
   input.coor {
@@ -383,6 +353,12 @@ body {
     border: 2px;
   }
 
+  #teste10 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
   #teste26 {
     display: none;
     padding: 5px;
@@ -407,7 +383,19 @@ body {
     border: 2px;
   }
 
-  #teste10 {
+  #teste30 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste31 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste32 {
     display: none;
     padding: 5px;
     border: 2px;
@@ -423,6 +411,25 @@ body {
 
   #offcanvasDarkNavbar {
     width: 440px;
+  }
+
+  div#dropd1 {
+    display: none; 
+  }
+
+  div#dropd2 {
+    display: none; 
+  }
+
+  input#remLay1 {
+    color:black;
+    background-color: transparent;
+    border-color: black;
+  }
+
+  input#remLay1:hover {
+    background-color: #729B65;
+    color:white;
   }
 
   #aaa {
@@ -454,44 +461,63 @@ body {
     color:white;
   }
 
-  div.estrelas input[type=radio]{
-    display: none;
-  }div.estrelas label i.fa:before{
-    content: '\f005';
-    color: #FC0;
-  }div.estrelas  input[type=radio]:checked  ~ label i.fa:before{
-    color: #CCC;
+table#comBordaSimples {
+    border-collapse: collapse;
+    
+}
+ 
+table#comBordaSimples td {
+    padding: 7px;
+    text-align: center;
+    border: 1px solid black;
+}
+ 
+table#comBordaSimples td#linha1 {
+    background: #89be89;
+}
+
+button#avaliacao {
+  color:black;
+  background-color: transparent;
+  border-color: black;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+button#avaliacao:hover {
+  background-color: #729B65;
+  color:white;
+}
+
+div.card{
+  max-width:25%;
+  max-height:82%;
+  overflow:auto;
+  position:fixed;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 500px) {
+  li.nav-item a{
+    font-size: 15px;
+  }
+
+  div.card h5{
+    font-size: 10px;
+  }
+
+  div.card div{
+    font-size: 10px;
   }
 
   div.card{
-    max-width:25%;
-    max-height:82%;
+    max-width:96%;
+    max-height:20%;
     overflow:auto;
     position:fixed;
-    margin-top: 2%;
+    margin-top: 113%;
     margin-left: 2%;
   }
-
-  /* All Mobile Sizes (devices and browser) */
-  @media only screen and (max-width: 500px) {
-    li.nav-item a{
-      font-size: 15px;
-    }
-
-    div.card h5{
-      font-size: 10px;
-    }
-
-    div.card div{
-      font-size: 10px;
-    }
-
-    div.card{
-      max-width:96%;
-      max-height:20%;
-      overflow:auto;
-      position:fixed;
-      margin-top: 113%;
-      margin-left: 2%;
-    }
-  }
+}

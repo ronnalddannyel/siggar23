@@ -129,28 +129,8 @@ if(window.screen.width > "500"){
 
 }
 
-
-
-
 const  urlParams = new URLSearchParams(window.location.search);
-
-const pParam = urlParams.get("cpf");
-console.log(pParam);
-
-if(pParam != null){
-  var areaImovel2 = L.geoJSON(areaImovel1, {
-    style: function(geom) {
-      switch (geom.properties.cpf_cnpj) {
-          case pParam: return {color: "red", weight: "3", fill: false};
-          default: return {fill: false,  weight: "0"};
-      }
-    },
-    onEachFeature: function (geom, layer) {
-      layer.bindPopup('<h6><b>Área do Imóvel</b></h6><p><b>Imóvel:</b> '+geom.properties.nome_imov+'<br><b>Município:</b> '+geom.properties.municip+'<br><b>Gleba:</b> '+geom.properties.gleba+'<br><b>CAR:</b> '+geom.properties.car+'<br><b>SIGEF:</b> '+geom.properties.sigef+'<br><b>Área:</b> '+geom.properties.area+' ha.</p>');
-    }
-  });
-  map.addLayer(areaImovel2);
-}
+const pParam = urlParams.get("pol");
 
 // Barra de escala
 

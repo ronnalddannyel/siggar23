@@ -10,6 +10,7 @@ input.addEventListener('change', function(){
         groupLay2.clearLayers();
         var testando = leitor.result;
         var terf = JSON.parse(testando);
+        console.log(terf);
         var district_boundary = new L.geoJSON(terf, {
             color: "black",
             weight: "2",
