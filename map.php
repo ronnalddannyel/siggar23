@@ -1023,7 +1023,7 @@ include('verifica_login.php')
         }        
 
         var planet = L.tileLayer(
-        'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_2023_02_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK690ab731a2f44e3198f12dab18b5983a',
+        'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_2023_02_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK3c326ade500549e8a99bd8cf0382747f',
         {
           id: 'global_monthly',
         });
