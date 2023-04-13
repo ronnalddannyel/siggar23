@@ -348,7 +348,7 @@ session_start();
               <img src="imagens/SIGARR3.png" class="d-none d-lg-block d-print-block" href="https://femarh.rr.gov.br/" id="fem1">
 
               <p>
-                <a class="btn btn-primary" href="https://intranet.femarh.com/siggarr/" role="button" id="leg1">LOGIN</a>
+                <a class="btn btn-primary" href="https://femarh.com/FemarhIntranet/SiggarrIntranet" role="button" id="leg1">LOGIN</a>
               </p>
 
             </div>
