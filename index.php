@@ -47,6 +47,11 @@ session_start();
     <script src="mapas/areasInstitucionais/areaProjetoHist.geojson"></script>
     <script src="mapas/areasInstitucionais/monitoramento.geojson"></script>
 
+    <script src="mapas/Monitoramento_4mf/areaImovel_4mf.geojson"></script>
+    <script src="mapas/Monitoramento_4mf/areaProjeto_4mf.geojson"></script>
+    <script src="mapas/Monitoramento_4mf/areaProjetoHist_4mf.geojson"></script>
+    <script src="mapas/Monitoramento_4mf/monitoramento_4mf.geojson"></script>
+
     <script src="mapas/areasInstitucionais/areaImovel1.geojson"></script>
 
     <script src="mapas/areasLicenciadas/areaInalienaveis.geojson"></script>
@@ -159,8 +164,6 @@ session_start();
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-           <!--    <script>var cont2 = 1;</script> -->
-
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       ÁREAS LICENCIADAS
                     </a>
@@ -170,10 +173,6 @@ session_start();
                           <hr class="dropdown-divider">
                       </li>
                       <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Área do Imóvel <a href="Download/view_ati.zip" download="Area_Total_Imovel" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="arImov('teste1')" id="2"></a></li>
-                      <!--<li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" href="#">Área de Uso e Ocupação do Solo</a></li> -->
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -182,6 +181,22 @@ session_start();
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Monitoramento<a href="Download/monitoramento.zip" download="Monitoramento" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="monit('teste26')" id="20"></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      MONITORAMENTO ATÉ 4 MÓDULOS FISCAIS
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu">
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Área do Projeto <a href="Download/ap.zip" download="Area_Projeto" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="areaProj_4mf('teste30')" id="24"></a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Área do Imóvel <a href="Download/view_ati.zip" download="Area_Total_Imovel" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="arImov_4mf('teste31')" id="25"></a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Monitoramento<a href="Download/monitoramento.zip" download="Monitoramento" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="monit_4mf('teste32')" id="26"></a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -460,6 +475,45 @@ session_start();
 
               <div id="teste26">
                 Monitoramento <br>
+                <div style="margin-left:15px;">
+                <img src="imagens/quadrado-verde3.png" style="max-width:20px;max-height:20px;"> CSSA - Corte seletivo executado sem autorização <br>
+                <img src="imagens/quadrado-verde.png" style="max-width:20px;max-height:20px;"> CRSA - Corte Raso Executado sem Autorização <br>
+                <img src="imagens/quadrado-marrom.png" style="max-width:20px;max-height:20px;"> SVSA - Supressão Vegetal Executada sem Autorização' <br>
+                <img src="imagens/quadrado-roxo.png" style="max-width:20px;max-height:20px;"> CSAUV - Corte Seletivo Executado na Área de Uso Alternativo do Solo na Vingência da Autorização <br>
+                <img src="imagens/quadrado-amarelo1.png" style="max-width:20px;max-height:20px;"> CSAUFV - Corte seletivo executado na área de uso alternativo do solo fora da vigência da autorização <br>
+                <img src="imagens/quadrado-amarelo.png" style="max-width:20px;max-height:20px;"> CSFAUV - Corte Seletivo Executado Fora da Área de Uso Alternativo do Solo na Vingência da Autorização <br>
+                <img src="imagens/quadrado-azul.png" style="max-width:20px;max-height:20px;"> CSFAUFV - Corte Seletivo Executado Fora da Área de Uso Alternativo do Solo Fora da Vingência da Autorização <br>
+                <img src="imagens/quadrado-roxo1.png" style="max-width:20px;max-height:20px;"> CRAUV - Corte Raso Executado na Área de Uso Alternativo do Solo na Vingência da Autorização <br>
+                <img src="imagens/quadrado-roxo2.png" style="max-width:20px;max-height:20px;"> CRAUFV - Corte Raso Executado na Área de Uso Alternativo do Solo Fora da Vingência da Autorização <br>
+                <img src="imagens/quadrado-verde1.png" style="max-width:20px;max-height:20px;"> CRFAUV - Corte Raso Executado Fora da Área de Uso Alternativo do Solo na Vingência da Autorização <br>
+                <img src="imagens/quadrado-roxo3.png" style="max-width:20px;max-height:20px;"> CRFAUFV - Corte Raso Executado Fora da Área de Uso Alternativo do Solo Fora da Vingência da Autorização <br>
+                <img src="imagens/quadrado-laranja.png" style="max-width:20px;max-height:20px;"> CSPMV - Corte Seletivo Executado na Área do Plano de Manejo Florestal Sustentável na Vingência da Autorização <br>
+                <img src="imagens/quadrado-verde2.png" style="max-width:20px;max-height:20px;"> CSPMFV - Corte Seletivo Executado na Área do Plano de Manejo Florestal Sustentável Fora da Vingência da Autorização <br>
+                <img src="imagens/quadrado-azul2.png" style="max-width:20px;max-height:20px;"> CSFPMV - Corte seletivo executado fora da área do plano de manejo florestal sustentável na vigência da autorização <br>
+                <img src="imagens/quadrado-vermelho1.png" style="max-width:20px;max-height:20px;"> CSFPMFV - Corte seletivo executado fora da área do plano de manejo florestal sustentável fora da vigência da autorização <br>
+                <img src="imagens/quadrado-marrom1.png" style="max-width:20px;max-height:20px;"> CRPMV - Corte raso executado na área do plano de manejo florestal sustentável na vigência da autorização <br>
+                <img src="imagens/quadrado-laranja1.png" style="max-width:20px;max-height:20px;"> CRPMFV - Corte raso executado na área do plano de manejo florestal sustentável fora da vigência da autorização <br>
+                <img src="imagens/quadrado-rosa.png" style="max-width:20px;max-height:20px;"> CRFPMV - Corte raso executado fora da área do plano de manejo florestal sustentável na vigência da autorização <br>
+                <img src="imagens/quadrado-amarelo2.png" style="max-width:20px;max-height:20px;"> CRFPM - Corte raso executado fora da área do plano de manejo florestal sustentável fora da vigência da autorização <br>
+                <img src="imagens/quadrado-roxo4.png" style="max-width:20px;max-height:20px;"> SVAUV - Supressão Vegetal Executada na Área de Uso Alternativo do Solo na Vingência da Autorização <br>
+                <img src="imagens/quadrado-laranja2.png" style="max-width:20px;max-height:20px;"> SVAUFV - Supressão vegetal executado na área de uso alternativo do solo fora da vigência da autorização <br>
+                <img src="imagens/quadrado-cinza.png" style="max-width:20px;max-height:20px;"> SVFAUFV - Supressão vegetal executado fora da área de uso alternativo do solo fora da vigência da autorização <br>
+                <img src="imagens/quadrado-azul3.png" style="max-width:20px;max-height:20px;"> SVFAUV - Supressão vegetal executado fora da área de uso alternativo do solo na vigência da autorização <br>
+                <img src="imagens/quadrado-azul1.png" style="max-width:20px;max-height:20px;"> CRNE - Corte Raso Não Executável <br>
+                <img src="imagens/quadrado-preto.png" style="max-width:20px;max-height:20px;"> POANE - Plano operacional anual não executado <br>
+                </div>
+              </div>
+
+              <div id="teste30">
+                <img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Área do Projeto (Até 4 Módulos Fiscais)
+              </div>
+
+              <div id="teste31">
+                <img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Área do Imóvel (Até 4 Módulos Fiscais)
+              </div>
+
+              <div id="teste32">
+                Monitoramento (Até 4 Módulos Fiscais) <br>
                 <div style="margin-left:15px;">
                 <img src="imagens/quadrado-verde3.png" style="max-width:20px;max-height:20px;"> CSSA - Corte seletivo executado sem autorização <br>
                 <img src="imagens/quadrado-verde.png" style="max-width:20px;max-height:20px;"> CRSA - Corte Raso Executado sem Autorização <br>
@@ -1672,6 +1726,8 @@ session_start();
       }
   </script>
 
+  <script src="mapas/Monitoramento_4mf/Mon_4mf.js"></script>
+
     <script>
           function removeAllLayer(id, id2, id3, el, li){
             map.removeLayer(areaImov);
@@ -1697,6 +1753,9 @@ session_start();
             map.removeLayer(markers3);
             map.removeLayer(markers4);
             map.removeLayer(markers5);
+            map.removeLayer(areaImov_4mf);
+            map.removeLayer(areaProjeto_4mf);
+            map.removeLayer(monitor_4mf);
             map.removeLayer(basemap);
             map.removeLayer(satelite);
             map.removeLayer(NatGeo);
@@ -1706,7 +1765,8 @@ session_start();
             map.removeLayer(planet);
             map.addLayer(googleTerrain);
             map.addLayer(limitesMunic);
-            while (id<24){
+
+            while (id<27){
             var status = document.getElementById(id);
               if (status.checked) {
                 status.checked = false;
@@ -1714,26 +1774,33 @@ session_start();
               id++;
               console.log(id);
             }
+
             var status1 = document.getElementById(id2);
+
             if (status1.checked) {
               status.checked = false;
             } else {
               status1.checked = true;
             }
+
             var status2 = document.getElementsByName(id3);
+
             for (var i = 0; i < status2.length; i++) {
             if (status2[i].id === "coor2") {
               status2[i].checked = true;
             }
             }
+
             console.log(li);
             
             var teste = document.getElementById(li).style.display;
             if(teste == "none"){
               document.getElementById(li).style.display = 'block';
             }
+
             var cont = 1;
-            while(cont<31) {
+
+            while(cont<34) {
             
               var res = el + cont;
               console.log(res);

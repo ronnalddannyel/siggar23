@@ -293,6 +293,12 @@ body {
     border: 2px;
   }
 
+  #teste10 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
   #teste11 {
     display: none;
     padding: 5px;
@@ -407,7 +413,19 @@ body {
     border: 2px;
   }
 
-  #teste10 {
+  #teste30 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste31 {
+    display: none;
+    padding: 5px;
+    border: 2px;
+  }
+
+  #teste32 {
     display: none;
     padding: 5px;
     border: 2px;
