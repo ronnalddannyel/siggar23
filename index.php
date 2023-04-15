@@ -987,7 +987,7 @@ session_start();
         }
         
         var planet = L.tileLayer(
-        'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_2023_03_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK8ce7cd6fac64440a91e562a965631a1c',
+        'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_2023_03_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK65ecee166c174b758323feb39d18d360',
         {
           id: 'global_monthly',
         });
