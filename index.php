@@ -41,11 +41,11 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="leaflet.ajax.js"></script>
 
-    <script src="mapas/areasInstitucionais/areaImovel.geojson"></script>
-    <script src="mapas/areasInstitucionais/areaProjeto.geojson"></script>
-    <script src="mapas/areasInstitucionais/areaProjeto1.geojson"></script>
-    <script src="mapas/areasInstitucionais/areaProjetoHist.geojson"></script>
-    <script src="mapas/areasInstitucionais/monitoramento.geojson"></script>
+    <script src="mapas/areasLicenciadas/areaImovel.geojson"></script>
+    <script src="mapas/areasLicenciadas/areaProjeto.geojson"></script>
+    <script src="mapas/areasLicenciadas/areaProjeto1.geojson"></script>
+    <script src="mapas/areasLicenciadas/areaProjetoHist.geojson"></script>
+    <script src="mapas/areasLicenciadas/monitoramento.geojson"></script>
 
     <script src="mapas/Monitoramento_4mf/areaImovel_4mf.geojson"></script>
     <script src="mapas/Monitoramento_4mf/areaProjeto_4mf.geojson"></script>
@@ -54,11 +54,11 @@ session_start();
 
     <script src="mapas/areasInstitucionais/areaImovel1.geojson"></script>
 
-    <script src="mapas/areasLicenciadas/areaInalienaveis.geojson"></script>
-    <script src="mapas/areasLicenciadas/arMil.geojson"></script>
-    <script src="mapas/areasLicenciadas/limiteTerraIndigena.geojson"></script>
-    <script src="mapas/areasLicenciadas/ucs_estaduais.geojson"></script>
-    <script src="mapas/areasLicenciadas/undConserFed.geojson"></script>
+    <script src="mapas/areasInstitucionais/areaInalienaveis.geojson"></script>
+    <script src="mapas/areasInstitucionais/arMil.geojson"></script>
+    <script src="mapas/areasInstitucionais/limiteTerraIndigena.geojson"></script>
+    <script src="mapas/areasInstitucionais/ucs_estaduais.geojson"></script>
+    <script src="mapas/areasInstitucionais/undConserFed.geojson"></script>
 
     <script src="mapas/baseCartografica/sedesMunicipais.geojson"></script>
     <script src="mapas/baseCartografica/localidades.geojson"></script>
@@ -869,373 +869,25 @@ session_start();
 </script>
 
 
-<!-- Códigos do mapa contidos no mapa.js -->
-<br>
-    <script>
+    <!-- Códigos dos mapas -->
 
-        var basemap = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {});
+    <script src="mapas/mapasCod.js"></script>
 
-        function basm(){
-          if(!map.hasLayer(basemap)){
-            map.addLayer(basemap);
-            map.removeLayer(satelite);
-            map.removeLayer(NatGeo);
-            map.removeLayer(googleSat);
-            map.removeLayer(googleStreets);
-            map.removeLayer(googleHybrid);
-            map.removeLayer(googleTerrain);
-            map.removeLayer(planet);
-          }
-        }
-
-        var satelite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {});
-
-        function sat(){
-          if(!map.hasLayer(satelite)){
-            map.addLayer(satelite);
-            map.removeLayer(basemap);
-            map.removeLayer(NatGeo);
-            map.removeLayer(googleSat);
-            map.removeLayer(googleStreets);
-            map.removeLayer(googleHybrid);
-            map.removeLayer(googleTerrain);
-            map.removeLayer(planet);
-          }
-        }
-
-        var NatGeo = L.tileLayer('http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {});
-
-        function nGeo(){
-          if(!map.hasLayer(NatGeo)){
-            map.addLayer(NatGeo);
-            map.removeLayer(basemap);
-            map.removeLayer(satelite);
-            map.removeLayer(googleSat);
-            map.removeLayer(googleStreets);
-            map.removeLayer(googleHybrid);
-            map.removeLayer(googleTerrain);
-            map.removeLayer(planet);
-          }
-        }
-
-        var googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
-          subdomains:['mt0','mt1','mt2','mt3']
-        });
-
-        function gSat(){
-          if(!map.hasLayer(googleSat)){
-            map.addLayer(googleSat);
-            map.removeLayer(basemap);
-            map.removeLayer(satelite);
-            map.removeLayer(NatGeo);
-            map.removeLayer(googleStreets);
-            map.removeLayer(googleHybrid);
-            map.removeLayer(googleTerrain);
-            map.removeLayer(planet);
-          }
-        }
-
-        var googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
-            subdomains:['mt0','mt1','mt2','mt3']
-        });
-
-        function gStr(){
-          if(!map.hasLayer(googleStreets)){
-            map.addLayer(googleStreets);
-            map.removeLayer(basemap);
-            map.removeLayer(satelite);
-            map.removeLayer(NatGeo);
-            map.removeLayer(googleSat);
-            map.removeLayer(googleHybrid);
-            map.removeLayer(googleTerrain);
-            map.removeLayer(planet);
-          }
-        }        
-
-        var googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
-            subdomains:['mt0','mt1','mt2','mt3']
-        });
-
-        function gHyb(){
-          if(!map.hasLayer(googleHybrid)){
-            map.addLayer(googleHybrid);
-            map.removeLayer(basemap);
-            map.removeLayer(satelite);
-            map.removeLayer(NatGeo);
-            map.removeLayer(googleSat);
-            map.removeLayer(googleStreets);
-            map.removeLayer(googleTerrain);
-            map.removeLayer(planet);
-          }
-        }        
-
-        var googleTerrain = L.tileLayer('http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',{
-            subdomains:['mt0','mt1','mt2','mt3']
-        });
-
-        function gTerr(){
-          if(!map.hasLayer(googleTerrain)){
-            map.addLayer(googleTerrain);
-            map.removeLayer(basemap);
-            map.removeLayer(satelite);
-            map.removeLayer(NatGeo);
-            map.removeLayer(googleSat);
-            map.removeLayer(googleStreets);
-            map.removeLayer(googleHybrid);
-            map.removeLayer(planet);
-          }
-        }
-        
-        var planet = L.tileLayer(
-        'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_2023_03_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAKa6e2136fd1e44bd09b5afba2836c8992',
-        {
-          id: 'global_monthly',
-        });
-
-        function plan(){
-          if(!map.hasLayer(planet)){
-            map.addLayer(planet);
-            map.removeLayer(basemap);
-            map.removeLayer(satelite);
-            map.removeLayer(NatGeo);
-            map.removeLayer(googleSat);
-            map.removeLayer(googleStreets);
-            map.removeLayer(googleHybrid);
-            map.removeLayer(googleTerrain);
-          }
-        }
-        
-        
-    </script>
+    <!-- Códigos para criar mapa -->
 
     <script src="mapa.js"></script>
+
+    <!-- Códigos para ler arquivos geojson externo -->
+
     <script src="file.js"></script>
 
-    <script>
+    <!-- Códigos - Áreas Licenciadas -->
 
-      var areaImov = L.geoJSON(areaImovel, {
-        color: "blue",
-        fill: false,
-        weight: "3",
-        onEachFeature: function (geom, layer) {
-          layer.bindPopup('<h6><b>Área do Imóvel</b></h6><p><b>Imóvel:</b> '+geom.properties.nome_imov+'<br><b>Município:</b> '+geom.properties.municip+'<br><b>Gleba:</b> '+geom.properties.gleba+'<br><b>CAR:</b> '+geom.properties.car+'<br><b>SIGEF:</b> '+geom.properties.sigef+'<br><b>Área:</b> '+geom.properties.area+' ha.</p>');
-        }
-      });
+    <script src="mapas/areasLicenciadas/js/areasLicenciadas.js"></script>
 
-      function arImov(el){
-        if(map.hasLayer(areaImov)){
-        map.removeLayer(areaImov);
-        }
-        else {
-        map.addLayer(areaImov);
-        }
-        var display = document.getElementById(el).style.display;
-        if(display == "block"){
-          document.getElementById(el).style.display = 'none';
-        }else{
-          document.getElementById(el).style.display = 'block';
-        }
-      }
+    <!-- Códigos - Áreas Institucionais -->
 
-      var areaProjeto = L.geoJSON(areaProjeto, {
-        color: "black",
-          onEachFeature: function (Feature, layer) {
-            if(Feature.properties.fk_tipo_projeto == 1){
-              var tipoProjeto = 'CRRA - Certificado Roraimense de Regularidade Ambiental';
-            }else if(Feature.properties.fk_tipo_projeto == 2){
-              var tipoProjeto = 'DRA - Declaração de Regularização Ambiental';
-            }else if(Feature.properties.fk_tipo_projeto == 3){
-              var tipoProjeto = 'AUAS - Autorização de Uso Alternativo do Solo';
-            }else{
-              var tipoProjeto = Feature.properties.fk_tipo_projeto;
-            }
-            layer.bindPopup('<h6><b>Área do Projeto</b></h6><b>Processo: </b>'+Feature.properties.n_processo+'<br><b>Código: </b>'+Feature.properties.fk_cod_femarh+'<br><b>Descrição: </b> '+Feature.properties.descr_ativ+'<br><b>Área: </b> '+Feature.properties.area+'<br><b>Tipo do Projeto: </b> '+tipoProjeto+'<br><br><button type="button" onclick="test()" id="aProj" value="'+Feature.id+'" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Detalhes</button>');
-          }
-      });
-
-      function areaProj(el){
-        if(map.hasLayer(areaProjeto)){
-        map.removeLayer(areaProjeto);
-        }
-        else {
-        map.addLayer(areaProjeto);
-        }
-        var display = document.getElementById(el).style.display;
-        if(display == "block"){
-          document.getElementById(el).style.display = 'none';
-        }else{
-          document.getElementById(el).style.display = 'block';
-        } 
-          }
-
-        var monitor = L.geoJSON(monitoramento, {
-        style: function(geom) {
-          switch (geom.properties.fk_tip_mon) {
-              case 1: return {color: "#33fd38", weight: "2"};
-              case 2: return {color: "#30ca9a", weight: "2"};
-              case 3: return {color: "#ab9960", weight: "2"};
-              case 4: return {color: "#a72266", weight: "2"};
-              case 5: return {color: "#fffa36", weight: "2"};
-              case 6: return {color: "#becc23", weight: "2"};
-              case 7: return {color: "#4694b1", weight: "2"};
-              case 8: return {color: "#a32ab2", weight: "2"};
-              case 9: return {color: "#974c4c", weight: "2"};
-              case 10: return {color: "#69a86d", weight: "2"};
-              case 11: return {color: "#7251a7", weight: "2"};
-              case 12: return {color: "#cd9649", weight: "2"};
-              case 13: return {color: "#7cad44", weight: "2"};
-              case 14: return {color: "#0c00ac", weight: "2"};
-              case 15: return {color: "#8a0000", weight: "2"};
-              case 16: return {color: "#36291e", weight: "2"};
-              case 17: return {color: "#de6c04", weight: "2"};
-              case 18: return {color: "#d0129a", weight: "2"};
-              case 19: return {color: "#a9cc16", weight: "2"};
-              case 20: return {color: "#592057", weight: "2"};
-              case 21: return {color: "#f16f3b", weight: "2"};
-              case 22: return {color: "#4b4947", weight: "2"};
-              case 23: return {color: "#42f4f8", weight: "2"};
-              case 24: return {color: "#3b6ec9", weight: "2"};
-              case 25: return {color: "black", weight: "2"};
-          }
-        },
-        onEachFeature: function (features, layer) {
-          layer.bindPopup('<h6><b>Monitoramento</b></h6>'+'<b>Código da Área do Imóvel: </b>'+features.properties.fk_ati+'<br><b>Código da Área do Projeto: </b> '+features.properties.fk_ap+'<br><b>Nº do Processo: </b>'+features.properties.n_processo+'<br><b>Classificação: </b> '+features.properties.fk_corte_fora_proj+'<br><b>Área Monitorada:</b> '+features.properties.area+' ha.<br><b>Nº da Autorização: </b> '+features.properties.n_autoriza+'<br><b>Início da Vigência: </b> '+features.properties.vig_inicia+'<br><b>Fim da Vigênica:</b> '+features.properties.vig_fim+'<br><b>Intervalo da Vigência: </b>'+features.properties.vig_interv+'<br><b>Operador: </b> '+features.properties.fk_usuario+'<br><b>Data do Registro: </b> '+features.properties.data_reg+'<br><br><button type="button" onclick="test2()" id="mom" value="'+features.id+'" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Detalhes</button>');
-        }
-      });
-
-      function monit(el){
-        if(map.hasLayer(monitor)){
-        map.removeLayer(monitor);
-        }
-        else {
-        map.addLayer(monitor);
-        }
-        var display = document.getElementById(el).style.display;
-        if(display == "block"){
-          document.getElementById(el).style.display = 'none';
-        }else{
-          document.getElementById(el).style.display = 'block';
-        } 
-      }
-
-    </script>
-
-    <script>
-      var areaInalienaveis = L.geoJSON(areaInalienaveis, {
-        color: "#808080",
-        weight: "1",
-        onEachFeature: function (geom, layer) {
-          layer.bindPopup('<h6><b>Áreas Inalienáveis</b></h6><p><b>Nome:</b> Área Inalienável<br><b>Área:</b> '+geom.properties.area_ha.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.</p>');
-        }
-      });
-
-      function areaIna(el){
-          if(map.hasLayer(areaInalienaveis)){
-          map.removeLayer(areaInalienaveis);
-          }
-          else {
-          map.addLayer(areaInalienaveis);
-          }
-          var display = document.getElementById(el).style.display;
-          if(display == "block"){
-            document.getElementById(el).style.display = 'none';
-          }else{
-            document.getElementById(el).style.display = 'block';
-          } 
-          }
-
-      var areaMilit = L.geoJSON(arMilit, {
-        color: "#FF8C00",
-        weight: "2",
-        onEachFeature: function (geom, layer) {
-          layer.bindPopup('<h6><b>Áreas Militares</b></h6><p><b>Nome:</b> Área Militar<br><b>Área:</b> '+geom.properties.area_ha.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.</p>');
-        } 
-      });
-
-      function areaMil(el){
-        if(map.hasLayer(areaMilit)){
-        map.removeLayer(areaMilit);
-        }
-        else {
-        map.addLayer(areaMilit);
-        }
-        var display = document.getElementById(el).style.display;
-        if(display == "block"){
-          document.getElementById(el).style.display = 'none';
-        }else{
-          document.getElementById(el).style.display = 'block';
-        } 
-      }
-
-      var limiteTerraIndigena = L.geoJSON(limiteTerraIndigena, {
-        color: "red",
-        weight: "2",
-        onEachFeature: function (geom, layer) {
-          layer.bindPopup('<h6><b>Terras Indígenas</b></h6><p><b>Nome: </b> '+geom.properties.nomeabrev+'<br><b>Etnia: </b> '+geom.properties.etnia_nome+'<br><b>Municípios: </b> '+geom.properties.municipio_+'<br><b>Estados: </b> '+geom.properties.uf_sigla+'<br><b>Fase: </b> '+geom.properties.fase_ti+'<br><b>Modalidade: </b> '+geom.properties.modalidade+'<br><b>Unidade Administrativa: </b> '+geom.properties.undadm_nom+'<br><b>Sigla Unid. Administrativa: </b> '+geom.properties.undadm_sig+'<br><b>Faixa de Fronteira: </b> '+geom.properties.faixa_fron+'<br><b>Área:</b> '+geom.properties.area_ha.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Data Atualização: </b> '+geom.properties.data_atual+'</p>');
-        }
-      });
-
-      function TerraInd(el){
-        if(map.hasLayer(limiteTerraIndigena)){
-        map.removeLayer(limiteTerraIndigena);
-        }
-        else {
-        map.addLayer(limiteTerraIndigena);
-        }
-        var display = document.getElementById(el).style.display;
-        if(display == "block"){
-          document.getElementById(el).style.display = 'none';
-        }else{
-          document.getElementById(el).style.display = 'block';
-        } 
-      }
-
-      var undConserEst = L.geoJSON(ucsEst, {
-          color: "#32CD32",
-          weight: "2",
-          onEachFeature: function (geom, layer) {
-            layer.bindPopup('<h6><b>Unidade de Conservação Estadual</b></h6><p><b>Nome:</b> '+geom.properties.nomeabrev+'<br><b>Sigla:</b> '+geom.properties.sigla+'<br><b>Administração:</b> '+geom.properties.administra+'<br><b>Situação:</b> '+geom.properties.situacao+'<br><b>Decreto:</b> '+geom.properties.decreto+'<br><b>Ano:</b> '+geom.properties.ano+'<br><b>Lei:</b> '+geom.properties.lei+'<br><b>Área:</b> '+geom.properties.area_ha.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.</p>');
-          }
-        });
-        
-        function undConEst(el){
-          if(map.hasLayer(undConserEst)){
-          map.removeLayer(undConserEst);
-          }
-          else {
-          map.addLayer(undConserEst);
-          }
-          var display = document.getElementById(el).style.display;
-          if(display == "block"){
-            document.getElementById(el).style.display = 'none';
-          }else{
-            document.getElementById(el).style.display = 'block';
-          } 
-        }
-
-        var undConserFed = L.geoJSON(undConserFed, {
-          color: "#006400",
-          weight: "2",
-          onEachFeature: function (geom, layer) {
-            layer.bindPopup('<h6><b>Unidade de Conservação Federal</b></h6><p><b>Nome:</b> '+geom.properties.nome_area+'<br><b>Tipo:</b> '+geom.properties.natureza+'<br><b>Detentor:</b> '+geom.properties.detentor_n+'<br><b>Situação:</b> '+geom.properties.situacao_i+'</p>');
-          }
-        });
-
-        function undConFed(el){
-          if(map.hasLayer(undConserFed)){
-          map.removeLayer(undConserFed);
-          }
-          else {
-          map.addLayer(undConserFed);
-          }
-          var display = document.getElementById(el).style.display;
-          if(display == "block"){
-            document.getElementById(el).style.display = 'none';
-          }else{
-            document.getElementById(el).style.display = 'block';
-          } 
-        }
-    </script>
+    <script src="mapas/areasInstitucionais/js/areasInstitucionais.js"></script>
 
     <script>
       var sedesMunic = L.geoJSON(sedesMunic, {
