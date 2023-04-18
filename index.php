@@ -41,24 +41,32 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="leaflet.ajax.js"></script>
 
+    <!--- Áreas Licenciadas -->
+
     <script src="mapas/areasLicenciadas/areaImovel.geojson"></script>
     <script src="mapas/areasLicenciadas/areaProjeto.geojson"></script>
     <script src="mapas/areasLicenciadas/areaProjeto1.geojson"></script>
     <script src="mapas/areasLicenciadas/areaProjetoHist.geojson"></script>
     <script src="mapas/areasLicenciadas/monitoramento.geojson"></script>
 
+    <script src="mapas/areasLicenciadas/areaImovel1.geojson"></script>
+
+    <!--- Áreas Licenciadas 4mf -->
+
     <script src="mapas/Monitoramento_4mf/areaImovel_4mf.geojson"></script>
     <script src="mapas/Monitoramento_4mf/areaProjeto_4mf.geojson"></script>
     <script src="mapas/Monitoramento_4mf/areaProjetoHist_4mf.geojson"></script>
     <script src="mapas/Monitoramento_4mf/monitoramento_4mf.geojson"></script>
 
-    <script src="mapas/areasLicenciadas/areaImovel1.geojson"></script>
+    <!--- Áreas Institucionais -->
 
     <script src="mapas/areasInstitucionais/areaInalienaveis.geojson"></script>
     <script src="mapas/areasInstitucionais/arMil.geojson"></script>
     <script src="mapas/areasInstitucionais/limiteTerraIndigena.geojson"></script>
     <script src="mapas/areasInstitucionais/ucs_estaduais.geojson"></script>
     <script src="mapas/areasInstitucionais/undConserFed.geojson"></script>
+
+    <!--- Base Cartográfica -->
 
     <script src="mapas/baseCartografica/sedesMunicipais.geojson"></script>
     <script src="mapas/baseCartografica/localidades.geojson"></script>
@@ -69,15 +77,21 @@ session_start();
     <script src="mapas/baseCartografica/projAssent.geojson"></script>
     <script src="mapas/baseCartografica/glebas.geojson"></script>
 
+    <!--- Agência Nacional de Mineração -->
+
     <script src="mapas/agenciaNacMiner/minerariosAtivos.geojson"></script>
 
+    <!--- IBAMA -->
+
     <script src="mapas/IBAMA/embargos.geojson"></script>
+
+    <!--- Outorgas de Recursos Hídricos -->
 
     <script src="mapas/ANA/ANA.geojson"></script>
     <script src="mapas/ANA/outorgas_superficiais.geojson"></script>
     <script src="mapas/ANA/outorgas_subterraneas.geojson"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--- IPHAN -->
 
     <script src="mapas/IPHAN/sitiosArqPol.geojson"></script>
     <script src="mapas/IPHAN/sitiosArqPon.geojson"></script>
@@ -118,11 +132,15 @@ session_start();
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
 
+            <!--- Código - Abas -->
+
             <p style="padding: 0; margin: 0;">
               <input type="button" onclick="men124('dropd','dropd1','dropd2')" value="Mapas e Temas" style="min-width:33.87%;margin:  0 -4px 0 0;" id="remLay1">
               <input type="button" onclick="men123('dropd','dropd1','dropd2')" value="Consultas" style="min-width:33.87%; margin:  0 -4px  0 -4px;" id="remLay1">
               <input type="button" onclick="men125('dropd','dropd1','dropd2')" value="Informações" style="min-width:33.87%; margin:  0 0 0 -4px; " id="remLay1">
             </p>
+
+            <!--- Código - Aba Mapas e Temas -->
 
             <div class="offcanvas-body" id="dropd">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -364,6 +382,8 @@ session_start();
                 </li> -->
               </ul>
 
+              <!--- Código - Remover temas e camadas -->
+
               <p data-bs-dismiss="offcanvas" aria-label="Close">
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" id="leg">Legenda</a>
               </p>
@@ -377,6 +397,8 @@ session_start();
               </p>
 
             </div>
+
+            <!--- Código - Aba Consultas -->
 
             <div class="offcanvas-body" id="dropd1">
            
@@ -407,6 +429,7 @@ session_start();
 
 
             <br><hr>
+            
 
             <h5>Consulte por CPF/CNPJ</h5>
 
@@ -419,6 +442,9 @@ session_start();
               <img src="imagens/SIGARR3.png" class="d-none d-lg-block d-print-block" href="https://femarh.rr.gov.br/" id="fem1">
 
             </div>
+
+
+            <!--- Código - Aba Informações -->
 
             <div class="offcanvas-body" id="dropd2">
               <p>O banco de dados que gera o sistema em questão ainda não possui todos os imóveis licenciados pela FEMARH, o mesmo tem atualização diária com a inserção de novos imóveis.</p>
@@ -465,8 +491,14 @@ session_start();
         </div>
         
       </nav>
+
+
+      <!--- Código - Mapa -->
  
       <div id="map"></div>
+
+
+      <!--- Código - Legenda das camadas -->
 
       <div class="row">
         <div class="col">
@@ -684,19 +716,21 @@ session_start();
 
     </div>
 
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="text" id="text1"></div>
-        <div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
-      </div>
-      <div class="modal-body" id="aaa" >
-        
+    <!--- Código - Modal para mostrar detalhes da área do projeto e monitoramento -->
+
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="text" id="text1"></div>
+            <div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          </div>
+          <div class="modal-body" id="aaa" >
+            
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
     <!--- Código - Mostrar Área do Projeto Hist. -->
 
@@ -716,7 +750,7 @@ session_start();
 
     <!-- Códigos para ler arquivos geojson externo -->
               
-    <script src="file.js"></script>
+    <script src="mapas/funcoes/file.js"></script>
 
     <!-- Códigos - Áreas Licenciadas -->
 
@@ -776,7 +810,7 @@ session_start();
 
 
 
-    
+
     
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
 </html>
