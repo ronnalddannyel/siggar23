@@ -41,6 +41,18 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="leaflet.ajax.js"></script>
 
+    <!--- Grades -->
+
+    <script src="mapas/grade/cbers_cenas.geojson"></script>
+    <script src="mapas/grade/cbers_grade.geojson"></script>
+    <script src="mapas/grade/cbers4a_mux.geojson"></script>
+    <script src="mapas/grade/cbers4a_wfi.geojson"></script>
+    <script src="mapas/grade/landsat.geojson"></script>
+    <script src="mapas/grade/liss_3.geojson"></script>
+    <script src="mapas/grade/rapideye.geojson"></script>
+    <script src="mapas/grade/sentinel_2.geojson"></script>
+    <script src="mapas/grade/ibge_carta_100mil.geojson"></script>
+
     <!--- Áreas Licenciadas -->
 
     <script src="mapas/areasLicenciadas/areaImovel.geojson"></script>
@@ -184,14 +196,42 @@ session_start();
                 <!---
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      ÁREAS LICENCIADAS
+                      GRADES
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
-                      <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Área do Projeto <a href="Download/ap.zip" download="Area_Projeto" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="areaProj('teste5')" id="1"></a></li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> IBGE Carta 100 mil <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="ibgeCart('teste33')" id="27"></a></li>
                       <li>
                           <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Área do Imóvel <a href="Download/view_ati.zip" download="Area_Total_Imovel" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="arImov('teste1')" id="2"></a></li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS 4A - MUX <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cbers4aMu('teste34')" id="28"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS 4A - WFI <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cbers4aWif('teste35')" id="29"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS - Cenas <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cbersCena('teste36')" id="30"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cbersGr('teste37')" id="31"></a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Landsat <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="landsa('teste38')" id="32"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Liss 3 <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="liss('teste39')" id="33"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Rapideye <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="rapidey('teste40')" id="34"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Sentinel 2 <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="sentinel('teste41')" id="35"></a></li>
                     </ul>
                 </li>
                 --->
@@ -803,6 +843,10 @@ session_start();
     <!-- Códigos - Consultar Marcador por Coordenada -->
     
     <script src="mapas/funcoes/consultaMarc.js"></script>
+
+    <!-- Códigos - Grades -->
+    
+    <script src="mapas/grade/js/grade.js"></script>
 
 
 
