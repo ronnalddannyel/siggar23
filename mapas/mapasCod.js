@@ -112,7 +112,7 @@
         }
         
         var planet = L.tileLayer(
-        'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_2023_03_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK8ad4ac52422f48cc89510df066c8ac53',
+        'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_2023_03_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK2c6e017e74ab47cab780b75d3cbf0742',
         {
           id: 'global_monthly',
         });
