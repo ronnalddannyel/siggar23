@@ -113,9 +113,7 @@
         
         var planet = L.tileLayer(
         'https://tileserver-pf.sccon.com.br/sccon/basemaps/tiles/1.0.0/nome_mosaico/planet/{z}/{x}/{y}.png?token=07846b28-de18-11ed-a82e-f766f6d45dcf',
-        {
-          id: 'global_monthly',
-        });
+        {});
 
         function plan(){
           if(!map.hasLayer(planet)){
