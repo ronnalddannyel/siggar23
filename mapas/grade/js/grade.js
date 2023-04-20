@@ -3,6 +3,9 @@
 
   var ibgeCarta = L.geoJSON(ibgeCarta, {
     color: "#808080",
+    onEachFeature: function (geom, layer) {
+      layer.bindPopup('<h6><b>IBGE CARTA 1:100.000</b></h6><p><b>MI:</b> '+geom.properties.mi+'<br><b>Índice:</b> '+geom.properties.indicenome+'<br><b>Equidistância:</b> '+geom.properties.equidistan+'<br><b>Escala:</b> '+geom.properties.escala+'<br><b>Nome da Carta:</b> '+geom.properties.nome_carta+'<br><b>Aquisição:</b> '+geom.properties.aquisicao+'</p>');
+    }
   });
 
   function ibgeCart(el){

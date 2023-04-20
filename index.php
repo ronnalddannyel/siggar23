@@ -199,7 +199,7 @@ session_start();
                       GRADES
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
-                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> IBGE Carta 100 mil <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="ibgeCart('teste33')" id="27"></a></li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> IBGE CARTA 1:100.000 <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="ibgeCart('teste33')" id="27"></a></li>
                       <li>
                           <hr class="dropdown-divider">
                       </li>
@@ -546,6 +546,42 @@ session_start();
             <div class="card card-body" >
               
               <h5 style="text-align:center;">LEGENDAS</h5>
+
+              <div id="teste33">
+                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> IBGE CARTA 1:100.000
+              </div>
+
+              <div id="teste34">
+                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS 4A - MUX
+              </div>
+
+              <div id="teste35">
+                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS 4A - WFI
+              </div>
+
+              <div id="teste36">
+                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS - Cenas
+              </div>
+
+              <div id="teste37">
+                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS
+              </div>
+
+              <div id="teste38">
+                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Landsat
+              </div>
+
+              <div id="teste39">
+                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Liss 3
+              </div>
+
+              <div id="teste40">
+                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Rapideye
+              </div>
+
+              <div id="teste41">
+                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Sentinel 2
+              </div>
               
               <div id="teste5">
                 <img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Área do Projeto
