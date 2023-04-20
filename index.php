@@ -844,6 +844,10 @@ session_start();
 
     <script src="mapas/baseCartografica/js/baseCartografica.js"></script>
 
+    <!-- Códigos - Consultar Imóvel por CPF na URL -->
+
+    <script src="mapas/funcoes/urlImovel.js"></script>
+
     <!-- Códigos - Agência Nacional de Mineração -->
 
     <script src="mapas/agenciaNacMiner/js/agenciaNacMiner.js"></script>
