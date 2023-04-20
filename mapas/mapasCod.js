@@ -110,10 +110,10 @@
             map.removeLayer(planet);
           }
         }
-     //   https://tileserver-pf.sccon.com.br/sccon/basemaps/tiles/1.0.0/global_monthly_2023_03_mosaic/planet/{z}/{x}/{y}.png?token=07846b28-de18-11ed-a82e-f766f6d45dcf|https://tileserver-pf.sccon.com.br/sccon/basemaps/tiles/1.0.0/nome_mosaico/planet/%7Bz%7D/%7Bx%7D/%7By%7D.png?token=07846b28-de18-11ed-a82e-f766f6d45dcf]
+     //   https://tileserver-pf.sccon.com.br/sccon/basemaps/tiles/1.0.0/nome_mosaico/planet/{z}/{x}/{y}.png?token=07846b28-de18-11ed-a82e-f766f6d45dcf|https://tileserver-pf.sccon.com.br/sccon/basemaps/tiles/1.0.0/nome_mosaico/planet/%7Bz%7D/%7Bx%7D/%7By%7D.png?token=07846b28-de18-11ed-a82e-f766f6d45dcf]
 
         var planet = L.tileLayer(
-        'https://tileserver-pf.sccon.com.br/sccon/basemaps/tiles/1.0.0/global_monthly_2023_03_mosaic/planet/{z}/{x}/{y}.png?token=07846b28-de18-11ed-a82e-f766f6d45dcf',
+        'https://tileserver-pf.sccon.com.br/sccon/basemaps/tiles/1.0.0/nome_mosaico/planet/{z}/{x}/{y}.png?token=07846b28-de18-11ed-a82e-f766f6d45dcf',
         {
           id: 'global_monthly',
         });
