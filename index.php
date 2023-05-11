@@ -55,20 +55,20 @@ session_start();
 
     <!--- Áreas Licenciadas -->
 
-    <script src="mapas/areasLicenciadas/areaImovel.geojson"></script>
-    <script src="mapas/areasLicenciadas/areaProjeto.geojson"></script>
-    <script src="mapas/areasLicenciadas/areaProjeto1.geojson"></script>
-    <script src="mapas/areasLicenciadas/areaProjetoHist.geojson"></script>
-    <script src="mapas/areasLicenciadas/monitoramento.geojson"></script>
+    <script src="mapas/areasLicenciadas1/areaImovel.geojson"></script>
+    <script src="mapas/areasLicenciadas1/areaProjeto.geojson"></script>
+    <script src="mapas/areasLicenciadas1/areaProjeto1.geojson"></script>
+    <script src="mapas/areasLicenciadas1/areaProjetoHist.geojson"></script>
+    <script src="mapas/areasLicenciadas1/monitoramento.geojson"></script>
 
-    <script src="mapas/areasLicenciadas/areaImovel1.geojson"></script>
+    <script src="mapas/areasLicenciadas1/areaImovel1.geojson"></script>
 
     <!--- Áreas Licenciadas 4mf -->
 
-    <script src="mapas/Monitoramento_4mf/areaImovel_4mf.geojson"></script>
-    <script src="mapas/Monitoramento_4mf/areaProjeto_4mf.geojson"></script>
-    <script src="mapas/Monitoramento_4mf/areaProjetoHist_4mf.geojson"></script>
-    <script src="mapas/Monitoramento_4mf/monitoramento_4mf.geojson"></script>
+    <script src="mapas/Monitoramento_4mf1/areaImovel_4mf.geojson"></script>
+    <script src="mapas/Monitoramento_4mf1/areaProjeto_4mf.geojson"></script>
+    <script src="mapas/Monitoramento_4mf1/areaProjetoHist_4mf.geojson"></script>
+    <script src="mapas/Monitoramento_4mf1/monitoramento_4mf.geojson"></script>
 
     <!--- Áreas Institucionais -->
 
@@ -830,11 +830,11 @@ session_start();
 
     <!-- Códigos - Áreas Licenciadas -->
 
-    <script src="mapas/areasLicenciadas/js/areasLicenciadas.js"></script>
+    <script src="mapas/areasLicenciadas1/js/areasLicenciadas.js"></script>
 
     <!-- Códigos - Áreas Licenciadas até 4 Módulos Fiscais -->
 
-    <script src="mapas/Monitoramento_4mf/js/Mon_4mf.js"></script>
+    <script src="mapas/Monitoramento_4mf1/js/Mon_4mf.js"></script>
 
     <!-- Códigos - Áreas Institucionais -->
 
