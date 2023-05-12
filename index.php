@@ -818,7 +818,7 @@ session_start();
 
     <!-- Códigos dos mapas -->
 
-    <script src="mapas/mapasCod1.js"></script>
+    <script src="mapas/mapasCod.js"></script>
 
     <!-- Códigos para criar mapa -->
 
