@@ -55,13 +55,13 @@ session_start();
 
     <!--- Áreas Licenciadas -->
 
-    <script src="mapas/areasLicenciadas1/areaImovel.geojson"></script>
-    <script src="mapas/areasLicenciadas1/areaProjeto.geojson"></script>
-    <script src="mapas/areasLicenciadas1/areaProjeto1.geojson"></script>
-    <script src="mapas/areasLicenciadas1/areaProjetoHist.geojson"></script>
-    <script src="mapas/areasLicenciadas1/monitoramento.geojson"></script>
+    <script src="mapas/areasLicenciadas/areaImovel.geojson"></script>
+    <script src="mapas/areasLicenciadas/areaProjeto.geojson"></script>
+    <script src="mapas/areasLicenciadas/areaProjeto1.geojson"></script>
+    <script src="mapas/areasLicenciadas/areaProjetoHist.geojson"></script>
+    <script src="mapas/areasLicenciadas/monitoramento.geojson"></script>
 
-    <script src="mapas/areasLicenciadas1/areaImovel1.geojson"></script>
+    <script src="mapas/areasLicenciadas/areaImovel1.geojson"></script>
 
     <!--- Áreas Licenciadas 4mf -->
 
@@ -830,7 +830,7 @@ session_start();
 
     <!-- Códigos - Áreas Licenciadas -->
 
-    <script src="mapas/areasLicenciadas1/js/areasLicenciadas.js"></script>
+    <script src="mapas/areasLicenciadas/js/areasLicenciadas.js"></script>
 
     <!-- Códigos - Áreas Licenciadas até 4 Módulos Fiscais -->
 
