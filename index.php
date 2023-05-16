@@ -89,6 +89,43 @@ session_start();
     <script src="mapas/baseCartografica/projAssent.geojson"></script>
     <script src="mapas/baseCartografica/glebas.geojson"></script>
 
+    <!--- Zee -->
+
+    <script src="mapas/zee/aptidao_agricola.geojson"></script>
+    <script src="mapas/zee/biodivers_sistemas.geojson"></script>
+    <script src="mapas/zee/biodivers_veg_campos_dunas.geojson"></script>
+    <script src="mapas/zee/biodivers_veg_floresta.geojson"></script>
+    <script src="mapas/zee/biodivers_veg_lavrado.geojson"></script>
+    <script src="mapas/zee/biodivers_veg_sistemas_lacustres.geojson"></script>
+    <script src="mapas/zee/geologia_dominios_morfo.geojson"></script>
+    <script src="mapas/zee/geologia_erosao.geojson"></script>
+    <script src="mapas/zee/geologia_geologico.geojson"></script>
+    <script src="mapas/zee/geologia_potencial_mineral.geojson"></script>
+    <script src="mapas/zee/geomorfologia_unidades_geomorfo.geojson"></script>
+    <script src="mapas/zee/hidrografia_drenagem.geojson"></script>
+    <script src="mapas/zee/hidrografia_ottobacias.geojson"></script>
+    <script src="mapas/zee/potencial_social_ambiental.geojson"></script>
+    <script src="mapas/zee/potencial_social_humano.geojson"></script>
+    <script src="mapas/zee/potencial_social_institucional.geojson"></script>
+    <script src="mapas/zee/potencial_social_produtivo.geojson"></script>
+    <script src="mapas/zee/potencial_social.geojson"></script>
+    <script src="mapas/zee/solos.geojson"></script>
+    <script src="mapas/zee/vegetacao.geojson"></script>
+    <script src="mapas/zee/vul_nat_perda_solo_2018.geojson"></script>
+    <script src="mapas/zee/vul_nat_perda_solo_geologia_2018.geojson"></script>
+    <script src="mapas/zee/vul_nat_perda_solo_geomorfologia_2018.geojson"></script>
+    <script src="mapas/zee/vul_nat_perda_solo_vegetacao_2018.geojson"></script>
+    <script src="mapas/zee/vul_nat_perda_solo_zonaclima_2018.geojson"></script>
+    <script src="mapas/zee/zona_clima_clima_zee_2018.geojson"></script>
+    <script src="mapas/zee/zona_clima_concentracao_chuvas.geojson"></script>
+    <script src="mapas/zee/zona_clima_isolinhas_chuvas.geojson"></script>
+    <script src="mapas/zee/zona_clima_koppen.geojson"></script>
+    <script src="mapas/zee/zonas_subzona1_zup.geojson"></script>
+    <script src="mapas/zee/zonas_subzona2_zue.geojson"></script>
+    <script src="mapas/zee/zonas_zona1_zup.geojson"></script>
+    <script src="mapas/zee/zonas_zona2_zue.geojson"></script>
+    <script src="mapas/zee/zonas_zona3_zu.geojson"></script>
+
     <!--- Agência Nacional de Mineração -->
 
     <script src="mapas/agenciaNacMiner/minerariosAtivos.geojson"></script>
@@ -339,6 +376,112 @@ session_start();
                       <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Glebas <a href="Download/glebas.zip" download="Glebas" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gleb('teste15')" id="14"></a></li>
                     </ul>
                 </li>
+                <!---
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ZEE
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu">
+                      <li><a id="coord" > Áreas Inalienáveis <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="aptAgr1('teste42')" id="36"></a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Áreas Militares <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivSist1('teste43')" id="37"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Terras Indígenas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegCampDunas1('teste44')" id="38"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Unidade de Conservação Estadual <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegFlor1('teste45')" id="39"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Unidade de Conservação Federal <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegLavr1('teste46')" id="40"></a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Áreas Militares <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegSistLacust1('teste47')" id="41"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Terras Indígenas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoDomMorfo1('teste48')" id="42"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Unidade de Conservação Estadual <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gepErosao1('teste49')" id="43"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Unidade de Conservação Federal <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoGeolog1('teste50')" id="44"></a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Áreas Militares <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoPotMineral1('teste51')" id="45"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Terras Indígenas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoUndGeomorfo1('teste52')" id="46"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Unidade de Conservação Estadual <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidDrenagem1('teste53')" id="47"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Unidade de Conservação Federal <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidOttobacias1('teste54')" id="48"></a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Áreas Militares <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocAmbiental1('teste55')" id="49"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Terras Indígenas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocHumano1('teste56')" id="50"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Unidade de Conservação Estadual <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocInstitucional1('teste57')" id="51"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Unidade de Conservação Federal <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocProdutivo1('teste58')" id="52"></a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Áreas Militares <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocial1('teste59')" id="53"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Terras Indígenas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="solos1('teste60')" id="54"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Unidade de Conservação Estadual <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vegetacao1('teste61')" id="55"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Unidade de Conservação Federal <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdaSolo1('teste62')" id="56"></a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Áreas Militares <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdaSoloGeologia1('teste63')" id="57"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Terras Indígenas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdSoloGeomorfologia1('teste64')" id="58"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Unidade de Conservação Estadual <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdSoloVegetacao1('teste65')" id="59"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" > Unidade de Conservação Federal <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdSoloZonaclima1('teste66')" id="60"></a></li>
+                    </ul>
+                </li>
+                --->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       AGÊNCIA NACIONAL DE MINERAÇÃO
@@ -818,7 +961,7 @@ session_start();
 
     <!-- Códigos dos mapas -->
 
-    <script src="mapas/mapasCod.js"></script>
+    <script src="mapas/mapasCod2.js"></script>
 
     <!-- Códigos para criar mapa -->
 
