@@ -2,6 +2,9 @@
 // Aptidão Agrícola
 
 var aptAgr = L.geoJSON(aptAgr, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>Aptidão Agrícola</b></h6><p><b>sigla:</b> '+geom.properties.sigla+'<br><b>nome:</b> '+geom.properties.nome+'<br><b>classifica:</b> '+geom.properties.classifica+'<br><b>ha:</b> '+geom.properties.ha+'<br><b>class_apt:</b> '+geom.properties.class_apt+'<br><b>desc_:</b> '+geom.properties.desc_+'<br><b>desc_cont:</b> '+geom.properties.desc_cont+'<br><b>subl:</b> '+geom.properties.subl+'</p>');
+    }
 });
 
 function aptAgr1(el){
@@ -25,6 +28,9 @@ function aptAgr1(el){
 // biodivers_sistemas
 
 var bioDivSist = L.geoJSON(bioDivSist, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>biodivers_sistemas</b></h6><p><b>sistema:</b> '+geom.properties.sistema+'<br><b>padrão:</b> '+geom.properties.padrão+'<br><b>associação:</b> '+geom.properties.associação+'</p>');
+    }
 });
 
 function bioDivSist1(el){
@@ -48,6 +54,9 @@ function bioDivSist1(el){
 // biodivers_veg_campos_dunas
 
 var bioDivVegCampDunas = L.geoJSON(bioDivVegCampDunas, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>biodivers_veg_campos_dunas</b></h6><p><b>area:</b> '+geom.properties.area+'</p>');
+    }
 });
 
 function bioDivVegCampDunas1(el){
@@ -71,6 +80,9 @@ function bioDivVegCampDunas1(el){
 // biodivers_veg_floresta
 
 var bioDivVegFlor = L.geoJSON(bioDivVegFlor, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>biodivers_veg_floresta</b></h6><p><b>nomeabrev:</b> '+geom.properties.nomeabrev+'</p>');
+    }
 });
 
 function bioDivVegFlor1(el){
@@ -94,6 +106,9 @@ function bioDivVegFlor1(el){
 // biodivers_veg_lavrado
 
 var bioDivVegLavr = L.geoJSON(bioDivVegLavr, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>biodivers_veg_lavrado</b></h6><p><b>nomeabrev:</b> '+geom.properties.nomeabrev+'</p>');
+    }
 });
 
 function bioDivVegLavr1(el){
@@ -117,6 +132,9 @@ function bioDivVegLavr1(el){
 // biodivers_veg_sistemas_lacustres
 
 var bioDivVegSistLacust = L.geoJSON(bioDivVegSistLacust, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>biodivers_veg_sistemas_lacustres</b></h6><p><b>padrão:</b> '+geom.properties.padrão+'<br><b>associação:</b> '+geom.properties.associação+'</p>');
+    }
 });
 
 function bioDivVegSistLacust1(el){
@@ -140,6 +158,9 @@ function bioDivVegSistLacust1(el){
 // geologia_dominios_morfo
 
 var geoDomMorfo = L.geoJSON(geoDomMorfo, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>geologia_dominios_morfo</b></h6><p><b>domínios:</b> '+geom.properties.domínios+'</p>');
+    }
 });
 
 function geoDomMorfo1(el){
@@ -163,6 +184,9 @@ function geoDomMorfo1(el){
 // geologia_erosao
 
 var gepErosao = L.geoJSON(gepErosao, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>geologia_erosao</b></h6><p><b>litologia:</b> '+geom.properties.litologia+'</p>');
+    }
 });
 
 function gepErosao1(el){
@@ -186,6 +210,9 @@ function gepErosao1(el){
 // geologia_geologico
 
 var geoGeolog = L.geoJSON(geoGeolog, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>geologia_geologico</b></h6><p><b>rotulo:</b> '+geom.properties.rotulo+'<br><b>nomeext:</b> '+geom.properties.nomeext+'</p>');
+    }
 });
 
 function geoGeolog1(el){
@@ -209,6 +236,9 @@ function geoGeolog1(el){
 // geologia_potencial_mineral
 
 var geoPotMineral = L.geoJSON(geoPotMineral, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>geologia_potencial_mineral</b></h6><p><b>rm3:</b> '+geom.properties.rm3+'</p>');
+    }
 });
 
 function geoPotMineral1(el){
@@ -232,6 +262,9 @@ function geoPotMineral1(el){
 // geomorfologia_unidades_geomorfo
 
 var geoUndGeomorfo = L.geoJSON(geoUndGeomorfo, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>geomorfologia_unidades_geomorfo</b></h6><p><b>uni_geomor:</b> '+geom.properties.uni_geomor+'<br><b>sigla:</b> '+geom.properties.sigla+'<br><b>legenda:</b> '+geom.properties.legenda+'</p>');
+    }
 });
 
 function geoUndGeomorfo1(el){
@@ -255,6 +288,9 @@ function geoUndGeomorfo1(el){
 // hidrografia_drenagem
 
 var hidDrenagem = L.geoJSON(hidDrenagem, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>hidrografia_drenagem</b></h6><p><b>nome:</b> '+geom.properties.nome+'</p>');
+    }
 });
 
 function hidDrenagem1(el){
@@ -278,6 +314,9 @@ function hidDrenagem1(el){
 // hidrografia_ottobacias
 
 var hidOttobacias = L.geoJSON(hidOttobacias, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>hidrografia_ottobacias</b></h6><p><b>regiao48:</b> '+geom.properties.regiao48+'</p>');
+    }
 });
 
 function hidOttobacias1(el){
@@ -301,6 +340,9 @@ function hidOttobacias1(el){
 // potencial_social_ambiental
 
 var potSocAmbiental = L.geoJSON(potSocAmbiental, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>potencial_social_ambiental</b></h6><p><b>nome:</b> '+geom.properties.nome+'<br><b>natural:</b> '+geom.properties.natural+'<br><b>objectid_1:</b> '+geom.properties.objectid_1+'</p>');
+    }
 });
 
 function potSocAmbiental1(el){
@@ -654,29 +696,6 @@ function zonaClimaKoppen1(el){
     }
     else {
         map.addLayer(zonaClimaKoppen);
-    }
-
-    var display = document.getElementById(el).style.display;
-
-    if(display == "block"){
-        document.getElementById(el).style.display = 'none';
-    }else{
-        document.getElementById(el).style.display = 'block';
-    }
-}
-
-
-// zonas_subzona1_zup
-
-var zonasSubzonaZup = L.geoJSON(zonasSubzonaZup, {
-});
-
-function zonasSubzonaZup1(el){
-    if(map.hasLayer(zonasSubzonaZup)){
-        map.removeLayer(zonasSubzonaZup);
-    }
-    else {
-        map.addLayer(zonasSubzonaZup);
     }
 
     var display = document.getElementById(el).style.display;

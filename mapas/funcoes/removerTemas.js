@@ -3,39 +3,9 @@ function removeAllLayer(id, id2, id3, el, li){
 
     // remover todos os mapas e camadas
 
-    map.removeLayer(areaImov);
-    map.removeLayer(areaProjeto);
-    map.removeLayer(monitor);
-    map.removeLayer(areaInalienaveis);
-    map.removeLayer(areaMilit);
-    map.removeLayer(limiteTerraIndigena);
-    map.removeLayer(undConserEst);
-    map.removeLayer(undConserFed);
-    map.removeLayer(sedesMunic);
-    map.removeLayer(markers1);
-    map.removeLayer(rodovia);
-    map.removeLayer(hidrografia);
-    map.removeLayer(hidroMasDagua);
-    map.removeLayer(projAssent);
-    map.removeLayer(glebas);
-    map.removeLayer(minerAtivos);
-    map.removeLayer(iphanSitArq);
-    map.removeLayer(markers);
-    map.removeLayer(groupLayQueimada);
-    map.removeLayer(embarg);
-    map.removeLayer(markers3);
-    map.removeLayer(markers4);
-    map.removeLayer(markers5);
-    map.removeLayer(areaImov_4mf);
-    map.removeLayer(areaProjeto_4mf);
-    map.removeLayer(monitor_4mf);
-    map.removeLayer(basemap);
-    map.removeLayer(satelite);
-    map.removeLayer(NatGeo);
-    map.removeLayer(googleSat);
-    map.removeLayer(googleStreets);
-    map.removeLayer(googleHybrid);
-    map.removeLayer(planet);
+    map.eachLayer(function (layer) {
+      map.removeLayer(layer);
+    });
 
     // adicionar mapa e camada inicial
 
@@ -45,7 +15,7 @@ function removeAllLayer(id, id2, id3, el, li){
 
     // desmarcar os checkboxs das camadas
 
-    while (id<27){
+    while (id<61){
     var status = document.getElementById(id);
       if (status.checked) {
         status.checked = false;
@@ -85,7 +55,7 @@ function removeAllLayer(id, id2, id3, el, li){
 
     var cont = 1;
 
-    while(cont<34) {
+    while(cont<68) {
     
       var res = el + cont;
       console.log(res);
