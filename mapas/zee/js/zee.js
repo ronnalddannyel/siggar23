@@ -366,6 +366,9 @@ function potSocAmbiental1(el){
 // potencial_social_humano
 
 var potSocHumano = L.geoJSON(potSocHumano, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>potencial_social_humano</b></h6><p><b>cd_geocodi:</b> '+geom.properties.cd_geocodi+'<br><b>tipo:</b> '+geom.properties.tipo+'<br><b>nm_municip:</b> '+geom.properties.nm_municip+'<br><b>nm_micro:</b> '+geom.properties.nm_micro+'<br><b>nm_meso:</b> '+geom.properties.nm_meso+'<br><b>indice_med:</b> '+geom.properties.indice_med+'<br><b>atendiment:</b> '+geom.properties.atendiment+'<br><b>densidade_:</b> '+geom.properties.densidade_+'<br><b>esgoto_san:</b> '+geom.properties.esgoto_san+'<br><b>ideb_rr_mu:</b> '+geom.properties.ideb_rr_mu+'<br><b>nivel_de_u:</b> '+geom.properties.nivel_de_u+'<br><b>oferta_de_:</b> '+geom.properties.oferta_de_+'<br><b>pessoas_al:</b> '+geom.properties.pessoas_al+'<br><b>renda_domi:</b> '+geom.properties.renda_domi+'</p>');
+    }
 });
 
 function potSocHumano1(el){
@@ -389,6 +392,9 @@ function potSocHumano1(el){
 // potencial_social_institucional
 
 var potSocInstitucional = L.geoJSON(potSocInstitucional, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>potencial_social_institucional</b></h6><p><b>cd_geocodi:</b> '+geom.properties.cd_geocodi+'<br><b>tipo:</b> '+geom.properties.tipo+'<br><b>cd_geocods:</b> '+geom.properties.cd_geocods+'<br><b>cd_geocodd:</b> '+geom.properties.cd_geocodd+'<br><b>nm_distrit:</b> '+geom.properties.nm_distrit+'<br><b>cd_geocodm:</b> '+geom.properties.cd_geocodm+'<br><b>nm_municip:</b> '+geom.properties.nm_municip+'<br><b>nm_micro:</b> '+geom.properties.nm_micro+'<br><b>nm_meso:</b> '+geom.properties.nm_meso+'<br><b>par_pol_el:</b> '+geom.properties.par_pol_el+'<br><b>au_pol_adm:</b> '+geom.properties.au_pol_adm+'<br><b>n_con_soci:</b> '+geom.properties.n_con_soci+'<br><b>dissolvido:</b> '+geom.properties.dissolvido+'<br><b>dissolvi_1:</b> '+geom.properties.dissolvi_1+'<br><b>indice_are:</b> '+geom.properties.indice_are+'<br><b>potencial_:</b> '+geom.properties.potencial_+'</p>');
+    }
 });
 
 function potSocInstitucional1(el){
@@ -412,6 +418,9 @@ function potSocInstitucional1(el){
 // potencial_social_produtivo
 
 var potSocProdutivo = L.geoJSON(potSocProdutivo, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>potencial_social_produtivo</b></h6><p><b>cd_geocodi:</b> '+geom.properties.cd_geocodi+'<br><b>tipo:</b> '+geom.properties.tipo+'<br><b>cd_geocods:</b> '+geom.properties.cd_geocods+'<br><b>cd_geocodd:</b> '+geom.properties.cd_geocodd+'<br><b>nm_distrit:</b> '+geom.properties.nm_distrit+'<br><b>cd_geocodm:</b> '+geom.properties.cd_geocodm+'<br><b>nm_municip:</b> '+geom.properties.nm_municip+'<br><b>nm_micro:</b> '+geom.properties.nm_micro+'<br><b>nm_meso:</b> '+geom.properties.nm_meso+'<br><b>produt1:</b> '+geom.properties.produt1+'<br><b>produt2:</b> '+geom.properties.produt2+'<br><b>prod_graos:</b> '+geom.properties.prod_graos+'<br><b>pib_perc_m:</b> '+geom.properties.pib_perc_m+'<br><b>pib_munici:</b> '+geom.properties.pib_munici+'<br><b>consumo_en:</b> '+geom.properties.consumo_en+'<br><b>ener_rural:</b> '+geom.properties.ener_rural+'<br><b>ap_mineral:</b> '+geom.properties.ap_mineral+'<br><b>a_pecuaria:</b> '+geom.properties.a_pecuaria+'<br><b>din_indus:</b> '+geom.properties.din_indus+'<br><b>fi_atv_agr:</b> '+geom.properties.fi_atv_agr+'<br><b>est_vic_pa:</b> '+geom.properties.est_vic_pa+'<br><b>indice_med:</b> '+geom.properties.indice_med+'</p>');
+    }
 });
 
 function potSocProdutivo1(el){
@@ -435,6 +444,9 @@ function potSocProdutivo1(el){
 // potencial_social
 
 var potSocial = L.geoJSON(potSocial, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>potencial_social</b></h6><p><b>gridcode:</b> '+geom.properties.gridcode+'<br><b>pot_social:</b> '+geom.properties.pot_social+'</p>');
+    }
 });
 
 function potSocial1(el){
@@ -458,6 +470,9 @@ function potSocial1(el){
 // solos
 
 var solos = L.geoJSON(solos, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>solos</b></h6><p><b>sigla:</b> '+geom.properties.sigla+'<br><b>nome:</b> '+geom.properties.nome+'<br><b>classifica:</b> '+geom.properties.classifica+'<br><b>ha:</b> '+geom.properties.ha+'<br><b>siglan1:</b> '+geom.properties.siglan1+'</p>');
+    }
 });
 
 function solos1(el){
@@ -481,6 +496,9 @@ function solos1(el){
 // vegetacao
 
 var vegetacao = L.geoJSON(vegetacao, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>vegetacao</b></h6><p><b>cod_class:</b> '+geom.properties.cod_class+'<br><b>auxiliary_:</b> '+geom.properties.auxiliary_+'</p>');
+    }
 });
 
 function vegetacao1(el){
@@ -504,6 +522,9 @@ function vegetacao1(el){
 // vul_nat_perda_solo_2018
 
 var vulNatPerdaSolo = L.geoJSON(vulNatPerdaSolo, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>vul_nat_perda_solo_2018</b></h6><p><b>sigla:</b> '+geom.properties.sigla+'<br><b>nome:</b> '+geom.properties.nome+'<br><b>classifica:</b> '+geom.properties.classifica+'<br><b>reclass:</b> '+geom.properties.reclass+'<br><b>area_km2:</b> '+geom.properties.area_km2+'<br><b>pixel:</b> '+geom.properties.pixel+'</p>');
+    }
 });
 
 function vulNatPerdaSolo1(el){
@@ -527,6 +548,9 @@ function vulNatPerdaSolo1(el){
 // vul_nat_perda_solo_geologia_2018
 
 var vulNatPerdaSoloGeologia = L.geoJSON(vulNatPerdaSoloGeologia, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>vul_nat_perda_solo_geologia_2018</b></h6><p><b>rotulo:</b> '+geom.properties.rotulo+'<br><b>reclas:</b> '+geom.properties.reclas+'<br><b>area_km:</b> '+geom.properties.area_km+'<br><b>pixel:</b> '+geom.properties.pixel+'</p>');
+    }
 });
 
 function vulNatPerdaSoloGeologia1(el){
@@ -550,6 +574,9 @@ function vulNatPerdaSoloGeologia1(el){
 // vul_nat_perda_solo_geomorfologia_2018
 
 var vulNatPerdSoloGeomorfologia = L.geoJSON(vulNatPerdSoloGeomorfologia, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>vul_nat_perda_solo_geomorfologia_2018</b></h6><p><b>domínios:</b> '+geom.properties.domínios+'<br><b>reg_geomor:</b> '+geom.properties.reg_geomor+'<br><b>uni_geomor:</b> '+geom.properties.uni_geomor+'<br><b>modelados:</b> '+geom.properties.modelados+'<br><b>sigla:</b> '+geom.properties.sigla+'<br><b>siglaugeom:</b> '+geom.properties.siglaugeom+'<br><b>reclass:</b> '+geom.properties.reclass+'<br><b>area_km:</b> '+geom.properties.area_km+'<br><b>pixel:</b> '+geom.properties.pixel+'</p>');
+    }
 });
 
 function vulNatPerdSoloGeomorfologia1(el){
@@ -573,6 +600,9 @@ function vulNatPerdSoloGeomorfologia1(el){
 // vul_nat_perda_solo_vegetacao_2018
 
 var vulNatPerdSoloVegetacao = L.geoJSON(vulNatPerdSoloVegetacao, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>vul_nat_perda_solo_vegetacao_2018</b></h6><p><b>classe:</b> '+geom.properties.classe+'<br><b>tipo:</b> '+geom.properties.tipo+'<br><b>reclass:</b> '+geom.properties.reclass+'<br><b>area_km2:</b> '+geom.properties.area_km2+'<br><b>pixel:</b> '+geom.properties.pixel+'</p>');
+    }
 });
 
 function vulNatPerdSoloVegetacao1(el){
@@ -596,6 +626,9 @@ function vulNatPerdSoloVegetacao1(el){
 // vul_nat_perda_solo_zonaclima_2018
 
 var vulNatPerdSoloZonaclima = L.geoJSON(vulNatPerdSoloZonaclima, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>vul_nat_perda_solo_zonaclima_2018</b></h6><p><b>zievel:</b> '+geom.properties.zievel+'<br><b>zc:</b> '+geom.properties.zc+'<br><b>zclima:</b> '+geom.properties.zclima+'<br><b>tipos:</b> '+geom.properties.tipos+'<br><b>resumo:</b> '+geom.properties.resumo+'<br><b>reclass:</b> '+geom.properties.reclass+'<br><b>area_km:</b> '+geom.properties.area_km+'<br><b>pixel:</b> '+geom.properties.pixel+'</p>');
+    }
 });
 
 function vulNatPerdSoloZonaclima1(el){
@@ -619,6 +652,9 @@ function vulNatPerdSoloZonaclima1(el){
 // zona_clima_clima_zee_2018
 
 var zonaClimaClimaZee = L.geoJSON(zonaClimaClimaZee, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>zona_clima_clima_zee_2018</b></h6><p><b>zlevel:</b> '+geom.properties.zlevel+'<br><b>zc:</b> '+geom.properties.zc+'<br><b>zclima:</b> '+geom.properties.zclima+'<br><b>tipos:</b> '+geom.properties.tipos+'<br><b>resumo:</b> '+geom.properties.resumo+'<br><b>reclass:</b> '+geom.properties.reclass+'<br><b>area_km:</b> '+geom.properties.area_km+'</p>');
+    }
 });
 
 function zonaClimaClimaZee1(el){
@@ -642,6 +678,9 @@ function zonaClimaClimaZee1(el){
 // zona_clima_concentracao_chuvas
 
 var zonaClimaConcChuvas = L.geoJSON(zonaClimaConcChuvas, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>zona_clima_concentracao_chuvas</b></h6><p><b>zlevel:</b> '+geom.properties.zlevel+'</p>');
+    }
 });
 
 function zonaClimaConcChuvas1(el){
@@ -665,6 +704,9 @@ function zonaClimaConcChuvas1(el){
 // zona_clima_isolinhas_chuvas
 
 var zonaClimaIsolChuvas = L.geoJSON(zonaClimaIsolChuvas, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>zona_clima_isolinhas_chuvas</b></h6><p><b>zlevel:</b> '+geom.properties.zlevel+'</p>');
+    }
 });
 
 function zonaClimaIsolChuvas1(el){
@@ -688,6 +730,9 @@ function zonaClimaIsolChuvas1(el){
 // zona_clima_koppen
 
 var zonaClimaKoppen = L.geoJSON(zonaClimaKoppen, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>zona_clima_koppen</b></h6><p><b>zc_kopper:</b> '+geom.properties.zc_kopper+'<br><b>tipos:</b> '+geom.properties.tipos+'</p>');
+    }
 });
 
 function zonaClimaKoppen1(el){
@@ -711,6 +756,9 @@ function zonaClimaKoppen1(el){
 // zonas_subzona1_zup
 
 var zonasSubzonaZup = L.geoJSON(zonasSubzonaZup, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>zonas_subzona1_zup</b></h6><p><b>objectid:</b> '+geom.properties.objectid+'<br><b>subzona:</b> '+geom.properties.subzona+'<br><b>recom:</b> '+geom.properties.recom+'<br><b>macrozona:</b> '+geom.properties.macrozona+'<br><b>obs:</b> '+geom.properties.obs+'<br><b>obs2:</b> '+geom.properties.obs2+'</p>');
+    }
 });
 
 function zonasSubzonaZup1(el){
@@ -734,6 +782,9 @@ function zonasSubzonaZup1(el){
 // zonas_subzona2_zue
 
 var zonasSubzonaZue = L.geoJSON(zonasSubzonaZue, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>zonas_subzona2_zue</b></h6><p><b>layer:</b> '+geom.properties.layer+'<br><b>nome:</b> '+geom.properties.nome+'<br><b>area:</b> '+geom.properties.area+'<br><b>perimeter:</b> '+geom.properties.perimeter+'</p>');
+    }
 });
 
 function zonasSubzonaZue1(el){
@@ -757,6 +808,9 @@ function zonasSubzonaZue1(el){
 // zonas_zona1_zup
 
 var zonasZonaZup = L.geoJSON(zonasZonaZup, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>zonas_zona1_zup</b></h6><p><b>nome:</b> '+geom.properties.nome+'<br><b>area:</b> '+geom.properties.area+'<br><b>perimeter:</b> '+geom.properties.perimeter+'</p>');
+    }
 });
 
 function zonasZonaZup1(el){
@@ -780,6 +834,9 @@ function zonasZonaZup1(el){
 // zonas_zona2_zue
 
 var zonasZonaZue = L.geoJSON(zonasZonaZue, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>zonas_zona2_zue</b></h6><p><b>area:</b> '+geom.properties.area+'<br><b>perimeter:</b> '+geom.properties.perimeter+'</p>');
+    }
 });
 
 function zonasZonaZue1(el){
@@ -803,6 +860,9 @@ function zonasZonaZue1(el){
 // zonas_zona3_zu
 
 var zonasZonaZu = L.geoJSON(zonasZonaZu, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>zonas_zona3_zu</b></h6><p><b>municipio:</b> '+geom.properties.municipio+'<br><b>parcela:</b> '+geom.properties.parcela+'<br><b>fonte:</b> '+geom.properties.fonte+'<br><b>obs:</b> '+geom.properties.obs+'<br><b>nome_unico:</b> '+geom.properties.nome_unico+'<br><b>area:</b> '+geom.properties.area+'<br><b>perimeter:</b> '+geom.properties.perimeter+'</p>');
+    }
 });
 
 function zonasZonaZu1(el){

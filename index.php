@@ -89,7 +89,9 @@ session_start();
     <script src="mapas/baseCartografica/projAssent.geojson"></script>
     <script src="mapas/baseCartografica/glebas.geojson"></script>
 
-    <!--- Zee -->
+    <script src="mapas/zee/js/aptidao_agricola.geojson"></script>
+
+    <!--- Zee 
 
     <script src="mapas/zee/aptidao_agricola.geojson"></script>
     <script src="mapas/zee/biodivers_sistemas.geojson"></script>
@@ -125,7 +127,7 @@ session_start();
     <script src="mapas/zee/zonas_zona1_zup.geojson"></script>
     <script src="mapas/zee/zonas_zona2_zue.geojson"></script>
     <script src="mapas/zee/zonas_zona3_zu.geojson"></script>
-
+-->
     <!--- Agência Nacional de Mineração -->
 
     <script src="mapas/agenciaNacMiner/minerariosAtivos.geojson"></script>
@@ -376,7 +378,7 @@ session_start();
                       <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Glebas <a href="Download/glebas.zip" download="Glebas" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gleb('teste15')" id="14"></a></li>
                     </ul>
                 </li>
-                <!--
+                <!---
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       ZEE
@@ -517,7 +519,7 @@ session_start();
                       <li><a id="coord" > zonas_zona3_zu <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasZonaZu1('teste66')" id="60"></a></li>
                     </ul>
                 </li>
-    -->
+                --->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       AGÊNCIA NACIONAL DE MINERAÇÃO
@@ -1023,9 +1025,47 @@ session_start();
 
     <script src="mapas/baseCartografica/js/baseCartografica.js"></script>
 
-    <!-- Códigos - ZEE -->
+    <!-- Códigos - aptidao_agricola -->
 
-    <script src="mapas/zee/js/zee.js"></script>
+    <script src="mapas/zee/js/aptidao_agricola.js"></script>
+
+    <!-- Códigos - biodivers_veg_campos_dunas -->
+
+    <script src="mapas/zee/js/biodivers_veg_campos_dunas.js"></script>
+
+    <!-- Códigos - biodivers_sistemas -->
+
+    <script src="mapas/zee/js/biodivers_sistemas.js"></script>
+
+    <!-- Códigos - biodivers_veg_floresta -->
+
+    <script src="mapas/zee/js/biodivers_veg_floresta.js"></script>
+
+    <!-- Códigos - biodivers_veg_lavrado -->
+
+    <script src="mapas/zee/js/biodivers_veg_lavrado.js"></script>
+
+    <!-- Códigos - biodivers_veg_sistemas_lacustres -->
+
+    <script src="mapas/zee/js/biodivers_veg_sistemas_lacustres.js"></script>
+
+    <!-- Códigos - geologia_dominios_morfo -->
+
+    <script src="mapas/zee/js/geologia_dominios_morfo.js"></script>
+
+    <!-- Códigos - geologia_erosao -->
+
+    <script src="mapas/zee/js/geologia_erosao.js"></script>
+
+    <!-- Códigos - geologia_geologico -->
+
+    <script src="mapas/zee/js/geologia_geologico.js"></script>
+
+
+
+
+
+
 
     <!-- Códigos - Consultar Imóvel por CPF na URL -->
 

@@ -1,0 +1,38 @@
+
+// Aptidão Agrícola
+
+var aptAgr = new L.geoJson(aptAgr, {
+    onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>Aptidão Agrícola</b></h6><p><b>sigla:</b> '+geom.properties.sigla+'<br><b>nome:</b> '+geom.properties.nome+'<br><b>classifica:</b> '+geom.properties.classifica+'<br><b>ha:</b> '+geom.properties.ha+'<br><b>class_apt:</b> '+geom.properties.class_apt+'<br><b>desc_:</b> '+geom.properties.desc_+'<br><b>desc_cont:</b> '+geom.properties.desc_cont+'<br><b>subl:</b> '+geom.properties.subl+'</p>');
+    }
+});
+var UrlFemarh = "https://localhost/";
+
+$.ajax({
+dataType: "json",
+url: UrlFemarh+"siggarr1/siggar23/mapas/zee/aptidao_agricola.geojson",
+success: function(data) {
+    $(data.features).each(function(key, data) {
+        aptAgr.addData(data);
+    });
+}
+}).error(function() {});
+
+function aptAgr1(el){
+    if(map.hasLayer(aptAgr)){
+        map.removeLayer(aptAgr);
+    }
+    else {
+        map.addLayer(aptAgr);
+    }
+
+    var display = document.getElementById(el).style.display;
+
+    if(display == "block"){
+        document.getElementById(el).style.display = 'none';
+    }else{
+        document.getElementById(el).style.display = 'block';
+    }
+}
+
+
