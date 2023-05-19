@@ -9,7 +9,7 @@ var bioDivVegCampDunas = new L.geoJson(bioDivVegCampDunas, {
 
 $.ajax({
     dataType: "json",
-    url: "http://localhost/siggarr1/siggar23/mapas/zee/biodivers_veg_campos_dunas.geojson",
+    url: UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_campos_dunas.geojson",
     success: function(data) {
         $(data.features).each(function(key, data) {
             bioDivVegCampDunas.addData(data);

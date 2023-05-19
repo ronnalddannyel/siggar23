@@ -89,10 +89,10 @@ session_start();
     <script src="mapas/baseCartografica/projAssent.geojson"></script>
     <script src="mapas/baseCartografica/glebas.geojson"></script>
 
-    <script src="mapas/zee/js/aptidao_agricola.geojson"></script>
+    
 
     <!--- Zee 
-
+    <script src="mapas/zee/js/aptidao_agricola.geojson"></script>
     <script src="mapas/zee/aptidao_agricola.geojson"></script>
     <script src="mapas/zee/biodivers_sistemas.geojson"></script>
     <script src="mapas/zee/biodivers_veg_campos_dunas.geojson"></script>
@@ -519,7 +519,7 @@ session_start();
                       <li><a id="coord" > zonas_zona3_zu <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasZonaZu1('teste66')" id="60"></a></li>
                     </ul>
                 </li>
-                --->
+    -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       AGÊNCIA NACIONAL DE MINERAÇÃO
@@ -989,6 +989,11 @@ session_start();
       </div>
     </div>
 
+
+    <script>
+      var UrlFemarh = "http://localhost/";
+    </script>
+
     <!--- Código - Mostrar Área do Projeto Hist. -->
 
     <script src="mapas/funcoes/mostrarAreaProjHist.js"></script>
@@ -1025,6 +1030,10 @@ session_start();
 
     <script src="mapas/baseCartografica/js/baseCartografica.js"></script>
 
+
+
+
+
     <!-- Códigos - aptidao_agricola -->
 
     <script src="mapas/zee/js/aptidao_agricola.js"></script>
@@ -1060,6 +1069,58 @@ session_start();
     <!-- Códigos - geologia_geologico -->
 
     <script src="mapas/zee/js/geologia_geologico.js"></script>
+
+    <!-- Códigos - geologia_potencial_mineral -->
+
+    <script src="mapas/zee/js/geologia_potencial_mineral.js"></script>
+
+    <!-- Códigos - geomorfologia_unidades_geomorfo -->
+
+    <script src="mapas/zee/js/geomorfologia_unidades_geomorfo.js"></script>
+
+    <!-- Códigos - hidrografia_drenagem -->
+
+    <script src="mapas/zee/js/hidrografia_drenagem.js"></script>
+
+    <!-- Códigos - hidrografia_ottobacias -->
+
+    <script src="mapas/zee/js/hidrografia_ottobacias.js"></script>
+
+    <!-- Códigos - potencial_social_ambiental -->
+
+    <script src="mapas/zee/js/potencial_social_ambiental.js"></script>
+
+    <!-- Códigos - potencial_social_humano -->
+
+    <script src="mapas/zee/js/potencial_social_humano.js"></script>
+
+    <!-- Códigos - potencial_social_institucional -->
+
+    <script src="mapas/zee/js/potencial_social_institucional.js"></script>
+
+    <!-- Códigos - potencial_social_produtivo -->
+
+    <script src="mapas/zee/js/potencial_social_produtivo.js"></script>
+
+    <!-- Códigos - potencial_social -->
+
+    <script src="mapas/zee/js/potencial_social.js"></script>
+
+    <!-- Códigos - solos -->
+
+    <script src="mapas/zee/js/solos.js"></script>
+
+    <!-- Códigos - vegetacao -->
+
+    <script src="mapas/zee/js/vegetacao.js"></script>
+
+    <!-- Códigos - vul_nat_perda_solo_2018 -->
+
+    <script src="mapas/zee/js/vul_nat_perda_solo_2018.js"></script>
+
+    <!-- Códigos - vul_nat_perda_solo_geologia_2018 -->
+
+    <script src="mapas/zee/js/vul_nat_perda_solo_geologia_2018.js"></script>
 
 
 

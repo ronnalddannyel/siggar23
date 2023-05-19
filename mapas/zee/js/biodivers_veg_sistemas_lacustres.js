@@ -9,7 +9,7 @@ var bioDivVegSistLacust = L.geoJSON(bioDivVegSistLacust, {
 
 $.ajax({
     dataType: "json",
-    url: "http://localhost/siggarr1/siggar23/mapas/zee/biodivers_veg_sistemas_lacustres.geojson",
+    url: UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_sistemas_lacustres.geojson",
     success: function(data) {
         $(data.features).each(function(key, data) {
             bioDivVegSistLacust.addData(data);

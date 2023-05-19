@@ -7,12 +7,10 @@ var geoGeolog = L.geoJSON(geoGeolog, {
     }
 });
 
-var UrlFemarh = "https://localhost/";
-
 
 $.ajax({
     dataType: "json",
-    url: "https://localhost/siggarr1/siggar23/mapas/zee/geologia_geologico.geojson",
+    url: UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_geologico.geojson",
     success: function(data) {
         $(data.features).each(function(key, data) {
             geoGeolog.addData(data);

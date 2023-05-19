@@ -9,7 +9,7 @@ var gepErosao = L.geoJSON(gepErosao, {
 
 $.ajax({
     dataType: "json",
-    url: "http://localhost/siggarr1/siggar23/mapas/zee/geologia_erosao.geojson",
+    url: UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_erosao.geojson",
     success: function(data) {
         $(data.features).each(function(key, data) {
             gepErosao.addData(data);

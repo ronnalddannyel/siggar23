@@ -8,7 +8,7 @@ var bioDivSist = new L.geoJson(bioDivSist, {
 
 $.ajax({
     dataType: "json",
-    url: "http://localhost/siggarr1/siggar23/mapas/zee/biodivers_sistemas.geojson",
+    url: UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_sistemas.geojson",
     success: function(data) {
         $(data.features).each(function(key, data) {
             bioDivSist.addData(data);

@@ -9,7 +9,7 @@ var geoDomMorfo = L.geoJSON(geoDomMorfo, {
 
 $.ajax({
     dataType: "json",
-    url: "http://localhost/siggarr1/siggar23/mapas/zee/geologia_dominios_morfo.geojson",
+    url: UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_dominios_morfo.geojson",
     success: function(data) {
         $(data.features).each(function(key, data) {
             geoDomMorfo.addData(data);

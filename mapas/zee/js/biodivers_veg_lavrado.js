@@ -9,7 +9,7 @@ var bioDivVegLavr = L.geoJSON(bioDivVegLavr, {
 
 $.ajax({
     dataType: "json",
-    url: "http://localhost/siggarr1/siggar23/mapas/zee/biodivers_veg_lavrado.geojson",
+    url: UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_lavrado.geojson",
     success: function(data) {
         $(data.features).each(function(key, data) {
             bioDivVegLavr.addData(data);
