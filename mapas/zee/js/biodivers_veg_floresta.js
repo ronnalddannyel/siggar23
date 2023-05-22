@@ -1,28 +1,29 @@
 
 // biodivers_veg_floresta
 
-var bioDivVegFlor = new L.geoJson(bioDivVegFlor, {
-    onEachFeature: function (geom, layer) {
-        layer.bindPopup('<h6><b>biodivers_veg_floresta</b></h6><p><b>nomeabrev:</b> '+geom.properties.nomeabrev+'</p>');
-    }
-});
-
-$.ajax({
-    dataType: "json",
-    url: UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_floresta.geojson",
-    success: function(data) {
-        $(data.features).each(function(key, data) {
-            bioDivVegFlor.addData(data);
-        });
-    }
-    }).error(function() {});
+var groupLay_bioDivVegFlor = L.layerGroup([]);
 
 function bioDivVegFlor1(el){
-    if(map.hasLayer(bioDivVegFlor)){
-        map.removeLayer(bioDivVegFlor);
+
+    groupLay_bioDivVegFlor.clearLayers();
+    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_floresta.geojson", function(data) {  
+        var bioDivVegFlor = new L.geoJson(data, {
+            onEachFeature: function (geom, layer) {
+                layer.bindPopup('<h6><b>biodivers_veg_floresta</b></h6><p><b>nomeabrev:</b> '+geom.properties.nomeabrev+'</p>');
+            }
+        });
+
+        groupLay_bioDivVegFlor.addLayer(bioDivVegFlor);
+    })
+
+
+    
+
+    if(map.hasLayer(groupLay_bioDivVegFlor)){
+        map.removeLayer(groupLay_bioDivVegFlor);
     }
     else {
-        map.addLayer(bioDivVegFlor);
+        map.addLayer(groupLay_bioDivVegFlor);
     }
 
     var display = document.getElementById(el).style.display;

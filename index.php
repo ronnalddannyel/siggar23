@@ -1030,30 +1030,6 @@ session_start();
 
     <script src="mapas/baseCartografica/js/baseCartografica.js"></script>
 
-
-
-
-
-    <!-- Códigos - aptidao_agricola -->
-
-    <script src="mapas/zee/js/aptidao_agricola.js"></script>
-
-    <!-- Códigos - biodivers_veg_campos_dunas -->
-
-    <script src="mapas/zee/js/biodivers_veg_campos_dunas.js"></script>
-
-    <!-- Códigos - biodivers_sistemas -->
-
-    <script src="mapas/zee/js/biodivers_sistemas.js"></script>
-
-    <!-- Códigos - biodivers_veg_floresta -->
-
-    <script src="mapas/zee/js/biodivers_veg_floresta.js"></script>
-
-    <!-- Códigos - biodivers_veg_lavrado -->
-
-    <script src="mapas/zee/js/biodivers_veg_lavrado.js"></script>
-
     <!-- Códigos - biodivers_veg_sistemas_lacustres -->
 
     <script src="mapas/zee/js/biodivers_veg_sistemas_lacustres.js"></script>
@@ -1062,67 +1038,29 @@ session_start();
 
     <script src="mapas/zee/js/geologia_dominios_morfo.js"></script>
 
-    <!-- Códigos - geologia_erosao -->
-
-    <script src="mapas/zee/js/geologia_erosao.js"></script>
-
-    <!-- Códigos - geologia_geologico -->
-
-    <script src="mapas/zee/js/geologia_geologico.js"></script>
-
-    <!-- Códigos - geologia_potencial_mineral -->
-
-    <script src="mapas/zee/js/geologia_potencial_mineral.js"></script>
-
-    <!-- Códigos - geomorfologia_unidades_geomorfo -->
-
-    <script src="mapas/zee/js/geomorfologia_unidades_geomorfo.js"></script>
-
-    <!-- Códigos - hidrografia_drenagem -->
-
-    <script src="mapas/zee/js/hidrografia_drenagem.js"></script>
-
-    <!-- Códigos - hidrografia_ottobacias -->
-
-    <script src="mapas/zee/js/hidrografia_ottobacias.js"></script>
-
-    <!-- Códigos - potencial_social_ambiental -->
-
-    <script src="mapas/zee/js/potencial_social_ambiental.js"></script>
-
-    <!-- Códigos - potencial_social_humano -->
-
-    <script src="mapas/zee/js/potencial_social_humano.js"></script>
-
-    <!-- Códigos - potencial_social_institucional -->
-
-    <script src="mapas/zee/js/potencial_social_institucional.js"></script>
-
-    <!-- Códigos - potencial_social_produtivo -->
-
-    <script src="mapas/zee/js/potencial_social_produtivo.js"></script>
-
-    <!-- Códigos - potencial_social -->
-
-    <script src="mapas/zee/js/potencial_social.js"></script>
-
-    <!-- Códigos - solos -->
-
-    <script src="mapas/zee/js/solos.js"></script>
-
-    <!-- Códigos - vegetacao -->
-
-    <script src="mapas/zee/js/vegetacao.js"></script>
-
-    <!-- Códigos - vul_nat_perda_solo_2018 -->
-
-    <script src="mapas/zee/js/vul_nat_perda_solo_2018.js"></script>
-
-    <!-- Códigos - vul_nat_perda_solo_geologia_2018 -->
-
-    <script src="mapas/zee/js/vul_nat_perda_solo_geologia_2018.js"></script>
 
 
+
+
+    <!-- Códigos - aptidao_agricola -->
+
+    <script src="mapas/zee/js/aptidao_agricola.js"></script>
+
+    <!-- Códigos - biodivers_sistemas -->
+
+    <script src="mapas/zee/js/biodivers_sistemas.js"></script>
+
+    <!-- Códigos - biodivers_veg_campos_dunas -->
+
+    <script src="mapas/zee/js/biodivers_veg_campos_dunas.js"></script>
+
+    <!-- Códigos - biodivers_veg_floresta -->
+
+    <script src="mapas/zee/js/biodivers_veg_floresta.js"></script>
+
+    <!-- Códigos - biodivers_veg_lavrado -->
+
+    <script src="mapas/zee/js/biodivers_veg_lavrado.js"></script>
 
 
 

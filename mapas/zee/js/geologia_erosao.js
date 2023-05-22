@@ -1,23 +1,24 @@
 
 // geologia_erosao
 
-var gepErosao = L.geoJSON(gepErosao, {
-    onEachFeature: function (geom, layer) {
-        layer.bindPopup('<h6><b>geologia_erosao</b></h6><p><b>litologia:</b> '+geom.properties.litologia+'</p>');
-    }
-});
-
-$.ajax({
-    dataType: "json",
-    url: UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_erosao.geojson",
-    success: function(data) {
-        $(data.features).each(function(key, data) {
-            gepErosao.addData(data);
-        });
-    }
-    }).error(function() {});
-
 function gepErosao1(el){
+
+    var gepErosao = L.geoJSON(gepErosao, {
+        onEachFeature: function (geom, layer) {
+            layer.bindPopup('<h6><b>geologia_erosao</b></h6><p><b>litologia:</b> '+geom.properties.litologia+'</p>');
+        }
+    });
+    
+    $.ajax({
+        dataType: "json",
+        url: UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_erosao.geojson",
+        success: function(data) {
+            $(data.features).each(function(key, data) {
+                gepErosao.addData(data);
+            });
+        }
+        }).error(function() {});
+
     if(map.hasLayer(gepErosao)){
         map.removeLayer(gepErosao);
     }
