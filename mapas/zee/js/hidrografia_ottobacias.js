@@ -1,28 +1,26 @@
 
 // hidrografia_ottobacias
 
-var hidOttobacias = L.geoJSON(hidOttobacias, {
-    onEachFeature: function (geom, layer) {
-        layer.bindPopup('<h6><b>hidrografia_ottobacias</b></h6><p><b>regiao48:</b> '+geom.properties.regiao48+'</p>');
-    }
-});
-
-$.ajax({
-    dataType: "json",
-    url: UrlFemarh+"siggarr1/siggar23/mapas/zee/hidrografia_ottobacias.geojson",
-    success: function(data) {
-        $(data.features).each(function(key, data) {
-            hidOttobacias.addData(data);
-        });
-    }
-    }).error(function() {});
+var groupLay_hidOttobacias = L.layerGroup([]);
 
 function hidOttobacias1(el){
-    if(map.hasLayer(hidOttobacias)){
-        map.removeLayer(hidOttobacias);
+
+    groupLay_hidOttobacias.clearLayers();
+    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/hidrografia_ottobacias.geojson", function(data) {  
+        var hidOttobacias = L.geoJSON(data, {
+            onEachFeature: function (geom, layer) {
+                layer.bindPopup('<h6><b>hidrografia_ottobacias</b></h6><p><b>regiao48:</b> '+geom.properties.regiao48+'</p>');
+            }
+        });
+
+        groupLay_hidOttobacias.addLayer(hidOttobacias);
+    })
+
+    if(map.hasLayer(groupLay_hidOttobacias)){
+        map.removeLayer(groupLay_hidOttobacias);
     }
     else {
-        map.addLayer(hidOttobacias);
+        map.addLayer(groupLay_hidOttobacias);
     }
 
     var display = document.getElementById(el).style.display;

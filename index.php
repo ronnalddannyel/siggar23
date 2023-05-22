@@ -519,7 +519,7 @@ session_start();
                       <li><a id="coord" > zonas_zona3_zu <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasZonaZu1('teste66')" id="60"></a></li>
                     </ul>
                 </li>
-    -->
+    --->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       AGÊNCIA NACIONAL DE MINERAÇÃO
@@ -1061,6 +1061,75 @@ session_start();
     <!-- Códigos - biodivers_veg_lavrado -->
 
     <script src="mapas/zee/js/biodivers_veg_lavrado.js"></script>
+
+    <!-- Códigos - geologia_erosao -->
+
+    <script src="mapas/zee/js/geologia_erosao.js"></script>
+
+    <!-- Códigos - geologia_geologico -->
+
+    <script src="mapas/zee/js/geologia_geologico.js"></script>
+
+    <!-- Códigos - geologia_potencial_mineral -->
+
+    <script src="mapas/zee/js/geologia_potencial_mineral.js"></script>
+
+    <!-- Códigos - geomorfologia_unidades_geomorfo -->
+
+    <script src="mapas/zee/js/geomorfologia_unidades_geomorfo.js"></script>
+
+    <!-- Códigos - hidrografia_drenagem -->
+
+    <script src="mapas/zee/js/hidrografia_drenagem.js"></script>
+
+    <!-- Códigos - hidrografia_ottobacias -->
+
+    <script src="mapas/zee/js/hidrografia_ottobacias.js"></script>
+
+    <!-- Códigos - potencial_social_ambiental -->
+
+    <script src="mapas/zee/js/potencial_social_ambiental.js"></script>
+
+    <!-- Códigos - potencial_social_humano -->
+
+    <script src="mapas/zee/js/potencial_social_humano.js"></script>
+
+    <!-- Códigos - potencial_social_institucional -->
+
+    <script src="mapas/zee/js/potencial_social_institucional.js"></script>
+
+    <!-- Códigos - potencial_social_produtivo -->
+
+    <script src="mapas/zee/js/potencial_social_produtivo.js"></script>
+
+    <!-- Códigos - potencial_social -->
+
+    <script src="mapas/zee/js/potencial_social.js"></script>
+
+    <!-- Códigos - solos -->
+
+    <script src="mapas/zee/js/solos.js"></script>
+
+    <!-- Códigos - vegetacao -->
+
+    <script src="mapas/zee/js/vegetacao.js"></script>
+
+    <!-- Códigos - vul_nat_perda_solo_2018 -->
+
+    <script src="mapas/zee/js/vul_nat_perda_solo_2018.js"></script>
+
+    <!-- Códigos - vul_nat_perda_solo_geologia_2018 -->
+
+    <script src="mapas/zee/js/vul_nat_perda_solo_geologia_2018.js"></script>
+
+    <!-- Códigos - vul_nat_perda_solo_geomorfologia_2018 -->
+
+    <script src="mapas/zee/js/vul_nat_perda_solo_geomorfologia_2018.js"></script>
+
+    <!-- Códigos - vul_nat_perda_solo_zonaclima_2018 -->
+
+    <script src="mapas/zee/js/vul_nat_perda_solo_zonaclima_2018.js"></script>
+
 
 
 

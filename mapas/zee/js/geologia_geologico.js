@@ -1,30 +1,28 @@
 
 // geologia_geologico
 
+var groupLay_geoGeolog = L.layerGroup([]);
+
 function geoGeolog1(el){
 
-    var geoGeolog = L.geoJSON(geoGeolog, {
-        onEachFeature: function (geom, layer) {
-            layer.bindPopup('<h6><b>geologia_geologico</b></h6><p><b>rotulo:</b> '+geom.properties.rotulo+'<br><b>nomeext:</b> '+geom.properties.nomeext+'</p>');
-        }
-    });
     
-    
-    $.ajax({
-        dataType: "json",
-        url: UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_geologico.geojson",
-        success: function(data) {
-            $(data.features).each(function(key, data) {
-                geoGeolog.addData(data);
-            });
-        }
-        }).error(function() {});
+    groupLay_geoGeolog.clearLayers();
+    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_geologico.geojson", function(data) {  
 
-    if(map.hasLayer(geoGeolog)){
-        map.removeLayer(geoGeolog);
+        var geoGeolog = L.geoJSON(data, {
+            onEachFeature: function (geom, layer) {
+                layer.bindPopup('<h6><b>geologia_geologico</b></h6><p><b>rotulo:</b> '+geom.properties.rotulo+'<br><b>nomeext:</b> '+geom.properties.nomeext+'</p>');
+            }
+        });
+
+        groupLay_geoGeolog.addLayer(geoGeolog);
+    })
+
+    if(map.hasLayer(groupLay_geoGeolog)){
+        map.removeLayer(groupLay_geoGeolog);
     }
     else {
-        map.addLayer(geoGeolog);
+        map.addLayer(groupLay_geoGeolog);
     }
 
     var display = document.getElementById(el).style.display;

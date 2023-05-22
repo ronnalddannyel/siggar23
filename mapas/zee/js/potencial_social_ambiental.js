@@ -1,28 +1,26 @@
 
 // potencial_social_ambiental
 
-var potSocAmbiental = L.geoJSON(potSocAmbiental, {
-    onEachFeature: function (geom, layer) {
-        layer.bindPopup('<h6><b>potencial_social_ambiental</b></h6><p><b>nome:</b> '+geom.properties.nome+'<br><b>natural:</b> '+geom.properties.natural+'<br><b>objectid_1:</b> '+geom.properties.objectid_1+'</p>');
-    }
-});
-
-$.ajax({
-    dataType: "json",
-    url: UrlFemarh+"siggarr1/siggar23/mapas/zee/potencial_social_ambiental.geojson",
-    success: function(data) {
-        $(data.features).each(function(key, data) {
-            potSocAmbiental.addData(data);
-        });
-    }
-    }).error(function() {});
+var groupLay_potSocAmbiental = L.layerGroup([]);
 
 function potSocAmbiental1(el){
-    if(map.hasLayer(potSocAmbiental)){
-        map.removeLayer(potSocAmbiental);
+
+    groupLay_potSocAmbiental.clearLayers();
+    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/potencial_social_ambiental.geojson", function(data) {  
+        var potSocAmbiental = L.geoJSON(data, {
+            onEachFeature: function (geom, layer) {
+                layer.bindPopup('<h6><b>potencial_social_ambiental</b></h6><p><b>nome:</b> '+geom.properties.nome+'<br><b>natural:</b> '+geom.properties.natural+'<br><b>objectid_1:</b> '+geom.properties.objectid_1+'</p>');
+            }
+        });
+
+        groupLay_potSocAmbiental.addLayer(potSocAmbiental);
+    })
+
+    if(map.hasLayer(groupLay_potSocAmbiental)){
+        map.removeLayer(groupLay_potSocAmbiental);
     }
     else {
-        map.addLayer(potSocAmbiental);
+        map.addLayer(groupLay_potSocAmbiental);
     }
 
     var display = document.getElementById(el).style.display;

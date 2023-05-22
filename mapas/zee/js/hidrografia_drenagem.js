@@ -1,28 +1,27 @@
 
 // hidrografia_drenagem
 
-var hidDrenagem = L.geoJSON(hidDrenagem, {
-    onEachFeature: function (geom, layer) {
-        layer.bindPopup('<h6><b>hidrografia_drenagem</b></h6><p><b>nome:</b> '+geom.properties.nome+'</p>');
-    }
-});
+var groupLay_hidDrenagem = L.layerGroup([]);
 
-$.ajax({
-    dataType: "json",
-    url: UrlFemarh+"siggarr1/siggar23/mapas/zee/hidrografia_drenagem.geojson",
-    success: function(data) {
-        $(data.features).each(function(key, data) {
-            hidDrenagem.addData(data);
-        });
-    }
-    }).error(function() {});
 
 function hidDrenagem1(el){
-    if(map.hasLayer(hidDrenagem)){
-        map.removeLayer(hidDrenagem);
+
+    groupLay_hidDrenagem.clearLayers();
+    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/hidrografia_drenagem.geojson", function(data) {  
+        var hidDrenagem = L.geoJSON(data, {
+            onEachFeature: function (geom, layer) {
+                layer.bindPopup('<h6><b>hidrografia_drenagem</b></h6><p><b>nome:</b> '+geom.properties.nome+'</p>');
+            }
+        });
+
+        groupLay_hidDrenagem.addLayer(hidDrenagem);
+    })
+
+    if(map.hasLayer(groupLay_hidDrenagem)){
+        map.removeLayer(groupLay_hidDrenagem);
     }
     else {
-        map.addLayer(hidDrenagem);
+        map.addLayer(groupLay_hidDrenagem);
     }
 
     var display = document.getElementById(el).style.display;

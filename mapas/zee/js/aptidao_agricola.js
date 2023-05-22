@@ -7,7 +7,6 @@ function aptAgr1(el){
 
     groupLay_aptAgr.clearLayers();
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/aptidao_agricola.geojson", function(data) {  
-        console.log(data);
         var aptAgr = new L.geoJson(data, {
             onEachFeature: function (geom, layer) {
                 layer.bindPopup('<h6><b>Aptidão Agrícola</b></h6><p><b>sigla:</b> '+geom.properties.sigla+'<br><b>nome:</b> '+geom.properties.nome+'<br><b>classifica:</b> '+geom.properties.classifica+'<br><b>ha:</b> '+geom.properties.ha+'<br><b>class_apt:</b> '+geom.properties.class_apt+'<br><b>desc_:</b> '+geom.properties.desc_+'<br><b>desc_cont:</b> '+geom.properties.desc_cont+'<br><b>subl:</b> '+geom.properties.subl+'</p>');
