@@ -781,11 +781,7 @@ function zonasSubzonaZup1(el){
 
 // zonas_subzona2_zue
 
-var zonasSubzonaZue = L.geoJSON(zonasSubzonaZue, {
-    onEachFeature: function (geom, layer) {
-        layer.bindPopup('<h6><b>zonas_subzona2_zue</b></h6><p><b>layer:</b> '+geom.properties.layer+'<br><b>nome:</b> '+geom.properties.nome+'<br><b>area:</b> '+geom.properties.area+'<br><b>perimeter:</b> '+geom.properties.perimeter+'</p>');
-    }
-});
+
 
 function zonasSubzonaZue1(el){
     if(map.hasLayer(zonasSubzonaZue)){

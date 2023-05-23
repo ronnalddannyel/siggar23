@@ -378,7 +378,7 @@ session_start();
                       <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Glebas <a href="Download/glebas.zip" download="Glebas" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gleb('teste15')" id="14"></a></li>
                     </ul>
                 </li>
-                <!---
+                <!--
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       ZEE
@@ -519,7 +519,7 @@ session_start();
                       <li><a id="coord" > zonas_zona3_zu <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasZonaZu1('teste66')" id="60"></a></li>
                     </ul>
                 </li>
-    --->
+    -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       AGÊNCIA NACIONAL DE MINERAÇÃO
@@ -1126,9 +1126,33 @@ session_start();
 
     <script src="mapas/zee/js/vul_nat_perda_solo_geomorfologia_2018.js"></script>
 
+    <!-- Códigos - vul_nat_perda_solo_vegetacao_2018 -->
+
+    <script src="mapas/zee/js/vul_nat_perda_solo_vegetacao_2018.js"></script>
+
     <!-- Códigos - vul_nat_perda_solo_zonaclima_2018 -->
 
     <script src="mapas/zee/js/vul_nat_perda_solo_zonaclima_2018.js"></script>
+
+    <!-- Códigos - zona_clima_clima_zee_2018 -->
+
+    <script src="mapas/zee/js/zona_clima_clima_zee_2018.js"></script>
+
+    <!-- Códigos - zona_clima_concentracao_chuvas -->
+
+    <script src="mapas/zee/js/zona_clima_concentracao_chuvas.js"></script>
+
+    <!-- Códigos - zona_clima_isolinhas_chuvas -->
+
+    <script src="mapas/zee/js/zona_clima_isolinhas_chuvas.js"></script>
+
+    <!-- Códigos - zona_clima_koppen -->
+
+    <script src="mapas/zee/js/zona_clima_koppen.js"></script>
+
+    <!-- Códigos - zonas_subzona2_zue -->
+
+    <script src="mapas/zee/js/zonas_subzona2_zue.js"></script>
 
 
 
