@@ -1150,9 +1150,25 @@ session_start();
 
     <script src="mapas/zee/js/zona_clima_koppen.js"></script>
 
+    <!-- Códigos - zonas_subzona1_zup -->
+
+    <script src="mapas/zee/js/zonas_subzona1_zup.js"></script>
+
     <!-- Códigos - zonas_subzona2_zue -->
 
     <script src="mapas/zee/js/zonas_subzona2_zue.js"></script>
+
+    <!-- Códigos - zonas_zona1_zup -->
+
+    <script src="mapas/zee/js/zonas_zona1_zup.js"></script>
+
+    <!-- Códigos - zonas_zona2_zue -->
+
+    <script src="mapas/zee/js/zonas_zona2_zue.js"></script>
+
+    <!-- Códigos - zonas_zona3_zu -->
+
+    <script src="mapas/zee/js/zonas_zona3_zu.js"></script>
 
 
 
