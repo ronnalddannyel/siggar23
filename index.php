@@ -89,45 +89,6 @@ session_start();
     <script src="mapas/baseCartografica/projAssent.geojson"></script>
     <script src="mapas/baseCartografica/glebas.geojson"></script>
 
-    
-
-    <!--- Zee 
-    <script src="mapas/zee/js/aptidao_agricola.geojson"></script>
-    <script src="mapas/zee/aptidao_agricola.geojson"></script>
-    <script src="mapas/zee/biodivers_sistemas.geojson"></script>
-    <script src="mapas/zee/biodivers_veg_campos_dunas.geojson"></script>
-    <script src="mapas/zee/biodivers_veg_floresta.geojson"></script>
-    <script src="mapas/zee/biodivers_veg_lavrado.geojson"></script>
-    <script src="mapas/zee/biodivers_veg_sistemas_lacustres.geojson"></script>
-    <script src="mapas/zee/geologia_dominios_morfo.geojson"></script>
-    <script src="mapas/zee/geologia_erosao.geojson"></script>
-    <script src="mapas/zee/geologia_geologico.geojson"></script>
-    <script src="mapas/zee/geologia_potencial_mineral.geojson"></script>
-    <script src="mapas/zee/geomorfologia_unidades_geomorfo.geojson"></script>
-    <script src="mapas/zee/hidrografia_drenagem.geojson"></script>
-    <script src="mapas/zee/hidrografia_ottobacias.geojson"></script>
-    <script src="mapas/zee/potencial_social_ambiental.geojson"></script>
-    <script src="mapas/zee/potencial_social_humano.geojson"></script>
-    <script src="mapas/zee/potencial_social_institucional.geojson"></script>
-    <script src="mapas/zee/potencial_social_produtivo.geojson"></script>
-    <script src="mapas/zee/potencial_social.geojson"></script>
-    <script src="mapas/zee/solos.geojson"></script>
-    <script src="mapas/zee/vegetacao.geojson"></script>
-    <script src="mapas/zee/vul_nat_perda_solo_2018.geojson"></script>
-    <script src="mapas/zee/vul_nat_perda_solo_geologia_2018.geojson"></script>
-    <script src="mapas/zee/vul_nat_perda_solo_geomorfologia_2018.geojson"></script>
-    <script src="mapas/zee/vul_nat_perda_solo_vegetacao_2018.geojson"></script>
-    <script src="mapas/zee/vul_nat_perda_solo_zonaclima_2018.geojson"></script>
-    <script src="mapas/zee/zona_clima_clima_zee_2018.geojson"></script>
-    <script src="mapas/zee/zona_clima_concentracao_chuvas.geojson"></script>
-    <script src="mapas/zee/zona_clima_isolinhas_chuvas.geojson"></script>
-    <script src="mapas/zee/zona_clima_koppen.geojson"></script>
-    <script src="mapas/zee/zonas_subzona1_zup.geojson"></script>
-    <script src="mapas/zee/zonas_subzona2_zue.geojson"></script>
-    <script src="mapas/zee/zonas_zona1_zup.geojson"></script>
-    <script src="mapas/zee/zonas_zona2_zue.geojson"></script>
-    <script src="mapas/zee/zonas_zona3_zu.geojson"></script>
--->
     <!--- Agência Nacional de Mineração -->
 
     <script src="mapas/agenciaNacMiner/minerariosAtivos.geojson"></script>
@@ -232,7 +193,7 @@ session_start();
                       <li><a id="coord">OSM Standard <input type="RADIO" name="op" onclick="basm()" id="coor"></a></li>
                     </ul>
                 </li>
-                <!---
+                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       GRADES
@@ -273,7 +234,7 @@ session_start();
                       <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Sentinel 2 <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="sentinel('teste41')" id="35"></a></li>
                     </ul>
                 </li>
-                --->
+                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       ÁREAS LICENCIADAS
