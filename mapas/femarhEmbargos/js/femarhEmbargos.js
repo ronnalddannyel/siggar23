@@ -44,7 +44,16 @@
 
   var femarhEmbargos = L.geoJSON(femarhEmbargos, {
     pointToLayer: function (geom, latlng) {
-        return L.marker(latlng, {icon: redIcon});
+      switch (geom.properties.ano) {
+        case 2016: return L.marker(latlng, {icon: AmareloIcon});
+        case 2017: return L.marker(latlng, {icon: Amarelo1Icon});
+        case 2018: return L.marker(latlng, {icon: CinzaIcon});
+        case 2019: return L.marker(latlng, {icon: Marrom1Icon});
+        case 2020: return L.marker(latlng, {icon: RoxoIcon});
+        case 2021: return L.marker(latlng, {icon: VerdeIcon});
+        case 2022: return L.marker(latlng, {icon: Vermelho1Icon});
+        case 2023: return L.marker(latlng, {icon: redIcon});
+      }
     },
     onEachFeature: function (geom, layer) {
       if(geom.properties.valor_mult != null){

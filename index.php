@@ -354,7 +354,7 @@ session_start();
                     EMBARGOS E AUTUAÇÕES FEMARH
                   </a>
                   <ul class="dropdown-menu dropdown-menu">
-                    <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px;"> Embargos e Autuações FEMARH <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="femarhEmbargos1('teste42')" id="36"></a></li>
+                    <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Embargos e Autuações FEMARH <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="femarhEmbargos1('teste42')" id="36"></a></li>
                   </ul>
                 </li>
     
@@ -902,7 +902,31 @@ session_start();
               </div>
 
               <div id="teste42">
-                <img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px;"> Embargos e Autuações FEMARH
+                Embargos e Autuações FEMARH <br>
+                <div style="margin-top: 8px;">
+                  <img src="leaflet/images/pin-de-localizacao-amarelo.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2016
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="leaflet/images/pin-de-localizacao-amarelo1.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2017
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="leaflet/images/pin-de-localizacao-cinza.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2018
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="leaflet/images/pin-de-localizacao-marrom1.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2019
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="leaflet/images/pin-de-localizacao-roxo.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2020
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="leaflet/images/pin-de-localizacao-verde.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2021
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="leaflet/images/pin-de-localizacao-vermelho1.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2022
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2023
+                </div>
               </div>
 
               <div id="teste16">

@@ -49,6 +49,55 @@ var MarromIcon = new L.Icon({
   iconUrl: '././leaflet/images/pin-de-localizacao-marrom.png'
 });
 
+var AmareloIcon = new L.Icon({
+  iconSize: [35, 35],
+  iconAnchor: [18, 27],
+  popupAnchor:  [1, -24],
+  iconUrl: '././leaflet/images/pin-de-localizacao-amarelo.png'
+});
+
+var Amarelo1Icon = new L.Icon({
+  iconSize: [35, 35],
+  iconAnchor: [18, 27],
+  popupAnchor:  [1, -24],
+  iconUrl: '././leaflet/images/pin-de-localizacao-amarelo1.png'
+});
+
+var CinzaIcon = new L.Icon({
+  iconSize: [35, 35],
+  iconAnchor: [18, 27],
+  popupAnchor:  [1, -24],
+  iconUrl: '././leaflet/images/pin-de-localizacao-cinza.png'
+});
+
+var Marrom1Icon = new L.Icon({
+  iconSize: [35, 35],
+  iconAnchor: [18, 27],
+  popupAnchor:  [1, -24],
+  iconUrl: '././leaflet/images/pin-de-localizacao-marrom1.png'
+});
+
+var RoxoIcon = new L.Icon({
+  iconSize: [35, 35],
+  iconAnchor: [18, 27],
+  popupAnchor:  [1, -24],
+  iconUrl: '././leaflet/images/pin-de-localizacao-roxo.png'
+});
+
+var VerdeIcon = new L.Icon({
+  iconSize: [35, 35],
+  iconAnchor: [18, 27],
+  popupAnchor:  [1, -24],
+  iconUrl: '././leaflet/images/pin-de-localizacao-verde.png'
+});
+
+var Vermelho1Icon = new L.Icon({
+  iconSize: [35, 35],
+  iconAnchor: [18, 27],
+  popupAnchor:  [1, -24],
+  iconUrl: '././leaflet/images/pin-de-localizacao-vermelho1.png'
+});
+
 if(window.screen.width > "500"){
 
   var latit = 1.80054;
