@@ -228,37 +228,27 @@ var sedesMunic = L.geoJSON(sedesMunic, {
 
   // Limites do Estado
 
-  var groupLay_estadosLimites = L.layerGroup([]);
+  var estadosLimites = L.geoJSON(estadosLimites, {
+    color: "black",
+    fill: false,
+    weight: "3",
+    onEachFeature: function (geom, layer) {
+      layer.bindPopup('<h6><b>Limites do Estado</b></h6><p><b>Geocódigo:</b> '+geom.properties.geocodigo+'<br><b>Nome:</b> '+geom.properties.nome+'<br><b>Sigla:</b> '+geom.properties.sigla+'</p>');
+    }
+  });
 
   function estadosLimites1(el){
-  
-      groupLay_estadosLimites.clearLayers();
-      $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/baseCartografica/estadosLimites.geojson", function(data) {  
-        var estadosLimites = L.geoJSON(data, {
-          color: "blue",
-          weight: "1",
-          onEachFeature: function (geom, layer) {
-            layer.bindPopup('<h6><b>Limites do Estado</b></h6><p><b>id_objeto:</b> '+geom.properties.id_objeto+'<br><b>Nome:</b> '+geom.properties.nome+'<br><b>nomeabrev:</b> '+geom.properties.nomeabrev+'<br><b>geometriaa:</b> '+geom.properties.geometriaa+'<br><b>geocodigo:</b> '+geom.properties.geocodigo+'<br><b>sigla:</b> '+geom.properties.sigla+'</p>');
-          }
-        });
-  
-          groupLay_estadosLimites.addLayer(estadosLimites);
-      })
-  
-  
-  
-      if(map.hasLayer(groupLay_estadosLimites)){
-          map.removeLayer(groupLay_estadosLimites);
-      }
-      else {
-          map.addLayer(groupLay_estadosLimites);
-      }
-  
-      var display = document.getElementById(el).style.display;
-  
-      if(display == "block"){
-          document.getElementById(el).style.display = 'none';
-      }else{
-          document.getElementById(el).style.display = 'block';
-      }
+    if(map.hasLayer(estadosLimites)){
+    map.removeLayer(estadosLimites);
+    }
+    else {
+    map.addLayer(estadosLimites);
+    }
+    var display = document.getElementById(el).style.display;
+    if(display == "none"){
+      document.getElementById(el).style.display = 'block';
+    }else{
+      document.getElementById(el).style.display = 'none';
+    } 
   }
+  map.addLayer(estadosLimites);

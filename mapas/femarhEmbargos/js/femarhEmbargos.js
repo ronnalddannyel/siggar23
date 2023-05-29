@@ -52,7 +52,7 @@
       }else{
         var val_mult = geom.properties.valor_mult;
       }
-        layer.bindPopup('<h6><b>Embargos e Autuação FEMARH</b></h6><p><b>Sequência:</b> '+geom.properties.seq+'<br><b>Nome do Autuado:</b> '+geom.properties.nome_aut+'<br><b>Auto de Infração:</b> '+geom.properties.auto_infra+'<br><b>Número do Relatório:</b> '+geom.properties.n_relat+'<br><b>Número do Processo:</b> '+geom.properties.n_processo+'<br><b>Tipo do Crime Ambiental:</b> '+geom.properties.crime_amb+'<br><b>Valor da Multa:</b> '+val_mult+'<br><b>Data da Autuação:</b> '+geom.properties.data_aut+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>CPF/CNPJ:</b> '+geom.properties.cpf_cnpj+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Ano:</b> '+geom.properties.ano+'<br><b>Observação:</b> '+geom.properties.obs+'</p>');
+        layer.bindPopup('<h6><b>Embargos e Autuações FEMARH</b></h6><p><b>Nome do Autuado:</b> '+geom.properties.nome_aut+'<br><b>Auto de Infração:</b> '+geom.properties.auto_infra+'<br><b>Número do Relatório:</b> '+geom.properties.n_relat+'<br><b>Número do Processo:</b> '+geom.properties.n_processo+'<br><b>Tipo do Crime Ambiental:</b> '+geom.properties.crime_amb+'<br><b>Valor da Multa:</b> '+val_mult+'<br><b>Data da Autuação:</b> '+geom.properties.data_aut+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>CPF/CNPJ:</b> '+geom.properties.cpf_cnpj+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Ano:</b> '+geom.properties.ano+'<br><b>Observação:</b> '+geom.properties.obs+'</p>');
       }
 });
 

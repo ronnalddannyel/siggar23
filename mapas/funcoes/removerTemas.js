@@ -1,5 +1,5 @@
 
-function removeAllLayer(id, id2, id3, el, li){
+function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     // remover todos os mapas e camadas
 
@@ -11,6 +11,7 @@ function removeAllLayer(id, id2, id3, el, li){
 
     map.addLayer(googleTerrain);
     map.addLayer(limitesMunic);
+    map.addLayer(estadosLimites);
 
 
     // desmarcar os checkboxs das camadas
@@ -34,6 +35,16 @@ function removeAllLayer(id, id2, id3, el, li){
       status1.checked = true;
     }
 
+    // Marcar os checkboxs camada limites dos estados
+
+    var status1 = document.getElementById(id4);
+
+    if (status1.checked) {
+      status.checked = false;
+    } else {
+      status1.checked = true;
+    }
+
     // Marcar radio do mapa Google Terrain
 
     var status2 = document.getElementsByName(id3);
@@ -49,6 +60,13 @@ function removeAllLayer(id, id2, id3, el, li){
     var teste = document.getElementById(li).style.display;
     if(teste == "none"){
       document.getElementById(li).style.display = 'block';
+    }
+
+    // Mostrar Limites dos Estados na legenda
+
+    var teste1 = document.getElementById(li1).style.display;
+    if(teste1 == "none"){
+      document.getElementById(li1).style.display = 'block';
     }
 
     // Tirar da legenda as demais camadas

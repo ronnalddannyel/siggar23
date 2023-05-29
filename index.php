@@ -83,6 +83,7 @@ session_start();
     <script src="mapas/baseCartografica/sedesMunicipais.geojson"></script>
     <script src="mapas/baseCartografica/localidades.geojson"></script>
     <script src="mapas/baseCartografica/limitesMunicipais.geojson"></script>
+    <script src="mapas/baseCartografica/estadosLimites.geojson"></script>
     <script src="mapas/baseCartografica/rodovias.geojson"></script>
     <script src="mapas/baseCartografica/hidrografia2.geojson"></script>
     <script src="mapas/baseCartografica/hidroMassaDagua.geojson"></script>
@@ -324,10 +325,10 @@ session_start();
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                   <!---   <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Limites do Estado <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" value="l" class="coor" onclick="estadosLimites1('teste43')" id="37"></a></li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Limites do Estado <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" value="l" class="coor" onclick="estadosLimites1('lim1')" id="coor4" checked></a></li>
                       <li>
                         <hr class="dropdown-divider">
-                      </li> -->
+                      </li> 
                       <li><a id="coord" ><img src="imagens/linha-horizontal.png" style="max-width:20px;max-height:20px;"> Rodovias <a href="Download/rodovias.zip" download="Rodovias" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="rod('teste11')" id="10"></a></li>
                       <li>
                         <hr class="dropdown-divider">
@@ -350,10 +351,10 @@ session_start();
                 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    EMBARGOS E AUTUAÇÃO FEMARH
+                    EMBARGOS E AUTUAÇÕES FEMARH
                   </a>
                   <ul class="dropdown-menu dropdown-menu">
-                    <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px;"> Embargos e Autuação FEMARH <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="femarhEmbargos1('teste42')" id="36"></a></li>
+                    <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px;"> Embargos e Autuações FEMARH <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="femarhEmbargos1('teste42')" id="36"></a></li>
                   </ul>
                 </li>
     
@@ -363,6 +364,14 @@ session_start();
                       ZEE
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Veg
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                        </ul>
+                      </li>
                       <li><a id="coord" > Aptidão Agrícola <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="aptAgr1('teste44')" id="38"></a></li>
                       <li>
                           <hr class="dropdown-divider">
@@ -588,7 +597,7 @@ session_start();
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" id="leg">Legenda</a>
               </p>
 
-              <input class="btn btn-primary" type="button" onclick="removeAllLayer('1', 'coor3', 'op', 'teste', 'lim')"  value="Remover Temas" id="remLay">
+              <input class="btn btn-primary" type="button" onclick="removeAllLayer('1', 'coor3', 'coor4', 'op', 'teste', 'lim', 'lim1')"  value="Remover Temas" id="remLay">
 
               <img src="imagens/SIGARR3.png" class="d-none d-lg-block d-print-block" href="https://femarh.rr.gov.br/" id="fem1">
 
@@ -859,8 +868,8 @@ session_start();
                 <img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Limites Municipais
               </div>
 
-              <div id="teste43">
-                <img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Limites do Estado
+              <div id="lim1">
+                <img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Limites do Estado
               </div>
 
               <div id="teste11">
@@ -893,7 +902,7 @@ session_start();
               </div>
 
               <div id="teste42">
-                <img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px;"> Embargos e Autuação FEMARH
+                <img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px;"> Embargos e Autuações FEMARH
               </div>
 
               <div id="teste16">

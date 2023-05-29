@@ -293,6 +293,12 @@ body {
     border: 2px;
   }
 
+  #lim1 {
+    display: block;
+    padding: 5px;
+    border: 2px;
+  }
+
   #teste10 {
     display: none;
     padding: 5px;
