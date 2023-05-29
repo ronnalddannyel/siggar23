@@ -645,7 +645,7 @@ session_start();
               <label for="cpf">CPF/CNPJ</label>
               <input type="text" class="form-control" id="cpf" name="cpf" placeholder="ex. xxxxxxxxxxx / xxxxxxxx/xxxx-xx">
 
-              <input type="button" class="btn btn-primary" onclick="cpf2(areaImovel1)" value="Enviar" id="remLay">
+              <input type="button" class="btn btn-primary" onclick="cpf2(areaImovel1, areaImovel_4mf)" value="Enviar" id="remLay">
               <input class="btn btn-primary" type="button" onclick="removeCpf()"  value="Remover tema" id="remLay">
               
               <img src="imagens/SIGARR3.png" class="d-none d-lg-block d-print-block" href="https://femarh.rr.gov.br/" id="fem1">
