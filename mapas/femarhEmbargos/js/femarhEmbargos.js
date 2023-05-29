@@ -57,7 +57,7 @@
     },
     onEachFeature: function (geom, layer) {
       if(geom.properties.valor_mult != null){
-        var val_mult = "R$ "+geom.properties.valor_mult.toLocaleString('pt-BR');
+        var val_mult = "R$ "+geom.properties.valor_mult.toLocaleString('pt-BR', {minimumFractionDigits: 2,maximumFractionDigits: 4});
       }else{
         var val_mult = geom.properties.valor_mult;
       }
