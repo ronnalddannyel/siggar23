@@ -14,8 +14,10 @@
       markers3.addLayer(ana);
 
       function ana1(el){
-        if(map.hasLayer(markers3)){
+        if(map.hasLayer(markers3) || map.hasLayer(ana)){
         map.removeLayer(markers3);
+        map.removeLayer(ana);
+        document.getElementById('ana').checked = false;
         }
         else {
         map.addLayer(markers3);
@@ -26,6 +28,17 @@
         }else{
           document.getElementById(el).style.display = 'block';
         } 
+      }
+
+      function ana2(){
+        if(map.hasLayer(markers3)){
+          map.removeLayer(markers3);
+          map.addLayer(ana);
+        }
+        else {
+          map.addLayer(markers3);
+          map.removeLayer(ana);
+        }
       }
 
 
@@ -44,8 +57,10 @@
       markers4.addLayer(outSuper);
       
       function outSuper1(el){
-        if(map.hasLayer(markers4)){
+        if(map.hasLayer(markers4) || map.hasLayer(outSuper)){
         map.removeLayer(markers4);
+        map.removeLayer(outSuper);
+        document.getElementById('outSup').checked = false;
         }
         else {
         map.addLayer(markers4);
@@ -56,6 +71,18 @@
         }else{
           document.getElementById(el).style.display = 'block';
         } 
+      }
+
+
+      function outSuper2(){
+        if(map.hasLayer(markers4)){
+          map.removeLayer(markers4);
+          map.addLayer(outSuper);
+        }
+        else {
+          map.addLayer(markers4);
+          map.removeLayer(outSuper);
+        }
       }
 
 
@@ -74,8 +101,10 @@
       markers5.addLayer(outSub);
 
       function outSub1(el){
-        if(map.hasLayer(markers5)){
+        if(map.hasLayer(markers5) || map.hasLayer(outSub)){
         map.removeLayer(markers5);
+        map.removeLayer(outSub);
+        document.getElementById('outSub').checked = false;
         }
         else {
         map.addLayer(markers5);
@@ -86,6 +115,18 @@
         }else{
           document.getElementById(el).style.display = 'block';
         } 
+      }
+
+
+      function outSub2(){
+        if(map.hasLayer(markers5)){
+          map.removeLayer(markers5);
+          map.addLayer(outSub);
+        }
+        else {
+          map.addLayer(markers5);
+          map.removeLayer(outSub);
+        }
       }
 
       

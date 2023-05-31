@@ -41,8 +41,10 @@ var iphanSitArq = L.geoJSON(sitArPol, {
   markers.addLayer(iphanSitArqPto);
 
   function ipSitArqPto(el){
-    if(map.hasLayer(markers)){
+    if(map.hasLayer(markers) || map.hasLayer(iphanSitArqPto)){
     map.removeLayer(markers);
+    map.removeLayer(iphanSitArqPto);
+    document.getElementById('iphanPto').checked = false;
     }
     else {
     map.addLayer(markers);
@@ -53,4 +55,15 @@ var iphanSitArq = L.geoJSON(sitArPol, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+  }
+
+  function ipSitArqPto1(){
+    if(map.hasLayer(markers)){
+      map.removeLayer(markers);
+      map.addLayer(iphanSitArqPto);
+    }
+    else {
+      map.addLayer(markers);
+      map.removeLayer(iphanSitArqPto);
+    }
   }

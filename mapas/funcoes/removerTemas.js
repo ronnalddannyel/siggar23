@@ -25,6 +25,42 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
       console.log(id);
     }
 
+    // desmarcar os checkboxs do Embargos e Autuações Femarh
+
+    if(document.getElementById('embAut').checked === true){
+      document.getElementById('embAut').checked = false;
+    }
+
+    // desmarcar os checkboxs de Localidades
+
+    if(document.getElementById('local').checked === true){
+      document.getElementById('local').checked = false;
+    }
+
+    // desmarcar os checkboxs do Iphan pto
+
+    if(document.getElementById('iphanPto').checked === true){
+      document.getElementById('iphanPto').checked = false;
+    }
+
+    // desmarcar os checkboxs da ANA
+
+    if(document.getElementById('ana').checked === true){
+      document.getElementById('ana').checked = false;
+    }
+
+    // desmarcar os checkboxs da Outorgas Superficiais
+
+    if(document.getElementById('outSup').checked === true){
+      document.getElementById('outSup').checked = false;
+    }
+
+    // desmarcar os checkboxs da Outorgas Subterrâneas
+
+    if(document.getElementById('outSub').checked === true){
+      document.getElementById('outSub').checked = false;
+    }
+
     // Marcar os checkboxs camada limites municipais
 
     var status1 = document.getElementById(id2);

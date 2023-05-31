@@ -47,8 +47,10 @@ var sedesMunic = L.geoJSON(sedesMunic, {
   markers1.addLayer(localidade);
 
   function loc(el){
-    if(map.hasLayer(markers1)){
+    if(map.hasLayer(markers1) || map.hasLayer(localidade)){
     map.removeLayer(markers1);
+    map.removeLayer(localidade);
+    document.getElementById('local').checked = false;
     }
     else {
     map.addLayer(markers1);
@@ -59,6 +61,17 @@ var sedesMunic = L.geoJSON(sedesMunic, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+  }
+
+  function loc1(){
+    if(map.hasLayer(markers1)){
+      map.removeLayer(markers1);
+      map.addLayer(localidade);
+    }
+    else {
+      map.addLayer(markers1);
+      map.removeLayer(localidade);
+    }
   }
 
 

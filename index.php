@@ -934,6 +934,9 @@ session_start();
 
               <div id="teste9">
                 <img src="leaflet/images/pin-de-localizacao.png" style="max-width:20px;max-height:20px;"> Localidades
+                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
+                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="loc1()" id="local">
+                </div>
               </div>
 
               <div id="lim">
@@ -976,7 +979,7 @@ session_start();
               <div id="teste42">
                 Embargos e Autuações FEMARH
                 <div class="form-check form-switch" style="float: right;margin-left: 20px;">
-                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="femarhEmbargos2()" id="flexSwitchCheckDefault">
+                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="femarhEmbargos2()" id="embAut">
                 </div>
                 <div style="margin-top: 8px;">
                   <img src="leaflet/images/pin-de-localizacao-amarelo.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2016
@@ -1010,6 +1013,9 @@ session_start();
 
               <div id="teste24">
                 <img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px"> Iphan - Sítios Arqueológicos (Pontos)
+                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
+                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="ipSitArqPto1()" id="iphanPto">
+                </div>
               </div>
 
               <div id="teste23">
@@ -1046,14 +1052,23 @@ session_start();
 
               <div id="teste27">
                 <img src="leaflet/images/pin-de-localizacao-azul1.png" style="max-width:20px;max-height:20px"> Outorgas Emitidas pela ANA 
+                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
+                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="ana2()" id="ana">
+                </div>
               </div>
 
               <div id="teste28">
-                <img src="leaflet/images/pin-de-localizacao-azul3.png" style="max-width:20px;max-height:20px"> Outorgas Superficiais 
+                <img src="leaflet/images/pin-de-localizacao-azul3.png" style="max-width:20px;max-height:20px"> Outorgas Superficiais
+                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
+                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="outSuper2()" id="outSup">
+                </div> 
               </div>
 
               <div id="teste29">
                 <img src="leaflet/images/pin-de-localizacao-marrom.png" style="max-width:20px;max-height:20px"> Outorgas Subterrâneas
+                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
+                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="outSub2()" id="outSub">
+                </div>
               </div>
 
               <div id="teste25">

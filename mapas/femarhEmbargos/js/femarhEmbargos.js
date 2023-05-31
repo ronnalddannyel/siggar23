@@ -71,7 +71,7 @@
     if(map.hasLayer(groupLay_femarhEmbargos) || map.hasLayer(femarhEmbargos)){
     map.removeLayer(groupLay_femarhEmbargos);
     map.removeLayer(femarhEmbargos);
-    document.getElementById('flexSwitchCheckDefault').checked = false;
+    document.getElementById('embAut').checked = false;
     }
     else {
     map.addLayer(groupLay_femarhEmbargos);
