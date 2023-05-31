@@ -974,10 +974,10 @@ session_start();
               </div>
 
               <div id="teste42">
-                Embargos e Autuações FEMARH <br><!--
+                Embargos e Autuações FEMARH
                 <div class="form-check form-switch" style="float: right;margin-left: 20px;">
                   <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="femarhEmbargos2()" id="flexSwitchCheckDefault">
-                </div>-->
+                </div>
                 <div style="margin-top: 8px;">
                   <img src="leaflet/images/pin-de-localizacao-amarelo.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2016
                 </div>

@@ -38,6 +38,14 @@ function arImov(el){
         var tipoProjeto = 'DRA - Declaração de Regularização Ambiental';
     }else if(Feature.properties.fk_tipo_projeto == 3){
         var tipoProjeto = 'AUAS - Autorização de Uso Alternativo do Solo';
+    }else if(Feature.properties.fk_tipo_projeto == 4){
+      var tipoProjeto = 'ASV - Autorização de Supressão Vegetal';
+    }else if(Feature.properties.fk_tipo_projeto == 5){
+      var tipoProjeto = 'PMFS - Plano de Manejo Florestal Sustentável';
+    }else if(Feature.properties.fk_tipo_projeto == 6){
+      var tipoProjeto = 'POA - Plano Operacional Anual';
+    }else if(Feature.properties.fk_tipo_projeto == 7){
+      var tipoProjeto = 'PRAD - Plano de Recuperação de Área Degradada';
     }else{
         var tipoProjeto = Feature.properties.fk_tipo_projeto;
     }
