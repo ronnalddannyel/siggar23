@@ -10,7 +10,7 @@ function hidDrenagem1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/hidrografia_drenagem.geojson", function(data) {  
         var hidDrenagem = L.geoJSON(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>hidrografia_drenagem</b></h6><p><b>nome:</b> '+geom.properties.nome+'</p>');
+                layer.bindPopup('<h6><b>Drenagem</b></h6><p><b>Nome:</b> '+geom.properties.nome+'</p>');
             }
         });
 

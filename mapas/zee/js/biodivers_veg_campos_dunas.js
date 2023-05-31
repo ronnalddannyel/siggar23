@@ -9,7 +9,7 @@ function bioDivVegCampDunas1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_campos_dunas.geojson", function(data) {  
         var bioDivVegCampDunas = new L.geoJson(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>biodivers_veg_campos_dunas</b></h6><p><b>area:</b> '+geom.properties.area+'</p>');
+                layer.bindPopup('<h6><b>Vegetação (Campos/Dunas)</b></h6><p><b>Área:</b> '+geom.properties.area.toLocaleString('pt-BR', {minimumFractionDigits: 2,maximumFractionDigits: 2})+' Km²</p>');
             }
         });
 

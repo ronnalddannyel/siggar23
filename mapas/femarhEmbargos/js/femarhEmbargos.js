@@ -68,8 +68,10 @@
     groupLay_femarhEmbargos.addLayer(femarhEmbargos);
 
   function femarhEmbargos1(el){
-    if(map.hasLayer(groupLay_femarhEmbargos)){
+    if(map.hasLayer(groupLay_femarhEmbargos)/* || map.hasLayer(femarhEmbargos)*/){
     map.removeLayer(groupLay_femarhEmbargos);
+    /*map.removeLayer(femarhEmbargos);
+    document.getElementById('flexSwitchCheckDefault').checked = false;*/
     }
     else {
     map.addLayer(groupLay_femarhEmbargos);
@@ -80,4 +82,16 @@
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+  }
+
+
+  function femarhEmbargos2(){
+    if(map.hasLayer(groupLay_femarhEmbargos)){
+    map.removeLayer(groupLay_femarhEmbargos);
+    map.addLayer(femarhEmbargos);
+    }
+    else {
+    map.addLayer(groupLay_femarhEmbargos);
+    map.removeLayer(femarhEmbargos);
+    }
   }

@@ -363,148 +363,220 @@ session_start();
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       ZEE
                     </a>
-                    <ul class="dropdown-menu dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu" style="border: none; padding-left: 10px; margin-top: -10px;">
                       <li>
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Veg
+                          APTIDÃO AGRÍCOLA
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
 
+                          <li><a id="coord" > Aptidão Agrícola <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="aptAgr1('teste44')" id="38"></a></li>
+                        
                         </ul>
                       </li>
-                      <li><a id="coord" > Aptidão Agrícola <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="aptAgr1('teste44')" id="38"></a></li>
+
                       <li>
-                          <hr class="dropdown-divider">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          BIODIVERSIDADE
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord" > Sistemas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivSist1('teste45')" id="39"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > Vegetação (Campos/Dunas) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegCampDunas1('teste46')" id="40"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > Vegetação (Floresta) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegFlor1('teste47')" id="41"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > Vegetação (Lavrado) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegLavr1('teste48')" id="42"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > Vegetação (Sistemas Lacustres) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegSistLacust1('teste49')" id="43"></a></li>
+
+                        </ul>
                       </li>
-                      <li><a id="coord" > biodivers_sistemas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivSist1('teste45')" id="39"></a></li>
+
                       <li>
-                        <hr class="dropdown-divider">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          GEOLOGIA
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord" > Domínios Morfológicos <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoDomMorfo1('teste50')" id="44"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > Erosão <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gepErosao1('teste51')" id="45"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > Geológico <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoGeolog1('teste52')" id="46"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > Potencial Mineral <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoPotMineral1('teste53')" id="47"></a></li>
+
+                        </ul>
                       </li>
-                      <li><a id="coord" > biodivers_veg_campos_dunas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegCampDunas1('teste46')" id="40"></a></li>
+
                       <li>
-                        <hr class="dropdown-divider">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          GEOMORFOLOGIA
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord" > Geomorfológia <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoUndGeomorfo1('teste54')" id="48"></a></li>
+                        
+                        </ul>
                       </li>
-                      <li><a id="coord" > biodivers_veg_floresta <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegFlor1('teste47')" id="41"></a></li>
+
                       <li>
-                        <hr class="dropdown-divider">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          HIDROGRAFIA
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord" > Drenagem <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidDrenagem1('teste55')" id="49"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > Ottobacias <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidOttobacias1('teste56')" id="50"></a></li>
+
+                        </ul>
                       </li>
-                      <li><a id="coord" > biodivers_veg_lavrado <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegLavr1('teste48')" id="42"></a></li>
+
                       <li>
-                          <hr class="dropdown-divider">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          POTENCIAL SOCIAL
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord" > potencial_social_ambiental <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocAmbiental1('teste57')" id="51"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > potencial_social_humano <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocHumano1('teste58')" id="52"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > potencial_social_institucional <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocInstitucional1('teste59')" id="53"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > potencial_social_produtivo <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocProdutivo1('teste60')" id="54"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > potencial_social <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocial1('teste61')" id="55"></a></li>
+
+                        </ul>
                       </li>
-                      <li><a id="coord" > biodivers_veg_sistemas_lacustres <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegSistLacust1('teste49')" id="43"></a></li>
+
                       <li>
-                        <hr class="dropdown-divider">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          SOLOS
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord" > solos <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="solos1('teste62')" id="56"></a></li>
+
+                        </ul>
                       </li>
-                      <li><a id="coord" > geologia_dominios_morfo <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoDomMorfo1('teste50')" id="44"></a></li>
+
                       <li>
-                        <hr class="dropdown-divider">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          VEGETAÇÃO
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                        <li><a id="coord" > vegetacao <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vegetacao1('teste63')" id="57"></a></li>
+
+                        </ul>
                       </li>
-                      <li><a id="coord" > geologia_erosao <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gepErosao1('teste51')" id="45"></a></li>
+
                       <li>
-                        <hr class="dropdown-divider">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          VULNERABILIDADE SOCIAL
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord" > vul_nat_perda_solo_2018 <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdaSolo1('teste64')" id="58"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > vul_nat_perda_solo_geologia_2018 <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdaSoloGeologia1('teste65')" id="59"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > vul_nat_perda_solo_geomorfologia_2018 <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdSoloGeomorfologia1('teste66')" id="60"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > vul_nat_perda_solo_vegetacao_2018 <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdSoloVegetacao1('teste67')" id="61"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > vul_nat_perda_solo_zonaclima_2018 <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdSoloZonaclima1('teste68')" id="62"></a></li>
+
+                        </ul>
                       </li>
-                      <li><a id="coord" > geologia_geologico <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoGeolog1('teste52')" id="46"></a></li>
+
                       <li>
-                          <hr class="dropdown-divider">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          ZONAS CLIMÁTICAS
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord" > zona_clima_clima_zee_2018 <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonaClimaClimaZee1('teste69')" id="63"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > zona_clima_concentracao_chuvas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonaClimaConcChuvas1('teste70')" id="64"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > zona_clima_isolinhas_chuvas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonaClimaIsolChuvas1('teste71')" id="65"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > zona_clima_koppen <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonaClimaKoppen1('teste72')" id="66"></a></li>
+
+                        </ul>
                       </li>
-                      <li><a id="coord" > geologia_potencial_mineral <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoPotMineral1('teste53')" id="47"></a></li>
+
                       <li>
-                        <hr class="dropdown-divider">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          ZONAS
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord" > zonas_subzona1_zup <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasSubzonaZup1('teste73')" id="67"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > zonas_subzona2_zue <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasSubzonaZue1('teste74')" id="68"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > zonas_zona1_zup <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasZonaZup1('teste75')" id="69"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > zonas_zona2_zue <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasZonaZue1('teste76')" id="70"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > zonas_zona3_zu <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasZonaZu1('teste77')" id="71"></a></li>
+
+                        </ul>
                       </li>
-                      <li><a id="coord" > geomorfologia_unidades_geomorfo <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoUndGeomorfo1('teste54')" id="48"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > hidrografia_drenagem <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidDrenagem1('teste55')" id="49"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > hidrografia_ottobacias <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidOttobacias1('teste56')" id="50"></a></li>
-                      <li>
-                          <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > potencial_social_ambiental <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocAmbiental1('teste57')" id="51"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > potencial_social_humano <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocHumano1('teste58')" id="52"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > potencial_social_institucional <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocInstitucional1('teste59')" id="53"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > potencial_social_produtivo <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocProdutivo1('teste60')" id="54"></a></li>
-                      <li>
-                          <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > potencial_social <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="potSocial1('teste61')" id="55"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > solos <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="solos1('teste62')" id="56"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > vegetacao <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vegetacao1('teste63')" id="57"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > vul_nat_perda_solo_2018 <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdaSolo1('teste64')" id="58"></a></li>
-                      <li>
-                          <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > vul_nat_perda_solo_geologia_2018 <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdaSoloGeologia1('teste65')" id="59"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > vul_nat_perda_solo_geomorfologia_2018 <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdSoloGeomorfologia1('teste66')" id="60"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > vul_nat_perda_solo_vegetacao_2018 <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdSoloVegetacao1('teste67')" id="61"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > vul_nat_perda_solo_zonaclima_2018 <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="vulNatPerdSoloZonaclima1('teste68')" id="62"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > zona_clima_clima_zee_2018 <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonaClimaClimaZee1('teste69')" id="63"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > zona_clima_concentracao_chuvas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonaClimaConcChuvas1('teste70')" id="64"></a></li>
-                      <li>
-                          <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > zona_clima_isolinhas_chuvas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonaClimaIsolChuvas1('teste71')" id="65"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > zona_clima_koppen <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonaClimaKoppen1('teste72')" id="66"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > zonas_subzona1_zup <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasSubzonaZup1('teste73')" id="67"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > zonas_subzona2_zue <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasSubzonaZue1('teste74')" id="68"></a></li>
-                      <li>
-                          <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > zonas_zona1_zup <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasZonaZup1('teste75')" id="69"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > zonas_zona2_zue <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasZonaZue1('teste76')" id="70"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" > zonas_zona3_zu <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="zonasZonaZu1('teste77')" id="71"></a></li>
+
                     </ul>
                 </li>
     -->
@@ -902,7 +974,10 @@ session_start();
               </div>
 
               <div id="teste42">
-                Embargos e Autuações FEMARH <br>
+                Embargos e Autuações FEMARH <br><!--
+                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
+                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="femarhEmbargos2()" id="flexSwitchCheckDefault">
+                </div>-->
                 <div style="margin-top: 8px;">
                   <img src="leaflet/images/pin-de-localizacao-amarelo.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2016
                 </div>

@@ -11,7 +11,7 @@ function geoGeolog1(el){
 
         var geoGeolog = L.geoJSON(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>geologia_geologico</b></h6><p><b>rotulo:</b> '+geom.properties.rotulo+'<br><b>nomeext:</b> '+geom.properties.nomeext+'</p>');
+                layer.bindPopup('<h6><b>Geológico</b></h6><p><b>Sigla:</b> '+geom.properties.rotulo+'<br><b>Nome:</b> '+geom.properties.nomeext+'</p>');
             }
         });
 

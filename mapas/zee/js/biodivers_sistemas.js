@@ -8,7 +8,7 @@ function bioDivSist1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_sistemas.geojson", function(data) {  
         var bioDivSist = new L.geoJson(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>biodivers_sistemas</b></h6><p><b>sistema:</b> '+geom.properties.sistema+'<br><b>padrão:</b> '+geom.properties.padrão+'<br><b>associação:</b> '+geom.properties.associação+'</p>');
+                layer.bindPopup('<h6><b>Sistemas</b></h6><p><b>Sistemas:</b> '+geom.properties.sistema+'<br><b>Padrão:</b> '+geom.properties.padrão+'</p>');
             }
         });
 

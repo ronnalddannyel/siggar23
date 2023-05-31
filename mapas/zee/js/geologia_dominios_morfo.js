@@ -10,7 +10,7 @@ function geoDomMorfo1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_dominios_morfo.geojson", function(data) {  
         var geoDomMorfo = L.geoJSON(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>geologia_dominios_morfo</b></h6><p><b>domínios:</b> '+geom.properties.domínios+'</p>');
+                layer.bindPopup('<h6><b>Domínios Morfológicos</b></h6><p><b>Domínios:</b> '+geom.properties.domínios+'</p>');
             }
         });
 

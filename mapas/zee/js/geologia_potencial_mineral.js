@@ -10,7 +10,7 @@ function geoPotMineral1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_potencial_mineral.geojson", function(data) {  
         var geoPotMineral = L.geoJSON(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>geologia_potencial_mineral</b></h6><p><b>rm3:</b> '+geom.properties.rm3+'</p>');
+                layer.bindPopup('<h6><b>Potencial Mineral</b></h6><p><b>RM3:</b> '+geom.properties.rm3+'</p>');
             }
         });
 

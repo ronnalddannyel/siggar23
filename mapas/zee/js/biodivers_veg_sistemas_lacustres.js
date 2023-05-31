@@ -9,7 +9,7 @@ function bioDivVegSistLacust1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_sistemas_lacustres.geojson", function(data) {  
         var bioDivVegSistLacust = L.geoJSON(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>biodivers_veg_sistemas_lacustres</b></h6><p><b>padrão:</b> '+geom.properties.padrão+'<br><b>associação:</b> '+geom.properties.associação+'</p>');
+                layer.bindPopup('<h6><b>Vegetação (Sistemas Lacustres)</b></h6><p></p>');
             }
         });
 

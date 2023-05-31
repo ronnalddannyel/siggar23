@@ -9,7 +9,7 @@ function hidOttobacias1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/hidrografia_ottobacias.geojson", function(data) {  
         var hidOttobacias = L.geoJSON(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>hidrografia_ottobacias</b></h6><p><b>regiao48:</b> '+geom.properties.regiao48+'</p>');
+                layer.bindPopup('<h6><b>Ottobacias</b></h6><p><b>Região:</b> '+geom.properties.regiao48+'</p>');
             }
         });
 
