@@ -42,7 +42,7 @@
 
   var groupLay_femarhEmbargos = L.markerClusterGroup();
 
-  var femarhEmbargos = L.geoJSON(femarhEmbargos, {
+  var femarhEmbargos = L.geoJSON(femarhEmbargos3, {
     pointToLayer: function (geom, latlng) {
       switch (geom.properties.ano) {
         case 2016: return L.marker(latlng, {icon: AmareloIcon});

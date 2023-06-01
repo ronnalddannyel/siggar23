@@ -3,7 +3,7 @@
 
     var markers3 = L.markerClusterGroup();
 
-      var ana = L.geoJSON(ana, {
+      var ana = L.geoJSON(ana3, {
         pointToLayer: function (geom, latlng) {
             return L.marker(latlng, {icon: blueIcon1});
         },
@@ -46,7 +46,7 @@
 
       var markers4 = L.markerClusterGroup();
 
-      var outSuper = L.geoJSON(outSuper, {
+      var outSuper = L.geoJSON(outSuper3, {
         pointToLayer: function (geom, latlng) {
             return L.marker(latlng, {icon: blueIcon2});
         },
@@ -90,7 +90,7 @@
 
       var markers5 = L.markerClusterGroup();
 
-      var outSub = L.geoJSON(outSub, {
+      var outSub = L.geoJSON(outSub3, {
         pointToLayer: function (geom, latlng) {
             return L.marker(latlng, {icon: MarromIcon});
         },

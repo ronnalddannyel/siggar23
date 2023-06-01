@@ -41,6 +41,10 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="leaflet.ajax.js"></script>
 
+    <script>
+      var queiFeat;
+    </script>
+
     <!--- Grades -->
 
     <script src="mapas/grade/cbers_cenas.geojson"></script>
@@ -348,7 +352,7 @@ session_start();
                       <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Glebas <a href="Download/glebas.zip" download="Glebas" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gleb('teste15')" id="14"></a></li>
                     </ul>
                 </li>
-                
+                <!--
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EMBARGOS E AUTUAÇÕES FEMARH
@@ -357,7 +361,7 @@ session_start();
                     <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Embargos e Autuações FEMARH <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="femarhEmbargos1('teste42')" id="36"></a></li>
                   </ul>
                 </li>
-    
+    -->
                 <!--
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -824,16 +828,12 @@ session_start();
                 <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Sentinel 2
               </div>
               
-              <div id="teste5">
-                <img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Área do Projeto
-              </div>
+              <div id="teste5"></div>
 
-              <div id="teste1">
-                <img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Área do Imóvel
-              </div>
+              <div id="teste1"></div>
 
               <div id="teste26">
-                Monitoramento <br>
+                <div id="monit"></div>                
                 <div style="margin-left:15px;">
                 <img src="imagens/quadrado-verde3.png" style="max-width:20px;max-height:20px;"> CSSA - Corte seletivo executado sem autorização <br>
                 <img src="imagens/quadrado-verde.png" style="max-width:20px;max-height:20px;"> CRSA - Corte Raso Executado sem Autorização <br>
@@ -863,16 +863,12 @@ session_start();
                 </div>
               </div>
 
-              <div id="teste30">
-                <img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Área do Projeto (Até 4 Módulos Fiscais)
-              </div>
+              <div id="teste30"></div>
 
-              <div id="teste31">
-                <img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Área do Imóvel (Até 4 Módulos Fiscais)
-              </div>
+              <div id="teste31"></div>
 
               <div id="teste32">
-                Monitoramento (Até 4 Módulos Fiscais) <br>
+                <div id="monit4mf"></div> 
                 <div style="margin-left:15px;">
                 <img src="imagens/quadrado-verde3.png" style="max-width:20px;max-height:20px;"> CSSA - Corte seletivo executado sem autorização <br>
                 <img src="imagens/quadrado-verde.png" style="max-width:20px;max-height:20px;"> CRSA - Corte Raso Executado sem Autorização <br>
@@ -902,28 +898,18 @@ session_start();
                 </div>
               </div>
 
-              <div id="teste2">
-                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Áreas Inalienáveis
-              </div>
+              <div id="teste2"></div>
 
-              <div id="teste3">
-                <img src="imagens/retangulo-arredondado-FF8C00.png" style="max-width:20px;max-height:20px;"> Áreas Militares
-              </div>
+              <div id="teste3"></div>
 
-              <div id="teste4">
-                <img src="imagens/retangulo-arredondado-red.png" style="max-width:20px;max-height:20px;"> Terras Indígenas
-              </div>
+              <div id="teste4"></div>
 
-              <div id="teste6">
-                <img src="imagens/retangulo-arredondado-32CD32.png" style="max-width:20px;max-height:20px;"> Unidade de Conservação Estadual
-              </div>
+              <div id="teste6"></div>
 
-              <div id="teste7">
-                <img src="imagens/retangulo-arredondado-006400.png" style="max-width:20px;max-height:20px;"> Unidade de Conservação Federal
-              </div>
+              <div id="teste7"></div>
 
               <div id="teste8">
-                Sedes Municipais <br>
+                <div id="sMun"></div>
                 <div style="margin-top: 8px;">
                   <img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Capital
                 </div>
@@ -932,23 +918,14 @@ session_start();
                 </div>
               </div>
 
-              <div id="teste9">
-                <img src="leaflet/images/pin-de-localizacao.png" style="max-width:20px;max-height:20px;"> Localidades
-                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
-                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="loc1()" id="local">
-                </div>
-              </div>
+              <div id="teste9"></div>
 
-              <div id="lim">
-                <img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Limites Municipais
-              </div>
+              <div id="lim"></div>
 
-              <div id="lim1">
-                <img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Limites do Estado
-              </div>
+              <div id="lim1"></div>
 
               <div id="teste11">
-                Rodovias <br>
+                <div id="rod"></div>
                 <div style="margin-top: 8px;">
                   <img src="imagens/linha-horizontal-red.png" style="max-width:20px;max-height:20px; margin-left:7px;margin-left:15px"> Federal
                 </div>
@@ -960,27 +937,16 @@ session_start();
                 </div>
               </div>
 
-              <div id="teste12">
-                <img src="imagens/linha-horizontal-00BFFF.png" style="max-width:20px;max-height:20px;"> Trecho de Drenagem (1:100.000)
-              </div>
+              <div id="teste12"></div>
 
-              <div id="teste13">
-              <img src='imagens/retangulo-arredondado-00BFFF.png' style='max-width:20px;max-height:20px;'> Trecho de Massa D'Água
-              </div>
+              <div id="teste13"></div>
 
-              <div id="teste14">
-              <img src="imagens/retangulo-arredondado-FFD700.png" style="max-width:20px;max-height:20px;"> Projetos de Assentamento
-              </div>
+              <div id="teste14"></div>
 
-              <div id="teste15">
-                <img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Glebas
-              </div>
+              <div id="teste15"></div>
 
               <div id="teste42">
-                Embargos e Autuações FEMARH
-                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
-                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="femarhEmbargos2()" id="embAut">
-                </div>
+                <div id="embAut1"></div>
                 <div style="margin-top: 8px;">
                   <img src="leaflet/images/pin-de-localizacao-amarelo.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2016
                 </div>
@@ -1007,20 +973,11 @@ session_start();
                 </div>
               </div>
 
-              <div id="teste16">
-                <img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Minerarios Ativos
-              </div>
+              <div id="teste16"></div>
 
-              <div id="teste24">
-                <img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px"> Iphan - Sítios Arqueológicos (Pontos)
-                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
-                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="ipSitArqPto1()" id="iphanPto">
-                </div>
-              </div>
+              <div id="teste24"></div>
 
-              <div id="teste23">
-                <img src="imagens/retangulo-arredondado-8B0000.png" style="max-width:20px;max-height:20px;"> Iphan - Sítios Arqueológicos (Polígonos)
-              </div>
+              <div id="teste23"></div>
 
               <div id="teste17">
                 fbds App
@@ -1046,34 +1003,15 @@ session_start();
                 fbds Uso
               </div>
 
-              <div id="teste10">
-                <img src="imagens/retangulo-arredondado-red.png" style="max-width:20px;max-height:20px;"> Embargos
-              </div>
+              <div id="teste10"></div>
 
-              <div id="teste27">
-                <img src="leaflet/images/pin-de-localizacao-azul1.png" style="max-width:20px;max-height:20px"> Outorgas Emitidas pela ANA 
-                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
-                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="ana2()" id="ana">
-                </div>
-              </div>
+              <div id="teste27"></div>
 
-              <div id="teste28">
-                <img src="leaflet/images/pin-de-localizacao-azul3.png" style="max-width:20px;max-height:20px"> Outorgas Superficiais
-                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
-                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="outSuper2()" id="outSup">
-                </div> 
-              </div>
+              <div id="teste28"></div>
 
-              <div id="teste29">
-                <img src="leaflet/images/pin-de-localizacao-marrom.png" style="max-width:20px;max-height:20px"> Outorgas Subterrâneas
-                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
-                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="outSub2()" id="outSub">
-                </div>
-              </div>
+              <div id="teste29"></div>
 
-              <div id="teste25">
-                <img src="leaflet/images/fogo.png" style="max-width:20px;max-height:20px"> Focos de Queimadas
-              </div>
+              <div id="teste25"></div>
 
 
             </div>
@@ -1338,7 +1276,7 @@ session_start();
 
 
 
-
+    <script src="mapas/funcoes/legenda.js"></script>
 
 
 

@@ -1,7 +1,7 @@
 
 // Embargos
 
-var embarg = L.geoJSON(embarg, {
+var embarg = L.geoJSON(embarg1, {
     color: "red",
     weight: "2",
     onEachFeature: function (geom, layer) {

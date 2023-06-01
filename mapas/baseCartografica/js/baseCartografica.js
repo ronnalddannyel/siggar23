@@ -1,7 +1,7 @@
 
 // Sedes Municipais
 
-var sedesMunic = L.geoJSON(sedesMunic, {
+var sedesMunic = L.geoJSON(sedesMunic1, {
     pointToLayer: function (geom, latlng) {
       if (geom.properties.nome == 'Boa Vista') {
         return L.marker(latlng, {icon: redIcon});
@@ -35,7 +35,7 @@ var sedesMunic = L.geoJSON(sedesMunic, {
 
   var markers1 = L.markerClusterGroup();
 
-  var localidade = L.geoJSON(localidade, {
+  var localidade = L.geoJSON(localidade1, {
     pointToLayer: function (geom, latlng) {
         return L.marker(latlng, {icon: whiteIcon});
     },
@@ -77,7 +77,7 @@ var sedesMunic = L.geoJSON(sedesMunic, {
 
   // Limites Municipais
 
-  var limitesMunic = L.geoJSON(limitesMunic, {
+  var limitesMunic = L.geoJSON(limitesMunic1, {
     color: "black",
     opacity: "1.0",
     fillOpacity: "0",
@@ -106,7 +106,7 @@ var sedesMunic = L.geoJSON(sedesMunic, {
 
   // Rodovias
 
-  var rodovia = L.geoJSON(rodovia, {
+  var rodovia = L.geoJSON(rodovia1, {
     style: function(feature) {
       switch (feature.properties.administra) {
           case 'Federal': return {color: "red", weight: "2"};
@@ -137,7 +137,7 @@ var sedesMunic = L.geoJSON(sedesMunic, {
 
   // Trecho de Drenagem (1:100.000)
 
-  var hidrografia = L.geoJSON(hidrografia, {
+  var hidrografia = L.geoJSON(hidrografia1, {
     color: "#00BFFF",
     weight: "1",
     onEachFeature: function (geom, layer) {
@@ -163,7 +163,7 @@ var sedesMunic = L.geoJSON(sedesMunic, {
 
   // Trecho de Massa D'Água
 
-  var hidroMasDagua = L.geoJSON(hidroMasDagua, {
+  var hidroMasDagua = L.geoJSON(hidroMasDagua1, {
     color: "#00BFFF",
     weight: "2",
     onEachFeature: function (geom, layer) {
@@ -189,7 +189,7 @@ var sedesMunic = L.geoJSON(sedesMunic, {
 
   // Projeto de Assentamento
 
-  var projAssent = L.geoJSON(projAssent, {
+  var projAssent = L.geoJSON(projAssent1, {
     color: "#FFD700",
     weight: "2",
     onEachFeature: function (geom, layer) {
@@ -215,7 +215,7 @@ var sedesMunic = L.geoJSON(sedesMunic, {
 
   // Glebas
 
-  var glebas = L.geoJSON(glebas, {
+  var glebas = L.geoJSON(glebas1, {
     color: "blue",
     onEachFeature: function (geom, layer) {
       layer.bindPopup('<h6><b>Glebas</b></h6><p><b>Nome:</b> '+geom.properties.text+'<br><b>Situação:</b> '+geom.properties.situacao+'<br><b>Área:</b> '+geom.properties.hectares.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.</p>');
@@ -241,7 +241,7 @@ var sedesMunic = L.geoJSON(sedesMunic, {
 
   // Limites do Estado
 
-  var estadosLimites = L.geoJSON(estadosLimites, {
+  var estadosLimites = L.geoJSON(estadosLimites2, {
     color: "black",
     fill: false,
     weight: "3",

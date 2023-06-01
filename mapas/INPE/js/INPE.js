@@ -34,11 +34,11 @@
 // Focos de Queimadas - Código em tempo real
 
 var groupLayQueimada = L.layerGroup([]);
-
 function queimadas(el){
   groupLayQueimada.clearLayers();
   $.getJSON("https://queimadas.dgi.inpe.br/home/download?id=focos_brasil_rr&time=48h&outputFormat=json&utm_source=landing-page&utm_medium=landing-page&utm_campaign=dados-abertos&utm_content=focos_brasil_rr_48h", function(data) {  
-  var queimada = L.geoJson(data, {
+  
+  var queimada = L.geoJson(data, { 
     pointToLayer: function (geom, latlng) {
       return L.marker(latlng, {icon: fogo})
     },
@@ -48,6 +48,17 @@ function queimadas(el){
     });
 
     groupLayQueimada.addLayer(queimada);
+
+    // Focos de Queimadas
+
+    var quei12 = document.getElementById("teste25");
+    if(quei12.style.display === "block"){
+      queiHtml = '<img src="leaflet/images/fogo.png" style="max-width:20px;max-height:20px"> Focos de Queimadas ('+data.totalFeatures+')';
+      quei12.innerHTML += queiHtml;
+    }else{
+      quei12.innerHTML = "";
+    }
+    
   })
 
   if(map.hasLayer(groupLayQueimada)){
@@ -61,5 +72,7 @@ function queimadas(el){
       document.getElementById(el).style.display = 'none';
     }else{
       document.getElementById(el).style.display = 'block';
-    } 
+    }
+    
+    
   }

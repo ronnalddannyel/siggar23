@@ -1,7 +1,7 @@
 
 // Áreas Inalienáveis
 
-var areaInalienaveis = L.geoJSON(areaInalienaveis, {
+var areaInalienaveis = L.geoJSON(areaInalienaveis1, {
     color: "#808080",
     weight: "1",
     onEachFeature: function (geom, layer) {
@@ -53,7 +53,7 @@ var areaInalienaveis = L.geoJSON(areaInalienaveis, {
 
 // Terras Indígenas
 
-  var limiteTerraIndigena = L.geoJSON(limiteTerraIndigena, {
+  var limiteTerraIndigena = L.geoJSON(limiteTerraIndigena1, {
     color: "red",
     weight: "2",
     onEachFeature: function (geom, layer) {
@@ -105,7 +105,7 @@ var areaInalienaveis = L.geoJSON(areaInalienaveis, {
 
 // Unidades de Conservação Federal
 
-    var undConserFed = L.geoJSON(undConserFed, {
+    var undConserFed = L.geoJSON(ucsFed, {
       color: "#006400",
       weight: "2",
       onEachFeature: function (geom, layer) {

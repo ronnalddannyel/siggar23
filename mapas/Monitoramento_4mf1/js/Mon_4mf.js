@@ -22,7 +22,7 @@ var areaImov_4mf = L.geoJSON(areaImovel_4mf, {
     }
   }
 
-  var areaProjeto_4mf = L.geoJSON(areaProjeto_4mf, {
+  var areaProjeto_4mf = L.geoJSON(areaProjeto1_4mf, {
     color: "black",
       onEachFeature: function (Feature, layer) {
         if(Feature.properties.fk_tipo_projeto == 1){
