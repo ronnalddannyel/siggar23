@@ -64,7 +64,7 @@ session_start();
     <script src="mapas/areasLicenciadas/areaProjeto1.geojson"></script>
     <script src="mapas/areasLicenciadas/areaProjetoHist.geojson"></script>
     <script src="mapas/areasLicenciadas/monitoramento.geojson"></script>
-
+    <script src="mapas/areasLicenciadas/areaUos.geojson"></script>
     <script src="mapas/areasLicenciadas/areaImovel1.geojson"></script>
 
     <!--- Áreas Licenciadas 4mf -->
@@ -73,6 +73,7 @@ session_start();
     <script src="mapas/Monitoramento_4mf1/areaProjeto_4mf.geojson"></script>
     <script src="mapas/Monitoramento_4mf1/areaProjetoHist_4mf.geojson"></script>
     <script src="mapas/Monitoramento_4mf1/monitoramento_4mf.geojson"></script>
+    <script src="mapas/Monitoramento_4mf1/areaUos_4mf.geojson"></script>
 
     <!--- Áreas Institucionais -->
 
@@ -257,6 +258,10 @@ session_start();
                       <li>
                           <hr class="dropdown-divider">
                       </li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-325f5f.png" style="max-width:20px;max-height:20px;"> Área de Uso e Ocupação do Solo<a href="Download/auos.zip" download="Area_UOS" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="arUos('teste42')" id="36"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
                       <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Monitoramento<a href="Download/monitoramento.zip" download="Monitoramento" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="monit('teste26')" id="20"></a></li>
                     </ul>
                 </li>
@@ -272,6 +277,10 @@ session_start();
                       <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Área do Imóvel <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="arImov_4mf('teste31')" id="25"></a></li>
                       <li>
                           <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-325f5f.png" style="max-width:20px;max-height:20px;"> Área de Uso e Ocupação do Solo<a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="arUos_4mf('teste43')" id="37"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
                       </li>
                       <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Monitoramento<a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="monit_4mf('teste32')" id="26"></a></li>
                     </ul>
@@ -358,7 +367,7 @@ session_start();
                     EMBARGOS E AUTUAÇÕES FEMARH
                   </a>
                   <ul class="dropdown-menu dropdown-menu">
-                    <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Embargos e Autuações FEMARH <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="femarhEmbargos1('teste42')" id="36"></a></li>
+                    <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Embargos e Autuações FEMARH <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="femarhEmbargos1('teste44')" id="38"></a></li>
                   </ul>
                 </li>
     -->
@@ -814,6 +823,8 @@ session_start();
 
               <div id="teste1"></div>
 
+              <div id="teste42"></div>
+
               <div id="teste26">
                 <div id="monit"></div>                
                 <div style="margin-left:15px;">
@@ -848,6 +859,8 @@ session_start();
               <div id="teste30"></div>
 
               <div id="teste31"></div>
+
+              <div id="teste43"></div>
 
               <div id="teste32">
                 <div id="monit4mf"></div> 
@@ -927,7 +940,7 @@ session_start();
 
               <div id="teste15"></div>
 
-              <div id="teste42">
+              <div id="teste44">
                 <div id="embAut1"></div>
                 <div style="margin-top: 8px;">
                   <img src="leaflet/images/pin-de-localizacao-amarelo.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2016
@@ -1256,7 +1269,7 @@ session_start();
     
     <script src="mapas/grade/js/grade.js"></script>
 
-
+    <!-- Legenda - Layers -->
 
     <script src="mapas/funcoes/legenda.js"></script>
 

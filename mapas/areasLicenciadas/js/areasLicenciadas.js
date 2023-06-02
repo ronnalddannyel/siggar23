@@ -167,6 +167,33 @@ function arImov(el){
       }
 
 
+
+    // Área de Uso e Ocupação do Solo
+
+    var areaUos = L.geoJSON(areaUos1, {
+      color: "#325f5f",
+      weight: "2",
+      onEachFeature: function (geom, layer) {
+        layer.bindPopup('<h6><b>Área de Uso e Ocupação do Solo</b></h6><b>Tipo do Solo: </b>'+geom.properties.fk_tipo+'<br><b>Área:</b> '+geom.properties.area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.');
+      }
+    });
+
+    function arUos(el){
+      if(map.hasLayer(areaUos)){
+      map.removeLayer(areaUos);
+      }
+      else {
+      map.addLayer(areaUos);
+      }
+      var display = document.getElementById(el).style.display;
+      if(display == "block"){
+        document.getElementById(el).style.display = 'none';
+      }else{
+        document.getElementById(el).style.display = 'block';
+      } 
+    }
+
+
     // Monitoramento
 
     var monitor = L.geoJSON(monitoramento, {

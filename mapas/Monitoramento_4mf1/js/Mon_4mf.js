@@ -53,6 +53,31 @@ var areaImov_4mf = L.geoJSON(areaImovel_4mf, {
     } 
       }
 
+
+      var areaUos_4mf = L.geoJSON(areaUos1_4mf, {
+        color: "#325f5f",
+        weight: "2",
+        onEachFeature: function (geom, layer) {
+          layer.bindPopup('<h6><b>Área de Uso e Ocupação do Solo</b></h6><b>Tipo do Solo: </b>'+geom.properties.fk_tipo+'<br><b>Área:</b> '+geom.properties.area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.');
+        }
+      });
+      
+      function arUos_4mf(el){
+        if(map.hasLayer(areaUos_4mf)){
+        map.removeLayer(areaUos_4mf);
+        }
+        else {
+        map.addLayer(areaUos_4mf);
+        }
+        var display = document.getElementById(el).style.display;
+        if(display == "block"){
+          document.getElementById(el).style.display = 'none';
+        }else{
+          document.getElementById(el).style.display = 'block';
+        } 
+      }
+
+
     var monitor_4mf = L.geoJSON(monitoramento_4mf, {
     style: function(geom) {
       switch (geom.properties.fk_tip_mon) {

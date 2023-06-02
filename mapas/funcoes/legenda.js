@@ -75,6 +75,12 @@ var arImov12 = document.getElementById("teste1");
 var arImovHtml = '<img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Área do Imóvel ('+areaImovel1.totalFeatures+')';
 arImov12.innerHTML += arImovHtml;
 
+// Área de Uso e Ocupação do Solo
+
+var auos12 = document.getElementById("teste42");
+var auosHtml = '<img src="imagens/retangulo-arredondado-325f5f.png" style="max-width:20px;max-height:20px;"> Área de Uso e Ocupação do Solo ('+areaUos1.totalFeatures+')';
+auos12.innerHTML += auosHtml;
+
 
 // Monitoramento
 
@@ -94,6 +100,13 @@ arProj4mf12.innerHTML += arProj4mfHtml;
 var arImov4mf12 = document.getElementById("teste31");
 var arImov4mfHtml = '<img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Área do Imóvel "Até 4 Módulos Fiscais" ('+areaImovel_4mf.totalFeatures+')';
 arImov4mf12.innerHTML += arImov4mfHtml;
+
+
+// Área de Uso e Ocupação do Solo (Até 4 Módulos Fiscais)
+
+var auos12 = document.getElementById("teste43");
+var auosHtml = '<img src="imagens/retangulo-arredondado-325f5f.png" style="max-width:20px;max-height:20px;"> Área de Uso e Ocupação do Solo "Até 4 Módulos Fiscais" ('+areaUos1_4mf.totalFeatures+')';
+auos12.innerHTML += auosHtml;
 
 
 // Monitoramento (Até 4 Módulos Fiscais)
