@@ -1,7 +1,7 @@
 
 // IBGE Cartas 100 mil
 
-  var ibgeCarta = L.geoJSON(ibgeCarta, {
+  var ibgeCarta = L.geoJSON(ibgeCarta1, {
     color: "#808080",
     weight: "2",
     onEachFeature: function (geom, layer) {
@@ -26,7 +26,7 @@
 
   // CBERS 4A - MUX
 
-  var cbers4aMux = L.geoJSON(cbers4aMux, {
+  var cbers4aMux = L.geoJSON(cbers4aMux1, {
     color: "#808080",
     weight: "2",
     onEachFeature: function (geom, layer) {
@@ -51,7 +51,7 @@
 
   // CBERS 4A - WFI
 
-  var cbers4aWifi = L.geoJSON(cbers4aWifi, {
+  var cbers4aWifi = L.geoJSON(cbers4aWfi, {
     color: "#808080",
     weight: "2",
     onEachFeature: function (geom, layer) {
@@ -76,7 +76,7 @@
 
   // CBERS - Cenas
 
-  var cbersCenas = L.geoJSON(cbersCenas, {
+  var cbersCenas = L.geoJSON(cbersCenas1, {
     color: "#808080",
     weight: "2",
     onEachFeature: function (geom, layer) {
@@ -101,7 +101,7 @@
 
   // CBERS
 
-  var cbersGrade = L.geoJSON(cbersGrade, {
+  var cbersGrade = L.geoJSON(cbersGrade1, {
     color: "#808080",
     weight: "2",
     onEachFeature: function (geom, layer) {
@@ -126,7 +126,7 @@
 
   // Landsat
 
-  var landsat = L.geoJSON(landsat, {
+  var landsat = L.geoJSON(landsat1, {
     color: "#808080",
     weight: "2",
     onEachFeature: function (geom, layer) {
@@ -151,7 +151,7 @@
 
   // Liss 3
 
-  var liss_3 = L.geoJSON(liss_3, {
+  var liss_3 = L.geoJSON(liss_31, {
     color: "#808080",
     weight: "2",
     onEachFeature: function (geom, layer) {
@@ -176,7 +176,7 @@
 
   // Rapideye
 
-  var rapideye = L.geoJSON(rapideye, {
+  var rapideye = L.geoJSON(rapideye1, {
     color: "#808080",
     weight: "2",
     onEachFeature: function (geom, layer) {
@@ -201,7 +201,7 @@
 
   // Sentinel 2
 
-  var sentinel_2 = L.geoJSON(sentinel_2, {
+  var sentinel_2 = L.geoJSON(sentinel_21, {
     color: "#808080",
     weight: "2",
     onEachFeature: function (geom, layer) {

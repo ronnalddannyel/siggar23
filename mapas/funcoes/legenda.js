@@ -1,4 +1,67 @@
 
+// IBGE CARTA 1:100.000
+
+var IbgeCarta12 = document.getElementById("teste33");
+var IbgeCartaHtml = '<img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> IBGE CARTA 1:100.000 ('+ibgeCarta1.totalFeatures+')';
+IbgeCarta12.innerHTML += IbgeCartaHtml;
+
+
+// CBERS 4A - MUX
+
+var CbersMux12 = document.getElementById("teste34");
+var CbersMuxHtml = '<img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS 4A - MUX ('+cbers4aMux1.totalFeatures+')';
+CbersMux12.innerHTML += CbersMuxHtml;
+
+
+// CBERS 4A - WFI
+
+var CbersWfi12 = document.getElementById("teste35");
+var CbersWfiHtml = '<img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS 4A - WFI ('+cbers4aWfi.totalFeatures+')';
+CbersWfi12.innerHTML += CbersWfiHtml;
+
+
+// CBERS - Cenas
+
+var CbersCenas12 = document.getElementById("teste36");
+var CbersCenasHtml = '<img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS - Cenas ('+cbersCenas1.totalFeatures+')';
+CbersCenas12.innerHTML += CbersCenasHtml;
+
+
+// CBERS
+
+var Cbers12 = document.getElementById("teste37");
+var CbersHtml = '<img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS ('+cbersGrade1.totalFeatures+')';
+Cbers12.innerHTML += CbersHtml;
+
+
+// Landsat
+
+var Landsat12 = document.getElementById("teste38");
+var LandsatHtml = '<img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Landsat ('+landsat1.totalFeatures+')';
+Landsat12.innerHTML += LandsatHtml;
+
+
+// Liss 3
+
+var Liss12 = document.getElementById("teste39");
+var LissHtml = '<img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Liss 3 ('+liss_31.totalFeatures+')';
+Liss12.innerHTML += LissHtml;
+
+
+// Rapideye
+
+var Rapideye12 = document.getElementById("teste40");
+var RapideyeHtml = '<img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Rapideye ('+rapideye1.totalFeatures+')';
+Rapideye12.innerHTML += RapideyeHtml;
+
+
+// Sentinel 2
+
+var Sentinel12 = document.getElementById("teste41");
+var SentinelHtml = '<img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Sentinel 2 ('+sentinel_21.totalFeatures+')';
+Sentinel12.innerHTML += SentinelHtml;
+
+
 // Área do Projeto
 
 var arProj12 = document.getElementById("teste5");

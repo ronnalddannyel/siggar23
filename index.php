@@ -792,41 +792,23 @@ session_start();
               
               <h5 style="text-align:center;">LEGENDAS</h5>
 
-              <div id="teste33">
-                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> IBGE CARTA 1:100.000
-              </div>
+              <div id="teste33"></div>
 
-              <div id="teste34">
-                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS 4A - MUX
-              </div>
+              <div id="teste34"></div>
 
-              <div id="teste35">
-                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS 4A - WFI
-              </div>
+              <div id="teste35"></div>
 
-              <div id="teste36">
-                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS - Cenas
-              </div>
+              <div id="teste36"></div>
 
-              <div id="teste37">
-                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS
-              </div>
+              <div id="teste37"></div>
 
-              <div id="teste38">
-                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Landsat
-              </div>
+              <div id="teste38"></div>
 
-              <div id="teste39">
-                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Liss 3
-              </div>
+              <div id="teste39"></div>
 
-              <div id="teste40">
-                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Rapideye
-              </div>
+              <div id="teste40"></div>
 
-              <div id="teste41">
-                <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Sentinel 2
-              </div>
+              <div id="teste41"></div>
               
               <div id="teste5"></div>
 
