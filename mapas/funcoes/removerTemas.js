@@ -122,4 +122,6 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
       cont++;
     }
 
+    legMostra();
+
   }

@@ -22,6 +22,7 @@
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
   // CBERS 4A - MUX
@@ -47,6 +48,7 @@
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
   // CBERS 4A - WFI
@@ -72,6 +74,7 @@
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
   // CBERS - Cenas
@@ -97,6 +100,7 @@
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
   // CBERS
@@ -122,6 +126,7 @@
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
   // Landsat
@@ -147,6 +152,7 @@
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
   // Liss 3
@@ -172,6 +178,7 @@
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
   // Rapideye
@@ -197,6 +204,7 @@
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
   // Sentinel 2
@@ -222,4 +230,5 @@
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }

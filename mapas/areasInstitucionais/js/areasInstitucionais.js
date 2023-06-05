@@ -22,6 +22,7 @@ var areaInalienaveis = L.geoJSON(areaInalienaveis1, {
       }else{
         document.getElementById(el).style.display = 'block';
       } 
+      legMostra();
       }
 
 
@@ -48,6 +49,7 @@ var areaInalienaveis = L.geoJSON(areaInalienaveis1, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
 
@@ -74,6 +76,7 @@ var areaInalienaveis = L.geoJSON(areaInalienaveis1, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
 
@@ -100,6 +103,7 @@ var areaInalienaveis = L.geoJSON(areaInalienaveis1, {
       }else{
         document.getElementById(el).style.display = 'block';
       } 
+      legMostra();
     }
 
 
@@ -126,4 +130,5 @@ var areaInalienaveis = L.geoJSON(areaInalienaveis1, {
       }else{
         document.getElementById(el).style.display = 'block';
       } 
+      legMostra();
     }

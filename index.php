@@ -679,7 +679,7 @@ session_start();
               <!--- Código - Remover temas e camadas -->
 
               <p data-bs-dismiss="offcanvas" aria-label="Close">
-                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" id="leg">Legenda</a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="true" aria-controls="multiCollapseExample1" id="leg">Legenda</a>
               </p>
 
               <input class="btn btn-primary" type="button" onclick="removeAllLayer('1', 'coor3', 'coor4', 'op', 'teste', 'lim', 'lim1')"  value="Remover Temas" id="remLay">
@@ -794,9 +794,9 @@ session_start();
 
       <!--- Código - Legenda das camadas -->
 
-      <div class="row">
+      <div class="row" id="mostra">
         <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="show multi-collapse" id="multiCollapseExample1">
             <div class="card card-body" >
               
               <h5 style="text-align:center;">LEGENDAS</h5>
@@ -1035,6 +1035,27 @@ session_start();
 
     <script>
       var UrlFemarh = "http://localhost/";
+    </script>
+
+    <script>
+      function legMostra(){
+        var elems = document.getElementsByClassName("coor");
+        var status = 0;
+        for (var i = 0; i < elems.length; i++) {
+        if (elems[i].checked === true) {
+          status = 1;
+          break;
+        }
+        }
+
+        if(status === 1){
+          document.getElementById('mostra').style.display = 'block';
+        }else{
+          document.getElementById('mostra').style.display = 'none';
+        }
+      }
+
+      legMostra();
     </script>
 
     <!--- Código - Mostrar Área do Projeto Hist. -->

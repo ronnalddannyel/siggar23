@@ -22,6 +22,7 @@ var iphanSitArq = L.geoJSON(sitArPol, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
 
@@ -55,6 +56,7 @@ var iphanSitArq = L.geoJSON(sitArPol, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
   function ipSitArqPto1(){

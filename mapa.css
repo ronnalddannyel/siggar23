@@ -754,6 +754,10 @@ body {
     margin-left: 1.5%;
   }
 
+  #mostra {
+    display: none;
+  }
+
   /* All Mobile Sizes (devices and browser) */
   @media only screen and (max-width: 500px) {
     li.nav-item a{

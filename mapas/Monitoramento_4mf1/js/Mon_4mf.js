@@ -20,6 +20,7 @@ var areaImov_4mf = L.geoJSON(areaImovel_4mf, {
     }else{
       document.getElementById(el).style.display = 'block';
     }
+    legMostra();
   }
 
   var areaProjeto_4mf = L.geoJSON(areaProjeto1_4mf, {
@@ -51,6 +52,7 @@ var areaImov_4mf = L.geoJSON(areaImovel_4mf, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
       }
 
 
@@ -75,6 +77,7 @@ var areaImov_4mf = L.geoJSON(areaImovel_4mf, {
         }else{
           document.getElementById(el).style.display = 'block';
         } 
+        legMostra();
       }
 
 
@@ -126,4 +129,5 @@ var areaImov_4mf = L.geoJSON(areaImovel_4mf, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }

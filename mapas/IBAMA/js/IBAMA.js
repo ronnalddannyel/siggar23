@@ -22,4 +22,5 @@ var embarg = L.geoJSON(embarg1, {
         }else{
           document.getElementById(el).style.display = 'block';
         } 
+        legMostra();
       }

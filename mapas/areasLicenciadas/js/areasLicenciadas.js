@@ -25,6 +25,7 @@ function arImov(el){
     }else{
         document.getElementById(el).style.display = 'block';
     }
+    legMostra();
 }
 
 // Área do Projeto
@@ -164,6 +165,7 @@ function arImov(el){
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
       }
 
 
@@ -191,6 +193,7 @@ function arImov(el){
       }else{
         document.getElementById(el).style.display = 'block';
       } 
+      legMostra();
     }
 
 
@@ -244,4 +247,5 @@ function arImov(el){
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }

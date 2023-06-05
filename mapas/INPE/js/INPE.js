@@ -73,6 +73,6 @@ function queimadas(el){
     }else{
       document.getElementById(el).style.display = 'block';
     }
-    
+    legMostra();
     
   }

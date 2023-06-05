@@ -28,6 +28,7 @@
         }else{
           document.getElementById(el).style.display = 'block';
         } 
+        legMostra();
       }
 
       function ana2(){
@@ -71,6 +72,7 @@
         }else{
           document.getElementById(el).style.display = 'block';
         } 
+        legMostra();
       }
 
 
@@ -115,6 +117,7 @@
         }else{
           document.getElementById(el).style.display = 'block';
         } 
+        legMostra();
       }
 
 

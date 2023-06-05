@@ -82,6 +82,7 @@
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
 

@@ -21,4 +21,5 @@ var minerAtivos = L.geoJSON(mineAtivos, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }

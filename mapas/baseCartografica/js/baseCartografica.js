@@ -28,6 +28,7 @@ var sedesMunic = L.geoJSON(sedesMunic1, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
 
@@ -61,6 +62,7 @@ var sedesMunic = L.geoJSON(sedesMunic1, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
   function loc1(){
@@ -100,6 +102,7 @@ var sedesMunic = L.geoJSON(sedesMunic1, {
     }else{
       document.getElementById(el).style.display = 'none';
     } 
+    legMostra();
   }
   map.addLayer(limitesMunic);
 
@@ -132,6 +135,7 @@ var sedesMunic = L.geoJSON(sedesMunic1, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
 
@@ -158,6 +162,7 @@ var sedesMunic = L.geoJSON(sedesMunic1, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
 
@@ -184,6 +189,7 @@ var sedesMunic = L.geoJSON(sedesMunic1, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
 
@@ -210,6 +216,7 @@ var sedesMunic = L.geoJSON(sedesMunic1, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
 
@@ -235,6 +242,7 @@ var sedesMunic = L.geoJSON(sedesMunic1, {
     }else{
       document.getElementById(el).style.display = 'block';
     } 
+    legMostra();
   }
 
 
@@ -263,5 +271,6 @@ var sedesMunic = L.geoJSON(sedesMunic1, {
     }else{
       document.getElementById(el).style.display = 'none';
     } 
+    legMostra();
   }
   map.addLayer(estadosLimites);
