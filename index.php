@@ -172,7 +172,7 @@ session_start();
                       MAPAS
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
-                      <li><a id="coord">Mosaico Planet 04/2023 <input type="RADIO" name="op" onclick=" plan()" id="coor"></a></li>
+                      <li><a id="coord">Mosaico Planet 05/2023 <input type="RADIO" name="op" onclick=" plan()" id="coor"></a></li>
                       <li>
                           <hr class="dropdown-divider">
                       </li>
