@@ -8,8 +8,24 @@ function gepErosao1(el){
     groupLay_gepErosao.clearLayers();
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_erosao.geojson", function(data) {  
         var gepErosao = L.geoJSON(data, {
+            style: function(geom) {
+                switch (geom.properties.litologia) {
+                    case 1: return {color: "#75ace3"};
+                    case 2: return {color: "#86eba2"};
+                    case 3: return {color: "#fbbec6"};
+                }
+              },
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>Erosão</b></h6><p><b>Litogia:</b> '+geom.properties.litologia+'</p>');
+
+                if(geom.properties.litologia == 1){
+                    var lit = 'Baixo';
+                  }else if(geom.properties.litologia == 2){
+                    var lit = 'Moderado';
+                  }else{
+                      var lit = 'Alto';
+                  }
+
+                layer.bindPopup('<h6><b>Erosão</b></h6><p><b>Litogia:</b> '+lit+'</p>');
             }
         });
 

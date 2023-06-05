@@ -8,6 +8,16 @@ function aptAgr1(el){
     groupLay_aptAgr.clearLayers();
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/aptidao_agricola.geojson", function(data) {  
         var aptAgr = new L.geoJson(data, {
+            style: function(geom) {
+                switch (geom.properties.class_apt) {
+                    case '1ABC': return {color: "#a9a800"};
+                    case '2(a)bc': return {color: "#e1b053"};
+                    case '2abc': return {color: "#a48f79"};
+                    case '2bc': return {color: "#e2b051"};
+                    case '3(bc)': return {color: "#cac6ac"};
+                    case '6': return {color: "#becc23"};
+                }
+              },
             onEachFeature: function (geom, layer) {
                 layer.bindPopup('<h6><b>Aptidão Agrícola</b></h6><p><b>Sigla:</b> '+geom.properties.sigla+'<br><b>Nome:</b> '+geom.properties.nome+'<br><b>Classificação:</b> '+geom.properties.classifica+'<br><b>Área:</b> '+geom.properties.ha.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Classe:</b> '+geom.properties.class_apt+'<br><b>Descrição:</b> '+geom.properties.desc_+'<br><b>Descrição (continuação):</b> '+geom.properties.desc_cont+'</p>');
             }

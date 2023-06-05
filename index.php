@@ -172,10 +172,6 @@ session_start();
                       MAPAS
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
-                      <li><a id="coord">Mosaico Planet 05/2023 <input type="RADIO" name="op" onclick=" plan()" id="coor"></a></li>
-                      <li>
-                          <hr class="dropdown-divider">
-                      </li>
                       <li><a id="coord">Google Satélite <input type="RADIO" name="op" onclick=" gSat()" id="coor"></a></li>
                       <li>
                           <hr class="dropdown-divider">
@@ -201,6 +197,70 @@ session_start();
                           <hr class="dropdown-divider">
                       </li>
                       <li><a id="coord">OSM Standard <input type="RADIO" name="op" onclick="basm()" id="coor"></a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      MOSAICOS PLANET
+                    </a>
+      
+                    <ul class="dropdown-menu dropdown-menu" style="border: none; padding-left: 10px; margin-top: -10px;">
+                    Fonte: Planet
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          2023
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord">Mosaico Planet 05/2023 <input type="RADIO" name="op" onclick=" plan('2023_05')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 04/2023 <input type="RADIO" name="op" onclick=" plan('2023_04')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 03/2023 <input type="RADIO" name="op" onclick=" plan('2023_03')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 02/2023 <input type="RADIO" name="op" onclick=" plan('2023_02')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 01/2023 <input type="RADIO" name="op" onclick=" plan('2023_01')" id="coor"></a></li>
+
+                        </ul>
+                      </li>
+<!--
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          2022
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord" > Sistemas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivSist1('teste45')" id="39"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > Vegetação (Campos/Dunas) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegCampDunas1('teste46')" id="40"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > Vegetação (Floresta) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegFlor1('teste47')" id="41"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > Vegetação (Lavrado) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegLavr1('teste48')" id="42"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" > Vegetação (Sistemas Lacustres) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegSistLacust1('teste49')" id="43"></a></li>
+
+                        </ul>
+                      </li>
+    -->
                     </ul>
                 </li>
                 
