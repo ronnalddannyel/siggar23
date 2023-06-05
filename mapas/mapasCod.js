@@ -9,7 +9,7 @@
             map.removeLayer(googleStreets);
             map.removeLayer(googleHybrid);
             map.removeLayer(googleTerrain);
-            map.removeLayer(planet);
+            map.removeLayer(groupLayPlanet);
           }
         }
 
@@ -24,7 +24,7 @@
             map.removeLayer(googleStreets);
             map.removeLayer(googleHybrid);
             map.removeLayer(googleTerrain);
-            map.removeLayer(planet);
+            map.removeLayer(groupLayPlanet);
           }
         }
 
@@ -39,7 +39,7 @@
             map.removeLayer(googleStreets);
             map.removeLayer(googleHybrid);
             map.removeLayer(googleTerrain);
-            map.removeLayer(planet);
+            map.removeLayer(groupLayPlanet);
           }
         }
 
@@ -56,7 +56,7 @@
             map.removeLayer(googleStreets);
             map.removeLayer(googleHybrid);
             map.removeLayer(googleTerrain);
-            map.removeLayer(planet);
+            map.removeLayer(groupLayPlanet);
           }
         }
 
@@ -73,7 +73,7 @@
             map.removeLayer(googleSat);
             map.removeLayer(googleHybrid);
             map.removeLayer(googleTerrain);
-            map.removeLayer(planet);
+            map.removeLayer(groupLayPlanet);
           }
         }        
 
@@ -90,7 +90,7 @@
             map.removeLayer(googleSat);
             map.removeLayer(googleStreets);
             map.removeLayer(googleTerrain);
-            map.removeLayer(planet);
+            map.removeLayer(groupLayPlanet);
           }
         }        
 
@@ -107,7 +107,7 @@
             map.removeLayer(googleSat);
             map.removeLayer(googleStreets);
             map.removeLayer(googleHybrid);
-            map.removeLayer(planet);
+            map.removeLayer(groupLayPlanet);
           }
         }
 
