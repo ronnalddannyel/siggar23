@@ -116,9 +116,9 @@
         function plan(ano){
 
           groupLayPlanet.clearLayers();
-
+          
           var planet = L.tileLayer(
-            'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_'+ano+'_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAKf93d65b50fef4e2090d3f3b9d550bea3',
+            'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_'+ano+'_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAKb225a3287006496f97ca21f886359778',
             {
               id: 'global_monthly',
             });
