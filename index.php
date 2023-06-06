@@ -233,34 +233,392 @@ session_start();
 
                         </ul>
                       </li>
-<!--
+
                       <li>
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           2022
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
 
-                          <li><a id="coord" > Sistemas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivSist1('teste45')" id="39"></a></li>
-                          <li>
-                            <hr class="dropdown-divider">
-                          </li>
-                          <li><a id="coord" > Vegetação (Campos/Dunas) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegCampDunas1('teste46')" id="40"></a></li>
-                          <li>
-                            <hr class="dropdown-divider">
-                          </li>
-                          <li><a id="coord" > Vegetação (Floresta) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegFlor1('teste47')" id="41"></a></li>
-                          <li>
-                            <hr class="dropdown-divider">
-                          </li>
-                          <li><a id="coord" > Vegetação (Lavrado) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegLavr1('teste48')" id="42"></a></li>
+                          <li><a id="coord">Mosaico Planet 12/2022 <input type="RADIO" name="op" onclick=" plan('2022_12')" id="coor"></a></li>
                           <li>
                               <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord" > Vegetação (Sistemas Lacustres) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegSistLacust1('teste49')" id="43"></a></li>
+                          <li><a id="coord">Mosaico Planet 11/2022 <input type="RADIO" name="op" onclick=" plan('2022_11')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 10/2022 <input type="RADIO" name="op" onclick=" plan('2022_10')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 09/2022 <input type="RADIO" name="op" onclick=" plan('2022_09')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 08/2022 <input type="RADIO" name="op" onclick=" plan('2022_08')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 07/2022 <input type="RADIO" name="op" onclick=" plan('2022_07')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 06/2022 <input type="RADIO" name="op" onclick=" plan('2022_06')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 05/2022 <input type="RADIO" name="op" onclick=" plan('2022_05')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 04/2022 <input type="RADIO" name="op" onclick=" plan('2022_04')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 03/2022 <input type="RADIO" name="op" onclick=" plan('2022_03')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 02/2022 <input type="RADIO" name="op" onclick=" plan('2022_02')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 01/2022 <input type="RADIO" name="op" onclick=" plan('2022_01')" id="coor"></a></li>
 
                         </ul>
                       </li>
-    -->
+
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          2021
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord">Mosaico Planet 12/2021 <input type="RADIO" name="op" onclick=" plan('2021_12')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 11/2021 <input type="RADIO" name="op" onclick=" plan('2021_11')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 10/2021 <input type="RADIO" name="op" onclick=" plan('2021_10')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 09/2021 <input type="RADIO" name="op" onclick=" plan('2021_09')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 08/2021 <input type="RADIO" name="op" onclick=" plan('2021_08')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 07/2021 <input type="RADIO" name="op" onclick=" plan('2021_07')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 06/2021 <input type="RADIO" name="op" onclick=" plan('2021_06')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 05/2021 <input type="RADIO" name="op" onclick=" plan('2021_05')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 04/2021 <input type="RADIO" name="op" onclick=" plan('2021_04')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 03/2021 <input type="RADIO" name="op" onclick=" plan('2021_03')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 02/2021 <input type="RADIO" name="op" onclick=" plan('2021_02')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 01/2021 <input type="RADIO" name="op" onclick=" plan('2021_01')" id="coor"></a></li>
+
+                        </ul>
+                      </li>
+
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          2020
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord">Mosaico Planet 12/2020 <input type="RADIO" name="op" onclick=" plan('2020_12')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 11/2020 <input type="RADIO" name="op" onclick=" plan('2020_11')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 10/2020 <input type="RADIO" name="op" onclick=" plan('2020_10')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 09/2020 <input type="RADIO" name="op" onclick=" plan('2020_09')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 08/2020 <input type="RADIO" name="op" onclick=" plan('2020_08')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 07/2020 <input type="RADIO" name="op" onclick=" plan('2020_07')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 06/2020 <input type="RADIO" name="op" onclick=" plan('2020_06')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 05/2020 <input type="RADIO" name="op" onclick=" plan('2020_05')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 04/2020 <input type="RADIO" name="op" onclick=" plan('2020_04')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 03/2020 <input type="RADIO" name="op" onclick=" plan('2020_03')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 02/2020 <input type="RADIO" name="op" onclick=" plan('2020_02')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 01/2020 <input type="RADIO" name="op" onclick=" plan('2020_01')" id="coor"></a></li>
+
+                        </ul>
+                      </li>
+
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          2019
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord">Mosaico Planet 12/2019 <input type="RADIO" name="op" onclick=" plan('2019_12')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 11/2019 <input type="RADIO" name="op" onclick=" plan('2019_11')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 10/2019 <input type="RADIO" name="op" onclick=" plan('2019_10')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 09/2019 <input type="RADIO" name="op" onclick=" plan('2019_09')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 08/2019 <input type="RADIO" name="op" onclick=" plan('2019_08')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 07/2019 <input type="RADIO" name="op" onclick=" plan('2019_07')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 06/2019 <input type="RADIO" name="op" onclick=" plan('2019_06')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 05/2019 <input type="RADIO" name="op" onclick=" plan('2019_05')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 04/2019 <input type="RADIO" name="op" onclick=" plan('2019_04')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 03/2019 <input type="RADIO" name="op" onclick=" plan('2019_03')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 02/2019 <input type="RADIO" name="op" onclick=" plan('2019_02')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 01/2019 <input type="RADIO" name="op" onclick=" plan('2019_01')" id="coor"></a></li>
+
+                        </ul>
+                      </li>
+
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          2018
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord">Mosaico Planet 12/2018 <input type="RADIO" name="op" onclick=" plan('2018_12')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 11/2018 <input type="RADIO" name="op" onclick=" plan('2018_11')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 10/2018 <input type="RADIO" name="op" onclick=" plan('2018_10')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 09/2018 <input type="RADIO" name="op" onclick=" plan('2018_09')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 08/2018 <input type="RADIO" name="op" onclick=" plan('2018_08')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 07/2018 <input type="RADIO" name="op" onclick=" plan('2018_07')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 06/2018 <input type="RADIO" name="op" onclick=" plan('2018_06')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 05/2018 <input type="RADIO" name="op" onclick=" plan('2018_05')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 04/2018 <input type="RADIO" name="op" onclick=" plan('2018_04')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 03/2018 <input type="RADIO" name="op" onclick=" plan('2018_03')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 02/2018 <input type="RADIO" name="op" onclick=" plan('2018_02')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 01/2018 <input type="RADIO" name="op" onclick=" plan('2018_01')" id="coor"></a></li>
+
+                        </ul>
+                      </li>
+
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          2017
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord">Mosaico Planet 12/2017 <input type="RADIO" name="op" onclick=" plan('2017_12')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 11/2017 <input type="RADIO" name="op" onclick=" plan('2017_11')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 10/2017 <input type="RADIO" name="op" onclick=" plan('2017_10')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 09/2017 <input type="RADIO" name="op" onclick=" plan('2017_09')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 08/2017 <input type="RADIO" name="op" onclick=" plan('2017_08')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 07/2017 <input type="RADIO" name="op" onclick=" plan('2017_07')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 06/2017 <input type="RADIO" name="op" onclick=" plan('2017_06')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 05/2017 <input type="RADIO" name="op" onclick=" plan('2017_05')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 04/2017 <input type="RADIO" name="op" onclick=" plan('2017_04')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 03/2017 <input type="RADIO" name="op" onclick=" plan('2017_03')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 02/2017 <input type="RADIO" name="op" onclick=" plan('2017_02')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 01/2017 <input type="RADIO" name="op" onclick=" plan('2017_01')" id="coor"></a></li>
+
+                        </ul>
+                      </li>
+
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          2016
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+
+                          <li><a id="coord">Mosaico Planet 12/2016 <input type="RADIO" name="op" onclick=" plan('2016_12')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 11/2016 <input type="RADIO" name="op" onclick=" plan('2016_11')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 10/2016 <input type="RADIO" name="op" onclick=" plan('2016_10')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 09/2016 <input type="RADIO" name="op" onclick=" plan('2016_09')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 08/2016 <input type="RADIO" name="op" onclick=" plan('2016_08')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 07/2016 <input type="RADIO" name="op" onclick=" plan('2016_07')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 06/2016 <input type="RADIO" name="op" onclick=" plan('2016_06')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 05/2016 <input type="RADIO" name="op" onclick=" plan('2016_05')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 04/2016 <input type="RADIO" name="op" onclick=" plan('2016_04')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 03/2016 <input type="RADIO" name="op" onclick=" plan('2016_03')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 02/2016 <input type="RADIO" name="op" onclick=" plan('2016_02')" id="coor"></a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">Mosaico Planet 01/2016 <input type="RADIO" name="op" onclick=" plan('2016_01')" id="coor"></a></li>
+
+                        </ul>
+                      </li>
+    
                     </ul>
                 </li>
                 
