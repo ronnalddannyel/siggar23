@@ -16,6 +16,18 @@ function geoGeolog1(el){
         });
 
         groupLay_geoGeolog.addLayer(geoGeolog);
+
+
+        // Geológico
+
+        var geoGeo112 = document.getElementById("teste52");
+        var geoGeo12 = document.getElementById("geoGeo");
+        if(geoGeo112.style.display === "block"){
+            geoGeoHtml = 'Geológico ('+data.totalFeatures+')';
+            geoGeo12.innerHTML += geoGeoHtml;
+        }else{
+            geoGeo12.innerHTML = "";
+        }
     })
 
     if(map.hasLayer(groupLay_geoGeolog)){

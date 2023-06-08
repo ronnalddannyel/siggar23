@@ -107,7 +107,81 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     // Tirar da legenda as demais camadas
 
+    // Queimadas
+
     document.getElementById("teste25").innerHTML = "";
+
+    // Zee
+
+    document.getElementById("teste44").innerHTML = "";
+
+    document.getElementById("teste45").innerHTML = "";
+
+    document.getElementById("teste46").innerHTML = "";
+
+    document.getElementById("teste47").innerHTML = "";
+
+    document.getElementById("teste48").innerHTML = "";
+
+    document.getElementById("teste49").innerHTML = "";
+
+    document.getElementById("teste50").innerHTML = "";
+
+    document.getElementById("teste51").innerHTML = "";
+
+    document.getElementById("teste52").innerHTML = "";
+
+    document.getElementById("teste53").innerHTML = "";
+
+    document.getElementById("teste54").innerHTML = "";
+
+    document.getElementById("teste55").innerHTML = "";
+
+    document.getElementById("teste56").innerHTML = "";
+
+    document.getElementById("teste57").innerHTML = "";
+
+    document.getElementById("teste58").innerHTML = "";
+
+    document.getElementById("teste59").innerHTML = "";
+
+    document.getElementById("teste60").innerHTML = "";
+
+    document.getElementById("teste61").innerHTML = "";
+
+    document.getElementById("teste62").innerHTML = "";
+
+    document.getElementById("teste63").innerHTML = "";
+
+    document.getElementById("teste64").innerHTML = "";
+
+    document.getElementById("teste65").innerHTML = "";
+
+    document.getElementById("teste66").innerHTML = "";
+
+    document.getElementById("teste67").innerHTML = "";
+
+    document.getElementById("teste68").innerHTML = "";
+
+    document.getElementById("teste69").innerHTML = "";
+
+    document.getElementById("teste70").innerHTML = "";
+
+    document.getElementById("teste71").innerHTML = "";
+
+    document.getElementById("teste72").innerHTML = "";
+
+    document.getElementById("teste73").innerHTML = "";
+
+    document.getElementById("teste74").innerHTML = "";
+
+    document.getElementById("teste75").innerHTML = "";
+
+    document.getElementById("teste76").innerHTML = "";
+
+    document.getElementById("teste77").innerHTML = "";
+
+    // Demais camadas
 
     var cont = 1;
 

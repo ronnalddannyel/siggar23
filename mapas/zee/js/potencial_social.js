@@ -9,11 +9,23 @@ function potSocial1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/potencial_social.geojson", function(data) {  
         var potSocial = L.geoJSON(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>potencial_social</b></h6><p><b>gridcode:</b> '+geom.properties.gridcode+'<br><b>pot_social:</b> '+geom.properties.pot_social+'</p>');
+                layer.bindPopup('<h6><b>Potencial Social</b></h6><p><b>Grid Code:</b> '+geom.properties.gridcode+'<br><b>Potencial:</b> '+geom.properties.pot_social+'</p>');
             }
         });
 
         groupLay_potSocial.addLayer(potSocial);
+
+
+        // Potencial Social
+
+        var potSoc112 = document.getElementById("teste61");
+        var potSoc12 = document.getElementById("potSoc");
+        if(potSoc112.style.display === "block"){
+            potSocHtml = 'Potencial Social ('+data.totalFeatures+')';
+            potSoc12.innerHTML += potSocHtml;
+        }else{
+            potSoc12.innerHTML = "";
+        }
     })
 
     if(map.hasLayer(groupLay_potSocial)){

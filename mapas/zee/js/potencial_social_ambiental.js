@@ -9,11 +9,23 @@ function potSocAmbiental1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/potencial_social_ambiental.geojson", function(data) {  
         var potSocAmbiental = L.geoJSON(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>potencial_social_ambiental</b></h6><p><b>nome:</b> '+geom.properties.nome+'<br><b>natural:</b> '+geom.properties.natural+'<br><b>objectid_1:</b> '+geom.properties.objectid_1+'</p>');
+                layer.bindPopup('<h6><b>Potencial Social Ambiental</b></h6><p><b>Nome:</b> '+geom.properties.nome+'<br><b>Natural:</b> '+geom.properties.natural+'</p>');
             }
         });
 
         groupLay_potSocAmbiental.addLayer(potSocAmbiental);
+
+
+        // Potencial Social Ambiental
+
+        var potSocAmb112 = document.getElementById("teste57");
+        var potSocAmb12 = document.getElementById("potSocAmb");
+        if(potSocAmb112.style.display === "block"){
+            potSocAmbHtml = 'Potencial Social Ambiental ('+data.totalFeatures+')';
+            potSocAmb12.innerHTML += potSocAmbHtml;
+        }else{
+            potSocAmb12.innerHTML = "";
+        }
     })
 
     if(map.hasLayer(groupLay_potSocAmbiental)){

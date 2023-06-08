@@ -14,6 +14,18 @@ function hidOttobacias1(el){
         });
 
         groupLay_hidOttobacias.addLayer(hidOttobacias);
+
+
+        // Ottobacias
+
+        var hidOtt112 = document.getElementById("teste56");
+        var hidOtt12 = document.getElementById("hidOtt");
+        if(hidOtt112.style.display === "block"){
+            hidOttHtml = 'Ottobacias ('+data.totalFeatures+')';
+            hidOtt12.innerHTML += hidOttHtml;
+        }else{
+            hidOtt12.innerHTML = "";
+        }
     })
 
     if(map.hasLayer(groupLay_hidOttobacias)){

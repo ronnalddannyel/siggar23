@@ -30,6 +30,18 @@ function gepErosao1(el){
         });
 
         groupLay_gepErosao.addLayer(gepErosao);
+
+
+        // Erosão
+
+        var geoEros112 = document.getElementById("teste51");
+        var geoEros12 = document.getElementById("geoEros");
+        if(geoEros112.style.display === "block"){
+            geoErosHtml = 'Erosão ('+data.totalFeatures+')';
+            geoEros12.innerHTML += geoErosHtml;
+        }else{
+            geoEros12.innerHTML = "";
+        }
     })
 
     if(map.hasLayer(groupLay_gepErosao)){

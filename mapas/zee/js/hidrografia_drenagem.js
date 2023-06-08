@@ -15,6 +15,18 @@ function hidDrenagem1(el){
         });
 
         groupLay_hidDrenagem.addLayer(hidDrenagem);
+
+
+        // Drenagem
+
+        var hidDren112 = document.getElementById("teste55");
+        var hidDren12 = document.getElementById("hidDren");
+        if(hidDren112.style.display === "block"){
+            hidDrenHtml = 'Drenagem ('+data.totalFeatures+')';
+            hidDren12.innerHTML += hidDrenHtml;
+        }else{
+            hidDren12.innerHTML = "";
+        }
     })
 
     if(map.hasLayer(groupLay_hidDrenagem)){

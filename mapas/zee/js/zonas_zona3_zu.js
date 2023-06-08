@@ -9,11 +9,23 @@ function zonasZonaZu1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/zonas_zona3_zu.geojson", function(data) {  
         var zonasZonaZu = L.geoJSON(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>zonas_zona3_zu</b></h6><p><b>municipio:</b> '+geom.properties.municipio+'<br><b>parcela:</b> '+geom.properties.parcela+'<br><b>fonte:</b> '+geom.properties.fonte+'<br><b>obs:</b> '+geom.properties.obs+'<br><b>nome_unico:</b> '+geom.properties.nome_unico+'<br><b>area:</b> '+geom.properties.area+'<br><b>perimeter:</b> '+geom.properties.perimeter+'</p>');
+                layer.bindPopup('<h6><b>zonas_zona3_zu</b></h6><p><b>Município:</b> '+geom.properties.municipio+'<br><b>Parcela:</b> '+geom.properties.parcela+'<br><b>Fonte:</b> '+geom.properties.fonte+'<br><b>Observação:</b> '+geom.properties.obs+'<br><b>Nome:</b> '+geom.properties.nome_unico+'</p>');
             }
         });
 
         groupLay_zonasZonaZu.addLayer(zonasZonaZu);
+
+
+        // zonas_zona3_zu
+
+        var zonaZonaZu112 = document.getElementById("teste77");
+        var zonaZonaZu12 = document.getElementById("zonaZonaZu");
+        if(zonaZonaZu112.style.display === "block"){
+            zonaZonaZuHtml = 'zonas_zona3_zu ('+data.totalFeatures+')';
+            zonaZonaZu12.innerHTML += zonaZonaZuHtml;
+        }else{
+            zonaZonaZu12.innerHTML = "";
+        }
     })
 
 

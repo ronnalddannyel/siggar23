@@ -27,7 +27,7 @@ function geoUndGeomorfo1(el){
                     case 'Serra do Tepequém - RrM': return {color: "#ff7f7f"};
                     case 'Serranias Residuais - Sr': return {color: "#e60000"};
                     case 'Serras do Interflúvio - Sit': return {color: "#a80000"};
-                    case 'null': return {color: "#969696"};
+                    default: return {color: "#969696"};
                 }
               },
             onEachFeature: function (geom, layer) {
@@ -36,6 +36,18 @@ function geoUndGeomorfo1(el){
         });
 
         groupLay_geoUndGeomorfo.addLayer(geoUndGeomorfo);
+
+
+        // Geomorfológia
+
+        var geomor112 = document.getElementById("teste54");
+        var geomor12 = document.getElementById("geomor");
+        if(geomor112.style.display === "block"){
+            geomorHtml = 'Geomorfológia ('+data.totalFeatures+')';
+            geomor12.innerHTML += geomorHtml;
+        }else{
+            geomor12.innerHTML = "";
+        }
     })
 
     if(map.hasLayer(groupLay_geoUndGeomorfo)){

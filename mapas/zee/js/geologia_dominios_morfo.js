@@ -14,6 +14,7 @@ function geoDomMorfo1(el){
                     case 'Bacias e Coberturas Sedimentares Fanerozóicas': return {color: "#cdaa66"};
                     case 'Crátons Neoproterozóicos': return {color: "#f57a7a"};
                     case 'Depósitos Sedimentares Quaternários': return {color: "#ffff73"};
+                    default: return {color: "#969696"};
                 }
               },
             onEachFeature: function (geom, layer) {
@@ -22,6 +23,18 @@ function geoDomMorfo1(el){
         });
 
         groupLay_geoDomMorfo.addLayer(geoDomMorfo);
+
+
+        // Domínios Morfológicos
+
+        var geoDomMor112 = document.getElementById("teste50");
+        var geoDomMor12 = document.getElementById("geoDomMor");
+        if(geoDomMor112.style.display === "block"){
+            geoDomMorHtml = 'Domínios Morfológicos ('+data.totalFeatures+')';
+            geoDomMor12.innerHTML += geoDomMorHtml;
+        }else{
+            geoDomMor12.innerHTML = "";
+        }
     })
 
     if(map.hasLayer(groupLay_geoDomMorfo)){

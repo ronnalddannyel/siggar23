@@ -13,6 +13,18 @@ function zonasZonaZue1(el){
         });
 
         groupLay_zonasZonaZue.addLayer(zonasZonaZue);
+
+
+        // zonas_zona2_zue
+
+        var zonaZonaZue112 = document.getElementById("teste76");
+        var zonaZonaZue12 = document.getElementById("zonaZonaZue");
+        if(zonaZonaZue112.style.display === "block"){
+            zonaZonaZueHtml = 'zonas_zona2_zue ('+data.totalFeatures+')';
+            zonaZonaZue12.innerHTML += zonaZonaZueHtml;
+        }else{
+            zonaZonaZue12.innerHTML = "";
+        }
     })
 
 

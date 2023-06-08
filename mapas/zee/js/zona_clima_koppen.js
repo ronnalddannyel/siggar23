@@ -9,11 +9,23 @@ function zonaClimaKoppen1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/zona_clima_koppen.geojson", function(data) {  
         var zonaClimaKoppen = L.geoJSON(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>zona_clima_koppen</b></h6><p><b>zc_kopper:</b> '+geom.properties.zc_kopper+'<br><b>tipos:</b> '+geom.properties.tipos+'</p>');
+                layer.bindPopup('<h6><b>Kroppen</b></h6><p><b>Sigla:</b> '+geom.properties.zc_kopper+'<br><b>Tipo:</b> '+geom.properties.tipos+'</p>');
             }
         });
 
         groupLay_zonaClimaKoppen.addLayer(zonaClimaKoppen);
+
+
+        // Kroppen
+
+        var zonaClimKop112 = document.getElementById("teste72");
+        var zonaClimKop12 = document.getElementById("zonaClimKop");
+        if(zonaClimKop112.style.display === "block"){
+            zonaClimKopHtml = 'Kroppen ('+data.totalFeatures+')';
+            zonaClimKop12.innerHTML += zonaClimKopHtml;
+        }else{
+            zonaClimKop12.innerHTML = "";
+        }
     })
 
 

@@ -9,11 +9,23 @@ function zonaClimaConcChuvas1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/zona_clima_concentracao_chuvas.geojson", function(data) {  
         var zonaClimaConcChuvas = L.geoJSON(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>zona_clima_concentracao_chuvas</b></h6><p><b>zlevel:</b> '+geom.properties.zlevel+'</p>');
+                layer.bindPopup('<h6><b>Concentração de Chuvas</b></h6><p><b>Zona:</b> '+geom.properties.zlevel+'</p>');
             }
         });
 
         groupLay_zonaClimaConcChuvas.addLayer(zonaClimaConcChuvas);
+
+
+        // Concentração de Chuvas
+
+        var zonaClimConcChuva112 = document.getElementById("teste70");
+        var zonaClimConcChuva12 = document.getElementById("zonaClimConcChuva");
+        if(zonaClimConcChuva112.style.display === "block"){
+            zonaClimConcChuvaHtml = 'Concentração de Chuvas ('+data.totalFeatures+')';
+            zonaClimConcChuva12.innerHTML += zonaClimConcChuvaHtml;
+        }else{
+            zonaClimConcChuva12.innerHTML = "";
+        }
     })
 
 

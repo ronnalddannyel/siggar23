@@ -23,6 +23,18 @@ function bioDivSist1(el){
         });
 
         groupLay_bioDivSist.addLayer(bioDivSist);
+
+
+        // Sistemas
+
+        var bioDivSis112 = document.getElementById("teste45");
+        var bioDivSis12 = document.getElementById("bioDivSis");
+        if(bioDivSis112.style.display === "block"){
+            bioDivSisHtml = 'Aptidão Agrícola ('+data.totalFeatures+')';
+            bioDivSis12.innerHTML += bioDivSisHtml;
+        }else{
+            bioDivSis12.innerHTML = "";
+        }
     })
 
     if(map.hasLayer(groupLay_bioDivSist)){

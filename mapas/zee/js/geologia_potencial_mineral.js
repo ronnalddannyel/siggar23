@@ -15,6 +15,18 @@ function geoPotMineral1(el){
         });
 
         groupLay_geoPotMineral.addLayer(geoPotMineral);
+
+
+        // Potencial Mineral
+
+        var geoPotMin112 = document.getElementById("teste53");
+        var geoPotMin12 = document.getElementById("geoPotMin");
+        if(geoPotMin112.style.display === "block"){
+            geoPotMinHtml = 'Potencial Mineral ('+data.totalFeatures+')';
+            geoPotMin12.innerHTML += geoPotMinHtml;
+        }else{
+            geoPotMin12.innerHTML = "";
+        }
     })
 
 

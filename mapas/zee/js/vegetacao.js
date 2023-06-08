@@ -9,11 +9,23 @@ function vegetacao1(el){
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/vegetacao.geojson", function(data) {  
         var vegetacao = L.geoJSON(data, {
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>vegetacao</b></h6><p><b>cod_class:</b> '+geom.properties.cod_class+'<br><b>auxiliary_:</b> '+geom.properties.auxiliary_+'</p>');
+                layer.bindPopup('<h6><b>Vegetação</b></h6><p><b>Classe:</b> '+geom.properties.cod_class+'</p>');
             }
         });
 
         groupLay_vegetacao.addLayer(vegetacao);
+
+
+        // Vegetação
+
+        var veg112 = document.getElementById("teste63");
+        var veg12 = document.getElementById("veg");
+        if(veg112.style.display === "block"){
+            vegHtml = 'Vegetação ('+data.totalFeatures+')';
+            veg12.innerHTML += vegHtml;
+        }else{
+            veg12.innerHTML = "";
+        }
     })
 
     if(map.hasLayer(groupLay_vegetacao)){

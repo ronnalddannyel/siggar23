@@ -15,6 +15,17 @@ function bioDivVegSistLacust1(el){
         });
 
         groupLay_bioDivVegSistLacust.addLayer(bioDivVegSistLacust);
+
+
+        // Vegetação (Sistemas Lacustres)
+
+        var bioDiv12 = document.getElementById("teste49");
+        if(bioDiv12.style.display === "block"){
+            bioDivHtml = '<img src="imagens/zee/retangulo-arredondado-48a9f2.png" style="max-width:20px;max-height:20px;"> Vegetação (Sistemas Lacustres) ('+data.totalFeatures+')';
+            bioDiv12.innerHTML += bioDivHtml;
+        }else{
+            bioDiv12.innerHTML = "";
+        }
     })
 
 

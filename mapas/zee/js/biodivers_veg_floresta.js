@@ -6,7 +6,8 @@ var groupLay_bioDivVegFlor = L.layerGroup([]);
 function bioDivVegFlor1(el){
 
     groupLay_bioDivVegFlor.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_floresta.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_floresta.geojson", function(data) { 
+        console.log(data.totalFeatures); 
         var bioDivVegFlor = new L.geoJson(data, {
             color: '#42963f',
             onEachFeature: function (geom, layer) {
@@ -15,6 +16,17 @@ function bioDivVegFlor1(el){
         });
 
         groupLay_bioDivVegFlor.addLayer(bioDivVegFlor);
+
+
+        // Vegetação (Floresta)
+
+        var bioDiv12 = document.getElementById("teste47");
+        if(bioDiv12.style.display === "block"){
+            bioDivHtml = '<img src="imagens/zee/retangulo-arredondado-42963f.png" style="max-width:20px;max-height:20px;"> Vegetação (Floresta) ('+data.totalFeatures+')';
+            bioDiv12.innerHTML += bioDivHtml;
+        }else{
+            bioDiv12.innerHTML = "";
+        }
     })
 
 

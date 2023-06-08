@@ -14,8 +14,8 @@ function aptAgr1(el){
                     case '2(a)bc': return {color: "#e1b053"};
                     case '2abc': return {color: "#a48f79"};
                     case '2bc': return {color: "#e2b051"};
-                    case '3(bc)': return {color: "#cac6ac"};
-                    case '6': return {color: "#becc23"};
+                    case '3(bc)': return {color: "#fdd07d"};
+                    case '6': return {color: "#cac6ac"};
                 }
               },
             onEachFeature: function (geom, layer) {
@@ -24,6 +24,17 @@ function aptAgr1(el){
         });
 
         groupLay_aptAgr.addLayer(aptAgr);
+
+        // Aptidão Agrícola
+
+        var aptAgr112 = document.getElementById("teste44");
+        var aptAgr12 = document.getElementById("aptAgri");
+        if(aptAgr112.style.display === "block"){
+            aptAgrHtml = 'Aptidão Agrícola ('+data.totalFeatures+')';
+            aptAgr12.innerHTML += aptAgrHtml;
+        }else{
+            aptAgr12.innerHTML = "";
+        }
     })
 
 

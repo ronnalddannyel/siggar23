@@ -15,6 +15,17 @@ function bioDivVegCampDunas1(el){
         });
 
         groupLay_bioDivVegCampDunas.addLayer(bioDivVegCampDunas);
+
+
+        // Vegetação (Campos/Dunas)
+
+        var vegCampDunas12 = document.getElementById("teste46");
+        if(vegCampDunas12.style.display === "block"){
+            vegCampDunasHtml = '<img src="imagens/zee/retangulo-arredondado-b35a2b.png" style="max-width:20px;max-height:20px;"> Vegetação (Campos/Dunas) ('+data.totalFeatures+')';
+            vegCampDunas12.innerHTML += vegCampDunasHtml;
+        }else{
+            vegCampDunas12.innerHTML = "";
+        }
     })
 
 
