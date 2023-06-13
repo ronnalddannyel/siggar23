@@ -779,7 +779,7 @@ session_start();
                       <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Glebas <a href="Download/glebas.zip" download="Glebas" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gleb('teste15')" id="14"></a></li>
                     </ul>
                 </li>
-                <!--
+                
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EMBARGOS E AUTUAÇÕES FEMARH
@@ -788,8 +788,8 @@ session_start();
                     <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Embargos e Autuações FEMARH <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="femarhEmbargos1('teste44')" id="38"></a></li>
                   </ul>
                 </li>
-    -->
-                <!--
+  
+                <!---
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       ZEE
@@ -1364,7 +1364,7 @@ session_start();
 
 
 
-              <div id="teste44">
+              <div id="teste78">
                 <div id="aptAgri"></div> 
                 <div style="margin-left:15px;">
                 <img src="imagens/zee/retangulo-arredondado-a9a800.png" style="max-width:20px;max-height:20px;"> 1ABC <br>
@@ -1734,7 +1734,7 @@ session_start();
 
               
 
-              <div id="teste78">
+              <div id="teste44">
                 <div id="embAut1"></div>
                 <div style="margin-top: 8px;">
                   <img src="leaflet/images/pin-de-localizacao-amarelo.png" style="max-width:20px;max-height:20px;margin-left:15px;"> 2016

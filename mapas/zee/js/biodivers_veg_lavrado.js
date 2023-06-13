@@ -21,7 +21,7 @@ function bioDivVegLavr1(el){
 
         var bioDiv12 = document.getElementById("teste48");
         if(bioDiv12.style.display === "block"){
-            bioDivHtml = '<img src="imagens/zee/retangulo-arredondado-66e661.png" style="max-width:20px;max-height:20px;"> Vegetação (Lavrado) ('+data.totalFeatures+')';
+            bioDivHtml = '<img src="imagens/zee/retangulo-arredondado-66e661.png" style="max-width:20px;max-height:20px;"> Vegetação "Lavrado" ('+data.totalFeatures+')';
             bioDiv12.innerHTML += bioDivHtml;
         }else{
             bioDiv12.innerHTML = "";

@@ -22,7 +22,7 @@ function bioDivVegFlor1(el){
 
         var bioDiv12 = document.getElementById("teste47");
         if(bioDiv12.style.display === "block"){
-            bioDivHtml = '<img src="imagens/zee/retangulo-arredondado-42963f.png" style="max-width:20px;max-height:20px;"> Vegetação (Floresta) ('+data.totalFeatures+')';
+            bioDivHtml = '<img src="imagens/zee/retangulo-arredondado-42963f.png" style="max-width:20px;max-height:20px;"> Vegetação "Floresta" ('+data.totalFeatures+')';
             bioDiv12.innerHTML += bioDivHtml;
         }else{
             bioDiv12.innerHTML = "";
