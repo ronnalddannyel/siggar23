@@ -110,7 +110,7 @@
             map.removeLayer(groupLayPlanet);
           }
         }
-
+        
         var groupLayPlanet = L.layerGroup([]);
 
         function plan(ano){
@@ -118,7 +118,7 @@
           groupLayPlanet.clearLayers();
           
           var planet = L.tileLayer(
-            'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_'+ano+'_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK163a1fd04a59496a9e92b5dc7bb07f6f',
+            'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_'+ano+'_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK8138a1556d904b7b99f74e40f3bb4872',
             {
               id: 'global_monthly',
             });
