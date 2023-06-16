@@ -41,6 +41,20 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="leaflet.ajax.js"></script>
 
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+      <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet@2.2.1/dist/esri-leaflet.js"
+      integrity="sha512-6BBVttv13OVrrUSoGmy9/aIVHateyIEGFaQxqnzCgXT9LNCAQ1Cxxj43R6Eq0ynydS7a7bLLfmEWwXFiO6lW2g=="
+      crossorigin=""></script>
+
+
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
 
@@ -684,6 +698,10 @@ session_start();
                         <hr class="dropdown-divider">
                       </li>
                       <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Monitoramento<a href="Download/monitoramento.zip" download="Monitoramento" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="monit('teste26')" id="20"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"> Agrupamento de Atributos <input type="checkbox" class="coor" onclick="clickMap()" id="aferf"></a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -1877,7 +1895,7 @@ session_start();
 
     <!-- Códigos - Áreas Licenciadas -->
 
-    <script src="mapas/areasLicenciadas/js/areasLicenciadas.js"></script>
+    <script src="mapas/areasLicenciadas/js/areasLicenciadas1.js"></script>
 
     <!-- Códigos - Áreas Licenciadas até 4 Módulos Fiscais -->
 
@@ -2090,6 +2108,45 @@ session_start();
     <!-- Legenda - Layers -->
 
     <script src="mapas/funcoes/legenda.js"></script>
+
+
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content" style="min-width: 550px;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Áreas Licenciadas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Área do Imóvel</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Área do Projeto</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">AUOS</button>
+              <button class="nav-link" id="nav-projet-tab" data-bs-toggle="tab" data-bs-target="#nav-projet" type="button" role="tab" aria-controls="nav-projet" aria-selected="false">Monitoramento</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><span class="field3" id="fieldC"></span></div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><span class="field4" id="fieldD"></span></div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><span class="field1" id="fieldA"></span></div>
+            <div class="tab-pane fade" id="nav-projet" role="tabpanel" aria-labelledby="nav-projet-tab"><span  class="field2" id="fieldB"></span></div>
+          </div>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 

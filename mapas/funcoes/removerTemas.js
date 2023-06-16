@@ -196,6 +196,9 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
       cont++;
     }
 
-    legMostra();
+
+    document.getElementById('aferf').checked = false;
+
+    clickMap ()
 
   }

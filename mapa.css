@@ -799,3 +799,8 @@ body {
       margin-left: 2%;
     }
   }
+
+
+  .tab-pane {
+    padding: 2%;
+  }
