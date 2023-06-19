@@ -114,7 +114,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     // Zee
 
-    document.getElementById("teste78").innerHTML = "";
+    document.getElementById("teste44").innerHTML = "";
 
     document.getElementById("teste45").innerHTML = "";
 

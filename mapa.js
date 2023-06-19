@@ -208,7 +208,7 @@ var drawControl = new L.Control.Draw({
         timeout: 1000
       },
       showArea: true,
-      metric: false,
+      metric: true,
       repeatMode: true
     },
     polyline: {
