@@ -12,6 +12,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
     map.addLayer(googleTerrain);
     map.addLayer(limitesMunic);
     map.addLayer(estadosLimites);
+    map.addLayer(drawnItems);
 
 
     // desmarcar os checkboxs das camadas
@@ -196,7 +197,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
       cont++;
     }
 
-
+    
     document.getElementById('aferf').checked = false;
 
     clickMap ()
