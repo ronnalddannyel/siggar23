@@ -11,8 +11,9 @@ input.addEventListener('change', function(){
         var testando = leitor.result;
         var terf = JSON.parse(testando);
         var district_boundary = new L.geoJSON(terf, {
-            color: "black",
-            weight: "2",
+            color: "red",
+            fill: false,
+            weight: "3",
           });
           groupLay2.addLayer(district_boundary);
           map.addLayer(groupLay2);
