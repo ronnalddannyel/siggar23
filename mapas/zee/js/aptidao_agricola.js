@@ -6,7 +6,7 @@ var groupLay_aptAgr = L.layerGroup([]);
 function aptAgr1(el){
 
     groupLay_aptAgr.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/aptidao_agricola.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/aptidao_agricola.geojson", function(data) {  
         var aptAgr = new L.geoJson(data, {
             style: function(geom) {
                 switch (geom.properties.class_apt) {

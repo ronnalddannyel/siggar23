@@ -6,7 +6,7 @@ var groupLay_bioDivVegCampDunas = L.layerGroup([]);
 function bioDivVegCampDunas1(el){
 
     groupLay_bioDivVegCampDunas.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_campos_dunas.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/biodivers_veg_campos_dunas.geojson", function(data) {  
         var bioDivVegCampDunas = new L.geoJson(data, {
             color: '#b35a2b',
             onEachFeature: function (geom, layer) {

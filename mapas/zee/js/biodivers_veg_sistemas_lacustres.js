@@ -6,7 +6,7 @@ var groupLay_bioDivVegSistLacust = L.layerGroup([]);
 function bioDivVegSistLacust1(el){
 
     groupLay_bioDivVegSistLacust.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_sistemas_lacustres.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/biodivers_veg_sistemas_lacustres.geojson", function(data) {  
         var bioDivVegSistLacust = L.geoJSON(data, {
             color: '#48a9f2',
             onEachFeature: function (geom, layer) {

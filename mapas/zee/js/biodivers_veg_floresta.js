@@ -6,7 +6,7 @@ var groupLay_bioDivVegFlor = L.layerGroup([]);
 function bioDivVegFlor1(el){
 
     groupLay_bioDivVegFlor.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_floresta.geojson", function(data) { 
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/biodivers_veg_floresta.geojson", function(data) { 
         console.log(data.totalFeatures); 
         var bioDivVegFlor = new L.geoJson(data, {
             color: '#42963f',

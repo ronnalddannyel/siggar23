@@ -6,7 +6,7 @@ var groupLay_gepErosao = L.layerGroup([]);
 function gepErosao1(el){
 
     groupLay_gepErosao.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_erosao.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/geologia_erosao.geojson", function(data) {  
         var gepErosao = L.geoJSON(data, {
             style: function(geom) {
                 switch (geom.properties.litologia) {

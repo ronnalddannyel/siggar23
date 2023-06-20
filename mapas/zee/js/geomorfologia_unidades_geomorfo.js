@@ -6,7 +6,7 @@ var groupLay_geoUndGeomorfo = L.layerGroup([]);
 function geoUndGeomorfo1(el){
 
     groupLay_geoUndGeomorfo.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/geomorfologia_unidades_geomorfo.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/geomorfologia_unidades_geomorfo.geojson", function(data) {  
         var geoUndGeomorfo = L.geoJSON(data, {
             style: function(geom) {
                 switch (geom.properties.legenda) {

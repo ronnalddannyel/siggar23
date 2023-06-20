@@ -5,7 +5,7 @@ var groupLay_bioDivSist = L.layerGroup([]);
 function bioDivSist1(el){
     groupLay_bioDivSist.clearLayers();
 
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_sistemas.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/biodivers_sistemas.geojson", function(data) {  
         var bioDivSist = new L.geoJson(data, {
             style: function(geom) {
                 switch (geom.properties.sistema) {

@@ -6,7 +6,7 @@ var groupLay_bioDivVegLavr = L.layerGroup([]);
 function bioDivVegLavr1(el){
 
     groupLay_bioDivVegLavr.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/biodivers_veg_lavrado.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/biodivers_veg_lavrado.geojson", function(data) {  
         var bioDivVegLavr = L.geoJSON(data, {
             color: '#66e661',
             onEachFeature: function (geom, layer) {

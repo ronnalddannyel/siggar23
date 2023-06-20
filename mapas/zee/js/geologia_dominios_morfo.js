@@ -7,7 +7,7 @@ function geoDomMorfo1(el){
 
 
     groupLay_geoDomMorfo.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_dominios_morfo.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/geologia_dominios_morfo.geojson", function(data) {  
         var geoDomMorfo = L.geoJSON(data, {
             style: function(geom) {
                 switch (geom.properties.domínios) {
