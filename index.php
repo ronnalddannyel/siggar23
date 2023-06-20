@@ -1849,7 +1849,7 @@ session_start();
 
 
     <script>
-      var UrlFemarh = "https://extranet.femarh.com";
+      var UrlFemarh = "http://extranet.femarh.com";
     </script>
 
     <script>
