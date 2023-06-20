@@ -6,7 +6,7 @@ var groupLay_solos = L.layerGroup([]);
 function solos1(el){
 
     groupLay_solos.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr/mapas/zee/solos.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/solos.geojson", function(data) {  
         var solos = L.geoJSON(data, {
             style: function(geom) {
                 switch (geom.properties.nome) {
