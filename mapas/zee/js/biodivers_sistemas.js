@@ -30,7 +30,7 @@ function bioDivSist1(el){
         var bioDivSis112 = document.getElementById("teste45");
         var bioDivSis12 = document.getElementById("bioDivSis");
         if(bioDivSis112.style.display === "block"){
-            bioDivSisHtml = 'Aptidão Agrícola ('+data.totalFeatures+')';
+            bioDivSisHtml = 'Sistemas ('+data.totalFeatures+')';
             bioDivSis12.innerHTML += bioDivSisHtml;
         }else{
             bioDivSis12.innerHTML = "";
