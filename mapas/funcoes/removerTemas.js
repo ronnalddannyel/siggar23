@@ -17,7 +17,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     // desmarcar os checkboxs das camadas
 
-    while (id<38){
+    while (id<48){
     var status = document.getElementById(id);
       if (status.checked) {
         status.checked = false;
@@ -114,9 +114,9 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     // Zee
 
-    document.getElementById("teste44").innerHTML = "";
+    document.getElementById("aptAgri").innerHTML = "";
 
-    document.getElementById("teste45").innerHTML = "";
+    document.getElementById("bioDivSis").innerHTML = "";
 
     document.getElementById("teste46").innerHTML = "";
 
@@ -126,72 +126,72 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     document.getElementById("teste49").innerHTML = "";
 
-    document.getElementById("teste50").innerHTML = "";
+    document.getElementById("geoDomMor").innerHTML = "";
 
-    document.getElementById("teste51").innerHTML = "";
+    document.getElementById("geoEros").innerHTML = "";
 
-    document.getElementById("teste52").innerHTML = "";
+    document.getElementById("geoGeo").innerHTML = "";
 
-    document.getElementById("teste53").innerHTML = "";
+    document.getElementById("geoPotMin").innerHTML = "";
 
-    document.getElementById("teste54").innerHTML = "";
+    document.getElementById("geomor").innerHTML = "";
 
-    document.getElementById("teste55").innerHTML = "";
+    document.getElementById("hidDren").innerHTML = "";
 
-    document.getElementById("teste56").innerHTML = "";
+    document.getElementById("hidOtt").innerHTML = "";
 
-    document.getElementById("teste57").innerHTML = "";
+    document.getElementById("potSocAmb").innerHTML = "";
 
-    document.getElementById("teste58").innerHTML = "";
+    document.getElementById("potSocHum").innerHTML = "";
 
-    document.getElementById("teste59").innerHTML = "";
+    document.getElementById("potSocInst").innerHTML = "";
 
-    document.getElementById("teste60").innerHTML = "";
+    document.getElementById("potSocProd").innerHTML = "";
 
-    document.getElementById("teste61").innerHTML = "";
+    document.getElementById("potSoc").innerHTML = "";
 
-    document.getElementById("teste62").innerHTML = "";
+    document.getElementById("solo").innerHTML = "";
 
-    document.getElementById("teste63").innerHTML = "";
+    document.getElementById("veg").innerHTML = "";
 
-    document.getElementById("teste64").innerHTML = "";
+    document.getElementById("vulNatPerSolo").innerHTML = "";
 
-    document.getElementById("teste65").innerHTML = "";
+    document.getElementById("vulNatPerSoloGeo").innerHTML = "";
 
-    document.getElementById("teste66").innerHTML = "";
+    document.getElementById("vulNatPerSoloGeom").innerHTML = "";
 
-    document.getElementById("teste67").innerHTML = "";
+    document.getElementById("vulNatPerSoloVeg").innerHTML = "";
 
-    document.getElementById("teste68").innerHTML = "";
+    document.getElementById("vulNatPerSoloZona").innerHTML = "";
 
-    document.getElementById("teste69").innerHTML = "";
+    document.getElementById("zonaClimClimZee").innerHTML = "";
 
-    document.getElementById("teste70").innerHTML = "";
+    document.getElementById("zonaClimConcChuva").innerHTML = "";
 
-    document.getElementById("teste71").innerHTML = "";
+    document.getElementById("zonaClimIsolChuva").innerHTML = "";
 
-    document.getElementById("teste72").innerHTML = "";
+    document.getElementById("zonaClimKop").innerHTML = "";
 
-    document.getElementById("teste73").innerHTML = "";
+    document.getElementById("zonaSubZup").innerHTML = "";
 
-    document.getElementById("teste74").innerHTML = "";
+    document.getElementById("zonaSubZue").innerHTML = "";
 
-    document.getElementById("teste75").innerHTML = "";
+    document.getElementById("zonaZonaZup").innerHTML = "";
 
-    document.getElementById("teste76").innerHTML = "";
+    document.getElementById("zonaZonaZue").innerHTML = "";
 
-    document.getElementById("teste77").innerHTML = "";
+    document.getElementById("zonaZonaZu").innerHTML = "";
 
     // Demais camadas
 
     var cont = 1;
 
-    while(cont<45) {
+    while(cont<54) {
     
       var res = el + cont;
       console.log(res);
       var display = document.getElementById(res).style.display;
-      if(display == "block"){
+      if(display === "block"){
         document.getElementById(res).style.display = 'none';
       }
       cont++;

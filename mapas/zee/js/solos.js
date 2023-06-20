@@ -42,7 +42,7 @@ function solos1(el){
 
         // Solos
 
-        var solo112 = document.getElementById("teste62");
+        var solo112 = document.getElementById("teste53");
         var solo12 = document.getElementById("solo");
         if(solo112.style.display === "block"){
             soloHtml = 'Solos ('+data.totalFeatures+')';

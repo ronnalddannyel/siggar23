@@ -810,7 +810,7 @@ session_start();
                   </ul>
                 </li>
     -->
-                <!--
+                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       ZEE
@@ -865,7 +865,7 @@ session_start();
                             <hr class="dropdown-divider">
                           </li>
                           <li><a id="coord" > Erosão <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gepErosao1('teste51')" id="45"></a></li>
-                          <li>
+                          <!--<li>
                             <hr class="dropdown-divider">
                           </li>
                           <li><a id="coord" > Geológico <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoGeolog1('teste52')" id="46"></a></li>
@@ -873,7 +873,7 @@ session_start();
                               <hr class="dropdown-divider">
                           </li>
                           <li><a id="coord" > Potencial Mineral <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoPotMineral1('teste53')" id="47"></a></li>
-
+    -->
                         </ul>
                       </li>
 
@@ -883,11 +883,11 @@ session_start();
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
 
-                          <li><a id="coord" > Geomorfológia <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoUndGeomorfo1('teste54')" id="48"></a></li>
+                          <li><a id="coord" > Geomorfológia <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoUndGeomorfo1('teste52')" id="46"></a></li>
                         
                         </ul>
                       </li>
-
+<!--
                       <li>
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           HIDROGRAFIA
@@ -929,18 +929,18 @@ session_start();
 
                         </ul>
                       </li>
-
+    -->
                       <li>
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           SOLOS
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
 
-                          <li><a id="coord" > Solos <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="solos1('teste62')" id="56"></a></li>
+                          <li><a id="coord" > Solos <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="solos1('teste53')" id="47"></a></li>
 
                         </ul>
                       </li>
-
+<!--
                       <li>
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           VEGETAÇÃO
@@ -1028,10 +1028,10 @@ session_start();
 
                         </ul>
                       </li>
-
+-->
                     </ul>
                 </li>
-    -->
+    
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       AGÊNCIA NACIONAL DE MINERAÇÃO
@@ -1436,7 +1436,7 @@ session_start();
                 </div>
               </div>
 
-              <div id="teste52">
+              <div id="teste54">
                 <div id="geoGeo"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1447,7 +1447,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste53">
+              <div id="teste62">
                 <div id="geoPotMin"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1458,7 +1458,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste54">
+              <div id="teste52">
                 <div id="geomor"></div> 
                 <div style="margin-left:15px;">
                   <img src="imagens/zee/retangulo-arredondado-d1ff73.png" style="max-width:20px;max-height:20px;"> Depressão Boa Vista - DBV <br>
@@ -1559,7 +1559,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste62">
+              <div id="teste53">
                 <div id="solo"></div>
                 <div style="margin-left:15px;">
                   <img src="imagens/zee/retangulo-arredondado-fdf1f0.png" style="max-width:20px;max-height:20px;"> ARGISSOLO AMARELO <br>

@@ -40,7 +40,7 @@ function geoUndGeomorfo1(el){
 
         // Geomorfológia
 
-        var geomor112 = document.getElementById("teste54");
+        var geomor112 = document.getElementById("teste52");
         var geomor12 = document.getElementById("geomor");
         if(geomor112.style.display === "block"){
             geomorHtml = 'Geomorfológia ('+data.totalFeatures+')';
