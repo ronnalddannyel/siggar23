@@ -17,7 +17,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     // desmarcar os checkboxs das camadas
 
-    while (id<48){
+    while (id<51){
     var status = document.getElementById(id);
       if (status.checked) {
         status.checked = false;
@@ -136,7 +136,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     document.getElementById("geomor").innerHTML = "";
 
-    document.getElementById("hidDren").innerHTML = "";
+    document.getElementById("teste55").innerHTML = "";
 
     document.getElementById("hidOtt").innerHTML = "";
 
@@ -186,7 +186,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     var cont = 1;
 
-    while(cont<54) {
+    while(cont<57) {
     
       var res = el + cont;
       console.log(res);

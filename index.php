@@ -865,11 +865,11 @@ session_start();
                             <hr class="dropdown-divider">
                           </li>
                           <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Erosão <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gepErosao1('teste51')" id="45"></a></li>
-                    <!--      <li>
+                          <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord" > Geológico <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoGeolog1('teste54')" id="46"></a></li>
-                          <li>
+                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Geológico <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoGeolog1('teste54')" id="48"></a></li>
+                       <!--   <li>
                               <hr class="dropdown-divider">
                           </li>
                           <li><a id="coord" > Potencial Mineral <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoPotMineral1('teste53')" id="47"></a></li>
@@ -887,22 +887,22 @@ session_start();
                         
                         </ul>
                       </li>
-<!--
+
                       <li>
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           HIDROGRAFIA
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
 
-                          <li><a id="coord" > Drenagem <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidDrenagem1('teste55')" id="49"></a></li>
+                          <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-01aaff.png" style="max-width:20px;max-height:20px;"> Drenagem <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidDrenagem1('teste55')" id="49"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord" > Ottobacias <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidOttobacias1('teste56')" id="50"></a></li>
+                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Ottobacias <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidOttobacias1('teste56')" id="50"></a></li>
 
                         </ul>
                       </li>
-
+<!--
                       <li>
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           POTENCIAL SOCIAL
@@ -1438,13 +1438,51 @@ session_start();
 
               <div id="teste54">
                 <div id="geoGeo"></div> 
-                <!--
                 <div style="margin-left:15px;">
-                <img src="imagens/zee/retangulo-arredondado-75ace3.png" style="max-width:20px;max-height:20px;"> Baixo <br>
-                <img src="imagens/zee/retangulo-arredondado-86eba2.png" style="max-width:20px;max-height:20px;"> Moderado <br>
-                <img src="imagens/zee/retangulo-arredondado-fbbec6.png" style="max-width:20px;max-height:20px;"> Alto
+                <img src="imagens/zee/retangulo-arredondado-ffff00.png" style="max-width:20px;max-height:20px;"> Q12ab <br>
+                <img src="imagens/zee/retangulo-arredondado-e6e600.png" style="max-width:20px;max-height:20px;"> Q12aa <br>
+                <img src="imagens/zee/retangulo-arredondado-ffffff.png" style="max-width:20px;max-height:20px;"> Q2a <br>
+                <img src="imagens/zee/retangulo-arredondado-ffd37f.png" style="max-width:20px;max-height:20px;"> Q1i <br>
+                <img src="imagens/zee/retangulo-arredondado-f5f57a.png" style="max-width:20px;max-height:20px;"> Nbv <br>
+                <img src="imagens/zee/retangulo-arredondado-0084a8.png" style="max-width:20px;max-height:20px;"> K1api <br>
+                <img src="imagens/zee/retangulo-arredondado-89cd66.png" style="max-width:20px;max-height:20px;"> K2st <br>
+                <img src="imagens/zee/retangulo-arredondado-a3ff73.png" style="max-width:20px;max-height:20px;"> K2ta <br>
+                <img src="imagens/zee/retangulo-arredondado-00734c.png" style="max-width:20px;max-height:20px;"> J3K1ap <br>
+                <img src="imagens/zee/retangulo-arredondado-73ffdf.png" style="max-width:20px;max-height:20px;"> MP12ss <br>
+                <img src="imagens/zee/retangulo-arredondado-cd6666.png" style="max-width:20px;max-height:20px;"> MP1su <br>
+                <img src="imagens/zee/retangulo-arredondado-aaff00.png" style="max-width:20px;max-height:20px;"> MP1r <br>
+                <img src="imagens/zee/retangulo-arredondado-894444.png" style="max-width:20px;max-height:20px;"> MP1au <br>
+                <img src="imagens/zee/retangulo-arredondado-ff7f7f-2.png" style="max-width:20px;max-height:20px;"> MP1mu <br>
+                <img src="imagens/zee/retangulo-arredondado-a80000-2.png" style="max-width:20px;max-height:20px;"> MP1to <br>
+                <img src="imagens/zee/retangulo-arredondado-00204d.png" style="max-width:20px;max-height:20px;"> PP4av <br>
+                <img src="imagens/zee/retangulo-arredondado-4c7300.png" style="max-width:20px;max-height:20px;"> PP34se <br>
+                <img src="imagens/zee/retangulo-arredondado-4cc100.png" style="max-width:20px;max-height:20px;"> MP4mi <br>
+                <img src="imagens/zee/retangulo-arredondado-e60000-2.png" style="max-width:20px;max-height:20px;"> PP34ma <br>
+                <img src="imagens/zee/retangulo-arredondado-ffaa00.png" style="max-width:20px;max-height:20px;"> PP3ir <br>
+                <img src="imagens/zee/retangulo-arredondado-d7b09e.png" style="max-width:20px;max-height:20px;"> PP3ja <br>
+                <img src="imagens/zee/retangulo-arredondado-b4d79e.png" style="max-width:20px;max-height:20px;"> PP34rr <br>
+                <img src="imagens/zee/retangulo-arredondado-aa66cd.png" style="max-width:20px;max-height:20px;"> PP3ia <br>
+                <img src="imagens/zee/retangulo-arredondado-ff0000.png" style="max-width:20px;max-height:20px;"> PP3sa <br>
+                <img src="imagens/zee/retangulo-arredondado-894465.png" style="max-width:20px;max-height:20px;"> PP3sp <br>
+                <img src="imagens/zee/retangulo-arredondado-cd6699.png" style="max-width:20px;max-height:20px;"> PP3ab <br>
+                <img src="imagens/zee/retangulo-arredondado-897044.png" style="max-width:20px;max-height:20px;"> PP3pa <br>
+                <img src="imagens/zee/retangulo-arredondado-e64c00.png" style="max-width:20px;max-height:20px;"> PP3ar <br>
+                <img src="imagens/zee/retangulo-arredondado-e69800.png" style="max-width:20px;max-height:20px;"> PP3su <br>
+                <img src="imagens/zee/retangulo-arredondado-ffff73-2.png" style="max-width:20px;max-height:20px;"> PP3ci <br>
+                <img src="imagens/zee/retangulo-arredondado-d69dbc.png" style="max-width:20px;max-height:20px;"> PP3ru1 <br>
+                <img src="imagens/zee/retangulo-arredondado-df73ff.png" style="max-width:20px;max-height:20px;"> PP3ru2e <br>
+                <img src="imagens/zee/retangulo-arredondado-f57a7a-2.png" style="max-width:20px;max-height:20px;"> PP3er <br>
+                <img src="imagens/zee/retangulo-arredondado-e600a9.png" style="max-width:20px;max-height:20px;"> PP3pp <br>
+                <img src="imagens/zee/retangulo-arredondado-cdaa66-2.png" style="max-width:20px;max-height:20px;"> PP3cx <br>
+                <img src="imagens/zee/retangulo-arredondado-a80084.png" style="max-width:20px;max-height:20px;"> PP3mp <br>
+                <img src="imagens/zee/retangulo-arredondado-895a44.png" style="max-width:20px;max-height:20px;"> PP3ca <br>
+                <img src="imagens/zee/retangulo-arredondado-996238.png" style="max-width:20px;max-height:20px;"> PP3mu <br>
+                <img src="imagens/zee/retangulo-arredondado-9c9c9c.png" style="max-width:20px;max-height:20px;"> PP3uu <br>
+                <img src="imagens/zee/retangulo-arredondado-ffbee8-2.png" style="max-width:20px;max-height:20px;"> PP23ur <br>
+                <img src="imagens/zee/retangulo-arredondado-a83800.png" style="max-width:20px;max-height:20px;"> PP23tr <br>
+                <img src="imagens/zee/retangulo-arredondado-e8beff.png" style="max-width:20px;max-height:20px;"> PP3an <br>
+                <img src="imagens/zee/retangulo-arredondado-e0e0e0.png" style="max-width:20px;max-height:20px;"> rps 
                 </div>
-            -->
               </div>
 
               <div id="teste62">
@@ -1482,26 +1520,22 @@ session_start();
                 </div>
               </div>
 
-              <div id="teste55">
-                <div id="hidDren"></div> 
-                <!--
-                <div style="margin-left:15px;">
-                <img src="imagens/zee/retangulo-arredondado-75ace3.png" style="max-width:20px;max-height:20px;"> Baixo <br>
-                <img src="imagens/zee/retangulo-arredondado-86eba2.png" style="max-width:20px;max-height:20px;"> Moderado <br>
-                <img src="imagens/zee/retangulo-arredondado-fbbec6.png" style="max-width:20px;max-height:20px;"> Alto
-                </div>
-            -->
-              </div>
+              <div id="teste55"></div>
 
               <div id="teste56">
                 <div id="hidOtt"></div> 
-                <!--
                 <div style="margin-left:15px;">
-                <img src="imagens/zee/retangulo-arredondado-75ace3.png" style="max-width:20px;max-height:20px;"> Baixo <br>
-                <img src="imagens/zee/retangulo-arredondado-86eba2.png" style="max-width:20px;max-height:20px;"> Moderado <br>
-                <img src="imagens/zee/retangulo-arredondado-fbbec6.png" style="max-width:20px;max-height:20px;"> Alto
+                <img src="imagens/zee/retangulo-arredondado-ff7f00.png" style="max-width:20px;max-height:20px;"> RIO ANAUÁ <br>
+                <img src="imagens/zee/retangulo-arredondado-eed350.png" style="max-width:20px;max-height:20px;"> RIO BRANCO <br>
+                <img src="imagens/zee/retangulo-arredondado-d77782.png" style="max-width:20px;max-height:20px;"> RIO CATRIMANI <br>
+                <img src="imagens/zee/retangulo-arredondado-33a02c.png" style="max-width:20px;max-height:20px;"> RIO JATAPU <br>
+                <img src="imagens/zee/retangulo-arredondado-fb9a99.png" style="max-width:20px;max-height:20px;"> RIO JAUAPERI <br>
+                <img src="imagens/zee/retangulo-arredondado-66f067.png" style="max-width:20px;max-height:20px;"> RIO JUFARI <br>
+                <img src="imagens/zee/retangulo-arredondado-fdbf6f.png" style="max-width:20px;max-height:20px;"> RIO MAPUERA <br>
+                <img src="imagens/zee/retangulo-arredondado-e4b42e.png" style="max-width:20px;max-height:20px;"> RIO MUCAJAÍ <br>
+                <img src="imagens/zee/retangulo-arredondado-92e853.png" style="max-width:20px;max-height:20px;"> RIO TACUTU <br>
+                <img src="imagens/zee/retangulo-arredondado-d3a3e9.png" style="max-width:20px;max-height:20px;"> RIO URARIQUERA
                 </div>
-            -->
               </div>
 
               <div id="teste57">

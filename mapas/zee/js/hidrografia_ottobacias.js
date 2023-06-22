@@ -6,18 +6,18 @@ var groupLay_hidOttobacias = L.layerGroup([]);
 function hidOttobacias1(el){
 
     groupLay_hidOttobacias.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/hidrografia_ottobacias.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/hidrografia_ottobacias.geojson", function(data) {  
         var hidOttobacias = L.geoJSON(data, {
             style: function(geom) {
                 switch (geom.properties.regiao48) {
-                    case 'RIO ANAUÁ': return {color: "#ff7f00"};
+                    case 'RIO ANAUÃ': return {color: "#ff7f00"};
                     case 'RIO BRANCO': return {color: "#eed350"};
                     case 'RIO CATRIMANI': return {color: "#d77782"};
                     case 'RIO JATAPU': return {color: "#33a02c"};
                     case 'RIO JAUAPERI': return {color: "#fb9a99"};
                     case 'RIO JUFARI': return {color: "#66f067"};
                     case 'RIO MAPUERA': return {color: "#fdbf6f"};
-                    case 'RIO MUCAJAÍ': return {color: "#e4b42e"};
+                    case 'RIO MUCAJAÃ': return {color: "#e4b42e"};
                     case 'RIO TACUTU': return {color: "#92e853"};
                     case 'RIO URARIQUERA': return {color: "#d3a3e9"};
                 }

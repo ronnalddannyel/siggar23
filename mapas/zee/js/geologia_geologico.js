@@ -7,7 +7,7 @@ function geoGeolog1(el){
 
     
     groupLay_geoGeolog.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/geologia_geologico.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/geologia_geologico.geojson", function(data) {  
 
         var geoGeolog = L.geoJSON(data, {
             style: function(geom) {

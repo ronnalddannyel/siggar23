@@ -7,7 +7,7 @@ var groupLay_hidDrenagem = L.layerGroup([]);
 function hidDrenagem1(el){
 
     groupLay_hidDrenagem.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/hidrografia_drenagem.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/zee/hidrografia_drenagem.geojson", function(data) {  
         var hidDrenagem = L.geoJSON(data, {
             color: '#01aaff',
             onEachFeature: function (geom, layer) {
@@ -21,12 +21,11 @@ function hidDrenagem1(el){
         // Drenagem
 
         var hidDren112 = document.getElementById("teste55");
-        var hidDren12 = document.getElementById("hidDren");
         if(hidDren112.style.display === "block"){
-            hidDrenHtml = 'Drenagem ('+data.totalFeatures+')';
-            hidDren12.innerHTML += hidDrenHtml;
+            hidDrenHtml = '<img src="imagens/zee/retangulo-arredondado-01aaff.png" style="max-width:20px;max-height:20px;"> Drenagem ('+data.totalFeatures+')';
+            hidDren112.innerHTML += hidDrenHtml;
         }else{
-            hidDren12.innerHTML = "";
+            hidDren112.innerHTML = "";
         }
     })
 
