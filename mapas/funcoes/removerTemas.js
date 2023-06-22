@@ -7,7 +7,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
       map.removeLayer(layer);
     });
 
-    // adicionar mapa e camada inicial
+    // adicionar mapa e camadas iniciais
 
     map.addLayer(googleTerrain);
     map.addLayer(limitesMunic);
@@ -196,9 +196,6 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
       }
       cont++;
     }
-
-    
-    document.getElementById('aferf').checked = false;
 
     clickMap ();
 

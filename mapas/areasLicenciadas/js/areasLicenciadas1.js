@@ -1,19 +1,19 @@
 
 // Área do Imóvel
 
-var areaImov1 = L.geoJSON(areaImovel, {
+/*var areaImov1 = L.geoJSON(areaImovel, {
     color: "blue",
-    //fill: false,
-    weight: "2",
-  });
+    fillOpacity: "0",
+    weight: "2.5",
+  });*/
   
   var areaImov = L.geoJSON(areaImovel, {
       color: "blue",
-      //fill: false,
-      weight: "2",
-      onEachFeature: function (geom, layer) {
+      fillOpacity: "0",
+      weight: "2.5",
+      /*onEachFeature: function (geom, layer) {
         layer.bindPopup('<h6><b>Área do Imóvel</b></h6><p><b>Imóvel:</b> '+geom.properties.nome_imov+'<br><b>Município:</b> '+geom.properties.municip+'<br><b>Gleba:</b> '+geom.properties.gleba+'<br><b>CAR:</b> '+geom.properties.car+'<br><b>SIGEF:</b> '+geom.properties.sigef+'<br><b>Área:</b> '+geom.properties.area+' ha.</p>');
-      }
+      }*/
   });
   
   function arImov(el){
@@ -31,19 +31,21 @@ var areaImov1 = L.geoJSON(areaImovel, {
       }else{
           document.getElementById(el).style.display = 'block';
       }
-      legMostra();
+      clickMap();
   }
   
   // Área do Projeto
   
   
-    var areaProjeto2 = L.geoJSON(areaProjeto1, {
+   /* var areaProjeto2 = L.geoJSON(areaProjeto1, {
       color: "black",
-    });
+    });*/
   
     var areaProjeto = L.geoJSON(areaProjeto, {
       color: "black",
-      onEachFeature: function (features, layer) {
+      fillOpacity: "0",
+      weight: "2.5",
+      /*onEachFeature: function (features, layer) {
   
         if(features.properties.fk_tipo_projeto == 1){
           var tipoProjeto = 'CRRA - Certificado Roraimense de Regularidade Ambiental';
@@ -160,7 +162,7 @@ var areaImov1 = L.geoJSON(areaImovel, {
         }
     
           layer.bindPopup('<h6><b>Área do Projeto</b></h6><b>GID: </b>'+features.id+'<br><b>Processo:</b> '+features.properties.n_processo+'<br><b>Código da Atividade: </b>'+codFemarh+'<br><b>Descrição: </b> '+features.properties.descr_ativ+'<br><b>Área: </b> '+features.properties.area+'<br><b>Código Imóvel: </b> '+features.properties.fk_ati+'<br><b>Tipo do Projeto: </b> '+tipoProjeto+'<br><br><button type="button" onclick="test()" id="aProj" value="'+features.id+'" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Detalhes</button>');
-        }
+        }*/
     });
   
     function areaProj(el){
@@ -176,25 +178,26 @@ var areaImov1 = L.geoJSON(areaImovel, {
       }else{
         document.getElementById(el).style.display = 'block';
       } 
-      legMostra();
-        }
+      clickMap();
+    }
   
   
   
       // Área de Uso e Ocupação do Solo
   
       
-      var areaUos2 = L.geoJSON(areaUos1, {
+      /*var areaUos2 = L.geoJSON(areaUos1, {
         color: "#325f5f",
         weight: "2",
-      });
+      });*/
   
       var areaUos = L.geoJSON(areaUos1, {
         color: "#325f5f",
-        weight: "2",
-        onEachFeature: function (geom, layer) {
+        fillOpacity: "0",
+        weight: "2.5",
+        /*onEachFeature: function (geom, layer) {
           layer.bindPopup('<h6><b>Área de Uso e Ocupação do Solo</b></h6><b>Tipo do Solo: </b>'+geom.properties.fk_tipo+'<br><b>Área:</b> '+geom.properties.area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.');
-        }
+        }*/
       });
   
       function arUos(el){
@@ -210,13 +213,13 @@ var areaImov1 = L.geoJSON(areaImovel, {
         }else{
           document.getElementById(el).style.display = 'block';
         } 
-        legMostra();
+        clickMap();
       }
   
   
       // Monitoramento
   
-      var monitor1 = L.geoJSON(monitoramento, {
+      /*var monitor1 = L.geoJSON(monitoramento, {
         style: function(geom) {
           switch (geom.properties.fk_tip_mon) {
               case 1: return {color: "#33fd38", weight: "2"};
@@ -246,7 +249,7 @@ var areaImov1 = L.geoJSON(areaImovel, {
               case 25: return {color: "black", weight: "2"};
           }
         },
-      });
+      });*/
   
   
   
@@ -280,9 +283,11 @@ var areaImov1 = L.geoJSON(areaImovel, {
             case 25: return {color: "black", weight: "2"};
         }
       },
-      onEachFeature: function (features, layer) {
+      fillOpacity: "0",
+      weight: "2.5",
+      /*onEachFeature: function (features, layer) {
         layer.bindPopup('<h6><b>Monitoramento</b></h6>'+'<b>Código da Área do Imóvel: </b>'+features.properties.fk_ati+'<br><b>Código da Área do Projeto: </b> '+features.properties.fk_ap+'<br><b>Nº do Processo: </b>'+features.properties.n_processo+'<br><b>Classificação: </b> '+features.properties.fk_corte_fora_proj+'<br><b>Área Monitorada:</b> '+features.properties.area+' ha.<br><b>Nº da Autorização: </b> '+features.properties.n_autoriza+'<br><b>Início da Vigência: </b> '+features.properties.vig_inicia+'<br><b>Fim da Vigênica:</b> '+features.properties.vig_fim+'<br><b>Intervalo da Vigência: </b>'+features.properties.vig_interv+'<br><b>Operador: </b> '+features.properties.fk_usuario+'<br><b>Data do Registro: </b> '+features.properties.data_reg+'<br><br><button type="button" onclick="test2()" id="mom" value="'+features.id+'" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Detalhes</button>');
-      }
+      }*/
     });
   
     function monit(el){
@@ -298,7 +303,7 @@ var areaImov1 = L.geoJSON(areaImovel, {
       }else{
         document.getElementById(el).style.display = 'block';
       } 
-      legMostra();
+      clickMap();
     }
   
   
@@ -322,32 +327,14 @@ var areaImov1 = L.geoJSON(areaImovel, {
   
     function clickMap (){
   
-      var check = document.getElementById('aferf');
+      var check1 = document.getElementById('1').checked;
+      var check2 = document.getElementById('2').checked;
+      var check3 = document.getElementById('36').checked;
+      var check4 = document.getElementById('20').checked;
+
   
-      if(check.checked === true){
-  
-        map.removeLayer(areaUos);
-        map.removeLayer(monitor);
-        map.removeLayer(areaProjeto);
-        map.removeLayer(areaImov);
-  
-        map.addLayer(areaImov1);
-        map.addLayer(monitor1);
-        map.addLayer(areaProjeto2);
-        map.addLayer(areaUos2);
-  
-        document.getElementById('1').disabled = true;
-        document.getElementById('2').disabled = true;
-        document.getElementById('36').disabled = true;
-        document.getElementById('20').disabled = true;
-  
-        document.getElementById('teste5').style.display = 'block';
-        document.getElementById('teste1').style.display = 'block';
-        document.getElementById('teste42').style.display = 'block';
-        document.getElementById('teste26').style.display = 'block';
-  
-  
-  
+      if((check1 === true) || (check2 === true) || (check3 === true) || (check4 === true)){
+
         map.on('click', onClick);
   
         legMostra();
@@ -355,40 +342,6 @@ var areaImov1 = L.geoJSON(areaImovel, {
         
     
       }else{
-  
-        map.removeLayer(areaImov1);
-        map.removeLayer(monitor1);
-        map.removeLayer(areaProjeto2);
-        map.removeLayer(areaUos2);
-  
-        document.getElementById('1').disabled = false;
-        document.getElementById('2').disabled = false;
-        document.getElementById('36').disabled = false;
-        document.getElementById('20').disabled = false;
-        
-        if(document.getElementById('1').checked === true){
-          map.addLayer(areaProjeto);
-        }else{
-          document.getElementById('teste5').style.display = 'none';
-        }
-  
-        if(document.getElementById('2').checked === true){
-          map.addLayer(areaImov);
-        }else{
-          document.getElementById('teste1').style.display = 'none';
-        }
-  
-        if(document.getElementById('36').checked === true){
-          map.addLayer(areaUos);
-        }else{
-          document.getElementById('teste42').style.display = 'none';
-        }
-  
-        if(document.getElementById('20').checked === true){
-          map.addLayer(monitor);
-        }else{
-          document.getElementById('teste26').style.display = 'none';
-        } 
     
         map.off('click', onClick);
   
@@ -417,7 +370,7 @@ var areaImov1 = L.geoJSON(areaImovel, {
        
      theMarker = L.marker([lat,lon]);
      
-      areaUos2.eachLayer(function (layer) {
+     areaUos.eachLayer(function (layer) {
        
        isInside =turf.booleanPointInPolygon(theMarker.toGeoJSON(), layer.toGeoJSON());
    
@@ -430,7 +383,7 @@ var areaImov1 = L.geoJSON(areaImovel, {
      });
      
      
-     monitor1.eachLayer(function (layer) {
+     monitor.eachLayer(function (layer) {
        isInside =turf.booleanPointInPolygon(theMarker.toGeoJSON(), layer.toGeoJSON());
        //isInside =turf.inside(theMarker.toGeoJSON(), layer.toGeoJSON());
      
@@ -441,7 +394,7 @@ var areaImov1 = L.geoJSON(areaImovel, {
      });
   
   
-     areaProjeto2.eachLayer(function (layer) {
+     areaProjeto.eachLayer(function (layer) {
   
   
       if(layer.feature.properties.fk_tipo_projeto == 1){
@@ -570,7 +523,7 @@ var areaImov1 = L.geoJSON(areaImovel, {
      
      
        
-    areaImov1.eachLayer(function (layer) {
+    areaImov.eachLayer(function (layer) {
        isInside =turf.booleanPointInPolygon(theMarker.toGeoJSON(), layer.toGeoJSON());
        //isInside =turf.inside(theMarker.toGeoJSON(), layer.toGeoJSON());
        
@@ -607,19 +560,38 @@ var areaImov1 = L.geoJSON(areaImovel, {
     alvo4.innerText = "";
   
     var facModal = $('#myModal');
-  
-  
+
     let alvoA = document.querySelector(".field1");
-    alvoA.innerHTML += a;
-  
+    if(document.getElementById('36').checked === true){
+      alvoA.innerHTML += a;
+    }else{
+      alvoA.innerHTML += 'No Data'
+    }
+
+
     let alvoB = document.querySelector(".field2");
-    alvoB.innerHTML += b;
-     
+    if(document.getElementById('20').checked === true){
+      alvoB.innerHTML += b;
+    }else{
+      alvoB.innerHTML += 'No Data'
+    }
+
+
     let alvoC = document.querySelector(".field3");
-    alvoC.innerHTML += c;
+    if(document.getElementById('2').checked === true){
+      alvoC.innerHTML += c;
+    }else{
+      alvoC.innerHTML += 'No Data'
+    }
+
   
     let alvoD = document.querySelector(".field4");
-    alvoD.innerHTML += d;
+    if(document.getElementById('1').checked === true){
+      alvoD.innerHTML += d;
+    }else{
+      alvoD.innerHTML += 'No Data'
+    }
+    
    
     facModal.appendTo("body").modal('show');
       facModal.draggable({handle: ".modal-header"	});

@@ -698,10 +698,6 @@ session_start();
                         <hr class="dropdown-divider">
                       </li>
                       <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Monitoramento<a href="Download/monitoramento.zip" download="Monitoramento" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="monit('teste26')" id="20"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord"> Agrupamento de Atributos <input type="checkbox" class="coor" onclick="clickMap()" id="aferf"></a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
