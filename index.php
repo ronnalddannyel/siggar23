@@ -865,10 +865,10 @@ session_start();
                             <hr class="dropdown-divider">
                           </li>
                           <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Erosão <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gepErosao1('teste51')" id="45"></a></li>
-                          <!--<li>
+                    <!--      <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord" > Geológico <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoGeolog1('teste52')" id="46"></a></li>
+                          <li><a id="coord" > Geológico <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoGeolog1('teste54')" id="46"></a></li>
                           <li>
                               <hr class="dropdown-divider">
                           </li>
@@ -1850,6 +1850,7 @@ session_start();
 
     <script>
       var UrlFemarh = "http://extranet.femarh.com";
+      //var UrlFemarh = "http://localhost/";
     </script>
 
     <script>

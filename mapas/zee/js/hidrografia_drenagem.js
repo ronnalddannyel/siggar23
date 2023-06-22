@@ -9,6 +9,7 @@ function hidDrenagem1(el){
     groupLay_hidDrenagem.clearLayers();
     $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/zee/hidrografia_drenagem.geojson", function(data) {  
         var hidDrenagem = L.geoJSON(data, {
+            color: '#01aaff',
             onEachFeature: function (geom, layer) {
                 layer.bindPopup('<h6><b>Drenagem</b></h6><p><b>Nome:</b> '+geom.properties.nome+'</p>');
             }
