@@ -15,6 +15,7 @@ input.addEventListener('change', function(){
             fill: false,
             weight: "3",
           });
+          map.fitBounds(district_boundary.getBounds());
           groupLay2.addLayer(district_boundary);
           map.addLayer(groupLay2);
     });
@@ -27,6 +28,7 @@ input.addEventListener('change', function(){
 function removerLayJson(){
     map.removeLayer(groupLay2);
     document.getElementById('arquivo').value = '';
+    map.setView([latit, long], zm);
   }
 
 
