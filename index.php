@@ -644,39 +644,39 @@ session_start();
                       GRADES
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
-                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> IBGE CARTA 1:100.000 <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="ibgeCart('teste33')" id="27"></a></li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> IBGE CARTA 1:100.000 <a href="Download/ibge_carta_100mil.zip" download="ibge_carta_100mil" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="ibgeCart('teste33')" id="27"></a></li>
                       <li>
                           <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS 4A - MUX <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cbers4aMu('teste34')" id="28"></a></li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS 4A - MUX <a href="Download/cbers4a_mux.zip" download="cbers4a_mux" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cbers4aMu('teste34')" id="28"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS 4A - WFI <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cbers4aWif('teste35')" id="29"></a></li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS 4A - WFI <a href="Download/cbers4a_wfi.zip" download="cbers4a_wfi" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cbers4aWif('teste35')" id="29"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS - Cenas <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cbersCena('teste36')" id="30"></a></li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS - Cenas <a href="Download/cbers_cenas.zip" download="cbers_cenas" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cbersCena('teste36')" id="30"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cbersGr('teste37')" id="31"></a></li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> CBERS <a href="Download/cbers_grade.zip" download="cbers_grade" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cbersGr('teste37')" id="31"></a></li>
                       <li>
                           <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Landsat <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="landsa('teste38')" id="32"></a></li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Landsat <a href="Download/landsat.zip" download="landsat" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="landsa('teste38')" id="32"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Liss 3 <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="liss('teste39')" id="33"></a></li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Liss 3 <a href="Download/liss_3.zip" download="liss_3" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="liss('teste39')" id="33"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Rapideye <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="rapidey('teste40')" id="34"></a></li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Rapideye <a href="Download/rapideye.zip" download="rapideye" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="rapidey('teste40')" id="34"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Sentinel 2 <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="sentinel('teste41')" id="35"></a></li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Sentinel 2 <a href="Download/sentinel_2.zip" download="sentinel_2" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="sentinel('teste41')" id="35"></a></li>
                     </ul>
                 </li>
                 
@@ -705,19 +705,19 @@ session_start();
                       ÁREAS LICENCIADAS ATÉ 4 MÓDULOS FISCAIS
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
-                      <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Área do Projeto <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="areaProj_4mf('teste30')" id="24"></a></li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Área do Projeto <a href="Download/ap_4mf.zip" download="ap_4mf" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="areaProj_4mf('teste30')" id="24"></a></li>
                       <li>
                           <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Área do Imóvel <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="arImov_4mf('teste31')" id="25"></a></li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Área do Imóvel <a href="Download/ati_4mf.zip" download="ati_4mf" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="arImov_4mf('teste31')" id="25"></a></li>
                       <li>
                           <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="imagens/retangulo-arredondado-325f5f.png" style="max-width:20px;max-height:20px;"> Área de Uso e Ocupação do Solo<a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="arUos_4mf('teste43')" id="37"></a></li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado-325f5f.png" style="max-width:20px;max-height:20px;"> Área de Uso e Ocupação do Solo<a href="Download/auos_4mf.zip" download="auos_4mf" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="arUos_4mf('teste43')" id="37"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Monitoramento<a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="monit_4mf('teste32')" id="26"></a></li>
+                      <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Monitoramento<a href="Download/monitoramento_4mf.zip" download="monitoramento_4mf" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="monit_4mf('teste32')" id="26"></a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -773,7 +773,7 @@ session_start();
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Limites do Estado <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" value="l" class="coor" onclick="estadosLimites1('lim1')" id="coor4" checked></a></li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Limites do Estado <a href="Download/estado_limites.zip" download="estado_limites" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" value="l" class="coor" onclick="estadosLimites1('lim1')" id="coor4" checked></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li> 
@@ -802,7 +802,7 @@ session_start();
                     EMBARGOS E AUTUAÇÕES FEMARH
                   </a>
                   <ul class="dropdown-menu dropdown-menu">
-                    <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Embargos e Autuações FEMARH <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="femarhEmbargos1('teste44')" id="38"></a></li>
+                    <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Embargos e Autuações FEMARH <a href="Download/femarh_embargos.zip" download="femarh_embargos" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="femarhEmbargos1('teste44')" id="38"></a></li>
                   </ul>
                 </li>
     -->
@@ -818,7 +818,7 @@ session_start();
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
 
-                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Aptidão Agrícola <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="aptAgr1('teste44')" id="38"></a></li>
+                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Aptidão Agrícola <a href="Download/aptidao_agricola.zip" download="aptidao_agricola" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="aptAgr1('teste44')" id="38"></a></li>
                         
                         </ul>
                       </li>
@@ -829,23 +829,23 @@ session_start();
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
 
-                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Sistemas <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivSist1('teste45')" id="39"></a></li>
+                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Sistemas <a href="Download/biodivers_sistemas.zip" download="biodivers_sistemas" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivSist1('teste45')" id="39"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-b35a2b.png" style="max-width:20px;max-height:20px;"> Vegetação (Campos/Dunas) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegCampDunas1('teste46')" id="40"></a></li>
+                          <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-b35a2b.png" style="max-width:20px;max-height:20px;"> Vegetação (Campos/Dunas) <a href="Download/biodivers_veg_campos_dunas.zip" download="biodivers_veg_campos_dunas" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegCampDunas1('teste46')" id="40"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-42963f.png" style="max-width:20px;max-height:20px;"> Vegetação (Floresta) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegFlor1('teste47')" id="41"></a></li>
+                          <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-42963f.png" style="max-width:20px;max-height:20px;"> Vegetação (Floresta) <a href="Download/biodivers_veg_floresta.zip" download="biodivers_veg_floresta" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegFlor1('teste47')" id="41"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-66e661.png" style="max-width:20px;max-height:20px;"> Vegetação (Lavrado) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegLavr1('teste48')" id="42"></a></li>
+                          <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-66e661.png" style="max-width:20px;max-height:20px;"> Vegetação (Lavrado) <a href="Download/biodivers_veg_lavrado.zip" download="biodivers_veg_lavrado" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegLavr1('teste48')" id="42"></a></li>
                           <li>
                               <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-48a9f2.png" style="max-width:20px;max-height:20px;"> Vegetação (Sistemas Lacustres) <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegSistLacust1('teste49')" id="43"></a></li>
+                          <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-48a9f2.png" style="max-width:20px;max-height:20px;"> Vegetação (Sistemas Lacustres) <a href="Download/biodivers_veg_sistemas_lacustres.zip" download="biodivers_veg_sistemas_lacustres" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="bioDivVegSistLacust1('teste49')" id="43"></a></li>
 
                         </ul>
                       </li>
@@ -856,15 +856,15 @@ session_start();
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
 
-                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Domínios Morfológicos <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoDomMorfo1('teste50')" id="44"></a></li>
+                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Domínios Morfológicos <a href="Download/geologia_dominios_morfo.zip" download="geologia_dominios_morfo" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoDomMorfo1('teste50')" id="44"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Erosão <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gepErosao1('teste51')" id="45"></a></li>
+                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Erosão <a href="Download/geologia_erosao.zip" download="geologia_erosao" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gepErosao1('teste51')" id="45"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Geológico <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoGeolog1('teste54')" id="48"></a></li>
+                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Geológico <a href="Download/geologia_geologico.zip" download="geologia_geologico" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoGeolog1('teste54')" id="48"></a></li>
                        <!--   <li>
                               <hr class="dropdown-divider">
                           </li>
@@ -879,7 +879,7 @@ session_start();
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
 
-                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Geomorfológia <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoUndGeomorfo1('teste52')" id="46"></a></li>
+                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Geomorfológia <a href="Download/geomorfologia_unidades_geomorfo.zip" download="geomorfologia_unidades_geomorfo" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="geoUndGeomorfo1('teste52')" id="46"></a></li>
                         
                         </ul>
                       </li>
@@ -890,11 +890,11 @@ session_start();
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
 
-                          <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-01aaff.png" style="max-width:20px;max-height:20px;"> Drenagem <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidDrenagem1('teste55')" id="49"></a></li>
+                          <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-01aaff.png" style="max-width:20px;max-height:20px;"> Drenagem <a href="Download/hidrografia_drenagem.zip" download="hidrografia_drenagem" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidDrenagem1('teste55')" id="49"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Ottobacias <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidOttobacias1('teste56')" id="50"></a></li>
+                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Ottobacias <a href="Download/hidrografia_ottobacias.zip" download="hidrografia_ottobacias" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="hidOttobacias1('teste56')" id="50"></a></li>
 
                         </ul>
                       </li>
@@ -932,7 +932,7 @@ session_start();
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
 
-                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Solos <a><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="solos1('teste53')" id="47"></a></li>
+                          <li><a id="coord" ><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Solos <a href="Download/solos.zip" download="solos" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="solos1('teste53')" id="47"></a></li>
 
                         </ul>
                       </li>
