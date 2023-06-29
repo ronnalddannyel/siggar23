@@ -227,6 +227,12 @@ body {
     margin-top: 9px;
   }
 
+  input#coor5 {
+    float: right;
+    margin-right: 5px;
+    margin-top: 9px;
+  }
+
   #teste5 {
     display: none;
     padding: 5px;
@@ -803,4 +809,24 @@ body {
 
   .tab-pane {
     padding: 2%;
+  }
+
+  .slider{
+    width: 370px;
+    height: 60px;
+    padding: 0 0 0 7px;
+  }
+  
+  .slider input[type="range"] {
+    width: 355px;
+    height: 2px;
+    background: black;
+    border: none;
+    outline: none;
+  }
+  
+  #resultado1 {
+    font-weight: bold;
+    color: blue;
+    float: left;
   }

@@ -214,9 +214,45 @@ session_start();
                           <hr class="dropdown-divider">
                       </li>
                       <li><a id="coord">OSM Standard <input type="RADIO" name="op" onclick="basm()" id="coor"></a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li>
+                        <a style="">
+                        
+                        <div style="margin-top: 0; padding-left: 10px;">
+                        <p style="float: left; padding-right: 10px;">Mosaico Planet: </p> 
+                        <p id="resultado1">2023_05</p></div>
+
+                        
+                        <input type="RADIO" class="MosPlan" name="op" onclick=" mudaNum('1')" id="coor5">
+                        <br><br>
+                        <p style="padding-left: 10px;">
+                          Fonte: Planet <br>
+                          Selecione o período abaixo:
+                        </p>
+
+                        
+                        <div class="slider">
+
+                          <input type="range" id="fader"  min="1" max="88" value="88" list="volsettings" oninput = "mudaNum('2')">
+                          <datalist id="volsettings">
+                            <option>1</option>
+                            <option>13</option>
+                            <option>24</option>
+                            <option>36</option>
+                            <option>48</option>
+                            <option>60</option>
+                            <option>72</option>
+                            <option>84</option>
+                          </datalist>
+                           
+                        </div>
+                        </a>
+                      </li>
                     </ul>
                 </li>
-
+<!--
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       MOSAICOS PLANET
@@ -638,7 +674,7 @@ session_start();
     
                     </ul>
                 </li>
-                
+    -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       GRADES
@@ -1919,6 +1955,10 @@ session_start();
     <!-- Códigos para criar mapa -->
 
     <script src="mapa.js"></script>
+
+    <!-- Códigos para mudar período dos mosaicos da Planet -->
+
+    <script src="mapas/funcoes/mosaicoPlanet.js"></script>
 
     <!-- Códigos para ler arquivos geojson externo -->
               
