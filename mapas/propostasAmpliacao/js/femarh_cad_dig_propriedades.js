@@ -6,9 +6,10 @@ var groupLay_cadDigProp = L.layerGroup([]);
 function cadDigProp(el){
 
     groupLay_cadDigProp.clearLayers();
-    $.getJSON(UrlFemarh+"siggarr1/siggar23/mapas/propostasAmpliacao/femarh_cad_dig_propriedades.geojson", function(data) {  
+    $.getJSON(UrlFemarh+"/siggarr/mapas/propostasAmpliacao/femarh_cad_dig_propriedades.geojson", function(data) {  
         var cadDigProp1 = new L.geoJson(data, {
-            color: "blue",
+            color: "#f57a7a",
+            weight: "2",
             onEachFeature: function (geom, layer) {
                 layer.bindPopup('<h6><b>Cadastro Digital de Propriedades</b></h6><p><b>Proprietário:</b> '+geom.properties.proprietar+'<br><b>Processo:</b> '+geom.properties.processo+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Gleba:</b> '+geom.properties.gleba+'<br><b>Imóvel:</b> '+geom.properties.imovel+'<br><b>Assunto:</b> '+geom.properties.assunto+'<br><b>Situação:</b> '+geom.properties.situacao+'</p>');
             }
@@ -20,7 +21,7 @@ function cadDigProp(el){
 
         var cadDigProp112 = document.getElementById("teste59");
         if(cadDigProp112.style.display === "block"){
-            cadDigPropHtml = 'Cadastro Digital de Propriedades ('+data.totalFeatures+')';
+            cadDigPropHtml = '<img src="imagens/zee/retangulo-arredondado-f57a7a.png" style="max-width:20px;max-height:20px;"> Cadastro Digital de Propriedades ('+data.totalFeatures+')';
             cadDigProp112.innerHTML += cadDigPropHtml;
         }else{
             cadDigProp112.innerHTML = "";
@@ -43,4 +44,5 @@ function cadDigProp(el){
     }else{
         document.getElementById(el).style.display = 'block';
     }
+    legMostra();
 }
