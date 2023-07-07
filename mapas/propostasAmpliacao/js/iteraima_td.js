@@ -10,7 +10,7 @@ function iterTd(el){
         var iterTd1 = new L.geoJson(data, {
             color: "black",
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>Aptidão Agrícola</b></h6><p><b>Propriedade:</b> '+geom.properties.propriedad+'<br><b>Número Título Definitivo:</b> '+geom.properties.titulo+'<br><b>Interessado:</b> '+geom.properties.interessad+'<br><b>Status:</b> '+geom.properties.status+'<br><b>Área (ha):</b> '+geom.properties.area_ha+'<br><b>Gleba:</b> '+geom.properties.gleba+'<br><b>Observação:</b> '+geom.properties.obs+'<br><b>Certificado:</b> '+geom.properties.certificad+'<br><b>Convênio:</b> '+geom.properties.conv+'</p>');
+                layer.bindPopup('<h6><b>Iteraima - Títulos Definitivos</b></h6><p><b>Propriedade:</b> '+geom.properties.propriedad+'<br><b>Número Título Definitivo:</b> '+geom.properties.titulo+'<br><b>Interessado:</b> '+geom.properties.interessad+'<br><b>Status:</b> '+geom.properties.status+'<br><b>Área (ha):</b> '+geom.properties.area_ha.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Gleba:</b> '+geom.properties.gleba+'<br><b>Observação:</b> '+geom.properties.obs+'<br><b>Certificado:</b> '+geom.properties.certificad+'<br><b>Convênio:</b> '+geom.properties.conv+'</p>');
             }
         });
 
@@ -20,7 +20,7 @@ function iterTd(el){
 
         var iterTd112 = document.getElementById("teste58");
         if(iterTd112.style.display === "block"){
-            iterTdHtml = 'iteraima_td ('+data.totalFeatures+')';
+            iterTdHtml = 'Iteraima - Títulos Definitivos ('+data.totalFeatures+')';
             iterTd112.innerHTML += iterTdHtml;
         }else{
             iterTd112.innerHTML = "";

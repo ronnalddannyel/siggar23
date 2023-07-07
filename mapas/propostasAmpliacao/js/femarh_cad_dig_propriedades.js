@@ -10,7 +10,7 @@ function cadDigProp(el){
         var cadDigProp1 = new L.geoJson(data, {
             color: "blue",
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>Aptidão Agrícola</b></h6><p><b>Proprietário:</b> '+geom.properties.proprietar+'<br><b>Processo:</b> '+geom.properties.processo+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Gleba:</b> '+geom.properties.gleba+'<br><b>Imóvel:</b> '+geom.properties.imovel+'<br><b>Assunto:</b> '+geom.properties.assunto+'<br><b>Situação:</b> '+geom.properties.situacao+'</p>');
+                layer.bindPopup('<h6><b>Cadastro Digital de Propriedades</b></h6><p><b>Proprietário:</b> '+geom.properties.proprietar+'<br><b>Processo:</b> '+geom.properties.processo+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Gleba:</b> '+geom.properties.gleba+'<br><b>Imóvel:</b> '+geom.properties.imovel+'<br><b>Assunto:</b> '+geom.properties.assunto+'<br><b>Situação:</b> '+geom.properties.situacao+'</p>');
             }
         });
 
@@ -20,7 +20,7 @@ function cadDigProp(el){
 
         var cadDigProp112 = document.getElementById("teste59");
         if(cadDigProp112.style.display === "block"){
-            cadDigPropHtml = 'femarh_cad_dig_propriedades ('+data.totalFeatures+')';
+            cadDigPropHtml = 'Cadastro Digital de Propriedades ('+data.totalFeatures+')';
             cadDigProp112.innerHTML += cadDigPropHtml;
         }else{
             cadDigProp112.innerHTML = "";

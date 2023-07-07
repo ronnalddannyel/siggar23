@@ -10,7 +10,7 @@ function icmbioEsec(el){
         var icmbioEsec1 = new L.geoJson(data, {
             color: "black",
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>Aptidão Agrícola</b></h6><p><b>Código Unidade de Conservação:</b> '+geom.properties.cod_uc+'<br><b>Categoria:</b> '+geom.properties.categoria+'<br><b>Nome:</b> '+geom.properties.nome_1+'<br><b>Bioma:</b> '+geom.properties.bioma_1+'<br><b>UF:</b> '+geom.properties.uf_1+'<br><b>Área (ha):</b> '+geom.properties.hectares+'<br><b>Processo:</b> '+geom.properties.processo+'<br><b>Território:</b> '+geom.properties.territorio+'<br><b>Etapa:</b> '+geom.properties.etapa+'</p>');
+                layer.bindPopup('<h6><b>ESEC Maracá - Proposta Ampliação</b></h6><p><b>Código Unidade de Conservação:</b> '+geom.properties.cod_uc+'<br><b>Categoria:</b> '+geom.properties.categoria+'<br><b>Nome:</b> '+geom.properties.nome_1+'<br><b>Bioma:</b> '+geom.properties.bioma_1+'<br><b>UF:</b> '+geom.properties.uf_1+'<br><b>Área (ha):</b> '+geom.properties.hectares.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Processo:</b> '+geom.properties.processo+'<br><b>Território:</b> '+geom.properties.territorio+'<br><b>Etapa:</b> '+geom.properties.etapa+'</p>');
             }
         });
 
@@ -20,7 +20,7 @@ function icmbioEsec(el){
 
         var icmbioEsec112 = document.getElementById("teste60");
         if(icmbioEsec112.style.display === "block"){
-            icmbioEsecHtml = 'icmbio_esec_maraca_ proposta_ampliacao ('+data.totalFeatures+')';
+            icmbioEsecHtml = 'ESEC Maracá - Proposta Ampliação ('+data.totalFeatures+')';
             icmbioEsec112.innerHTML += icmbioEsecHtml;
         }else{
             icmbioEsec112.innerHTML = "";

@@ -10,7 +10,7 @@ function icmbioFlona(el){
         var icmbioFlona1 = new L.geoJson(data, {
             color: "black",
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>Aptidão Agrícola</b></h6><p><b>Categoria:</b> '+geom.properties.categoria+'<br><b>Nome:</b> '+geom.properties.nome_1+'<br><b>Processo:</b> '+geom.properties.processo+'<br><b>Área (ha):</b> '+geom.properties.hectares.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+'</p>');
+                layer.bindPopup('<h6><b>FLONA Parima - Proposta</b></h6><p><b>Categoria:</b> '+geom.properties.categoria+'<br><b>Nome:</b> '+geom.properties.nome_1+'<br><b>Processo:</b> '+geom.properties.processo+'<br><b>Área (ha):</b> '+geom.properties.hectares.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.</p>');
             }
         });
 
@@ -20,7 +20,7 @@ function icmbioFlona(el){
 
         var icmbioFlona112 = document.getElementById("teste61");
         if(icmbioFlona112.style.display === "block"){
-            icmbioFlonaHtml = 'icmbio_flona_parima_ proposta ('+data.totalFeatures+')';
+            icmbioFlonaHtml = 'FLONA Parima - Proposta ('+data.totalFeatures+')';
             icmbioFlona112.innerHTML += icmbioFlonaHtml;
         }else{
             icmbioFlona112.innerHTML = "";
