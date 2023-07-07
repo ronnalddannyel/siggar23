@@ -842,7 +842,36 @@ session_start();
                   </ul>
                 </li>
     -->
-                
+<!--
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PROPOSTAS DE AMPLIAÇÃO ICMBIO
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu">
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Sigef Certificados <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="sigefCert('teste57')" id="51"></a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-FF8C00.png" style="max-width:20px;max-height:20px;"> Iteraima - Títulos Definitivos <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="iterTd('teste58')" id="52"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-red.png" style="max-width:20px;max-height:20px;"> Cadastro Digital de Propriedades <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cadDigProp('teste59')" id="53"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-32CD32.png" style="max-width:20px;max-height:20px;"> ESEC Maracá - Proposta Ampliação <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="icmbioEsec('teste60')" id="54"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-006400.png" style="max-width:20px;max-height:20px;"> FLONA Parima - Proposta <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="icmbioFlona('teste61')" id="55"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord" ><img src="imagens/retangulo-arredondado-006400.png" style="max-width:20px;max-height:20px;"> PARNA Viruá - Proposta Ampliação <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="icmbioParna('teste62')" id="56"></a></li>
+                    </ul>
+                </li>
+                -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       ZEE
@@ -1412,7 +1441,13 @@ session_start();
               <div id="teste15"></div>
 
 
+              <div id="teste57"></div>
 
+              <div id="teste58"></div>
+
+              <div id="teste59"></div>
+
+              <div id="teste60"></div>
 
 
 
@@ -1570,7 +1605,7 @@ session_start();
                 </div>
               </div>
 
-              <div id="teste57">
+              <div id="teste79">
                 <div id="potSocAmb"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1581,7 +1616,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste58">
+              <div id="teste80">
                 <div id="potSocHum"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1592,7 +1627,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste59">
+              <div id="teste81">
                 <div id="potSocInst"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1915,8 +1950,8 @@ session_start();
 
 
     <script>
-      var UrlFemarh = "http://extranet.femarh.com";
-      //var UrlFemarh = "http://localhost/";
+      //var UrlFemarh = "http://extranet.femarh.com";
+      var UrlFemarh = "http://localhost/";
     </script>
 
     <script>
@@ -1983,6 +2018,30 @@ session_start();
     <!-- Códigos - femarhEmbargos -->
 
     <script src="mapas/femarhEmbargos/js/femarhEmbargos.js"></script>
+
+    <!-- Códigos - femarh_cad_dig_propriedades -->
+
+    <script src="mapas/propostasAmpliacao/js/femarh_cad_dig_propriedades.js"></script>
+
+    <!-- Códigos - iteraima_td -->
+
+    <script src="mapas/propostasAmpliacao/js/iteraima_td.js"></script>
+
+    <!-- Códigos - sigef_certificados -->
+
+    <script src="mapas/propostasAmpliacao/js/sigef_certificados.js"></script>
+
+    <!-- Códigos - icmbio_esec_maraca_ proposta_ampliacao -->
+
+    <script src="mapas/propostasAmpliacao/js/icmbio_esec_maraca_ proposta_ampliacao.js"></script>
+
+    <!-- Códigos - icmbio_flona_parima_ proposta -->
+
+    <script src="mapas/propostasAmpliacao/js/icmbio_flona_parima_ proposta.js"></script>
+
+    <!-- Códigos - icmbio_parna_virua_proposta_ampliacao -->
+
+    <script src="mapas/propostasAmpliacao/js/icmbio_parna_virua_proposta_ampliacao.js"></script>
 
 
 
