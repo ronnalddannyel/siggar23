@@ -17,7 +17,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     // desmarcar os checkboxs das camadas
 
-    while (id<57){
+    while (id<56){
     var status = document.getElementById(id);
       if (status.checked) {
         status.checked = false;
@@ -200,7 +200,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     var cont = 1;
 
-    while(cont<63) {
+    while(cont<62) {
     
       var res = el + cont;
       console.log(res);

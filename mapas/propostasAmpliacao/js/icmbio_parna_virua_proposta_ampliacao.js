@@ -19,7 +19,7 @@ function icmbioParna(el){
 
         // icmbio_parna_virua_proposta_ampliacao
 
-        var icmbioParna112 = document.getElementById("teste62");
+        var icmbioParna112 = document.getElementById("teste59");
         if(icmbioParna112.style.display === "block"){
             icmbioParnaHtml = '<img src="imagens/zee/retangulo-arredondado-73ffdf.png" style="max-width:20px;max-height:20px;"> PARNA Viruá - Proposta Ampliação ('+data.totalFeatures+')';
             icmbioParna112.innerHTML += icmbioParnaHtml;

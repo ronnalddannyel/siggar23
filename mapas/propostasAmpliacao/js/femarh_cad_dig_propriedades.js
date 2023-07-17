@@ -19,7 +19,7 @@ function cadDigProp(el){
 
         // femarh_cad_dig_propriedades
 
-        var cadDigProp112 = document.getElementById("teste59");
+        var cadDigProp112 = document.getElementById("teste62");
         if(cadDigProp112.style.display === "block"){
             cadDigPropHtml = '<img src="imagens/zee/retangulo-arredondado-f57a7a.png" style="max-width:20px;max-height:20px;"> Cadastro Digital de Propriedades ('+data.totalFeatures+')';
             cadDigProp112.innerHTML += cadDigPropHtml;

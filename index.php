@@ -843,9 +843,9 @@ session_start();
                 </li>
     -->
 
-                <li class="nav-item dropdown">
+                  <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      PROPOSTAS DE AMPLIAÇÃO ICMBIO
+                      ITERAIMA
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-835acb.png" style="max-width:20px;max-height:20px;"> Sigef Certificados <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="sigefCert('teste57')" id="51"></a></li>
@@ -853,13 +853,18 @@ session_start();
                           <hr class="dropdown-divider">
                       </li>
                       <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-e1b053.png" style="max-width:20px;max-height:20px;"> Iteraima - Títulos Definitivos <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="iterTd('teste58')" id="52"></a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PROPOSTAS DE AMPLIAÇÃO ICMBIO
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu">
+                      <!--<li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-f57a7a.png" style="max-width:20px;max-height:20px;"> Cadastro Digital de Propriedades <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cadDigProp('teste62')" id="56"></a></li>
                       <li>
                         <hr class="dropdown-divider">
-                      </li>
-                      <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-f57a7a.png" style="max-width:20px;max-height:20px;"> Cadastro Digital de Propriedades <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cadDigProp('teste59')" id="53"></a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
+                      </li>-->
                       <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-ffffbe.png" style="max-width:20px;max-height:20px;"> ESEC Maracá - Proposta Ampliação <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="icmbioEsec('teste60')" id="54"></a></li>
                       <li>
                         <hr class="dropdown-divider">
@@ -868,7 +873,7 @@ session_start();
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-73ffdf.png" style="max-width:20px;max-height:20px;"> PARNA Viruá - Proposta Ampliação <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="icmbioParna('teste62')" id="56"></a></li>
+                      <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-73ffdf.png" style="max-width:20px;max-height:20px;"> PARNA Viruá - Proposta Ampliação <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="icmbioParna('teste59')" id="53"></a></li>
                     </ul>
                 </li>
     
@@ -1445,13 +1450,13 @@ session_start();
 
               <div id="teste58"></div>
 
-              <div id="teste59"></div>
+              <div id="teste62"></div>
 
               <div id="teste60"></div>
 
               <div id="teste61"></div>
 
-              <div id="teste62"></div>
+              <div id="teste59"></div>
 
 
 
