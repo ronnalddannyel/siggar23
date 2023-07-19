@@ -14,6 +14,13 @@
     iconUrl: '././leaflet/images/fogo.png'
   });
 
+  var contFogo = new L.Icon({
+    iconSize: [27, 27],
+    iconAnchor: [12, 20],
+    popupAnchor:  [1, -24],
+    iconUrl: '././leaflet/images/symbole-de-feu-rouge.png'
+  });
+
 var redIcon = new L.Icon({
   iconSize: [35, 35],
   iconAnchor: [18, 27],

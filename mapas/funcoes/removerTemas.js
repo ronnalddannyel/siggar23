@@ -17,7 +17,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     // desmarcar os checkboxs das camadas
 
-    while (id<56){
+    while (id<57){
     var status = document.getElementById(id);
       if (status.checked) {
         status.checked = false;
@@ -112,6 +112,8 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     document.getElementById("teste25").innerHTML = "";
 
+    document.getElementById("teste62").innerHTML = "";
+
     // PROPOSTAS DE AMPLIAÇÃO ICMBIO
 
     document.getElementById("teste57").innerHTML = "";
@@ -200,7 +202,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     var cont = 1;
 
-    while(cont<62) {
+    while(cont<63) {
     
       var res = el + cont;
       console.log(res);

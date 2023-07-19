@@ -842,6 +842,15 @@ session_start();
                   </ul>
                 </li>
     -->
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ÁREA LICENCIADA PARA USO DO FOGO
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu">
+                    <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> Área Licenciada para Uso do Fogo <a href="" download="femarh_embargos" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas('teste62')" id="56"></a></li>
+                  </ul>
+                </li>
 
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -2027,6 +2036,10 @@ session_start();
     <!-- Códigos - femarhEmbargos -->
 
     <script src="mapas/femarhEmbargos/js/femarhEmbargos.js"></script>
+
+    <!-- Códigos - controleQueimadas -->
+
+    <script src="mapas/controleQueimadas/js/controle_queimadas.js"></script>
 
     <!-- Códigos - femarh_cad_dig_propriedades -->
 
