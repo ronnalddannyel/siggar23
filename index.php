@@ -845,7 +845,7 @@ session_start();
                 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    ÁREA LICENCIADA PARA USO DO FOGO
+                    AUTORIZAÇÃO DE USO CONTROLADO DO FOGO
                   </a>
                   <ul class="dropdown-menu dropdown-menu">
                     <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> Área Licenciada para Uso do Fogo <a href="" download="femarh_embargos" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas('teste62')" id="56"></a></li>
