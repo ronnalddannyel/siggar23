@@ -114,11 +114,10 @@
         var groupLayPlanet = L.layerGroup([]);
 
         function plan(ano){
-          
           groupLayPlanet.clearLayers();
           
           var planet = L.tileLayer(
-            'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_'+ano+'_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK1a352ec4d9874d4fb341a4d810477538',
+            'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_'+ano+'_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAK9f03f327349347429a5d54e5bd991d5e',
             {
               id: 'global_monthly',
             });
