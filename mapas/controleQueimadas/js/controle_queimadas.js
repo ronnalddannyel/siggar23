@@ -16,7 +16,7 @@ function controleQueimadas(el){
       return L.marker(latlng, {icon: contFogo})
     },
     onEachFeature: function (geom, layer) {
-      layer.bindPopup('<h6><b>Área Licenciada para Uso do Fogo</b></h6><p><b>Nome:</b> '+geom.properties.nome+'<br><b>CPF/CNPJ:</b> '+geom.properties.cpf_cnpj+'<br><b>Denominação:</b> '+geom.properties.denomina+'<br><b>Endereço:</b> '+geom.properties.endereco+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Instituição:</b> '+geom.properties.instituto+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Atividade da Queimada:</b> '+geom.properties.atividade+'<br><b>Área Licenciada:</b> '+geom.properties.area_lic.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Data Final:</b> '+geom.properties.data_f+'<br><b>N° do Processo (SEI):</b> '+geom.properties.proces_sei+'</p>');
+      layer.bindPopup('<h6><b>Área Licenciada para Uso do Fogo</b></h6><p><b>Denominação:</b> '+geom.properties.denomina+'<br><b>Endereço:</b> '+geom.properties.endereco+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Instituição:</b> '+geom.properties.instituto+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Atividade da Queimada:</b> '+geom.properties.atividade+'<br><b>Área Licenciada:</b> '+geom.properties.area_lic.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Data Final:</b> '+geom.properties.data_f+'<br><b>N° do Processo (SEI):</b> '+geom.properties.proces_sei+'</p>');
     },
     });
     groupLayControleQueimada.clearLayers();
