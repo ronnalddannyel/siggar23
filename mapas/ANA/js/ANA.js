@@ -1,8 +1,8 @@
 
 // Outorgas Emitidas pela ANA
-
+      
     var markers3 = L.markerClusterGroup();
-
+      console.log(ana3);
       var ana = L.geoJSON(ana3, {
         pointToLayer: function (geom, latlng) {
             return L.marker(latlng, {icon: blueIcon1});
@@ -46,7 +46,7 @@
 // Outorgas Superficiais
 
       var markers4 = L.markerClusterGroup();
-
+      console.log(outSuper3);
       var outSuper = L.geoJSON(outSuper3, {
         pointToLayer: function (geom, latlng) {
             return L.marker(latlng, {icon: blueIcon2});
@@ -91,7 +91,7 @@
       // Outorgas Subterrâneas
 
       var markers5 = L.markerClusterGroup();
-
+      console.log(outSub3);
       var outSub = L.geoJSON(outSub3, {
         pointToLayer: function (geom, latlng) {
             return L.marker(latlng, {icon: MarromIcon});
