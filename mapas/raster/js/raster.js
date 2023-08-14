@@ -30,7 +30,7 @@ function raste(){
 
   var center = [3.823725, -59.809569];
 
-    var imageUrl = 'http://localhost/siggarr2/SIGGAR-Intranet/mapas/raster/raster3.png',
+    var imageUrl = UrlFemarh+'/siggarr/mapas/raster/raster3.png',
     imageBounds = [center, [1.94562, -61.944544]];
 
     var efef = L.imageOverlay(imageUrl, imageBounds);
