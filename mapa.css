@@ -54,15 +54,6 @@ body {
     font-size: 20px;
   }
 
-  div.bt button#bt4{
-    height: relative;
-    float: right;
-    margin-top: 605px;
-    margin-right:-150px;
-    border: none;
-    font-size: 20px;
-  }
-
   div.offcanvas-header img {
     max-width:100px;
     max-height:50px;
@@ -818,7 +809,7 @@ body {
   }
   
   .slider input[type="range"] {
-    width: 355px;
+    width: 350px;
     height: 2px;
     background: black;
     border: none;
@@ -829,4 +820,51 @@ body {
     font-weight: bold;
     color: blue;
     float: left;
+  }
+
+
+  @media only screen and (min-width: 1701px) {
+
+    div.bt button#bt4{
+      background-color: white;
+      border-radius: 4px;
+      float: right;
+      border: solid 0.1px rgb(190, 187, 187);
+      font-size: 20px;
+      margin-top: 27%;
+      margin-right: 0.6%;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 901px ) and (max-width: 1700px ){
+  
+    div.bt button#bt4{
+      background-color: white;
+      border-radius: 4px;
+      float: right;
+      border: solid 0.1px rgb(190, 187, 187);
+      font-size: 20px;
+      margin-top: 27%;
+      margin-right: 0.6%;
+    }
+  }
+  
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 900px) {
+  
+    div.bt button#bt4{
+      background-color: white;
+      border-radius: 4px;
+      float: right;
+      border: solid 0.1px rgb(190, 187, 187);
+      font-size: 20px;
+      margin-top: 90%;
+      margin-right: 2.3%;
+    }
+  
+    .slider input[type="range"] {
+      width: 316px;
+      }
+  
   }
