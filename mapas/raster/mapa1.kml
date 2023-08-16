@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:ns2="http://www.google.com/kml/ext/2.2" xmlns:ns3="http://www.w3.org/2005/Atom" xmlns:ns4="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <LookAt>
+            <longitude>-60.87793875452161</longitude>
+            <latitude>2.885172181130727</latitude>
+            <altitude>390958.13796906604</altitude>
+            <heading>0.0</heading>
+            <tilt>0.0</tilt>
+            <range>315914.68188636453</range>
+            <altitudeMode>clampToGround</altitudeMode>
+        </LookAt>
+        <Folder>
+            <name>cite:30m_232058_20080407_20161101_543</name>
+            <LookAt>
+                <longitude>149.99999999994242</longitude>
+                <latitude>75.4891813009131</latitude>
+                <altitude>1056307.8556634067</altitude>
+                <heading>0.0</heading>
+                <tilt>0.0</tilt>
+                <range>853552.1524874275</range>
+                <altitudeMode>clampToGround</altitudeMode>
+            </LookAt>
+            <GroundOverlay>
+                <name>cite:30m_232058_20080407_20161101_543</name>
+                <drawOrder>0</drawOrder>
+                <Icon>
+                    <href>http://localhost:8080/geoserver/cite/wms?service=wms&amp;request=GetMap&amp;version=1.1.1&amp;format=image%2Fpng&amp;layers=cite%3A30m_232058_20080407_20161101_543&amp;styles=raster&amp;height=671&amp;width=768&amp;transparent=true&amp;bbox=-61.944544491419556%2C1.9456197724386788%2C-59.8095694577266%2C3.8237248085350215&amp;srs=EPSG%3A4326</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshMode>never</viewRefreshMode>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.75</viewBoundScale>
+                </Icon>
+                <altitude>0.0</altitude>
+                <LatLonBox>
+                    <north>3.8237248085350215</north>
+                    <south>1.9456197724386788</south>
+                    <east>-59.8095694577266</east>
+                    <west>-61.944544491419556</west>
+                    <rotation>0.0</rotation>
+                </LatLonBox>
+            </GroundOverlay>
+        </Folder>
+    </Document>
+</kml>

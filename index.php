@@ -148,6 +148,8 @@ session_start();
     <script src="./leaflet/proj4-compressed.js"></script>
     <script src="./leaflet/proj4leaflet.js"></script>
 
+    <script src="leaflet/L.KML.js"></script>
+
     <script type="text/javascript" src="./FileSaver.min.js"></script>
     
 </head>
