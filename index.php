@@ -877,6 +877,18 @@ session_start();
               <input type="button" class="btn btn-primary" onclick="cpf2(areaImovel1, areaImovel_4mf)" value="Enviar" id="remLay">
               <input class="btn btn-primary" type="button" onclick="removeCpf()"  value="Remover tema" id="remLay">
               
+
+            <br><hr>
+            
+
+            <h5>Consulte CAR</h5>
+
+              <label for="car">CAR</label>
+              <input type="text" class="form-control" id="car" name="car" placeholder="Digite o CAR">
+
+              <input type="button" class="btn btn-primary" onclick="car2()" value="Enviar" id="remLay">
+              <input class="btn btn-primary" type="button" onclick="removeCar()"  value="Remover tema" id="remLay">
+              
               <img src="imagens/SIGARR3.png" class="d-none d-lg-block d-print-block" href="https://femarh.rr.gov.br/" id="fem1">
 
             </div>
@@ -1880,6 +1892,10 @@ session_start();
     <!-- Códigos - Consultar Imóvel por CPF na URL -->
 
     <script src="mapas/funcoes/urlImovel.js"></script>
+
+    <!-- Códigos - Consultar CAR -->
+
+    <script src="mapas/funcoes/consultaCar.js"></script>
 
     <!-- Códigos - Agência Nacional de Mineração -->
 
