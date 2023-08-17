@@ -114,6 +114,10 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     document.getElementById("teste62").innerHTML = "";
 
+    // CAR
+
+    document.getElementById("teste63").innerHTML = "";
+
     // PROPOSTAS DE AMPLIAÇÃO ICMBIO
 
     document.getElementById("teste57").innerHTML = "";
