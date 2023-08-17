@@ -225,7 +225,7 @@ session_start();
                           Landsat 2008
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
-                            <li><a id="coord">232058_07/04 <input type="checkbox" class="coor" value="l" onclick="raste()" id="61"></a></li>
+                            <li><a id="coord">232058_07/04 <input type="checkbox" class="coor" value="l" onclick="raste()" id="58"></a></li>
                         </ul>
                       </li>
                       <li>
@@ -436,6 +436,14 @@ session_start();
                       </li>
                       <li><a id="coord" ><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Glebas <a href="Download/glebas.zip" download="Glebas" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="gleb('teste15')" id="14"></a></li>
                     </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    CAR
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu">
+                    <li><a id="coord"><img src="imagens/zee/retangulo-arredondado-e600a9.png" style="max-width:20px;max-height:20px;"> CAR-RR <a href="Download/car_rr.zip" download="CAR-RR" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="car1('teste63')" id="57"></a></li>
+                  </ul>
                 </li>
                 <!--
                 <li class="nav-item dropdown">
@@ -1101,12 +1109,14 @@ session_start();
 
               <div id="teste15"></div>
 
+              <div id="teste63"></div>
+
+              <div id="teste62"></div>
+
 
               <div id="teste57"></div>
 
               <div id="teste58"></div>
-
-              <div id="teste62"></div>
 
               <div id="teste60"></div>
 
@@ -1717,6 +1727,9 @@ session_start();
     <script src="mapas/propostasAmpliacao/js/icmbio_parna_virua_proposta_ampliacao.js"></script>
 
 
+    <!-- Códigos - CAR -->
+
+    <script src="mapas/CAR/js/car.js"></script>
 
 
     <!-- Códigos - biodivers_veg_sistemas_lacustres -->
