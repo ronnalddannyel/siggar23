@@ -10,7 +10,7 @@ function car1(el){
             color: '#e600a9',
             weight: "1",
             onEachFeature: function (geom, layer) {
-                layer.bindPopup('<h6><b>CAR-RR</b></h6><p><b>Código Imovel:</b> '+geom.properties.cod_imovel+'<br><b>Status:</b> '+geom.properties.status_imo+'<br><b>Data de Criação:</b> '+geom.properties.dat_criaca+'<br><b>Área:</b> '+geom.properties.area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Condição:</b> '+geom.properties.condicao+'<br><b>UF:</b> '+geom.properties.uf+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Código Município:</b> '+geom.properties.cod_municipio_ibge+'<br><b>Módulo Fiscal:</b> '+geom.properties.m_fiscal+'<br><b>Tipo Imóvel:</b> '+geom.properties.tipo_imove+'</p>');
+                layer.bindPopup('<h6><b>CAR-RR</b></h6><p><b>Código Imovel:</b> '+geom.properties.cod_imovel+'<br><b>Status:</b> '+geom.properties.status_imovel+'<br><b>Data de Criação:</b> '+geom.properties.dat_criacao+'<br><b>Área:</b> '+geom.properties.area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Condição:</b> '+geom.properties.condicao+'<br><b>UF:</b> '+geom.properties.uf+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Código Município:</b> '+geom.properties.cod_municipio_ibge+'<br><b>Módulo Fiscal:</b> '+geom.properties.m_fiscal+'<br><b>Tipo Imóvel:</b> '+geom.properties.tipo_imovel+'</p>');
             }
         });
 
