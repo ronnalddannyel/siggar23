@@ -1,0 +1,6 @@
+.ui-autocomplete {
+    z-index:10000000;
+    font-size: 75%;
+    max-height: 30%;
+    overflow:auto;
+}
