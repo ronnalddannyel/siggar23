@@ -71,8 +71,8 @@ var sedesMunic = L.geoJSON(sedesMunic1, {
       map.addLayer(localidade);
     }
     else {
-      map.addLayer(markers1);
       map.removeLayer(localidade);
+      map.addLayer(markers1);
     }
   }
 
