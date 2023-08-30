@@ -893,7 +893,7 @@ session_start();
             <h5>Consulte CAR</h5>
 
               <label for="car">CAR</label>
-              <input type="text" class="form-control" id="car" name="car" placeholder="Digite o CAR">
+              <input type="text" class="form-control" id="car" name="car" placeholder="Digite os Últimos Dígitos">
 
               <input type="button" class="btn btn-primary" onclick="car2()" value="Enviar" id="remLay">
               <input class="btn btn-primary" type="button" onclick="removeCar()"  value="Remover tema" id="remLay">
