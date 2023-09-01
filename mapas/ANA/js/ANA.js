@@ -8,7 +8,7 @@
             return L.marker(latlng, {icon: blueIcon1});
         },
         onEachFeature: function (features, layer) {
-          layer.bindPopup('<h6><b>Outorgas Emitidas pela ANA</b></h6><p><b>Dominio: </b>'+features.properties.tdm_ds+'<br><b>Latitude:</b> '+features.properties.int_nu_lat+'<br><b>Longitude:</b> '+features.properties.int_nu_lon+'<br><b>Município:</b> '+features.properties.ing_nm_mun+'<br><b>Tipo da Finalidade:</b> '+features.properties.tfn_ds+'</p>');
+          layer.bindPopup('<h6><b>Outorgas Emitidas pela ANA</b></h6><p><b>Dominio: </b>'+features.properties.TDM_DS+'<br><b>Latitude:</b> '+features.properties.INT_NU_LAT+'<br><b>Longitude:</b> '+features.properties.INT_NU_LON+'<br><b>Município:</b> '+features.properties.ING_NM_MUN+'<br><b>Tipo da Finalidade:</b> '+features.properties.TFN_DS+'</p>');
         }
       });
       markers3.addLayer(ana);
@@ -37,8 +37,8 @@
           map.addLayer(ana);
         }
         else {
-          map.addLayer(markers3);
           map.removeLayer(ana);
+          map.addLayer(markers3);
         }
       }
 
@@ -52,7 +52,7 @@
             return L.marker(latlng, {icon: blueIcon2});
         },
         onEachFeature: function (features, layer) {
-          layer.bindPopup('<h6><b>Outorgas Superficiais</b></h6><p><b>Situação: </b>'+features.properties.tsp_ds+'<br><b>Domínio:</b> '+features.properties.tdm_ds+'<br><b>Latitude:</b> '+features.properties.int_nu_lat+'<br><b>Longitude:</b> '+features.properties.int_nu_lon+'<br><b>Município:</b> '+features.properties.ing_nm_mun+'<br><b>Tipo da Finalidade:</b> '+features.properties.tfn_ds+'</p>');
+          layer.bindPopup('<h6><b>Outorgas Superficiais</b></h6><p><b>Situação: </b>'+features.properties.TSP_DS+'<br><b>Domínio:</b> '+features.properties.TDM_DS+'<br><b>Latitude:</b> '+features.properties.INT_NU_LAT+'<br><b>Longitude:</b> '+features.properties.INT_NU_LON+'<br><b>Município:</b> '+features.properties.ING_NM_MUN+'<br><b>Tipo da Finalidade:</b> '+features.properties.TFN_DS+'</p>');
         }
       });
       markers4.addLayer(outSuper);
@@ -82,8 +82,8 @@
           map.addLayer(outSuper);
         }
         else {
-          map.addLayer(markers4);
           map.removeLayer(outSuper);
+          map.addLayer(markers4);
         }
       }
 
@@ -97,7 +97,7 @@
             return L.marker(latlng, {icon: MarromIcon});
         },
         onEachFeature: function (features, layer) {
-          layer.bindPopup('<h6><b>Outorgas Subterrâneas</b></h6><p><b>Situação: </b>'+features.properties.tsp_ds+'<br><b>Domínio:</b> Estadual'+'<br><b>Latitude:</b> '+features.properties.int_nu_lat+'<br><b>Longitude:</b> '+features.properties.int_nu_lon+'<br><b>Município:</b> '+features.properties.ing_nm_mun+'<br><b>Tipo da Finalidade:</b> '+features.properties.tfn_ds+'</p>');
+          layer.bindPopup('<h6><b>Outorgas Subterrâneas</b></h6><p><b>Situação: </b>'+features.properties.TSP_DS+'<br><b>Domínio:</b> Estadual'+'<br><b>Latitude:</b> '+features.properties.INT_NU_LAT+'<br><b>Longitude:</b> '+features.properties.INT_NU_LON+'<br><b>Município:</b> '+features.properties.ING_NM_MUN+'<br><b>Tipo da Finalidade:</b> '+features.properties.TFN_DS+'</p>');
         }
       });
       markers5.addLayer(outSub);
@@ -127,8 +127,8 @@
           map.addLayer(outSub);
         }
         else {
-          map.addLayer(markers5);
           map.removeLayer(outSub);
+          map.addLayer(markers5);
         }
       }
 
