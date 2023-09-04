@@ -242,6 +242,10 @@ session_start();
                           Landsat 2008
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
+                          <li><a id="coord">231058_07/09 <input type="checkbox" class="coor" value="l" onclick="raste5()" id="63"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
                           <li><a id="coord">231059_21/07 <input type="checkbox" class="coor" value="l" onclick="raste1()" id="59"></a></li>
                           <li>
                             <hr class="dropdown-divider">
@@ -1670,8 +1674,8 @@ session_start();
 
 
     <script>
-      var UrlFemarh = "http://extranet.femarh.com";
-      //var UrlFemarh = "http://localhost/";
+      //var UrlFemarh = "http://extranet.femarh.com";
+      var UrlFemarh = "http://localhost/";
     </script>
 
     <script>
@@ -1981,6 +1985,8 @@ session_start();
     <script src="mapas/raster/js/231-060_2008-07-21.js"></script>
 
     <script src="mapas/raster/js/232-060_2008-04-07.js"></script>
+
+    <script src="mapas/raster/js/231_058-2008_09_07.js"></script>
 
     <!-- Legenda - Layers -->
 
