@@ -160,6 +160,14 @@ session_start();
 
     <script src="mapas/funcoes/pesquisaCar.js"></script>
 
+    <!-- GeoRaster -->
+
+
+    <script src="https://unpkg.com/browse/whatwg-fetch@3.2.0/dist/fetch.umd.js"></script>
+    <script src="https://unpkg.com/proj4"></script>
+    <script src="https://unpkg.com/georaster"></script>
+    <script src="https://unpkg.com/georaster-layer-for-leaflet"></script>
+
     
 </head>
 <body>
@@ -234,7 +242,23 @@ session_start();
                           Landsat 2008
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
-                            <li><a id="coord">232058_07/04 <input type="checkbox" class="coor" value="l" onclick="raste()" id="58"></a></li>
+                          <li><a id="coord">231059_21/07 <input type="checkbox" class="coor" value="l" onclick="raste1()" id="59"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">231060_21/07 <input type="checkbox" class="coor" value="l" onclick="raste3()" id="61"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">232058_07/04 <input type="checkbox" class="coor" value="l" onclick="raste()" id="58"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">232059_07/04 <input type="checkbox" class="coor" value="l" onclick="raste2()" id="60"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">232060_07/04 <input type="checkbox" class="coor" value="l" onclick="raste4()" id="62"></a></li>
                         </ul>
                       </li>
                       <li>
@@ -1948,7 +1972,15 @@ session_start();
 
     <!-- Códigos - Mapas Raster -->
 
-    <script src="mapas/raster/js/raster.js"></script>
+    <script src="mapas/raster/js/30m_232058_20080407_20161101_543.js"></script>
+
+    <script src="mapas/raster/js/231-059_2008-07-21.js"></script>
+
+    <script src="mapas/raster/js/232-059_2008-04-07.js"></script>
+
+    <script src="mapas/raster/js/231-060_2008-07-21.js"></script>
+
+    <script src="mapas/raster/js/232-060_2008-04-07.js"></script>
 
     <!-- Legenda - Layers -->
 
