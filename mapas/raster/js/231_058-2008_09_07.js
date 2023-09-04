@@ -1,8 +1,8 @@
 var groupLayRaster5 = L.layerGroup([]);
-cont1 = 0;
+cont5 = 0;
 function raste5(){    
 
-  if(cont1 === 0){
+  if(cont5 === 0){
 
   fetch(UrlFemarh+'/siggarr/Arquivos/231_058-2008_09_07.tif')
   .then(function (response) {
@@ -16,7 +16,7 @@ function raste5(){
         pixelValuesToColorFn: values => values[0] === 0 ? null : `rgba(${values[0]},${values[1]},${values[2]})`
       });
       groupLayRaster5.addLayer(layer);
-      cont1++;
+      cont5++;
     });
   });
 
