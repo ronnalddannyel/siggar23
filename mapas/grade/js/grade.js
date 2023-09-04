@@ -3,7 +3,7 @@
 
   var ibgeCarta = L.geoJSON(ibgeCarta1, {
     color: "#808080",
-    weight: "2",
+    weight: 2,
     onEachFeature: function (geom, layer) {
       layer.bindPopup('<h6><b>IBGE CARTA 1:100.000</b></h6><p><b>MI:</b> '+geom.properties.mi+'<br><b>Índice:</b> '+geom.properties.indicenome+'<br><b>Equidistância:</b> '+geom.properties.equidistan+'<br><b>Escala:</b> '+geom.properties.escala+'<br><b>Nome da Carta:</b> '+geom.properties.nome_carta+'<br><b>Aquisição:</b> '+geom.properties.aquisicao+'</p>');
     }
@@ -29,7 +29,7 @@
 
   var cbers4aMux = L.geoJSON(cbers4aMux1, {
     color: "#808080",
-    weight: "2",
+    weight: 2,
     onEachFeature: function (geom, layer) {
         layer.bindPopup('<h6><b>CBERS 4A - MUX</b></h6><p><b>Órbita:</b> '+geom.properties.path+'<br><b>Ponto:</b> '+geom.properties.row+'</p>');
     }
@@ -55,7 +55,7 @@
 
   var cbers4aWifi = L.geoJSON(cbers4aWfi, {
     color: "#808080",
-    weight: "2",
+    weight: 2,
     onEachFeature: function (geom, layer) {
         layer.bindPopup('<h6><b>CBERS 4A - WFI</b></h6><p><b>Órbita:</b> '+geom.properties.path+'<br><b>Ponto:</b> '+geom.properties.row+'</p>');
     }
@@ -81,7 +81,7 @@
 
   var cbersCenas = L.geoJSON(cbersCenas1, {
     color: "#808080",
-    weight: "2",
+    weight: 2,
     onEachFeature: function (geom, layer) {
         layer.bindPopup('<h6><b>CBERS - Cenas</b></h6><p><b>Órbita/Ponto:</b> '+geom.properties.orbita_pon+'</p>');
     }
@@ -107,7 +107,7 @@
 
   var cbersGrade = L.geoJSON(cbersGrade1, {
     color: "#808080",
-    weight: "2",
+    weight: 2,
     onEachFeature: function (geom, layer) {
         layer.bindPopup('<h6><b>CBERS</b></h6><p><b>Órbita:</b> '+geom.properties.orbita+'<br><b>Ponto:</b> '+geom.properties.ponto+'<br><b>Latitude Decimal:</b> '+geom.properties.lat+'<br><b>Longitude Decimal:</b> '+geom.properties.lon+'<br><b>Latitude (GMS):</b> '+geom.properties.latgms+'<br><b>Longiutde (GMS):</b> '+geom.properties.longms+'</p>');
     }
@@ -133,7 +133,7 @@
 
   var landsat = L.geoJSON(landsat1, {
     color: "#808080",
-    weight: "2",
+    weight: 2,
     onEachFeature: function (geom, layer) {
         layer.bindPopup('<h6><b>Landsat</b></h6><p><b>Órbita / ponto:</b> '+geom.properties.orbpto+'</p>');
     }
@@ -159,7 +159,7 @@
 
   var liss_3 = L.geoJSON(liss_31, {
     color: "#808080",
-    weight: "2",
+    weight: 2,
     onEachFeature: function (geom, layer) {
         layer.bindPopup('<h6><b>Liss 3</b></h6><p><b>Órbita:</b> '+geom.properties.path+'<br><b>Ponto:</b> '+geom.properties.row+'</p>');
     }
@@ -185,7 +185,7 @@
 
   var rapideye = L.geoJSON(rapideye1, {
     color: "#808080",
-    weight: "2",
+    weight: 2,
     onEachFeature: function (geom, layer) {
         layer.bindPopup('<h6><b>Rapideye</b></h6><p><b>Cena/Órbita:</b> '+geom.properties.cena_orbit+'<br><b>Zona:</b> '+geom.properties.zona+'</p>');
     }
@@ -211,7 +211,7 @@
 
   var sentinel_2 = L.geoJSON(sentinel_21, {
     color: "#808080",
-    weight: "2",
+    weight: 2,
     onEachFeature: function (geom, layer) {
         layer.bindPopup('<h6><b>Sentinel 2</b></h6><p><b>NOME:</b> '+geom.properties.name+'</p>');
     }

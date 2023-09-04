@@ -9,7 +9,7 @@ function icmbioFlona(el){
     $.getJSON(UrlFemarh+"/siggarr/mapas/propostasAmpliacao/icmbio_flona_parima_ proposta.geojson", function(data) {  
         var icmbioFlona1 = new L.geoJson(data, {
             color: "#a80000",
-            weight: "2",
+            weight: 2,
             onEachFeature: function (geom, layer) {
                 layer.bindPopup('<h6><b>FLONA Parima - Proposta</b></h6><p><b>Categoria:</b> '+geom.properties.categoria+'<br><b>Nome:</b> '+geom.properties.nome_1+'<br><b>Processo:</b> '+geom.properties.processo+'<br><b>Área (ha):</b> '+geom.properties.hectares.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.</p>');
             }

@@ -9,7 +9,7 @@ function iterTd(el){
     $.getJSON(UrlFemarh+"/siggarr/mapas/propostasAmpliacao/iteraima_td.geojson", function(data) {  
         var iterTd1 = new L.geoJson(data, {
             color: "#e1b053",
-            weight: "2",
+            weight: 2,
             onEachFeature: function (geom, layer) {
                 layer.bindPopup('<h6><b>Iteraima - Títulos Definitivos</b></h6><p><b>Propriedade:</b> '+geom.properties.propriedad+'<br><b>Número Título Definitivo:</b> '+geom.properties.titulo+'<br><b>Interessado:</b> '+geom.properties.interessad+'<br><b>Status:</b> '+geom.properties.status+'<br><b>Área (ha):</b> '+geom.properties.area_ha.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Gleba:</b> '+geom.properties.gleba+'<br><b>Observação:</b> '+geom.properties.obs+'<br><b>Certificado:</b> '+geom.properties.certificad+'<br><b>Convênio:</b> '+geom.properties.conv+'</p>');
             }

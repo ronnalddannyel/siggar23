@@ -9,7 +9,7 @@ function icmbioEsec(el){
     $.getJSON(UrlFemarh+"/siggarr/mapas/propostasAmpliacao/icmbio_esec_maraca_ proposta_ampliacao.geojson", function(data) {  
         var icmbioEsec1 = new L.geoJson(data, {
             color: "#ffffbe",
-            weight: "3",
+            weight: 3,
             onEachFeature: function (geom, layer) {
                 layer.bindPopup('<h6><b>ESEC Maracá - Proposta Ampliação</b></h6><p><b>Código Unidade de Conservação:</b> '+geom.properties.cod_uc+'<br><b>Categoria:</b> '+geom.properties.categoria+'<br><b>Nome:</b> '+geom.properties.nome_1+'<br><b>Bioma:</b> '+geom.properties.bioma_1+'<br><b>UF:</b> '+geom.properties.uf_1+'<br><b>Área (ha):</b> '+geom.properties.hectares.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Processo:</b> '+geom.properties.processo+'<br><b>Território:</b> '+geom.properties.territorio+'<br><b>Etapa:</b> '+geom.properties.etapa+'</p>');
             }

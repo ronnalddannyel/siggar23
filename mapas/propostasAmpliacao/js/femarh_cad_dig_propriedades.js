@@ -9,7 +9,7 @@ function cadDigProp(el){
     $.getJSON(UrlFemarh+"/siggarr/mapas/propostasAmpliacao/femarh_cad_dig_propriedades.geojson", function(data) {  
         var cadDigProp1 = new L.geoJson(data, {
             color: "#f57a7a",
-            weight: "2",
+            weight: 2,
             onEachFeature: function (geom, layer) {
                 layer.bindPopup('<h6><b>Cadastro Digital de Propriedades</b></h6><p><b>Proprietário:</b> '+geom.properties.proprietar+'<br><b>Processo:</b> '+geom.properties.processo+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Gleba:</b> '+geom.properties.gleba+'<br><b>Imóvel:</b> '+geom.properties.imovel+'<br><b>Assunto:</b> '+geom.properties.assunto+'<br><b>Situação:</b> '+geom.properties.situacao+'</p>');
             }

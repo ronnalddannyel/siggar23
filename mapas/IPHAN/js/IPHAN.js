@@ -3,7 +3,7 @@
 
 var iphanSitArq = L.geoJSON(sitArPol, {
     color: "#8B0000",
-    weight: "2",
+    weight: 2,
     onEachFeature: function (geom, layer) {
       layer.bindPopup('<h6><b>IPHAN - Sítios Arqueológicos (Poligonos)</b></h6><p><b>Código Nacional:</b> '+geom.properties.co_iphan+'<br><b>Identificação:</b> '+geom.properties.identificacao_bem+'<br><b>Natureza:</b> '+geom.properties.ds_natureza+'<br><b>Código Natureza:</b> '+geom.properties.codigo_iphan+'<br><b>Classificação:</b> '+geom.properties.ds_classificacao+'<br><b>Tipo:</b> '+geom.properties.ds_tipo_bem+'<br><b>Sigla (Tipo):</b> '+geom.properties.sg_tipo_bem+'<br><b>Sintese:</b> '+geom.properties.sintese_bem+'<br><b>Logradouro:</b> '+geom.properties.no_logradouro+'<br><b>Número (Logradouro):</b> '+geom.properties.nu_logradouro+'<br><b>Data (Cadastro):</b> '+geom.properties.dt_cadastro+'</p>');
     }
