@@ -5,7 +5,7 @@ function raste3(){
 
   if(cont2 === 0){
 
-    fetch(UrlFemarh+'/siggarr/Arquivos/231-60_2008-07-21.tif')
+    fetch(UrlFemarh+'/siggarr/Arquivos/231-060_2008-07-21.tif')
     .then(function (response) {
       return response.arrayBuffer();
     })
