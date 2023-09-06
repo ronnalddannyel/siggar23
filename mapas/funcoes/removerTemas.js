@@ -17,7 +17,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     // desmarcar os checkboxs das camadas
 
-    while (id<71){
+    while (id<68){
     var status = document.getElementById(id);
       if (status.checked) {
         status.checked = false;
@@ -112,18 +112,18 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     document.getElementById("teste25").innerHTML = "";
 
-    document.getElementById("teste62").innerHTML = "";
+    document.getElementById("teste59").innerHTML = "";
 
     // CAR
 
-    document.getElementById("teste63").innerHTML = "";
+    document.getElementById("teste60").innerHTML = "";
 
     // PROPOSTAS DE AMPLIAÇÃO ICMBIO
 
     document.getElementById("teste57").innerHTML = "";
 
     document.getElementById("teste58").innerHTML = "";
-
+/*
     document.getElementById("teste59").innerHTML = "";
 
     document.getElementById("teste60").innerHTML = "";
@@ -131,7 +131,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
     document.getElementById("teste61").innerHTML = "";
 
     document.getElementById("teste62").innerHTML = "";
-
+*/
     // Zee
 
     document.getElementById("aptAgri").innerHTML = "";
@@ -206,7 +206,7 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
 
     var cont = 1;
 
-    while(cont<64) {
+    while(cont<61) {
     
       var res = el + cont;
       console.log(res);

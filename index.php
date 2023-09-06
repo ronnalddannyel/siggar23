@@ -242,55 +242,55 @@ session_start();
                           Landsat 2008
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
-                          <li><a id="coord">231-057_07/09/2008 <input type="checkbox" class="coor" value="l" onclick="raste6()" id="64"></a></li>
+                          <li><a id="coord">231-057_07/09/2008 <input type="checkbox" class="coor" value="l" onclick="raste6()" id="55"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord">231-058_07/09/2008 <input type="checkbox" class="coor" value="l" onclick="raste5()" id="63"></a></li>
+                          <li><a id="coord">231-058_07/09/2008 <input type="checkbox" class="coor" value="l" onclick="raste5()" id="56"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord">231-059_27/01/2008 <input type="checkbox" class="coor" value="l" onclick="raste7()" id="65"></a></li>
+                          <li><a id="coord">231-059_27/01/2008 <input type="checkbox" class="coor" value="l" onclick="raste7()" id="57"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord">231-059_21/07/2008 <input type="checkbox" class="coor" value="l" onclick="raste1()" id="59"></a></li>
+                          <li><a id="coord">231-059_21/07/2008 <input type="checkbox" class="coor" value="l" onclick="raste1()" id="58"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord">231-059_06/08/2008 <input type="checkbox" class="coor" value="l" onclick="raste8()" id="66"></a></li>
+                          <li><a id="coord">231-059_06/08/2008 <input type="checkbox" class="coor" value="l" onclick="raste8()" id="59"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord">231-060_21/07/2008 <input type="checkbox" class="coor" value="l" onclick="raste3()" id="61"></a></li>
+                          <li><a id="coord">231-060_21/07/2008 <input type="checkbox" class="coor" value="l" onclick="raste3()" id="60"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord">231-060_06/08/2008 <input type="checkbox" class="coor" value="l" onclick="raste9()" id="67"></a></li>
+                          <li><a id="coord">231-060_06/08/2008 <input type="checkbox" class="coor" value="l" onclick="raste9()" id="61"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord">232-057_09/05/2008 <input type="checkbox" class="coor" value="l" onclick="raste10()" id="68"></a></li>
+                          <li><a id="coord">232-057_09/05/2008 <input type="checkbox" class="coor" value="l" onclick="raste10()" id="62"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord">232-058_07/04/2008 <input type="checkbox" class="coor" value="l" onclick="raste()" id="58"></a></li>
+                          <li><a id="coord">232-058_07/04/2008 <input type="checkbox" class="coor" value="l" onclick="raste()" id="63"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord">232-059_07/04/2008 <input type="checkbox" class="coor" value="l" onclick="raste2()" id="60"></a></li>
+                          <li><a id="coord">232-059_07/04/2008 <input type="checkbox" class="coor" value="l" onclick="raste2()" id="64"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord">232-060_07/04/2008 <input type="checkbox" class="coor" value="l" onclick="raste4()" id="62"></a></li>
+                          <li><a id="coord">232-060_07/04/2008 <input type="checkbox" class="coor" value="l" onclick="raste4()" id="65"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord">233-057_21/09/2008 <input type="checkbox" class="coor" value="l" onclick="raste12()" id="69"></a></li>
+                          <li><a id="coord">233-057_21/09/2008 <input type="checkbox" class="coor" value="l" onclick="raste12()" id="66"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a id="coord">233-058_23/10/2008 <input type="checkbox" class="coor" value="l" onclick="raste13()" id="70"></a></li>
+                          <li><a id="coord">233-058_23/10/2008 <input type="checkbox" class="coor" value="l" onclick="raste13()" id="67"></a></li>
                         </ul>
                       </li>
                       <li>
@@ -507,7 +507,7 @@ session_start();
                     CAR
                   </a>
                   <ul class="dropdown-menu dropdown-menu">
-                    <li><a id="coord"><img src="imagens/zee/retangulo-arredondado-e600a9.png" style="max-width:20px;max-height:20px;"> CAR-RR <a href="Download/car_rr.zip" download="CAR-RR" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="car1('teste63')" id="57"></a></li>
+                    <li><a id="coord"><img src="imagens/zee/retangulo-arredondado-e600a9.png" style="max-width:20px;max-height:20px;"> CAR-RR <a href="Download/car_rr.zip" download="CAR-RR" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="car1('teste60')" id="54"></a></li>
                   </ul>
                 </li>
                 <!--
@@ -526,7 +526,7 @@ session_start();
                     AUTORIZAÇÃO DE USO CONTROLADO DO FOGO
                   </a>
                   <ul class="dropdown-menu dropdown-menu">
-                    <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> Área Licenciada para Uso do Fogo <a href="" download="femarh_embargos" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas('teste62')" id="56"></a></li>
+                    <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> Área Licenciada para Uso do Fogo <a href="" download="femarh_embargos" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas('teste59')" id="53"></a></li>
                   </ul>
                 </li>
 
@@ -542,17 +542,17 @@ session_start();
                       <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-e1b053.png" style="max-width:20px;max-height:20px;"> Iteraima - Títulos Definitivos <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="iterTd('teste58')" id="52"></a></li>
                     </ul>
                 </li>
-
+<!--
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       PROPOSTAS DE AMPLIAÇÃO ICMBIO
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
-                      <!--<li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-f57a7a.png" style="max-width:20px;max-height:20px;"> Cadastro Digital de Propriedades <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cadDigProp('teste62')" id="56"></a></li>
+                      <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-f57a7a.png" style="max-width:20px;max-height:20px;"> Cadastro Digital de Propriedades <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="cadDigProp('teste62')" id="56"></a></li>
                       <li>
                         <hr class="dropdown-divider">
-                      </li>-->
-                      <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-ffffbe.png" style="max-width:20px;max-height:20px;"> ESEC Maracá - Proposta Ampliação <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="icmbioEsec('teste60')" id="54"></a></li>
+                      </li>
+                      <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-ffffbe.png" style="max-width:20px;max-height:20px;"> ESEC Maracá - Proposta Ampliação <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="icmbioEsec('teste63')" id="57"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
@@ -560,10 +560,10 @@ session_start();
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-73ffdf.png" style="max-width:20px;max-height:20px;"> PARNA Viruá - Proposta Ampliação <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="icmbioParna('teste59')" id="53"></a></li>
+                      <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-73ffdf.png" style="max-width:20px;max-height:20px;"> PARNA Viruá - Proposta Ampliação <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="icmbioParna('teste62')" id="56"></a></li>
                     </ul>
                 </li>
-    
+    -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       ZEE
@@ -1186,20 +1186,20 @@ session_start();
 
               <div id="teste15"></div>
 
-              <div id="teste63"></div>
+              <div id="teste60"></div>
 
-              <div id="teste62"></div>
+              <div id="teste59"></div>
 
 
               <div id="teste57"></div>
 
               <div id="teste58"></div>
 
-              <div id="teste60"></div>
+              <div id="teste63"></div>
 
               <div id="teste61"></div>
 
-              <div id="teste59"></div>
+              <div id="teste62"></div>
 
 
 

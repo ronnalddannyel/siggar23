@@ -26,7 +26,7 @@ function controleQueimadas(el){
     // Controle de Queimadas
 
 
-    var quei12 = document.getElementById("teste62");
+    var quei12 = document.getElementById("teste59");
 
     if(quei12.style.display === "block"){
       var quei1Html = '<img src="leaflet/images/symbole-de-feu-rouge.png" style="max-width:20px;max-height:20px"> Área Licenciada para Uso do Fogo ('+data.totalFeatures+')';

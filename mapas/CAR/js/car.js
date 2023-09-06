@@ -18,7 +18,7 @@ function car1(el){
 
         // CAR-RR
 
-        var car112 = document.getElementById("teste63");
+        var car112 = document.getElementById("teste60");
         if(car112.style.display === "block"){
             carHtml = '<img src="imagens/zee/retangulo-arredondado-e600a9.png" style="max-width:20px;max-height:20px;"> CAR-RR ('+data.totalFeatures+')';
             car112.innerHTML += carHtml;
