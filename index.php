@@ -242,7 +242,15 @@ session_start();
                           Landsat 2008
                         </a>
                         <ul class="dropdown-menu dropdown-menu">
+                          <li><a id="coord">231-057_07/09/2008 <input type="checkbox" class="coor" value="l" onclick="raste6()" id="64"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
                           <li><a id="coord">231-058_07/09/2008 <input type="checkbox" class="coor" value="l" onclick="raste5()" id="63"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">231-059_27/01/2008 <input type="checkbox" class="coor" value="l" onclick="raste7()" id="65"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
@@ -250,7 +258,19 @@ session_start();
                           <li>
                             <hr class="dropdown-divider">
                           </li>
+                          <li><a id="coord">231-059_06/08/2008 <input type="checkbox" class="coor" value="l" onclick="raste8()" id="66"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
                           <li><a id="coord">231-060_21/07/2008 <input type="checkbox" class="coor" value="l" onclick="raste3()" id="61"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">231-060_06/08/2008 <input type="checkbox" class="coor" value="l" onclick="raste9()" id="67"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">232-057_09/05/2008 <input type="checkbox" class="coor" value="l" onclick="raste10()" id="68"></a></li>
                           <li>
                             <hr class="dropdown-divider">
                           </li>
@@ -263,6 +283,14 @@ session_start();
                             <hr class="dropdown-divider">
                           </li>
                           <li><a id="coord">232-060_07/04/2008 <input type="checkbox" class="coor" value="l" onclick="raste4()" id="62"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">233-057_21/09/2008 <input type="checkbox" class="coor" value="l" onclick="raste12()" id="69"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord">233-058_23/10/2008 <input type="checkbox" class="coor" value="l" onclick="raste13()" id="70"></a></li>
                         </ul>
                       </li>
                       <li>
