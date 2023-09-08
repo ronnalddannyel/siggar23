@@ -168,6 +168,11 @@ session_start();
     <script src="https://unpkg.com/georaster"></script>
     <script src="https://unpkg.com/georaster-layer-for-leaflet"></script>
 
+    <!-- ShapeFile -->
+
+    <script src="leaflet/leaflet.shpfile.js"></script>
+    <script src="leaflet/shp.js"></script>
+
     
 </head>
 <body>
@@ -917,6 +922,14 @@ session_start();
               
   
               <br><hr>
+
+              <h6 style="float:left;">Consulte por ShapeFile (.zip) </h6>
+              
+              <input type="file" id="shap" class="form-control">
+              <input class="btn btn-primary" type="button" onclick="removerLayShap()"  value="Remover Tema" id="remLay">
+
+
+            <br><hr>
 
             <h5>Consulte por Coordenada</h5>
 
@@ -1754,6 +1767,10 @@ session_start();
     <!-- Códigos para ler arquivos geojson externo - UTM -->
           
     <script src="mapas/funcoes/GeojsonUtm.js"></script>
+
+    <!-- Códigos para ler arquivos ShapeFile externo -->
+
+    <script src="mapas/funcoes/consultaShap.js"></script>
 
     <!-- Códigos - Áreas Licenciadas -->
 

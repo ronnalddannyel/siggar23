@@ -18,7 +18,7 @@ var groupLay = L.layerGroup([]);
         var areaImo = L.geoJSON(areaImovel1, {
           color: "red",
           fillOpacity: "0",
-          weight: "3",
+          weight: 3,
           filter: function (features) {
               if(features.properties.cpf_cnpj !== null){
                   var cpf1 = features.properties.cpf_cnpj;

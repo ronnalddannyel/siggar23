@@ -14,7 +14,7 @@ var groupLayCar = L.layerGroup([]);
             var car = new L.geoJson(data, {
                 color: "red",
                 fillOpacity: "0",
-                weight: "3",
+                weight: 3,
                 filter: function (features) {
                     if(features.properties.cod_imovel !== null){
                         var car1 = features.properties.cod_imovel;

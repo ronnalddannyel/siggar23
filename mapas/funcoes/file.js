@@ -12,8 +12,17 @@ input.addEventListener('change', function(){
         var terf = JSON.parse(testando);
         var district_boundary = new L.geoJSON(terf, {
             color: "red",
-            fill: false,
-            weight: "3",
+            fillOpacity: "0",
+            weight: 3,
+            onEachFeature: function(feature, layer) {
+                if (feature.properties) {
+                  layer.bindPopup(Object.keys(feature.properties).map(function(k) {
+                    return k + ": " + feature.properties[k];
+                  }).join("<br />"), {
+                    maxHeight: 200
+                  });
+                }
+              }
           });
           map.fitBounds(district_boundary.getBounds());
           groupLay2.addLayer(district_boundary);
