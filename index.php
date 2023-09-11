@@ -120,11 +120,11 @@ session_start();
 
     <!--- Agência Nacional de Mineração -->
 
-    <script src="mapas/agenciaNacMiner/minerariosAtivos.geojson"></script>
+    <script src="mapas/agenciaNacMiner/anm_minerarios_ativos.json"></script>
 
     <!--- IBAMA -->
 
-    <script src="mapas/IBAMA/embargos.geojson"></script>
+    <script src="mapas/IBAMA/Ibama_embargo.json"></script>
 
     <!--- Outorgas de Recursos Hídricos -->
 

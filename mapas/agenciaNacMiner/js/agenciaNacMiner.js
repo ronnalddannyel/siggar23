@@ -4,7 +4,7 @@
 var minerAtivos = L.geoJSON(mineAtivos, {
     color: "blue",
     onEachFeature: function (geom, layer) {
-      layer.bindPopup('<h6><b>Minerários Ativos</b></h6><p><b>Processo: </b>'+geom.properties.processo+'<br><b>Fase:</b> '+geom.properties.fase+'<br><b>Substância:</b> '+geom.properties.subs+'<br><b>Uso:</b> '+geom.properties.uso+'<br><b>Evento:</b> '+geom.properties.ult_evento+'<br><b>Área:</b> '+geom.properties.area_ha.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.</p>');
+      layer.bindPopup('<h6><b>Minerários Ativos</b></h6><p><b>Processo: </b>'+geom.properties.PROCESSO+'<br><b>Fase:</b> '+geom.properties.FASE+'<br><b>Substância:</b> '+geom.properties.SUBS+'<br><b>Uso:</b> '+geom.properties.USO+'<br><b>Evento:</b> '+geom.properties.ULT_EVENTO+'<br><b>Área:</b> '+geom.properties.AREA_HA.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.</p>');
     }
   });
 
