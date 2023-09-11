@@ -317,7 +317,7 @@ session_start();
                             
                             <div style="margin-top: 0; padding-left: 10px;">
                             <p style="float: left; padding-right: 10px;">Mosaico Planet: </p> 
-                            <p id="resultado1">2023_07</p></div>
+                            <p id="resultado1">2023_08</p></div>
 
                             
                             <input type="RADIO" class="MosPlan" name="op" onclick=" mudaNum('1')" id="coor5">
@@ -330,7 +330,7 @@ session_start();
                             
                             <div class="slider">
 
-                              <input type="range" id="fader"  min="1" max="90" value="90" list="volsettings" oninput = "mudaNum('2')">
+                              <input type="range" id="fader"  min="1" max="91" value="91" list="volsettings" oninput = "mudaNum('2')">
                               <datalist id="volsettings">
                                 <option>1</option>
                                 <option>13</option>
