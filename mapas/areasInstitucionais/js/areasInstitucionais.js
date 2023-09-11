@@ -113,7 +113,7 @@ var areaInalienaveis = L.geoJSON(areaInalienaveis1, {
       color: "#006400",
       weight: 2,
       onEachFeature: function (geom, layer) {
-        layer.bindPopup('<h6><b>Unidade de Conservação Federal</b></h6><p><b>Nome:</b> '+geom.properties.nome_area+'<br><b>Tipo:</b> '+geom.properties.natureza+'<br><b>Detentor:</b> '+geom.properties.detentor_n+'<br><b>Situação:</b> '+geom.properties.situacao_i+'</p>');
+        layer.bindPopup('<h6><b>Unidade de Conservação Federal</b></h6><p><b>Nome:</b> '+geom.properties.nome_area+'<br><b>Tipo:</b> '+geom.properties.natureza+'<br><b>Detentor:</b> '+geom.properties.detentor_n+'<br><b>Transcrição:</b> '+geom.properties.transcrica+'<br><b>Área Hectares:</b> '+geom.properties.area_hecta.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.</p>');
       }
     });
 
