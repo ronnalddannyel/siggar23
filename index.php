@@ -120,11 +120,11 @@ session_start();
 
     <!--- Agência Nacional de Mineração -->
 
-    <script src="mapas/agenciaNacMiner/anm_minerarios_ativos.json"></script>
+    <script src="mapas/agenciaNacMiner/minerariosAtivos.geojson"></script>
 
     <!--- IBAMA -->
 
-    <script src="mapas/IBAMA/Ibama_embargo.json"></script>
+    <script src="mapas/IBAMA/embargos.geojson"></script>
 
     <!--- Outorgas de Recursos Hídricos -->
 
@@ -164,7 +164,6 @@ session_start();
 
 
     <script src="https://unpkg.com/browse/whatwg-fetch@3.2.0/dist/fetch.umd.js"></script>
-    <script src="https://unpkg.com/proj4"></script>
     <script src="https://unpkg.com/georaster"></script>
     <script src="https://unpkg.com/georaster-layer-for-leaflet"></script>
 
