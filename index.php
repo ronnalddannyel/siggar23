@@ -124,7 +124,7 @@ session_start();
 
     <!--- IBAMA -->
 
-    <script src="mapas/IBAMA/embargos.geojson"></script>
+    <script src="mapas/IBAMA/Ibama_embargo.json"></script>
 
     <!--- Outorgas de Recursos Hídricos -->
 
