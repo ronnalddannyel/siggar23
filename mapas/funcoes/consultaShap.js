@@ -24,6 +24,9 @@ input2.addEventListener('change', function(){
               }
             }
           });
+          shpfile.on("data:loaded", function (e){
+            map.fitBounds(shpfile.getBounds());
+          });
           groupLay6.addLayer(shpfile);
           map.addLayer(groupLay6);
     }
