@@ -172,6 +172,15 @@ session_start();
     <script src="leaflet/leaflet.shpfile.js"></script>
     <script src="leaflet/shp.js"></script>
 
+    <!--- PRINT -->
+
+    <script src="leaflet/bundle.js"></script>
+
+    <!--- Botão -->
+
+    <link rel="stylesheet" href="leaflet/easy-button.css">
+    <script src="leaflet/easy-button.js"></script>
+
     
 </head>
 <body>
@@ -1026,9 +1035,9 @@ session_start();
 
       <!---   BT4  -->
       <div class="bt">
-       
+       <!---
        <button onclick="salvar()" id="bt4"><abbr title="Salvar (Json)"><i class="bi bi-save"></i></abbr></button>
-      <!---
+      
        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4" aria-controls="offcanvasRight" id="bt4">
        <i class="bi bi-arrow-left"></i>
        </button>

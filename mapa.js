@@ -253,3 +253,26 @@ map.on('draw:created', function (e) {
 
   drawnItems.addLayer(layer);
 });
+
+var stateChangingButton = L.easyButton({
+  states: [{
+          stateName: 'zoom-to-forest',        // name the state
+          icon:      'bi bi-save',               // and define its properties
+          title:     'Salvar (Json)',
+          // like its title
+          onClick: function(btn, map) {       // and its callback
+            salvar();
+          }
+      }]
+}).addTo(map);
+
+var printMap = L.easyPrint({
+  tileLayer: googleTerrain,
+  sizeModes: ['Current', 'A4Landscape', 'A4Portrait'],
+  filename: 'myMap',
+  exportOnly: true,
+  hideControlContainer: true,
+  position: 'topright'
+}).addTo(map);
+
+
