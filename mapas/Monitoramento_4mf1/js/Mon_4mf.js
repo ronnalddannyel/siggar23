@@ -35,7 +35,7 @@ var areaImov_4mf = L.geoJSON(areaImovel_4mf, {
         }else{
           var tipoProjeto = Feature.properties.fk_tipo_projeto;
         }
-        layer.bindPopup('<h6><b>Área do Projeto</b></h6><b>Processo: </b>'+Feature.properties.n_processo+'<br><b>Código: </b>'+Feature.properties.fk_cod_femarh+'<br><b>Descrição: </b> '+Feature.properties.descr_ativ+'<br><b>Área: </b> '+Feature.properties.area+'<br><b>Tipo do Projeto: </b> '+tipoProjeto+'<br><br><button type="button" onclick="test()" id="aProj" value="'+Feature.id+'" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Detalhes</button>');
+        layer.bindPopup('<h6><b>Área do Projeto</b></h6><b>Processo: </b>'+Feature.properties.n_processo+'<br><b>Código: </b>'+Feature.properties.fk_cod_femarh+'<br><b>Descrição: </b> '+Feature.properties.descr_ativ+'<br><b>Área: </b> '+Feature.properties.area+'<br><b>Tipo do Projeto: </b> '+Feature.properties.fk_tipo_projeto);
       }
   });
 
