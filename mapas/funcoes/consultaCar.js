@@ -29,7 +29,7 @@ var groupLayCar2 = L.layerGroup([]);
                   }
                 },
                 onEachFeature: function (geom, layer) {
-                  layer.bindPopup('<h6><b>CAR-RR</b></h6><p><b>Código Imovel:</b> '+geom.properties.cod_imovel+'<br><b>Status:</b> '+geom.properties.status_imovel+'<br><b>Data de Criação:</b> '+geom.properties.dat_criacao+'<br><b>Área:</b> '+geom.properties.area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Condição:</b> '+geom.properties.condicao+'<br><b>UF:</b> '+geom.properties.uf+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Código Município:</b> '+geom.properties.cod_municipio_ibge+'<br><b>Módulo Fiscal:</b> '+geom.properties.m_fiscal+'<br><b>Tipo Imóvel:</b> '+geom.properties.tipo_imovel+'</p>'+'<br><br><button type="button" id="aProj" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Ver Relatório de Sobreposição</button>');
+                  layer.bindPopup('<h6><b>CAR-RR</b></h6><p><b>Código Imovel:</b> '+geom.properties.cod_imovel+'<br><b>Status:</b> '+geom.properties.status_imovel+'<br><b>Data de Criação:</b> '+geom.properties.dat_criacao+'<br><b>Área:</b> '+geom.properties.area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Condição:</b> '+geom.properties.condicao+'<br><b>UF:</b> '+geom.properties.uf+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Código Município:</b> '+geom.properties.cod_municipio_ibge+'<br><b>Módulo Fiscal:</b> '+geom.properties.m_fiscal+'<br><b>Tipo Imóvel:</b> '+geom.properties.tipo_imovel+'</p>'+'<br><button type="button" id="aProj" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Ver Relatório de Sobreposição</button>');
                 }
             });
 
@@ -507,6 +507,7 @@ var groupLayCar2 = L.layerGroup([]);
 
             var pol22 = embarg1.features;
             var embarArray = new Array();
+            var contEmb = 0;
            
             for(i=0; i < pol22.length; i++){
             
@@ -531,10 +532,13 @@ var groupLayCar2 = L.layerGroup([]);
 
 
                embarArray.push(area8);
+               contEmb++;
 
              }      
            
             }
+
+            embarArray.push(contEmb);
 
             if(embarArray.length != 0){
               console.log(embarArray);
@@ -549,6 +553,7 @@ var groupLayCar2 = L.layerGroup([]);
 
             var pol24 = sitArPol.features;
             var sitArray = new Array();
+            var contSitPol = 0;
            
             for(i=0; i < pol24.length; i++){
             
@@ -574,12 +579,14 @@ var groupLayCar2 = L.layerGroup([]);
 
 
                sitArray.push(area9);
-
+               contSitPol++;
 
 
              }      
            
             }
+
+            embarArray.push(contSitPol);
 
             if(sitArray.length != 0){
               console.log(sitArray);

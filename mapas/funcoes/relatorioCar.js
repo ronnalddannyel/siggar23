@@ -14,7 +14,7 @@ function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, 
 
         // UCE
 
-        var text = "<h5>UCE</h5>";
+        var text = "<h5>Unidade de Conservação Estadual</h5>";
         for(i=0; i<ucsArray.length; i= i+2){
             if(ucsArray.length == 1){
                 text += "<b>Área de Sobreposição: </b>"+ ucsArray[i]+"<br><br>";
@@ -29,7 +29,7 @@ function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, 
         // UCF
 
 
-        var text1 = "<h5>UCF</h5>";
+        var text1 = "<h5>Unidade de Conservação Federal</h5>";
         for(i=0; i<uceArray.length; i= i+2){
             if(uceArray.length == 1){
                 text1 += "<b>Área de Sobreposição: </b>"+ uceArray[i]+"<br><br>";
@@ -78,7 +78,7 @@ function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, 
         // IBAMA - Embargos  
 
         var text5 = "<h5>IBAMA - Embargos</h5>";
-        for(i=0; i<embarArray.length; i= i+2){
+        for(i=0; i<embarArray.length-1; i= i+2){
             if(embarArray.length == 1){
                 text5 += "<b>Área de Sobreposição: </b>"+ embarArray[i]+"<br><br>";
             }else{
@@ -86,7 +86,7 @@ function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, 
                 text5 += "<b>Área de Sobreposição: </b>"+ embarArray[i+1]+"<br><br>";
             }
         }
-        console.log(text5);
+        text5 += '<b>Quantidade de Embargos Sobrepostos:</b> '+embarArray[i]+"<br><br>";
 
 
         // Área do Projeto  
@@ -134,7 +134,7 @@ function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, 
         // IPHAN - Sítios Arqueológicos (Polígonos)  
 
         var text9 = "<h5>IPHAN - Sítios Arqueológicos (Polígonos)</h5>";
-        for(i=0; i<sitArray.length; i= i+2){
+        for(i=0; i<sitArray.length-1; i= i+2){
             if(sitArray.length == 1){
                 text9 += "<b>Área de Sobreposição: </b>"+ sitArray[i]+"<br><br>";
             }else{
@@ -142,7 +142,8 @@ function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, 
                 text9 += "<b>Área de Sobreposição: </b>"+ sitArray[i+1]+"<br><br>";
             }
         }
-        console.log(text9);
+
+        text9 += '<b>Quantidade de Sítios Arqueológicos (Polígonos) Sobrepostos:</b> '+sitArray[i]+"<br><br>";
 
 
 
