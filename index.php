@@ -1833,6 +1833,8 @@ session_start();
 
     <script src="mapas/CAR/js/car.js"></script>
 
+    <script src="mapas/funcoes/relatorioCar.js"></script>
+
 
     <!-- Códigos - biodivers_veg_sistemas_lacustres -->
 
