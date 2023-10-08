@@ -586,7 +586,7 @@ var groupLayCar2 = L.layerGroup([]);
            
             }
 
-            embarArray.push(contSitPol);
+            sitArray.push(contSitPol);
 
             if(sitArray.length != 0){
               console.log(sitArray);
