@@ -1,4 +1,4 @@
-function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, projArray, projArray_4mf, assentArray, embarArray, sitArray, contOutSuper, contOutSub, contSitPon){
+function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, projArray, projArray_4mf, assentArray, embarArray, sitArray, contOutSuper, contOutSub, contSitPon, carArray){
     let alvo = document.getElementById("aaa");
     alvo.innerText = "";
 
@@ -146,10 +146,25 @@ function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, 
         text9 += '<b>Quantidade de Sítios Arqueológicos (Polígonos) Sobrepostos:</b> '+sitArray[i]+"<br><br>";
 
 
+        // CAR  
+
+        var text10 = "<h5>CAR</h5>";
+        for(i=0; i<carArray.length-1; i= i+2){
+            if(carArray.length == 1){
+                text10 += "<b>Área de Sobreposição: </b>"+ carArray[i]+"<br><br>";
+            }else{
+                text10 += "<b>Código Imovel: </b>"+ carArray[i]+"<br>";
+                text10 += "<b>Área de Sobreposição: </b>"+ carArray[i+1]+"<br><br>";
+            }
+        }
+
+        text10 += '<b>Quantidade de CAR Sobrepostos:</b> '+carArray[i]+"<br><br>";
+
+
 
         
 
-        var newHtml = text+"<hr>"+text1+"<hr>"+text2+"<hr>"+text3+"<hr>"+text4+"<hr>"+text5+"<hr>"+text6+"<hr>"+text7+"<hr>"+text8+"<hr>"+text9+
+        var newHtml = text+"<hr>"+text1+"<hr>"+text2+"<hr>"+text3+"<hr>"+text4+"<hr>"+text5+"<hr>"+text6+"<hr>"+text7+"<hr>"+text8+"<hr>"+text9+"<hr>"+text10+
         '<hr><b>Quantidade de Sítios Arqueológicos (Ponto) Sobrepostos:</b> '+contSitPon+
         '<br><hr><b>Quantidade de Outorgas Superficiais Sobrepostos:</b> '+contOutSuper+
         '<br><hr><b>Quantidade de Outorgas Subterrâneas Sobrepostos:</b> '+contOutSub+'<br>';

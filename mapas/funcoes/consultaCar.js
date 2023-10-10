@@ -631,7 +631,60 @@ var groupLayCar2 = L.layerGroup([]);
               console.log(int3);
             }
 
-            carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, projArray, projArray_4mf, assentArray, embarArray, sitArray, contOutSuper, contOutSub, contSitPon);
+
+
+            // CAR
+
+
+            var pol28 = rty.features;
+            var carArray = new Array();
+            var contCar = 0;
+           
+            for(i=0; i < pol28.length; i++){
+            
+             var pol29 = pol28[i];
+             var intersection13 = turf.intersect(pol29, pol1);
+             if(intersection13 !== null){
+               var fjf10 = L.geoJSON(intersection13, {
+                color: "#FFFF00"
+               });
+               groupLayCar2.addLayer(fjf10);
+
+
+
+               var nomeCar = pol28[i].properties.cod_imovel;
+               console.log(nomeCar);
+
+               carArray.push(nomeCar);
+
+
+               var ar10 = (turf.area(intersection13))/10000;
+               var area10 = ar10.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.';
+               console.log(area10);
+
+
+               carArray.push(area10);
+               contCar++;
+
+
+             }      
+           
+            }
+
+            carArray.push(contCar);
+
+            if(carArray.length != 0){
+              console.log(carArray);
+            }else{
+              carArray.push(0+' ha.');
+              console.log(carArray);
+            }
+
+
+
+
+
+            carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, projArray, projArray_4mf, assentArray, embarArray, sitArray, contOutSuper, contOutSub, contSitPon, carArray);
 
     
         })
