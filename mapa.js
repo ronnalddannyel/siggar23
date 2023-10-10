@@ -223,7 +223,7 @@ var drawControl = new L.Control.Draw({
         color: 'red'
       },
     },
-    rect: {
+    rectangle: {
       shapeOptions: {
         color: 'green'
       },
@@ -247,9 +247,18 @@ map.on('draw:created', function (e) {
   var type = e.layerType,
     layer = e.layer;
 
-  if (type === 'marker') {
-    layer.bindPopup('A popup!');
-  }
+    if (type === 'marker') {
+      layer.bindPopup('Latitude/Longitude: ' + layer.getLatLng()).openPopup();
+    }else if (type === 'polygon') {
+      var area = turf.area(layer.toGeoJSON()) / 10000;
+      layer.bindPopup('Área: ' + area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " ha.");
+    }else if (type === 'polyline') {
+      var distancia = turf.length(layer.toGeoJSON());
+      layer.bindPopup('Comprimento: ' + distancia.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " km");
+    }else if (type === 'rectangle') {
+      var area1 = turf.area(layer.toGeoJSON()) / 10000;
+      layer.bindPopup('Área: ' + area1.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " ha.");
+    }
 
   drawnItems.addLayer(layer);
 });
