@@ -5,7 +5,6 @@
       
 
       function addMarcador(){
-        groupLay1.clearLayers();
 
         var latitude = document.getElementById('latitude').value;
         var longitude = document.getElementById('longitude').value;
@@ -18,6 +17,8 @@
     // Função - Remover Marcador
 
       function removerTema(){
+        groupLay1.clearLayers();
+
         map.removeLayer(groupLay1);
         document.getElementById('latitude').value = '';
         document.getElementById('longitude').value = '';
