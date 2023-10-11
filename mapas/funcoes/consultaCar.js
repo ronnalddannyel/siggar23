@@ -645,26 +645,34 @@ var groupLayCar2 = L.layerGroup([]);
              var pol29 = pol28[i];
              var intersection13 = turf.intersect(pol29, pol1);
              if(intersection13 !== null){
-               var fjf10 = L.geoJSON(intersection13, {
-                color: "#FFFF00"
-               });
-               groupLayCar2.addLayer(fjf10);
+              
+              if(car2 ===  pol28[i].properties.cod_imovel){
+                continue;
+              }else{
+
+                var fjf10 = L.geoJSON(intersection13, {
+                  color: "#FFFF00"
+                 });
+                 groupLayCar2.addLayer(fjf10);
+  
+  
+  
+                 var nomeCar = pol28[i].properties.cod_imovel;
+                 console.log(nomeCar);
+  
+                 carArray.push(nomeCar);
+  
+  
+                 var ar10 = (turf.area(intersection13))/10000;
+                 var area10 = ar10.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.';
+                 console.log(area10);
+  
+  
+                 carArray.push(area10);
+                 contCar++;
 
 
-
-               var nomeCar = pol28[i].properties.cod_imovel;
-               console.log(nomeCar);
-
-               carArray.push(nomeCar);
-
-
-               var ar10 = (turf.area(intersection13))/10000;
-               var area10 = ar10.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.';
-               console.log(area10);
-
-
-               carArray.push(area10);
-               contCar++;
+              }
 
 
              }      
