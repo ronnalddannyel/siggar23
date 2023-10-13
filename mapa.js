@@ -261,6 +261,27 @@ map.on('draw:created', function (e) {
     }
 
   drawnItems.addLayer(layer);
+
+  layer.on("edit", function(event) {
+    if (type === 'polygon') {
+      var area = turf.area(layer.toGeoJSON()) / 10000;
+      layer.bindPopup('Área: ' + area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " ha.");
+    }else if (type === 'polyline') {
+      var distancia = turf.length(layer.toGeoJSON());
+      layer.bindPopup('Comprimento: ' + distancia.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " km");
+    }else if (type === 'rectangle') {
+      var area1 = turf.area(layer.toGeoJSON()) / 10000;
+      layer.bindPopup('Área: ' + area1.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " ha.");
+    }
+  });
+
+  layer.on("move", function(event) {
+    if (type === 'marker') {
+      layer.bindPopup('Latitude/Longitude: ' + layer.getLatLng());
+    }
+  });
+
+
 });
 
 var stateChangingButton = L.easyButton({
