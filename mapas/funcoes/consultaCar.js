@@ -57,7 +57,7 @@ var groupLayCar2 = L.layerGroup([]);
 
 
                var fjf = L.geoJSON(intersection, {
-                color: "black"
+                color: "#32CD32"
                });
                groupLayCar2.addLayer(fjf);
 
@@ -169,7 +169,7 @@ var groupLayCar2 = L.layerGroup([]);
              var intersection3 = turf.intersect(pol9, pol1);
              if(intersection3 !== null){
                var fjf1 = L.geoJSON(intersection3, {
-                color: "#6A5ACD"
+                color: "#006400"
                });
                groupLayCar2.addLayer(fjf1);
 
@@ -214,7 +214,7 @@ var groupLayCar2 = L.layerGroup([]);
              var intersection4 = turf.intersect(pol11, pol1);
              if(intersection4 !== null){
                var fjf2 = L.geoJSON(intersection4, {
-                color: "#0000CD"
+                color: "#FF8C00"
                });
                groupLayCar2.addLayer(fjf2);
 
@@ -252,7 +252,7 @@ var groupLayCar2 = L.layerGroup([]);
              var intersection5 = turf.intersect(pol13, pol1);
              if(intersection5 !== null){
                var fjf3 = L.geoJSON(intersection5, {
-                color: "#B0C4DE"
+                color: "#cdaa66"
                });
 
                groupLayCar2.addLayer(fjf3);
@@ -295,7 +295,7 @@ var groupLayCar2 = L.layerGroup([]);
              var intersection6 = turf.intersect(pol15, pol1);
              if(intersection6 !== null){
                var fjf4 = L.geoJSON(intersection6, {
-                color: "#006400"
+                color: "#808080"
                });
                groupLayCar2.addLayer(fjf4);
 
@@ -330,7 +330,7 @@ var groupLayCar2 = L.layerGroup([]);
              var intersection7 = turf.intersect(pol17, pol1);
              if(intersection7 !== null){
                var fjf5 = L.geoJSON(intersection7, {
-                color: "#8B4513"
+                color: "black"
                });
                groupLayCar2.addLayer(fjf5);
 
@@ -400,7 +400,7 @@ var groupLayCar2 = L.layerGroup([]);
              var intersection8 = turf.intersect(pol19, pol1);
              if(intersection8 !== null){
                var fjf6 = L.geoJSON(intersection8, {
-                color: "#BC8F8F"
+                color: "blue"
                });
                groupLayCar2.addLayer(fjf6);
 
@@ -470,7 +470,7 @@ var groupLayCar2 = L.layerGroup([]);
              var intersection9 = turf.intersect(pol21, pol1);
              if(intersection9 !== null){
                var fjf7 = L.geoJSON(intersection9, {
-                color: "#4B0082"
+                color: "#FFD700"
                });
                groupLayCar2.addLayer(fjf7);
 
@@ -515,7 +515,7 @@ var groupLayCar2 = L.layerGroup([]);
              var intersection10 = turf.intersect(pol23, pol1);
              if(intersection10 !== null){
                var fjf8 = L.geoJSON(intersection10, {
-                color: "#FF1493"
+                color: "#835acb"
                });
                groupLayCar2.addLayer(fjf8);
 
@@ -561,7 +561,7 @@ var groupLayCar2 = L.layerGroup([]);
              var intersection11 = turf.intersect(pol25, pol1);
              if(intersection11 !== null){
                var fjf9 = L.geoJSON(intersection11, {
-                color: "#FFFF00"
+                color: "#8B0000"
                });
                groupLayCar2.addLayer(fjf9);
 
@@ -651,7 +651,7 @@ var groupLayCar2 = L.layerGroup([]);
               }else{
 
                 var fjf10 = L.geoJSON(intersection13, {
-                  color: "#FFFF00"
+                  color: "#e600a9"
                  });
                  groupLayCar2.addLayer(fjf10);
   
@@ -689,7 +689,9 @@ var groupLayCar2 = L.layerGroup([]);
             }
 
 
+            // CAR - Legenda
 
+            document.getElementById('sobrepCar').style.display = 'block';
 
 
             carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, projArray, projArray_4mf, assentArray, embarArray, sitArray, contOutSuper, contOutSub, contSitPon, carArray);
@@ -707,4 +709,19 @@ var groupLayCar2 = L.layerGroup([]);
         map.removeLayer(groupLayCar);
         document.getElementById('car').value = '';
         map.setView([latit, long], zm);
+
+
+        groupLayCar2.clearLayers();
+        if(map.hasLayer(groupLayCar2)){
+          map.removeLayer(groupLayCar2);
+        }
+        document.getElementById('sobrepCar').style.display = 'none';
+        
+        // desmarcar os checkboxs da pesquisa do CAR
+
+        if(document.getElementById('sCar').checked === true){
+          document.getElementById('sCar').checked = false;
+        }
+
+
       } 

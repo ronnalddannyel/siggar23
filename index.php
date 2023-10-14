@@ -1068,6 +1068,62 @@ session_start();
               
               <h5 style="text-align:center;">LEGENDAS</h5>
 
+
+              <div id="sobrepCar" style="display: none; padding: 5px; border: 2px;">
+                
+                CAR
+
+                <div class="form-check form-switch" style="float: right;margin-left: 20px;">
+                  <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="sobreposicaoCar()" id="sCar">
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="imagens/retangulo-arredondado-32CD32.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Unidade de Conservação Estadual
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="imagens/retangulo-arredondado-006400.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Unidade de Conservação Federal
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="imagens/retangulo-arredondado-FF8C00.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Áreas Militares
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="imagens/zee/retangulo-arredondado-cdaa66.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Terras Indígenas
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Áreas Inalienáveis
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="imagens/zee/retangulo-arredondado-835acb.png" style="max-width:20px;max-height:20px;margin-left:15px;"> IBAMA - Embargos
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Área do Projeto
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Área do Projeto 4mf
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="imagens/retangulo-arredondado-FFD700.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Projetos de Assentamento
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="imagens/zee/retangulo-arredondado-e600a9.png" style="max-width:20px;max-height:20px;margin-left:15px;"> CAR
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="imagens/retangulo-arredondado-8B0000.png" style="max-width:20px;max-height:20px;margin-left:15px;"> IPHAN - Sítios Arqueológicos (Polígonos)
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Sítios Arqueológicos (Ponto)
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="leaflet/images/pin-de-localizacao-azul3.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas Superficiais
+                </div>
+                <div style="margin-top: 8px;">
+                  <img src="leaflet/images/pin-de-localizacao-marrom.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas Subterrâneas
+                </div>
+                
+
+              </div>
+
+
               <div id="teste33"></div>
 
               <div id="teste34"></div>

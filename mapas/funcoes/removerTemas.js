@@ -62,6 +62,12 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
       document.getElementById('outSub').checked = false;
     }
 
+    // desmarcar os checkboxs da pesquisa do CAR
+
+    if(document.getElementById('sCar').checked === true){
+      document.getElementById('sCar').checked = false;
+    }
+
     // Marcar os checkboxs camada limites municipais
 
     var status1 = document.getElementById(id2);
@@ -117,6 +123,8 @@ function removeAllLayer(id, id2, id4, id3, el, li, li1){
     // CAR
 
     document.getElementById("teste60").innerHTML = "";
+
+    document.getElementById('sobrepCar').style.display = 'none';
 
     // PROPOSTAS DE AMPLIAÇÃO ICMBIO
 
