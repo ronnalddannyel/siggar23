@@ -1891,6 +1891,8 @@ session_start();
 
     <script src="mapas/funcoes/relatorioCar.js"></script>
 
+    <script src="mapas/funcoes/legendaSobrepCar.js"></script>
+
 
     <!-- Códigos - biodivers_veg_sistemas_lacustres -->
 
