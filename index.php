@@ -1071,7 +1071,7 @@ session_start();
 
               <div id="sobrepCar" style="display: none; padding: 5px; border: 2px;">
                 
-                CAR
+                CAR - Sobreposição
 
                 <div class="form-check form-switch" style="float: right;margin-left: 20px;">
                   <input type="checkbox" class="form-check-input" role="switch" value="l" onclick="sobreposicaoCar()" id="sCar">
