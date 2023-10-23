@@ -2,10 +2,10 @@
 // Função - Adicionar Polígono (Imóvel)
 
 
-var groupLay = L.layerGroup([]);
+//var groupLay = L.layerGroup([]);
         
         function cpf2(areaImovel1, areaImovel_4mf){
-        groupLay.clearLayers();
+        //groupLay.clearLayers();
         
         var cpf = document.getElementById('cpf').value;
         var cpf2 = cpf.replace('.', '');
@@ -16,7 +16,7 @@ var groupLay = L.layerGroup([]);
         var ffg = null;
 
         var areaImo = L.geoJSON(areaImovel1, {
-          color: "red",
+          color: generateColor(),
           fillOpacity: "0",
           weight: 3,
           filter: function (features) {
@@ -38,7 +38,7 @@ var groupLay = L.layerGroup([]);
         });
 
         var areaImov2_4mf = L.geoJSON(areaImovel_4mf, {
-          color: "red",
+          color: generateColor(),
           fillOpacity: "0",
           weight: "3",
           filter: function (features) {
@@ -58,12 +58,14 @@ var groupLay = L.layerGroup([]);
       
         if(ffg != null){
           map.fitBounds(areaImo.getBounds());
-          groupLay.addLayer(areaImo);
-          map.addLayer(groupLay);
+          //groupLay.addLayer(areaImo);
+          map.addLayer(areaImo);
+          layerControl.addOverlay(areaImo, cpf);
         }else{
           map.fitBounds(areaImov2_4mf.getBounds());
-          groupLay.addLayer(areaImov2_4mf);
-          map.addLayer(groupLay);
+          //groupLay.addLayer(areaImov2_4mf);
+          map.addLayer(areaImov2_4mf);
+          layerControl.addOverlay(areaImov2_4mf, cpf);
         }
 
 
@@ -73,7 +75,7 @@ var groupLay = L.layerGroup([]);
       // Função - Remover Polígono (Imóvel)
 
       function removeCpf(){
-        map.removeLayer(groupLay);
+        //map.removeLayer(groupLay);
         document.getElementById('cpf').value = '';
-        map.setView([latit, long], zm);
+        //map.setView([latit, long], zm);
       } 

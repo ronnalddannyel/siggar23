@@ -1,17 +1,18 @@
 const input = document.querySelector('#arquivo');
-var groupLay2 = L.layerGroup([]);
+//var groupLay2 = L.layerGroup([]);
 
 
 input.addEventListener('change', function(){
+    var nome = this.files[0].name;
     const arquivo = this.files[0];
     const leitor = new FileReader();
     
     leitor.addEventListener('load', function (){
-        groupLay2.clearLayers();
+        //groupLay2.clearLayers();
         var testando = leitor.result;
         var terf = JSON.parse(testando);
         var district_boundary = new L.geoJSON(terf, {
-            color: "red",
+            color: generateColor(),
             fillOpacity: "0",
             weight: 3,
             onEachFeature: function(feature, layer) {
@@ -25,8 +26,9 @@ input.addEventListener('change', function(){
               }
           });
           map.fitBounds(district_boundary.getBounds());
-          groupLay2.addLayer(district_boundary);
-          map.addLayer(groupLay2);
+          //groupLay2.addLayer(district_boundary);
+          map.addLayer(district_boundary);
+          layerControl.addOverlay(district_boundary, nome.slice(0, -8));
     });
 
     if(arquivo){
@@ -35,9 +37,9 @@ input.addEventListener('change', function(){
 });
 
 function removerLayJson(){
-    map.removeLayer(groupLay2);
+    //map.removeLayer(groupLay2);
     document.getElementById('arquivo').value = '';
-    map.setView([latit, long], zm);
+    //map.setView([latit, long], zm);
   }
 
 

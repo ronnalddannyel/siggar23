@@ -910,7 +910,7 @@ session_start();
               </div>
             </div>
             <input type="file" id="arquivo" class="form-control">
-            <input class="btn btn-primary" type="button" onclick="removerLayJson()"  value="Remover Tema" id="remLay">
+            <input class="btn btn-primary" type="button" onclick="removerLayJson()"  value="Limpar" id="remLay">
 
             <br><hr>
             <!--https://www.statsilk.com/maps/convert-esri-shapefile-map-geojson-format-->
@@ -924,7 +924,7 @@ session_start();
                 </div>
               </div>
               <input type="file" id="arquivo1" class="form-control">
-              <input class="btn btn-primary" type="button" onclick="removerLayJson1()"  value="Remover Tema" id="remLay">
+              <input class="btn btn-primary" type="button" onclick="removerLayJson1()"  value="Limpar" id="remLay">
   
               
               
@@ -934,7 +934,7 @@ session_start();
               <h6 style="float:left;">Consulte por ShapeFile (.zip) </h6>
               
               <input type="file" id="shap" class="form-control">
-              <input class="btn btn-primary" type="button" onclick="removerLayShap()"  value="Remover Tema" id="remLay">
+              <input class="btn btn-primary" type="button" onclick="removerLayShap()"  value="Limpar" id="remLay">
 
 
             <br><hr>
@@ -961,7 +961,7 @@ session_start();
               <input type="text" class="form-control" id="cpf" name="cpf" placeholder="ex. xxxxxxxxxxx / xxxxxxxx/xxxx-xx">
 
               <input type="button" class="btn btn-primary" onclick="cpf2(areaImovel1, areaImovel_4mf)" value="Enviar" id="remLay">
-              <input class="btn btn-primary" type="button" onclick="removeCpf()"  value="Remover tema" id="remLay">
+              <input class="btn btn-primary" type="button" onclick="removeCpf()"  value="Limpar" id="remLay">
               
 
             <br><hr>
