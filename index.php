@@ -900,80 +900,225 @@ session_start();
             <!--- Código - Aba Consultas -->
 
             <div class="offcanvas-body" id="dropd1">
-           
-            <div>
-              <div>
-                <h6 style="float:left;">Consulte por Arquivo (Json/GeoJson - GEO)</h6>
-              </div>
-              <div>
-                <a href="https://ogre.adc4gis.com/" style="float:left; margin-left:5px" target="_blank"><abbr title="Transforme seu arquivo shape em Json"><i class="bi bi-info-square"></abbr></i></a>
-              </div>
-            </div>
-            <input type="file" id="arquivo" class="form-control">
-            <input class="btn btn-primary" type="button" onclick="removerLayJson()"  value="Limpar" id="remLay">
 
-            <br><hr>
-            <!--https://www.statsilk.com/maps/convert-esri-shapefile-map-geojson-format-->
 
-            <div>
-                <div>
-                  <h6 style="float:left;">Consulte por Arquivo (Json/GeoJson - UTM) </h6>
+
+
+
+            <div class="accordion" id="accordionExample">
+
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                     <b>Consulte por Arquivo (Json/GeoJson - GEO)</b> 
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                    <div>
+                       <a href="https://ogre.adc4gis.com/" style="float:left; margin-left:5px" target="_blank"><abbr title="Transforme seu arquivo shape em Json"><i class="bi bi-info-square"></abbr></i></a>
+                    </div>
+                    <input type="file" id="arquivo" class="form-control">
+                    <input class="btn btn-primary" type="button" onclick="removerLayJson()"  value="Limpar" id="remLay"> 
+
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <a href="https://ogre.adc4gis.com/" style="float:left; margin-left:5px" target="_blank"><abbr title="Transforme seu arquivo shape em Json"><i class="bi bi-info-square"></abbr></i></a>
+
+
+
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     <b>Consulte por Arquivo (Json/GeoJson - UTM)</b>   
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+                    <div>
+                      <a href="https://ogre.adc4gis.com/" style="float:left; margin-left:5px" target="_blank"><abbr title="Transforme seu arquivo shape em Json"><i class="bi bi-info-square"></abbr></i></a>
+                    </div>
+                  
+                  <input type="file" id="arquivo1" class="form-control">
+                  <input class="btn btn-primary" type="button" onclick="removerLayJson1()"  value="Limpar" id="remLay"> 
+
+
+                  </div>
+                  </div>
                 </div>
-              </div>
-              <input type="file" id="arquivo1" class="form-control">
-              <input class="btn btn-primary" type="button" onclick="removerLayJson1()"  value="Limpar" id="remLay">
-  
-              
-              
-  
-              <br><hr>
-
-              <h6 style="float:left;">Consulte por ShapeFile (.zip) </h6>
-              
-              <input type="file" id="shap" class="form-control">
-              <input class="btn btn-primary" type="button" onclick="removerLayShap()"  value="Limpar" id="remLay">
-
-
-            <br><hr>
-
-            <h5>Consulte por Coordenada</h5>
-
-              <label for="latitude">Latitude</label>
-              <input type="text" class="form-control" id="latitude" name="latitude" placeholder="ex. 0.0000000000000000">
-
-              <label for="longitude">Longitude</label>
-              <input type="text" class="form-control" id="longitude" name="longitude" placeholder="ex. -0.0000000000000000">
-
-              <input type="submit" class="btn btn-primary" onclick="addMarcador()" value="Enviar" id="remLay">
-              <input class="btn btn-primary" type="button" onclick="removerTema()"  value="Remover Marcador" id="remLay">
 
 
 
-            <br><hr>
-            
 
-            <h5>Consulte por CPF/CNPJ</h5>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                     <b>Consulte por ShapeFile (.zip)</b> 
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
 
-              <label for="cpf">CPF/CNPJ</label>
-              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="ex. xxxxxxxxxxx / xxxxxxxx/xxxx-xx">
+                    <input type="file" id="shap" class="form-control">
+                    <input class="btn btn-primary" type="button" onclick="removerLayShap()"  value="Limpar" id="remLay">
 
-              <input type="button" class="btn btn-primary" onclick="cpf2(areaImovel1, areaImovel_4mf)" value="Enviar" id="remLay">
-              <input class="btn btn-primary" type="button" onclick="removeCpf()"  value="Limpar" id="remLay">
-              
 
-            <br><hr>
-            
+                    </div>
+                  </div>
+                </div>
 
-            <h5>Consulte CAR</h5>
 
-              <label for="car">CAR</label>
-              <input type="text" class="form-control" id="car" name="car" placeholder="Digite os Últimos Dígitos">
 
-              <input type="button" class="btn btn-primary" onclick="car2()" value="Enviar" id="remLay">
-              <input class="btn btn-primary" type="button" onclick="removeCar()"  value="Remover tema" id="remLay">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                     <b>Consulte por Coordenada (Decimal)</b> 
+                    </button>
+                  </h2>
+                  <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+                    <label for="latitude"><h5>Latitude</h5></label><br>
+                    <input type="text" class="form-control" id="latitude" name="latitude" placeholder="ex. 0.0000000000000000">
+
+                    <label for="longitude"><h5>Longitude</h5></label><br>
+                    <input type="text" class="form-control" id="longitude" name="longitude" placeholder="ex. -0.0000000000000000"><br>
+
+                    <input type="submit" class="btn btn-primary" onclick="addMarcador()" value="Enviar" id="remLay">
+                    <input class="btn btn-primary" type="button" onclick="removerTema()"  value="Remover Marcador" id="remLay">
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                      <b>Consulte por Coordenada (DMS)</b>  
+                    </button>
+                  </h2>
+                  <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+                    <label for="latitude"><h5>Latitude:</h5></label><br>
+
+
+                    <label for="inputText" class="col-sm-2 col-form-label">Graus</label>
+                    <div>
+                      <input type="text" class="form-control" id="graus" placeholder="Digite Somente o Número">
+                    </div>
+                    <label for="inputText" class="col-sm-2 col-form-label">Min</label>
+                    <div>
+                      <input type="text" class="form-control" id="minutos" placeholder="Digite Somente o Número">
+                    </div>
+                    <label for="inputText" class="col-sm-2 col-form-label">Sec</label>
+                    <div>
+                      <input type="text" class="form-control" id="secundos" placeholder="Digite Somente o Número">
+                    </div><br>
+                    <div>
+                      <select name="coord" id="coord123" class="form-control">
+                      <option value="Norte">Norte</option>
+                      <option value="Sul">Sul</option>
+                      </select>
+                    </div><br>
+
+                    <label for="latitude"><h5>Longitude:</h5></label><br>
+
+
+                    <label for="inputText" class="col-sm-2 col-form-label">Graus</label>
+                    <div>
+                      <input type="text" class="form-control" id="graus1" placeholder="Digite Somente o Número">
+                    </div>
+                    <label for="inputText" class="col-sm-2 col-form-label">Min</label>
+                    <div>
+                      <input type="text" class="form-control" id="minutos1" placeholder="Digite Somente o Número">
+                    </div>
+                    <label for="inputText" class="col-sm-2 col-form-label">Sec</label>
+                    <div>
+                      <input type="text" class="form-control" id="secundos1" placeholder="Digite Somente o Número">
+                    </div><br>
+                    <div>
+                      <select name="coord" id="coord124" class="form-control">
+                      <option value="Oeste">Oeste</option>
+                      <option value="Leste">Leste</option>
+                      </select>
+                    </div><br>
+
+                    <input type="submit" class="btn btn-primary" onclick="convertCoord()" value="Enviar" id="remLay">
+                    <input class="btn btn-primary" type="button" onclick="removerTemaDms()"  value="Remover Marcador" id="remLay">
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading6">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                        <b>Consulte por CPF/CNPJ</b>  
+                      </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+
+
+                      <label for="cpf">CPF/CNPJ</label>
+                      <input type="text" class="form-control" id="cpf" name="cpf" placeholder="ex. xxxxxxxxxxx / xxxxxxxx/xxxx-xx">
+
+                      <input type="button" class="btn btn-primary" onclick="cpf2(areaImovel1, areaImovel_4mf)" value="Enviar" id="remLay">
+                      <input class="btn btn-primary" type="button" onclick="removeCpf()"  value="Limpar" id="remLay">
+
+
+
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading7">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        <b>Consulte CAR</b>  
+                      </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+
+
+                        <label for="car">CAR</label>
+                        <input type="text" class="form-control" id="car" name="car" placeholder="Digite os Últimos Dígitos">
+
+                        <input type="button" class="btn btn-primary" onclick="car2()" value="Enviar" id="remLay">
+                        <input class="btn btn-primary" type="button" onclick="removeCar()"  value="Remover tema" id="remLay">
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+
               
               <img src="imagens/SIGARR3.png" class="d-none d-lg-block d-print-block" href="https://femarh.rr.gov.br/" id="fem1">
 
@@ -2079,9 +2224,13 @@ session_start();
 
     <script src="mapas/funcoes/consultaCpf.js"></script>
 
-    <!-- Códigos - Consultar Marcador por Coordenada -->
+    <!-- Códigos - Consultar Marcador por Coordenada Decimal -->
     
     <script src="mapas/funcoes/consultaMarc.js"></script>
+
+    <!-- Códigos - Consultar Marcador por Coordenada DMS -->
+
+    <script src="mapas/funcoes/consultaMarcDms.js"></script>
 
     <!-- Códigos - Grades -->
     
