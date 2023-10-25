@@ -223,7 +223,7 @@ session_start();
                <!-- <li><a class="home" href="teste.php" style="text-decoration: none;">HOME</a></li> -->
                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      MAPAS
+                      <b>MAPAS</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord" >Google Streets <input type="RADIO" name="op" onclick="gStr()" id="coor"></a></li>
@@ -247,7 +247,7 @@ session_start();
                 </li>
                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      IMAGENS
+                      <b>IMAGENS</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu" style="border: none; padding-left: 10px; margin-top: -10px;">
                       <li>
@@ -360,7 +360,7 @@ session_start();
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      GRADES
+                      <b>GRADES</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord"><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> IBGE CARTA 1:100.000 <a href="Download/ibge_carta_100mil.zip" download="ibge_carta_100mil" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="ibgeCart('teste33')" id="27"></a></li>
@@ -401,7 +401,7 @@ session_start();
                 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      ÁREAS LICENCIADAS
+                      <b>ÁREAS LICENCIADAS</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                     <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Área do Projeto <a href="Download/ap.zip" download="Area_Projeto" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="areaProj('teste5')" id="1"></a></li>
@@ -421,7 +421,7 @@ session_start();
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      ÁREAS LICENCIADAS ATÉ 4 MÓDULOS FISCAIS
+                      <b>ÁREAS LICENCIADAS ATÉ 4 MÓDULOS FISCAIS</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord"><img src="imagens/retangulo-arredondado.png" style="max-width:20px;max-height:20px;"> Área do Projeto <a href="Download/ap_4mf.zip" download="ap_4mf" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="areaProj_4mf('teste30')" id="24"></a></li>
@@ -441,7 +441,7 @@ session_start();
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      ÁREAS INSTITUCIONAIS
+                      <b>ÁREAS INSTITUCIONAIS</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord" ><img src="imagens/retangulo-arredondado-808080.png" style="max-width:20px;max-height:20px;"> Áreas Inalienáveis <a href="Download/areas_inalienaveis_spu.zip" download="Areas_Inalienaveis" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="areaIna('teste2')" id="3"></a></li>
@@ -477,7 +477,7 @@ session_start();
                 </li> -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      BASE CARTOGRÁFICA
+                      <b>BASE CARTOGRÁFICA</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Sedes Municipais <a href="Download/municipios_sedes.zip" download="Sedes_Municipais" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="sedMunic('teste8')" id="8"></a></li>
@@ -517,7 +517,7 @@ session_start();
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    CAR
+                    <b>CAR</b>  
                   </a>
                   <ul class="dropdown-menu dropdown-menu">
                     <li><a id="coord"><img src="imagens/zee/retangulo-arredondado-e600a9.png" style="max-width:20px;max-height:20px;"> CAR-RR <a href="Download/car_rr.zip" download="CAR-RR" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="car1('teste60')" id="54"></a></li>
@@ -536,7 +536,7 @@ session_start();
                 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    AUTORIZAÇÃO DE USO CONTROLADO DO FOGO
+                    <b>AUTORIZAÇÃO DE USO CONTROLADO DO FOGO</b>  
                   </a>
                   <ul class="dropdown-menu dropdown-menu">
                     <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> Área Licenciada para Uso do Fogo <a href="" download="femarh_embargos" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas('teste59')" id="53"></a></li>
@@ -545,7 +545,7 @@ session_start();
 
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      ITERAIMA
+                      <b>ITERAIMA</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord" ><img src="imagens/zee/retangulo-arredondado-835acb.png" style="max-width:20px;max-height:20px;"> Sigef Certificados <a href="" ><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="sigefCert('teste57')" id="51"></a></li>
@@ -579,7 +579,7 @@ session_start();
     -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      ZEE
+                      <b>ZEE</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu" style="border: none; padding-left: 10px; margin-top: -10px;">
                       <li>
@@ -800,7 +800,7 @@ session_start();
     
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      AGÊNCIA NACIONAL DE MINERAÇÃO
+                      <b>AGÊNCIA NACIONAL DE MINERAÇÃO</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord"><img src="imagens/retangulo-arredondado-blue.png" style="max-width:20px;max-height:20px;"> Minerarios Ativos <a href="Download/anm_minerarios_ativos.zip" download="Minerarios_Ativos" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="minAtivos('teste16')" id="15"></a></li>
@@ -808,7 +808,7 @@ session_start();
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      IPHAN
+                      <b>IPHAN</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px"> Sítios Arqueológicos (Pontos) <a href="Download/iphan_sitios_arqueol_pto.zip" download="Iphan_Sitios_Arqueol_pto" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="ipSitArqPto('teste24')" id="16"></a></li>
@@ -820,7 +820,7 @@ session_start();
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      IBAMA
+                      <b>IBAMA</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord"><img src="imagens/retangulo-arredondado-red.png" style="max-width:20px;max-height:20px;"> Embargos <a href="Download/ibama_embargos.zip" download="Ibama_Embargos" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="emb('teste10')" id="19"></a></li>
@@ -828,7 +828,7 @@ session_start();
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      OUTORGA DE RECURSOS HÍDRICOS
+                      <b>OUTORGA DE RECURSOS HÍDRICOS</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-azul1.png" style="max-width:20px;max-height:20px"> Outorgas Emitidas pela ANA <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="ana1('teste27')" id="21"></a></li>
@@ -844,7 +844,7 @@ session_start();
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      INPE
+                      <b>INPE</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord"><img src="leaflet/images/fogo.png" style="max-width:20px;max-height:20px"> Focos de Queimadas <a href="https://queimadas.dgi.inpe.br/home/download?id=focos_brasil_rr&time=48h&outputFormat=json&utm_source=landing-page&utm_medium=landing-page&utm_campaign=dados-abertos&utm_content=focos_brasil_rr_48h" download="Focos_Queimadas_rr.json" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="queimadas('teste25')" id="18"></a></li>
