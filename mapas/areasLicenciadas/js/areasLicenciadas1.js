@@ -367,6 +367,10 @@
        b = 'No Data'; 
        c = 'No Data';
        d = 'No Data';
+       aProj = new Array();
+       bProj = new Array();
+       cProj = new Array();
+       dProj = new Array();
        
      theMarker = L.marker([lat,lon]);
      
@@ -379,6 +383,8 @@
        if (isInside){
            //selPoly.push(layer.feature);
            a = '<b>Tipo do Solo: </b>'+layer.feature.properties.fk_tipo+'<br><b>Área:</b> '+layer.feature.properties.area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.';
+       
+           aProj.push(a);
        }
      });
      
@@ -467,6 +473,8 @@
        if (isInside){
            //selPoly.push(layer.feature);
            b = '<b>Código da Área do Imóvel: </b>'+layer.feature.properties.fk_ati+'<br><b>Código da Área do Projeto: </b> '+layer.feature.properties.fk_ap+'<br><b>Nº do Processo: </b>'+layer.feature.properties.n_processo+'<br><b>Classificação: </b> '+layer.feature.properties.fk_corte_fora_proj+'<br><b>Área Monitorada:</b> '+layer.feature.properties.area+' ha.<br><b>Nº da Autorização: </b> '+layer.feature.properties.n_autoriza+'<br><b>Início da Vigência: </b> '+layer.feature.properties.vig_inicia+'<br><b>Fim da Vigênica:</b> '+layer.feature.properties.vig_fim+'<br><b>Intervalo da Vigência: </b>'+layer.feature.properties.vig_interv+'<br><b>Operador: </b> '+layer.feature.properties.fk_usuario+'<br><b>Data do Registro: </b> '+layer.feature.properties.data_reg+'<br><b>Situação do Monitoramento: </b> '+MonitSit+'<br><b>Licença de Autorização: </b> '+LicenAutor;
+       
+           bProj.push(b);
        }
      });
   
@@ -594,6 +602,8 @@
       if (isInside){
           //selPoly.push(layer.feature);
           d = '<b>GID: </b>'+layer.feature.id+'<br><b>Processo:</b> '+layer.feature.properties.n_processo+'<br><b>Código da Atividade: </b>'+codFemarh+'<br><b>Descrição: </b> '+layer.feature.properties.descr_ativ+'<br><b>Área: </b> '+layer.feature.properties.area+'<br><b>Código Imóvel: </b> '+layer.feature.properties.fk_ati+'<br><b>Tipo do Projeto: </b> '+tipoProjeto+'<br><br><button type="button" onclick="test()" id="aProj" value="'+layer.feature.id+'" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Detalhes</button>';
+      
+          dProj.push(d);
       }
     });
      
@@ -606,11 +616,14 @@
        
        if (isInside){
          c = '<b>Imóvel:</b> '+layer.feature.properties.nome_imov+'<br><b>Município:</b> '+layer.feature.properties.municip+'<br><b>Gleba:</b> '+layer.feature.properties.gleba+'<br><b>CAR:</b> '+layer.feature.properties.car+'<br><b>SIGEF:</b> '+layer.feature.properties.sigef+'<br><b>Área:</b> '+layer.feature.properties.area+' ha.</p>';
+       
+         cProj.push(c);
+       
        }
        
      })
    
-       popupModal(a, b, c, d); 
+       popupModal(aProj, bProj, cProj, dProj); 
      
      
    }
@@ -639,35 +652,63 @@
     var facModal = $('#myModal');
 
     let alvoA = document.querySelector(".field1");
+
+    for (var i = 0; i < a.length; i++) {
+
+
     if(document.getElementById('36').checked === true){
-      alvoA.innerHTML += a;
+      alvoA.innerHTML += a[i] + '<hr>';
     }else{
-      alvoA.innerHTML += 'No Data'
+      alvoA.innerHTML += '';
+      break;
     }
+
+  }
 
 
     let alvoB = document.querySelector(".field2");
+
+    for (var i = 0; i < b.length; i++) {
+
+
     if(document.getElementById('20').checked === true){
-      alvoB.innerHTML += b;
+      alvoB.innerHTML += b[i] + '<hr>';
     }else{
-      alvoB.innerHTML += 'No Data'
+      alvoB.innerHTML += '';
+      break;
     }
 
+  }
 
     let alvoC = document.querySelector(".field3");
+
+    for (var i = 0; i < c.length; i++) {
+
     if(document.getElementById('2').checked === true){
-      alvoC.innerHTML += c;
+      alvoC.innerHTML += c[i] + '<hr>';
     }else{
-      alvoC.innerHTML += 'No Data'
+      alvoC.innerHTML += '';
+      break;
     }
 
-  
-    let alvoD = document.querySelector(".field4");
-    if(document.getElementById('1').checked === true){
-      alvoD.innerHTML += d;
-    }else{
-      alvoD.innerHTML += 'No Data'
     }
+
+
+    let alvoD = document.querySelector(".field4");
+
+        // Marcar radio do mapa Google Terrain
+
+        for (var i = 0; i < d.length; i++) {
+        
+          if(document.getElementById('1').checked === true){
+            alvoD.innerHTML += d[i] + '<hr>'; 
+          }else{
+            alvoD.innerHTML += '';
+            break;
+          }
+
+
+        }
     
    
     facModal.appendTo("body").modal('show');
