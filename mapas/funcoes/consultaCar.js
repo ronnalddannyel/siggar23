@@ -568,7 +568,7 @@ var groupLayCar2 = L.layerGroup([]);
 
 
 
-               var nomeSit = pol24[i].properties.identificacao_bem;
+               var nomeSit = pol24[i].properties.identifica;
                console.log(nomeSit);
 
                sitArray.push(nomeSit);
