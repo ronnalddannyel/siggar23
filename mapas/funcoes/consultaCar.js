@@ -40,6 +40,7 @@ var groupLayCar2 = L.layerGroup([]);
 
 
             var pol1 = test;
+            var arCar = (turf.area(pol1))/10000;
 
 
             // UCE
@@ -658,14 +659,20 @@ var groupLayCar2 = L.layerGroup([]);
   
   
                  var nomeCar = pol28[i].properties.cod_imovel;
-                 console.log(nomeCar);
+                 var statusCar = pol28[i].properties.status_imovel;
   
                  carArray.push(nomeCar);
+                 carArray.push(statusCar);
   
   
                  var ar10 = (turf.area(intersection13))/10000;
                  var area10 = ar10.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.';
                  console.log(area10);
+
+
+                 var porc = (ar10/arCar)*100;
+                 var por = porc.toLocaleString('pt-BR', {minimumFractionDigits: 2,maximumFractionDigits: 2})+'%';
+                 carArray.push(por);
   
   
                  carArray.push(area10);

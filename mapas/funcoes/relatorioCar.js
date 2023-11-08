@@ -149,12 +149,14 @@ function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, 
         // CAR  
 
         var text10 = "<h5>CAR</h5>";
-        for(i=0; i<carArray.length-1; i= i+2){
+        for(i=0; i<carArray.length-1; i= i+4){
             if(carArray.length == 1){
                 text10 += "<b>Área de Sobreposição: </b>"+ carArray[i]+"<br><br>";
             }else{
                 text10 += "<b>Código Imovel: </b>"+ carArray[i]+"<br>";
-                text10 += "<b>Área de Sobreposição: </b>"+ carArray[i+1]+"<br><br>";
+                text10 += "<b>Status: </b>"+ carArray[i+1]+"<br>";
+                text10 += "<b>Área de Sobreposição (Relativo): </b>"+ carArray[i+2]+"<br>";
+                text10 += "<b>Área de Sobreposição (Absoluto): </b>"+ carArray[i+3]+"<br><br>";
             }
         }
 
