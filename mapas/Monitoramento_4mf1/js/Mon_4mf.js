@@ -60,7 +60,7 @@ var areaImov_4mf = L.geoJSON(areaImovel_4mf, {
         color: "#325f5f",
         weight: 2,
         onEachFeature: function (geom, layer) {
-          layer.bindPopup('<h6><b>Área de Uso e Ocupação do Solo</b></h6><b>Tipo do Solo: </b>'+geom.properties.fk_tipo+'<br><b>Área:</b> '+geom.properties.area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.');
+          layer.bindPopup('<h6><b>Área de Uso e Ocupação do Solo</b></h6><b>Tipo do Solo: </b>'+geom.properties.fk_tipo+'<br><b>Área:</b> '+geom.properties.area+' ha.');
         }
       });
       
