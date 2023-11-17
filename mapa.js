@@ -220,7 +220,7 @@ var drawControl = new L.Control.Draw({
     },
     polyline: {
       shapeOptions: {
-        color: 'red'
+        color: '#4B0082'
       },
     },
     rectangle: {
