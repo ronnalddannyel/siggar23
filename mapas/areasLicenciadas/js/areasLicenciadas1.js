@@ -281,6 +281,9 @@
             case 23: return {color: "#42f4f8", weight: 2};
             case 24: return {color: "#3b6ec9", weight: 2};
             case 25: return {color: "black", weight: 2};
+            case 26: return {color: "#FF0000", weight: 2};
+            case 27: return {color: "#0000FF", weight: 2};
+            case 28: return {color: "#FF1493", weight: 2};
         }
       },
       fillOpacity: "0",
@@ -442,6 +445,12 @@
         var MonitSit = '<img src="imagens/quadrado-azul1.png" style="max-width:20px;max-height:20px;"> CRNE - Corte Raso Não Executável';
       }else if(layer.feature.properties.fk_tip_mon == 25){
         var MonitSit = '<img src="imagens/quadrado-preto.png" style="max-width:20px;max-height:20px;"> POANE - Plano operacional anual não executado';
+      }else if(layer.feature.properties.fk_tip_mon == 26){
+        var MonitSit = '<img src="imagens/quadrado-FF0000.png" style="max-width:20px;max-height:20px;"> CR-A2008 - Corte Raso Anterior a 22/07/2008';
+      }else if(layer.feature.properties.fk_tip_mon == 27){
+        var MonitSit = '<img src="imagens/quadrado-0000FF.png" style="max-width:20px;max-height:20px;"> SAUVLAU - Supressão na área de uso alternativo do solo na virgência da Licença Ambiental Única';
+      }else if(layer.feature.properties.fk_tip_mon == 28){
+        var MonitSit = '<img src="imagens/quadrado-FF1493.png" style="max-width:20px;max-height:20px;"> SAUFVLAU - Supressão na área de uso alternativo do solo fora da virgência da Licença Ambiental Única';
       }else{
         var MonitSit = layer.feature.properties.fk_tip_mon;
       }
@@ -461,6 +470,8 @@
         var LicenAutor = 'PRAD - Plano de Recuperação de Área Degradada';
       }else if(layer.feature.properties.fk_tip_aut == 7){
         var LicenAutor = 'POA - PLANO OPERACIONAL ANUAL';
+      }else if(layer.feature.properties.fk_tip_aut == 8){
+        var LicenAutor = 'LAU - Licença Ambiental Única';
       }else{
         var LicenAutor = layer.feature.properties.fk_tip_aut;
 
@@ -485,7 +496,7 @@
       if(layer.feature.properties.fk_tipo_projeto == 1){
         var tipoProjeto = 'CRRA - Certificado Roraimense de Regularidade Ambiental';
       }else if(layer.feature.properties.fk_tipo_projeto == 2){
-        var tipoProjeto = 'DRA - Declaração de Regularização Ambiental';
+        var tipoProjeto = 'DRAF - Declaração de Regularização Ambiental (Floresta)';
       }else if(layer.feature.properties.fk_tipo_projeto == 3){
         var tipoProjeto = 'AUAS - Autorização de Uso Alternativo do Solo';
       }else if(layer.feature.properties.fk_tipo_projeto == 4){
@@ -496,6 +507,16 @@
         var tipoProjeto = 'POA - Plano Operacional Anual';
       }else if(layer.feature.properties.fk_tipo_projeto == 7){
         var tipoProjeto = 'PRAD - Plano de Recuperação de Área Degradada';
+      }else if(layer.feature.properties.fk_tipo_projeto == 8){
+        var tipoProjeto = 'LAU - Licença Ambiental Única';
+      }else if(layer.feature.properties.fk_tipo_projeto == 9){
+        var tipoProjeto = 'LAS - Licença Ambiental Simplificada';
+      }else if(layer.feature.properties.fk_tipo_projeto == 10){
+        var tipoProjeto = 'CRRAC - Certificado Roraimense de Regularidade Ambiental (Cerrado)';
+      }else if(layer.feature.properties.fk_tipo_projeto == 11){
+        var tipoProjeto = 'DRAC - Declaração de Regularização Ambiental (Cerrado)';
+      }else if(layer.feature.properties.fk_tipo_projeto == 12){
+        var tipoProjeto = 'LAA - Licença Ambiental de Ampliação';
       }else{
           var tipoProjeto = layer.feature.properties.fk_tipo_projeto;
       }

@@ -1321,6 +1321,9 @@ session_start();
                 <img src="imagens/quadrado-azul3.png" style="max-width:20px;max-height:20px;"> SVFAUV - Supressão vegetal executado fora da área de uso alternativo do solo na vigência da autorização <br>
                 <img src="imagens/quadrado-azul1.png" style="max-width:20px;max-height:20px;"> CRNE - Corte Raso Não Executável <br>
                 <img src="imagens/quadrado-preto.png" style="max-width:20px;max-height:20px;"> POANE - Plano operacional anual não executado <br>
+                <img src="imagens/quadrado-FF0000.png" style="max-width:20px;max-height:20px;"> CR-A2008 - Corte Raso Anterior a 22/07/2008 <br>
+                <img src="imagens/quadrado-0000FF.png" style="max-width:20px;max-height:20px;"> SAUVLAU - Supressão na área de uso alternativo do solo na virgência da Licença Ambiental Única <br>
+                <img src="imagens/quadrado-FF1493.png" style="max-width:20px;max-height:20px;"> SAUFVLAU - Supressão na área de uso alternativo do solo fora da virgência da Licença Ambiental Única <br>
                 </div>
               </div>
 
