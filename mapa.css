@@ -773,6 +773,25 @@ body {
     display: none;
   }
 
+  #inf_dev{
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .linha-horizontal {
+    flex: 1;
+    border-top: 0.5px solid black;
+    height: 0.5em;
+  }
+
+  .texto {
+    padding: 0 10px;
+  }
+
   /* All Mobile Sizes (devices and browser) */
   @media only screen and (max-width: 500px) {
     li.nav-item a{

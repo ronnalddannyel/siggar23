@@ -1132,6 +1132,65 @@ session_start();
 
              <hr>
 
+
+
+             <div>
+
+                <p><h6 id="inf_dev">Desenvolvido pela Fundação Estadual do Meio Ambiente e Recursos Hídricos – FEMARH-RR</h6></p>
+                <hr>
+                <p>
+                  <h5 id="inf_dev">Antonio Denarium</h6>
+                  <h6 id="inf_dev">Governador do Estado de Roraima</h6>
+                </p>
+                <hr>
+                <p>
+                  <h5 id="inf_dev">Edilson Damião Lima</h6>
+                  <h6 id="inf_dev">Vice-Governador do Estado de Roraima</h6>
+                </p>
+                <hr>
+                <p>
+                  <h5 id="inf_dev">Glicério Marcos Fernandes Pereira</h6>
+                  <h6 id="inf_dev">Presidente da Fundação do Meio Ambiente e Recursos Hídricos</h6>
+                </p>
+                <div class="container">
+                  <div class="linha-horizontal"></div>
+                  <h6 class="texto"><b>DESENVOLVEDORES</b></h6>
+                  <div class="linha-horizontal"></div>
+                </div>
+                <p>
+                  <h5 id="inf_dev">Luana Tabaldi</h6>
+                  <h6 id="inf_dev">Diretoria de Pesquisa e Tecnologia e Gestão territorial</h6>
+                </p>
+                <hr>
+                <p>
+                  <h5 id="inf_dev">Anderson Rodrigues Almeida</h6>
+                  <h6 id="inf_dev">Acessor Especial</h6>
+                </p>
+                <hr>
+                <p>
+                  <h5 id="inf_dev">Kemeson Alves Naveca</h6>
+                  <h6 id="inf_dev">Acessor Técnico</h6>
+                </p>
+                <hr>
+                <p>
+                  <h5 id="inf_dev">Ronnald Dannyel da Silva Cunha</h6>
+                  <h6 id="inf_dev">Acessor Especial</h6>
+                </p>
+                <div class="container">
+                  <div class="linha-horizontal"></div>
+                  <h6 class="texto"><b>MODERADORES DO BANCO DE DADOS</b></h6>
+                  <div class="linha-horizontal"></div>
+                </div>
+                <p>
+                  <h5 id="inf_dev">Divisão de Monitoramento e Controle Ambiental</h6>
+                </p>
+                <hr>
+
+
+              </div>
+
+
+
               <h5>Avalie o SIGGARR</h5>
               <?php
               if(isset($_SESSION['msg'])){
