@@ -1164,17 +1164,17 @@ session_start();
                 <hr>
                 <p>
                   <h5 id="inf_dev">Anderson Rodrigues Almeida</h6>
-                  <h6 id="inf_dev">Acessor Especial</h6>
+                  <h6 id="inf_dev">Assessor Especial</h6>
                 </p>
                 <hr>
                 <p>
                   <h5 id="inf_dev">Kemeson Alves Naveca</h6>
-                  <h6 id="inf_dev">Acessor Técnico</h6>
+                  <h6 id="inf_dev">Assessor Técnico</h6>
                 </p>
                 <hr>
                 <p>
                   <h5 id="inf_dev">Ronnald Dannyel da Silva Cunha</h6>
-                  <h6 id="inf_dev">Acessor Especial</h6>
+                  <h6 id="inf_dev">Assessor Especial</h6>
                 </p>
                 <div class="container">
                   <div class="linha-horizontal"></div>
