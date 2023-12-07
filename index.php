@@ -1139,7 +1139,7 @@ session_start();
                 <p><h6 id="inf_dev">Desenvolvido pela Fundação Estadual do Meio Ambiente e Recursos Hídricos – FEMARH-RR</h6></p>
                 <hr>
                 <p>
-                  <h5 id="inf_dev">Antonio Denarium</h6>
+                  <h5 id="inf_dev">Antonio Oliverio Garcia de Almeida</h6>
                   <h6 id="inf_dev">Governador do Estado de Roraima</h6>
                 </p>
                 <hr>
