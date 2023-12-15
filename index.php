@@ -976,6 +976,28 @@ session_start();
 
 
 
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading8">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                     <b>Consulte por KML</b> 
+                    </button>
+                  </h2>
+                  <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                    <input type="file" id="fileInput" accept=".kml" class="form-control">
+                    <input class="btn btn-primary" type="button" onclick="removerLayKml()"  value="Limpar" id="remLay">
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="heading4">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
@@ -2042,6 +2064,10 @@ session_start();
     <!-- Códigos para ler arquivos ShapeFile externo -->
 
     <script src="mapas/funcoes/consultaShap.js"></script>
+
+    <!-- Códigos para ler arquivos KML externo -->
+
+    <script src="mapas/funcoes/consultaKml.js"></script>
 
     <!-- Códigos - Áreas Licenciadas -->
 
