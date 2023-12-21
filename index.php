@@ -181,6 +181,10 @@ session_start();
     <link rel="stylesheet" href="leaflet/easy-button.css">
     <script src="leaflet/easy-button.js"></script>
 
+    <!--- Leaflet Omnivore -->
+
+    <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
     
 </head>
 <body>
