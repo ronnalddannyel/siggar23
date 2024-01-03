@@ -2436,7 +2436,6 @@ session_start();
               <input type="hidden" id="car2" name="car2">
           </form>
 
-        </div>
 
 
 
