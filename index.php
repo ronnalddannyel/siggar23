@@ -2374,42 +2374,69 @@ session_start();
     <script src="mapas/funcoes/salvarJson.js"></script>
 
 
+    <!-- Modal para mostrar informações do popup das camadas das Áreas Licenciadas -->
 
 
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content" style="min-width: 550px;">
-      <div class="modal-header">
-        <h5 class="modal-title" id="myModalLabel">Áreas Licenciadas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        
-
-          <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Área do Imóvel</button>
-              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Área do Projeto</button>
-              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">AUOS</button>
-              <button class="nav-link" id="nav-projet-tab" data-bs-toggle="tab" data-bs-target="#nav-projet" type="button" role="tab" aria-controls="nav-projet" aria-selected="false">Monitoramento</button>
-            </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><span class="field3" id="fieldC"></span></div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><span class="field4" id="fieldD"></span></div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><span class="field1" id="fieldA"></span></div>
-            <div class="tab-pane fade" id="nav-projet" role="tabpanel" aria-labelledby="nav-projet-tab"><span  class="field2" id="fieldB"></span></div>
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" style="min-width: 550px;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel">Áreas Licenciadas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
+          <div class="modal-body">
+            
+
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Área do Imóvel</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Área do Projeto</button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">AUOS</button>
+                  <button class="nav-link" id="nav-projet-tab" data-bs-toggle="tab" data-bs-target="#nav-projet" type="button" role="tab" aria-controls="nav-projet" aria-selected="false">Monitoramento</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><span class="field3" id="fieldC"></span></div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><span class="field4" id="fieldD"></span></div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><span class="field1" id="fieldA"></span></div>
+                <div class="tab-pane fade" id="nav-projet" role="tabpanel" aria-labelledby="nav-projet-tab"><span  class="field2" id="fieldB"></span></div>
+              </div>
 
 
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+
+
+
+
+
+
+          <!-- Formulário oculto para enviar o conteúdo da div para gerar_pdf.php -->
+          <form id="formEnviarParaPDF" action="./mapas/funcoes/gerar_pdf.php" method="post" style="display: none;" target="_blank">
+              <input type="hidden" id="car1" name="car1">
+              <input type="hidden" id="uce" name="uce">
+              <input type="hidden" id="ucf" name="ucf">
+              <input type="hidden" id="am" name="am">
+              <input type="hidden" id="ti" name="ti">
+              <input type="hidden" id="ai" name="ai">
+              <input type="hidden" id="emb" name="emb">
+              <input type="hidden" id="ap" name="ap">
+              <input type="hidden" id="ap4mf" name="ap4mf">
+              <input type="hidden" id="assent" name="assent">
+              <input type="hidden" id="saPol" name="saPol">
+              <input type="hidden" id="saPon" name="saPon">
+              <input type="hidden" id="os" name="os">
+              <input type="hidden" id="osb" name="osb">
+              <input type="hidden" id="car2" name="car2">
+          </form>
+
+        </div>
 
 
 

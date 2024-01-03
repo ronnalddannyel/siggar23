@@ -172,5 +172,46 @@ function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, 
         '<br><hr><b>Quantidade de Outorgas Subterrâneas Sobrepostos:</b> '+contOutSub+'<br>';
         element.innerHTML += newHtml;
 
+
+        // Atribuir valores dos arrays para o formulário de gerar PDF Laudo
+
+
+        document.getElementById('car1').value = JSON.stringify(carArray);
+
+        document.getElementById('uce').value = JSON.stringify(ucsArray);
+
+        document.getElementById('ucf').value = JSON.stringify(uceArray);
+
+        document.getElementById('am').value = JSON.stringify(militArray);
+
+        document.getElementById('ti').value = JSON.stringify(indigArray);
+
+        document.getElementById('ai').value = JSON.stringify(inalienArray);
+
+        document.getElementById('emb').value = JSON.stringify(embarArray);
+
+        document.getElementById('ap').value = JSON.stringify(projArray);
+
+        document.getElementById('ap4mf').value = JSON.stringify(projArray_4mf);
+
+        document.getElementById('assent').value = JSON.stringify(assentArray);
+
+        document.getElementById('saPol').value = JSON.stringify(sitArray);
+
+        document.getElementById('saPon').value = contSitPon;
+
+        document.getElementById('os').value = contOutSuper;
+
+        document.getElementById('osb').value = contOutSub;
+
+
+
+  }
+
+
+  // Função para acionar botão enviar do laudo CAR
+
+  function pdfCar(){
+    document.getElementById('formEnviarParaPDF').submit();
   }
 
