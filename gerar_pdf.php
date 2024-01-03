@@ -642,7 +642,7 @@ if (isset($_POST['car1'])) {
     $mpdf->WriteHTML($html);
     
     // Definir o nome do arquivo PDF e saída para o navegador
-    $filename = 'output.pdf';
+    $filename = 'Laudo_Car.pdf';
     $mpdf->Output($filename, \Mpdf\Output\Destination::INLINE);
     exit; // Termina o script após gerar o PDF
 } else {
