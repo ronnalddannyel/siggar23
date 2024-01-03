@@ -3,7 +3,7 @@
 <head>
 
 <?php
-include('../../../../db.php');
+include('../../../db.php');
 ?>
 
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@ include('../../../../db.php');
 
 <?php
 
-require_once __DIR__ . '../../vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 $mpdf = new \Mpdf\Mpdf();
 

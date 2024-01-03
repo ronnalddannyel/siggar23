@@ -2418,7 +2418,7 @@ session_start();
 
 
           <!-- Formulário oculto para enviar o conteúdo da div para gerar_pdf.php -->
-          <form id="formEnviarParaPDF" action="./mapas/funcoes/gerar_pdf.php" method="post" style="display: none;" target="_blank">
+          <form id="formEnviarParaPDF" action="./gerar_pdf.php" method="post" style="display: none;" target="_blank">
               <input type="hidden" id="car1" name="car1">
               <input type="hidden" id="uce" name="uce">
               <input type="hidden" id="ucf" name="ucf">
