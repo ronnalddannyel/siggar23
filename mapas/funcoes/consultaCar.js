@@ -648,6 +648,7 @@ var groupLayCar2 = L.layerGroup([]);
              if(intersection13 !== null){
               
               if(car2 ===  pol28[i].properties.cod_imovel){
+                document.getElementById('mun').value = pol28[i].properties.municipio;
                 continue;
               }else{
 
