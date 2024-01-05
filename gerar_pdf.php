@@ -41,8 +41,9 @@ if (isset($_POST['car1'])) {
     $os = $_POST['os'];
     $osb = $_POST['osb'];
     $car2 = $_POST['car2'];
+    $Siggarr = 'Externo';
 
-    $sql = "INSERT INTO LaudoCar (Car) VALUES ('".$car2."')";
+    $sql = "INSERT INTO LaudoCar (Car, Siggarr) VALUES ('".$car2."', '".$Siggarr."')";
     
         // Execute a consulta
         $result = mysqli_query($conn, $sql);
