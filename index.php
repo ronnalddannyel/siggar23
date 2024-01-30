@@ -851,11 +851,11 @@ session_start();
                       <b>DGPH/DRHI</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
-                      <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Qualidade da Água <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="qa1('teste61')" id="68"></a></li>
+                      <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Qualidade da Água <a href="Download/qa.zip" download="Qualidade_agua" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="qa1('teste61')" id="68"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px"> Estação Telemétrica <a href=""><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="Estacao_met1('teste62')" id="69"></a></li>
+                      <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px"> Estação Telemétrica <a href="Download/estacao_met.zip" download="Estacao_tel" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="Estacao_met1('teste62')" id="69"></a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
