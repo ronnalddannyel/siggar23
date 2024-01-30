@@ -645,6 +645,9 @@ var groupLayCar2 = L.layerGroup([]);
             
              var pol29 = pol28[i];
              var intersection13 = turf.intersect(pol29, pol1);
+
+             var arCar1 = (turf.area(pol29))/10000;
+
              if(intersection13 !== null){
               
               if(car2 ===  pol28[i].properties.cod_imovel){
@@ -671,7 +674,7 @@ var groupLayCar2 = L.layerGroup([]);
                  console.log(area10);
 
 
-                 var porc = (ar10/arCar)*100;
+                 var porc = (ar10/arCar1)*100;
                  var por = porc.toLocaleString('pt-BR', {minimumFractionDigits: 2,maximumFractionDigits: 2})+'%';
                  carArray.push(por);
   
