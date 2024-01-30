@@ -4,7 +4,6 @@ var groupLayQa = L.layerGroup([]);
 function qa1(el){
   groupLayQa.clearLayers();
   $.getJSON(UrlFemarh+"/siggarr/mapas/Dgph/qa.geojson", function(data) {  
-  console.log(data);
   var qa = L.geoJson(data, { 
     pointToLayer: function (geom, latlng) {
       return L.marker(latlng, {icon: blueIcon})
@@ -52,7 +51,6 @@ var groupLayEstacao_met = L.layerGroup([]);
 function Estacao_met1(el){
   groupLayEstacao_met.clearLayers();
   $.getJSON(UrlFemarh+"/siggarr/mapas/Dgph/estacao_met.geojson", function(data) {  
-  console.log(data);
   var Estacao_met = L.geoJson(data, { 
     pointToLayer: function (geom, latlng) {
       return L.marker(latlng, {icon: redIcon})
