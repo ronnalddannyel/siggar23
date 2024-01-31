@@ -1988,9 +1988,159 @@ session_start();
 
               <div id="teste27"></div>
 
-              <div id="teste28"></div>
+              <div id="teste28">
+                <div id="out_sup"></div>
 
-              <div id="teste29"></div>
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-ffff73.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Abastecimento Público e Esgotamento Sanitário
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-bee8ff.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Aproveitamento do Potencial Hidrelétrico
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-00c5ff.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Aquicultura em Tanque Escavado
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-002673.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Aquicultura em Tanque Rede
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-f0566b.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Consumo Humano
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-38a800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Criação Animal
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-e60000.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Indústria
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-f57ab6.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Irrigação
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-a83800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Mineração - Extração de AreiaCascalho em Leito de Rio
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-a83800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Mineração - Outros Processos Extrativos
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-005ce6.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Obras Hidráulicas
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-59f0c0.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outras
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-59f769.png" style="max-width:20px;max-height:20px;margin-left:15px;"> ReservatórioBarramentoRegularização de Vazões para Usos Múltiplos
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-8f6b42.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Sem Finalidade
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-8c3849.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Serviços
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-e69800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Termoelétrica
+                </div>
+
+
+                <div style="margin-top: 8px;">
+                  <img src="./imagens/outorga/pin-de-localizacao-308a3f.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Transposição
+                </div>
+
+                <div style="margin-top: 8px;">
+                  <img src="./leaflet/images/pin-de-localizacao-cinza.png" style="max-width:20px;max-height:20px;margin-left:15px;"> NULL
+                </div>
+              </div>
+
+              <div id="teste29">
+              <div id="out_sub"></div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-ffff73.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Abastecimento Público e Esgotamento Sanitário
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-bee8ff.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Aproveitamento do Potencial Hidrelétrico
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-00c5ff.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Aquicultura em Tanque Escavado
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-002673.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Aquicultura em Tanque Rede
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-f0566b.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Consumo Humano
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-38a800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Criação Animal
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-e60000.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Indústria
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-f57ab6.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Irrigação
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-a83800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Mineração - Extração de AreiaCascalho em Leito de Rio
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-a83800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Mineração - Outros Processos Extrativos
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-005ce6.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Obras Hidráulicas
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-59f0c0.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outras
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-59f769.png" style="max-width:20px;max-height:20px;margin-left:15px;"> ReservatórioBarramentoRegularização de Vazões para Usos Múltiplos
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-8f6b42.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Sem Finalidade
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-8c3849.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Serviços
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-e69800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Termoelétrica
+              </div>
+
+
+              <div style="margin-top: 8px;">
+                <img src="./imagens/outorga/pin-de-localizacao-308a3f.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Transposição
+              </div>
+
+              <div style="margin-top: 8px;">
+                <img src="./leaflet/images/pin-de-localizacao-cinza.png" style="max-width:20px;max-height:20px;margin-left:15px;"> NULL
+              </div>
+              </div>
 
               <div id="teste61"></div>
 
@@ -2056,6 +2206,10 @@ session_start();
     <!--- Código - Mostrar Situação do Monitoramento e Licença de Autorização -->
     
     <script src="mapas/funcoes/mostrarSitMon.js"></script>
+
+    <!--- ICON -->
+
+    <script src="./iconOut.js"></script>
 
     <!-- Códigos dos mapas -->
 

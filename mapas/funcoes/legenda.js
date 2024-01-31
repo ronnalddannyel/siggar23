@@ -273,8 +273,8 @@ outEmitAna12.innerHTML += outEmitAnaHtml;
 
 // Outorgas Superficiais
 
-var outsup12 = document.getElementById("teste28");
-var outsup1Html = '<img src="leaflet/images/pin-de-localizacao-azul3.png" style="max-width:20px;max-height:20px"> Outorgas Superficiais ('+outSuper3.totalFeatures+')';
+var outsup12 = document.getElementById("out_sup");
+var outsup1Html = 'Outorgas Superficiais ('+outSuper3.totalFeatures+')';
 var outsup2Html = '<div class="form-check form-switch" style="float: right;margin-left: 20px;">';
 var outsup3Html = '<input type="checkbox" class="form-check-input" role="switch" value="l" onclick="outSuper2()" id="outSup">';
 var outsup4Html = '</div>';
@@ -284,8 +284,8 @@ outsup12.innerHTML += outsupHtml;
 
 // Outorgas Subterrâneas 
 
-var outsub12 = document.getElementById("teste29");
-var outsub1Html = '<img src="leaflet/images/pin-de-localizacao-marrom.png" style="max-width:20px;max-height:20px"> Outorgas Subterrâneas ('+outSub3.totalFeatures+')';
+var outsub12 = document.getElementById("out_sub");
+var outsub1Html = 'Outorgas Subterrâneas ('+outSub3.totalFeatures+')';
 var outsub2Html = '<div class="form-check form-switch" style="float: right;margin-left: 20px;">';
 var outsub3Html = '<input type="checkbox" class="form-check-input" role="switch" value="l" onclick="outSub2()" id="outSub">';
 var outsub4Html = '</div>';

@@ -49,7 +49,27 @@
       console.log(outSuper3);
       var outSuper = L.geoJSON(outSuper3, {
         pointToLayer: function (geom, latlng) {
-            return L.marker(latlng, {icon: blueIcon2});
+          switch (geom.properties.FIN_TFN_DS) {
+            case 'Abastecimento Público': return L.marker(latlng, {icon: Icon_ffff73});
+            case 'Esgotamento Sanitário': return L.marker(latlng, {icon: Icon_ffff73});
+            case 'Aproveitamento do Potencial Hidrelétrico': return L.marker(latlng, {icon: Icon_bee8ff});
+            case 'Aquicultura em Tanque Escavado': return L.marker(latlng, {icon: Icon_00c5ff});
+            case 'Aquicultura em Tanque Rede': return L.marker(latlng, {icon: Icon_002673});
+            case 'Consumo Humano': return L.marker(latlng, {icon: Icon_f0566b});
+            case 'Criação Animal': return L.marker(latlng, {icon: Icon_38a800});
+            case 'Indústria': return L.marker(latlng, {icon: Icon_e60000});
+            case 'Irrigação': return L.marker(latlng, {icon: Icon_f57ab6});
+            case 'Mineração - Extração de AreiaCascalho em Leito de Rio': return L.marker(latlng, {icon: Icon_a83800});
+            case 'Mineração - Outros Processos Extrativos': return L.marker(latlng, {icon: Icon_a83800});
+            case 'Obras Hidráulicas': return L.marker(latlng, {icon: Icon_005ce6});
+            case 'Outras': return L.marker(latlng, {icon: Icon_59f0c0});
+            case 'ReservatórioBarramentoRegularização de Vazões para Usos Múltiplos': return L.marker(latlng, {icon: Icon_59f769});
+            case 'Sem Finalidade': return L.marker(latlng, {icon: Icon_8f6b42});
+            case 'Serviços': return L.marker(latlng, {icon: Icon_8c3849});
+            case 'Termoelétrica': return L.marker(latlng, {icon: Icon_e69800});
+            case 'Transposição': return L.marker(latlng, {icon: Icon_308a3f});
+            default: return L.marker(latlng, {icon: CinzaIcon});
+        }
         },
         onEachFeature: function (features, layer) {
           layer.bindPopup('<h6><b>Outorgas Superficiais</b></h6><p><b>Tipo de Interferência: </b>'+features.properties.INT_TIN_DS+'<br><b>Subtipo de Interferência: </b>'+features.properties.INT_TSU_DS+'<br><b>Tipo de Corpo Hídrico:</b> '+features.properties.INT_TCH_DS+'<br><b>Situação da Interferência:</b> '+features.properties.INT_TSI_DS+'<br><b>Domínio:</b> '+features.properties.INT_TDM_DS+'<br><b>Latitude:</b> '+features.properties.INT_NU_LAT+'<br><b>Longitude: </b>'+features.properties.INT_NU_LON+'<br><b>Município:</b> '+features.properties.ING_NM_MUN+'<br><b>Nome do Corpo Hídrico:</b> '+features.properties.INT_NM_COR+'<br><b>Nome do Corpo Hídrico Alterado:</b> '+features.properties.INT_NM_C_1+'<br><b>Nome do Empreendimento:</b> '+features.properties.EMP_NM_EMP+'<br><b>Situação da Outorga:</b> '+features.properties.OUT_TP_SIT+'<br><b>Data de Vencimento:</b> '+features.properties.OUT_DT_OUT+'<br><b>Data de Início:</b> '+features.properties.OUT_DT_O_1+'<br><b>Número do Processo: </b>'+features.properties.OUT_NU_PRO+'<br><b>Tipo do Ato:</b> '+features.properties.OUT_TP_ATO+'<br><b>Número do Ato:</b> '+features.properties.OUT_NU_ATO+'<br><b>Vazão Máxima:</b> '+features.properties.INT_QT_VAZ+'<br><b>Vazão Média:</b> '+features.properties.INT_QT_V_1+'<br><b>Volume Anual:</b> '+features.properties.INT_QT_VOL+'<br><b>Finalidade:</b> '+features.properties.FIN_TFN_DS+'</p>');   
@@ -94,7 +114,27 @@
       console.log(outSub3);
       var outSub = L.geoJSON(outSub3, {
         pointToLayer: function (geom, latlng) {
-            return L.marker(latlng, {icon: MarromIcon});
+          switch (geom.properties.FIN_TFN_DS) {
+            case 'Abastecimento Público': return L.marker(latlng, {icon: Icon_ffff73});
+            case 'Esgotamento Sanitário': return L.marker(latlng, {icon: Icon_ffff73});
+            case 'Aproveitamento do Potencial Hidrelétrico': return L.marker(latlng, {icon: Icon_bee8ff});
+            case 'Aquicultura em Tanque Escavado': return L.marker(latlng, {icon: Icon_00c5ff});
+            case 'Aquicultura em Tanque Rede': return L.marker(latlng, {icon: Icon_002673});
+            case 'Consumo Humano': return L.marker(latlng, {icon: Icon_f0566b});
+            case 'Criação Animal': return L.marker(latlng, {icon: Icon_38a800});
+            case 'Indústria': return L.marker(latlng, {icon: Icon_e60000});
+            case 'Irrigação': return L.marker(latlng, {icon: Icon_f57ab6});
+            case 'Mineração - Extração de AreiaCascalho em Leito de Rio': return L.marker(latlng, {icon: Icon_a83800});
+            case 'Mineração - Outros Processos Extrativos': return L.marker(latlng, {icon: Icon_a83800});
+            case 'Obras Hidráulicas': return L.marker(latlng, {icon: Icon_005ce6});
+            case 'Outras': return L.marker(latlng, {icon: Icon_59f0c0});
+            case 'ReservatórioBarramentoRegularização de Vazões para Usos Múltiplos': return L.marker(latlng, {icon: Icon_59f769});
+            case 'Sem Finalidade': return L.marker(latlng, {icon: Icon_8f6b42});
+            case 'Serviços': return L.marker(latlng, {icon: Icon_8c3849});
+            case 'Termoelétrica': return L.marker(latlng, {icon: Icon_e69800});
+            case 'Transposição': return L.marker(latlng, {icon: Icon_308a3f});
+            default: return L.marker(latlng, {icon: CinzaIcon});
+        }
         },
         onEachFeature: function (features, layer) {
           layer.bindPopup('<h6><b>Outorgas Subterrâneas</b></h6><p><b>Tipo de Interferência: </b>'+features.properties.INT_TIN_DS+'<br><b>Subtipo de Interferência: </b>'+features.properties.INT_TSU_DS+'<br><b>Tipo de Corpo Hídrico:</b> '+features.properties.INT_TCH_DS+'<br><b>Situação da Interferência:</b> '+features.properties.INT_TSI_DS+'<br><b>Domínio:</b> '+features.properties.INT_TDM_DS+'<br><b>Latitude:</b> '+features.properties.INT_NU_LAT+'<br><b>Longitude: </b>'+features.properties.INT_NU_LON+'<br><b>Município:</b> '+features.properties.ING_NM_MUN+'<br><b>Nome do Corpo Hídrico:</b> '+features.properties.INT_NM_COR+'<br><b>Nome do Corpo Hídrico Alterado:</b> '+features.properties.INT_NM_C_1+'<br><b>Nome do Empreendimento:</b> '+features.properties.EMP_NM_EMP+'<br><b>Situação da Outorga:</b> '+features.properties.OUT_TP_SIT+'<br><b>Data de Vencimento:</b> '+features.properties.OUT_DT_OUT+'<br><b>Data de Início:</b> '+features.properties.OUT_DT_O_1+'<br><b>Número do Processo: </b>'+features.properties.OUT_NU_PRO+'<br><b>Tipo do Ato:</b> '+features.properties.OUT_TP_ATO+'<br><b>Número do Ato:</b> '+features.properties.OUT_NU_ATO+'<br><b>Vazão Máxima:</b> '+features.properties.INT_QT_VAZ+'<br><b>Vazão Média:</b> '+features.properties.INT_QT_V_1+'<br><b>Volume Anual:</b> '+features.properties.INT_QT_VOL+'<br><b>Finalidade:</b> '+features.properties.FIN_TFN_DS+'</p>');        
