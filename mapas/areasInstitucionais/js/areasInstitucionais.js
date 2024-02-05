@@ -5,8 +5,7 @@ var areaInalienaveis = L.geoJSON(areaInalienaveis1, {
     color: "#808080",
     weight: 1,
     onEachFeature: function (geom, layer) {
-      //layer.bindPopup('<h6><b>Áreas Inalienáveis</b></h6><p><b>Nome:</b> Área Inalienável<br><b>Área:</b> '+geom.properties.area_ha.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.</p>');
-      layer.bindPopup('<h6><b>Áreas Inalienáveis</b></h6><p><b>Nome:</b> Área Inalienável<br><b>Área:</b> '+geom.properties.AREA__HA.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.</p>');
+      layer.bindPopup('<h6><b>Áreas Inalienáveis</b></h6><p><b>Nome:</b> Área Inalienável<br><b>Método:</b> '+geom.properties.metodo+'<br><b>Imagem: </b> '+geom.properties.imagem+'<br><b>Data: </b>'+geom.properties.data+'<br><b>Rio: </b> '+geom.properties.rio+'<br><b>Município: </b> '+geom.properties.municipio+'<br><b>Gleba: </b>'+geom.properties.gleba+'<br><b>Categoria: </b> '+geom.properties.categoria+'<br><b>Nup: </b> '+geom.properties.nup+'</p>');
     }
   });
 
