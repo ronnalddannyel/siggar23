@@ -1155,6 +1155,34 @@ session_start();
                     </div>
                   </div>
 
+
+
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading9">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                        <b>Consulte por CPF/CNPJ - Outorga</b>  
+                      </button>
+                    </h2>
+                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+
+
+                      <label for="cpf_out">CPF/CNPJ</label>
+                      <input type="text" class="form-control" id="cpf_out" name="cpf_out" placeholder="ex. xxxxxxxxxxx / xxxxxxxx/xxxx-xx">
+
+                      <input type="button" class="btn btn-primary" onclick="cpfOut()" value="Enviar" id="remLay">
+                      <input class="btn btn-primary" type="button" onclick="removeCpfOut()"  value="Limpar" id="remLay">
+
+
+
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
                 </div>
 
 
@@ -2486,6 +2514,10 @@ session_start();
     <!-- Códigos - Consultar Imóvel por CPF -->
 
     <script src="mapas/funcoes/consultaCpf.js"></script>
+
+    <!-- Códigos - Consultar Outorga por CPF -->
+
+    <script src="mapas/funcoes/outorgaCons.js"></script>
 
     <!-- Códigos - Consultar Marcador por Coordenada Decimal -->
     
