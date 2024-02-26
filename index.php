@@ -544,7 +544,11 @@ session_start();
                     <b>AUTORIZAÇÃO DE USO CONTROLADO DO FOGO</b>  
                   </a>
                   <ul class="dropdown-menu dropdown-menu">
-                    <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> Área Licenciada para Uso do Fogo <a href="Download/controle_queimadas.zip" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas('teste59')" id="53"></a></li>
+                    <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> 2023 <a href="Download/controle_queimadas.zip" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas('teste59')" id="53"></a></li>
+                    <li>
+                          <hr class="dropdown-divider">
+                    </li>
+                    <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> 2024 <a href="Download/controle_queimadas.zip" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas2('teste63')" id="70"></a></li>
                   </ul>
                 </li>
 
@@ -1541,12 +1545,14 @@ session_start();
 
               <div id="teste59"></div>
 
+              <div id="teste63"></div>
+
 
               <div id="teste57"></div>
 
               <div id="teste58"></div>
 
-              <div id="teste63"></div>
+              
 
 
 
@@ -1785,7 +1791,7 @@ session_start();
                 </div>
               </div>
               
-              <div id="teste63">
+              <div>
                 <div id="veg"></div> 
                 <!--
                 <div style="margin-left:15px;">
