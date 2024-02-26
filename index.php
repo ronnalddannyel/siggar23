@@ -544,11 +544,11 @@ session_start();
                     <b>AUTORIZAÇÃO DE USO CONTROLADO DO FOGO</b>  
                   </a>
                   <ul class="dropdown-menu dropdown-menu">
-                    <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> 2023 <a href="Download/controle_queimadas.zip" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas('teste59')" id="53"></a></li>
+                    <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> 2023 <a href="Download/controle_queimadas_2023.zip" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas('teste59')" id="53"></a></li>
                     <li>
                           <hr class="dropdown-divider">
                     </li>
-                    <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> 2024 <a href="Download/controle_queimadas.zip" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas2('teste63')" id="70"></a></li>
+                    <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> 2024 <a href="Download/controle_queimadas_2024.zip" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas2('teste63')" id="70"></a></li>
                   </ul>
                 </li>
 

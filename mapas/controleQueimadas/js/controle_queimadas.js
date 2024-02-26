@@ -18,7 +18,6 @@ function controleQueimadas(el){
       var date = new Date(features.properties.data_f);
       
         if(date.getUTCFullYear() == '2023'){
-          console.log(date.getUTCFullYear());
           cont++;
           return true;
         }
@@ -110,7 +109,6 @@ function controleQueimadas2(el){
       var date = new Date(features.properties.data_f);
       
         if(date.getUTCFullYear() == '2024'){
-          console.log(date.getUTCFullYear());
           cont++;
           return true;
         }
