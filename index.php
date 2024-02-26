@@ -544,7 +544,7 @@ session_start();
                     <b>AUTORIZAÇÃO DE USO CONTROLADO DO FOGO</b>  
                   </a>
                   <ul class="dropdown-menu dropdown-menu">
-                    <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> Área Licenciada para Uso do Fogo <a href="" download="femarh_embargos" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas('teste59')" id="53"></a></li>
+                    <li><a id="coord"><img src="leaflet/images/symbole-de-feu-rouge.png" style="width:20px;max-height:20px;"> Área Licenciada para Uso do Fogo <a href="Download/controle_queimadas.zip" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="controleQueimadas('teste59')" id="53"></a></li>
                   </ul>
                 </li>
 
