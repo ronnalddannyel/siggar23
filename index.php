@@ -853,6 +853,50 @@ session_start();
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <b>OUTORGA POR BACIA</b>  
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu">
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-002673.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Anaua <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outAnaua('teste64')" id="71"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-f0566b.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Branco <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outBranco('teste65')" id="72"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-38a800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Catrimani <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outCatrimani('teste66')" id="73"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-e60000.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Jatapu <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outJatapu('teste67')" id="74"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-a83800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Jauaperi <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outJauaperi('teste68')" id="75"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-005ce6.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Jufari <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outJufari('teste69')" id="76"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-8c3849.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Mapuera <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outMapuera('teste70')" id="77"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-e69800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Mucajaí <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outMucajai('teste71')" id="78"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-308a3f.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Tacutu <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outTacutu('teste72')" id="79"></a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-00c5ff.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Urariquera <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outUrariquera('teste73')" id="80"></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <b>DGPH/DRHI</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
@@ -1802,7 +1846,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste64">
+              <div>
                 <div id="vulNatPerSolo"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1813,7 +1857,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste65">
+              <div>
                 <div id="vulNatPerSoloGeo"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1824,7 +1868,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste66">
+              <div>
                 <div id="vulNatPerSoloGeom"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1835,7 +1879,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste67">
+              <div>
                 <div id="vulNatPerSoloVeg"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1846,7 +1890,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste68">
+              <div>
                 <div id="vulNatPerSoloZona"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1857,7 +1901,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste69">
+              <div>
                 <div id="zonaClimClimZee"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1868,7 +1912,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste70">
+              <div>
                 <div id="zonaClimConcChuva"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1879,7 +1923,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste71">
+              <div>
                 <div id="zonaClimIsolChuva"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1890,7 +1934,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste72">
+              <div>
                 <div id="zonaClimKop"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1901,7 +1945,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste73">
+              <div>
                 <div id="zonaSubZup"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1912,7 +1956,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste74">
+              <div>
                 <div id="zonaSubZue"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1923,7 +1967,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste75">
+              <div>
                 <div id="zonaZonaZup"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1934,7 +1978,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste76">
+              <div>
                 <div id="zonaZonaZue"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -1945,7 +1989,7 @@ session_start();
             -->
               </div>
 
-              <div id="teste77">
+              <div>
                 <div id="zonaZonaZu"></div> 
                 <!--
                 <div style="margin-left:15px;">
@@ -2176,6 +2220,26 @@ session_start();
                 <img src="./leaflet/images/pin-de-localizacao-cinza.png" style="max-width:20px;max-height:20px;margin-left:15px;"> NULL
               </div>
               </div>
+
+              <div id="teste64"></div>
+
+              <div id="teste65"></div>
+
+              <div id="teste66"></div>
+
+              <div id="teste67"></div>
+
+              <div id="teste68"></div>
+
+              <div id="teste69"></div>
+
+              <div id="teste70"></div>
+
+              <div id="teste71"></div>
+
+              <div id="teste72"></div>
+
+              <div id="teste73"></div>
 
               <div id="teste61"></div>
 
@@ -2497,9 +2561,60 @@ session_start();
 
     <script src="mapas/IBAMA/js/IBAMA.js"></script>
 
+
+
+
+
+
     <!-- Códigos - Outorga de Recursos Hídricos -->
 
     <script src="mapas/ANA/js/ANA.js"></script>
+
+
+
+
+    <!-- Códigos - Outorga de Recursos Hídricos por bacia -->
+
+    <script src="mapas/ANA/js/Bacias/outorgaAnaua.js"></script>
+
+    <!-- Códigos - Outorga de Recursos Hídricos por bacia -->
+
+    <script src="mapas/ANA/js/Bacias/outorgaBranco.js"></script>
+
+    <!-- Códigos - Outorga de Recursos Hídricos por bacia -->
+
+    <script src="mapas/ANA/js/Bacias/outorgaCatrimani.js"></script>
+
+    <!-- Códigos - Outorga de Recursos Hídricos por bacia -->
+
+    <script src="mapas/ANA/js/Bacias/outorgaJatapu.js"></script>
+
+    <!-- Códigos - Outorga de Recursos Hídricos por bacia -->
+
+    <script src="mapas/ANA/js/Bacias/outorgaJauaperi.js"></script>
+
+    <!-- Códigos - Outorga de Recursos Hídricos por bacia -->
+
+    <script src="mapas/ANA/js/Bacias/outorgaJufari.js"></script>
+
+    <!-- Códigos - Outorga de Recursos Hídricos por bacia -->
+
+    <script src="mapas/ANA/js/Bacias/outorgaMapuera.js"></script>
+
+    <!-- Códigos - Outorga de Recursos Hídricos por bacia -->
+
+    <script src="mapas/ANA/js/Bacias/outorgaMucajai.js"></script>
+
+    <!-- Códigos - Outorga de Recursos Hídricos por bacia -->
+
+    <script src="mapas/ANA/js/Bacias/outorgaTacutu.js"></script>
+
+    <!-- Códigos - Outorga de Recursos Hídricos por bacia -->
+
+    <script src="mapas/ANA/js/Bacias/outorgaUrariquera.js"></script>
+
+
+
 
     <!-- Códigos - Dgph -->
 
