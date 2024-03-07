@@ -66,7 +66,7 @@ function outUrariquera(el){
     var quei12 = document.getElementById("teste73");
 
     if(quei12.style.display === "block"){
-      var quei1Html = '<img src="./imagens/outorga/pin-de-localizacao-00c5ff.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Urariquera ('+cont+')';
+      var quei1Html = '<img src="./imagens/outorga/pin-de-localizacao-00c5ff.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Urariquera ('+cont+')';
       var quei2Html = '<div class="form-check form-switch" style="float: right;margin-left: 20px;">';
       var quei3Html = '<input type="checkbox" class="form-check-input" role="switch" value="l" onclick="outUrariquera1()" id="outUrariquera">';
       var quei4Html = '</div>';

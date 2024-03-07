@@ -66,7 +66,7 @@ function outCatrimani(el){
     var quei12 = document.getElementById("teste66");
 
     if(quei12.style.display === "block"){
-      var quei1Html = '<img src="./imagens/outorga/pin-de-localizacao-38a800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Catrimani ('+cont+')';
+      var quei1Html = '<img src="./imagens/outorga/pin-de-localizacao-38a800.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Catrimani ('+cont+')';
       var quei2Html = '<div class="form-check form-switch" style="float: right;margin-left: 20px;">';
       var quei3Html = '<input type="checkbox" class="form-check-input" role="switch" value="l" onclick="outCatrimani1()" id="outCatrimani">';
       var quei4Html = '</div>';

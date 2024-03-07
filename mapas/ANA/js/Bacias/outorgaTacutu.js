@@ -66,7 +66,7 @@ function outTacutu(el){
     var quei12 = document.getElementById("teste72");
 
     if(quei12.style.display === "block"){
-      var quei1Html = '<img src="./imagens/outorga/pin-de-localizacao-308a3f.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Tacutu ('+cont+')';
+      var quei1Html = '<img src="./imagens/outorga/pin-de-localizacao-308a3f.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Tacutu ('+cont+')';
       var quei2Html = '<div class="form-check form-switch" style="float: right;margin-left: 20px;">';
       var quei3Html = '<input type="checkbox" class="form-check-input" role="switch" value="l" onclick="outTacutu1()" id="outTacutu">';
       var quei4Html = '</div>';

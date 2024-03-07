@@ -66,7 +66,7 @@ function outJufari(el){
     var quei12 = document.getElementById("teste69");
 
     if(quei12.style.display === "block"){
-      var quei1Html = '<img src="./imagens/outorga/pin-de-localizacao-005ce6.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Jufari ('+cont+')';
+      var quei1Html = '<img src="./imagens/outorga/pin-de-localizacao-005ce6.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Jufari ('+cont+')';
       var quei2Html = '<div class="form-check form-switch" style="float: right;margin-left: 20px;">';
       var quei3Html = '<input type="checkbox" class="form-check-input" role="switch" value="l" onclick="outJufari1()" id="outJufari">';
       var quei4Html = '</div>';

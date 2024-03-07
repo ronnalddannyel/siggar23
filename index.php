@@ -856,43 +856,43 @@ session_start();
                       <b>OUTORGA POR BACIA</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-002673.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Anaua <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outAnaua('teste64')" id="71"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-002673.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Anaua <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outAnaua('teste64')" id="71"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-f0566b.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Branco <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outBranco('teste65')" id="72"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-f0566b.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Branco <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outBranco('teste65')" id="72"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-38a800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Catrimani <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outCatrimani('teste66')" id="73"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-38a800.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Catrimani <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outCatrimani('teste66')" id="73"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-e60000.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Jatapu <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outJatapu('teste67')" id="74"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-e60000.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Jatapu <input type="checkbox" class="coor" value="l" onclick="outJatapu('teste67')" id="74"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-a83800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Jauaperi <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outJauaperi('teste68')" id="75"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-a83800.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Jauaperi <input type="checkbox" class="coor" value="l" onclick="outJauaperi('teste68')" id="75"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-005ce6.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Jufari <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outJufari('teste69')" id="76"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-005ce6.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Jufari <input type="checkbox" class="coor" value="l" onclick="outJufari('teste69')" id="76"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-8c3849.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Mapuera <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outMapuera('teste70')" id="77"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-8c3849.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Mapuera <input type="checkbox" class="coor" value="l" onclick="outMapuera('teste70')" id="77"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-e69800.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Mucajaí <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outMucajai('teste71')" id="78"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-e69800.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Mucajaí <input type="checkbox" class="coor" value="l" onclick="outMucajai('teste71')" id="78"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-308a3f.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Tacutu <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outTacutu('teste72')" id="79"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-308a3f.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Tacutu <input type="checkbox" class="coor" value="l" onclick="outTacutu('teste72')" id="79"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-00c5ff.png" style="max-width:20px;max-height:20px;margin-left:15px;"> Outorgas - Bacia Rio Urariquera <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outUrariquera('teste73')" id="80"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-00c5ff.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Urariquera <input type="checkbox" class="coor" value="l" onclick="outUrariquera('teste73')" id="80"></a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
