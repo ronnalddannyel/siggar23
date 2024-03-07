@@ -856,15 +856,15 @@ session_start();
                       <b>OUTORGA POR BACIA</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-002673.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Anaua <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outAnaua('teste64')" id="71"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-002673.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Anaua <input type="checkbox" class="coor" value="l" onclick="outAnaua('teste64')" id="71"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-f0566b.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Branco <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outBranco('teste65')" id="72"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-f0566b.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Branco <input type="checkbox" class="coor" value="l" onclick="outBranco('teste65')" id="72"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-38a800.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Catrimani <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outCatrimani('teste66')" id="73"></a></li>
+                      <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-38a800.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Catrimani <input type="checkbox" class="coor" value="l" onclick="outCatrimani('teste66')" id="73"></a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
