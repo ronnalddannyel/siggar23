@@ -1,4 +1,4 @@
-function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, projArray, projArray_4mf, assentArray, embarArray, sitArray, contOutSuper, contOutSub, contSitPon, carArray){
+function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, projArray, projArray_4mf, assentArray, embarArray, sitArray, contOutSuper, contOutSub, contSitPon, carArray, tituloArray, sigefArray){
     let alvo = document.getElementById("aaa");
     alvo.innerText = "";
 
@@ -163,10 +163,41 @@ function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, 
         text10 += '<b>Quantidade de CAR Sobrepostos:</b> '+carArray[i]+"<br><br>";
 
 
+        // Sigef Certificados
+
+
+        var text11 = "<h5>Sigef Certificados</h5>";
+        for(i=0; i<sigefArray.length; i= i+3){
+            if(sigefArray.length == 1){
+                text11 += "<b>Área de Sobreposição: </b>"+ sigefArray[i]+"<br><br>";
+            }else{
+                text11 += "<b>Nome da Área: </b>"+ sigefArray[i]+"<br>";
+                text11 += "<b>Código Parcela: </b>"+ sigefArray[i+1]+"<br>";
+                text11 += "<b>Área de Sobreposição: </b>"+ sigefArray[i+2]+"<br><br>";
+            }
+        }
+
+
+
+        // Títulos Definitivos
+
+
+        var text12 = "<h5>Títulos Definitivos</h5>";
+        for(i=0; i<tituloArray.length; i= i+3){
+            if(tituloArray.length == 1){
+                text12 += "<b>Área de Sobreposição: </b>"+ tituloArray[i]+"<br><br>";
+            }else{
+                text12 += "<b>Propriedade: </b>"+ tituloArray[i]+"<br>";
+                text12 += "<b>Número Título Definitivo: </b>"+ tituloArray[i+1]+"<br>";
+                text12 += "<b>Área de Sobreposição: </b>"+ tituloArray[i+2]+"<br><br>";
+            }
+        }
+
+
 
         
 
-        var newHtml = text+"<hr>"+text1+"<hr>"+text2+"<hr>"+text3+"<hr>"+text4+"<hr>"+text5+"<hr>"+text6+"<hr>"+text7+"<hr>"+text8+"<hr>"+text9+"<hr>"+text10+
+        var newHtml = text+"<hr>"+text1+"<hr>"+text2+"<hr>"+text3+"<hr>"+text4+"<hr>"+text5+"<hr>"+text6+"<hr>"+text7+"<hr>"+text8+"<hr>"+text9+"<hr>"+text10+"<hr>"+text11+"<hr>"+text12+
         '<hr><b>Quantidade de Sítios Arqueológicos (Ponto) Sobrepostos:</b> '+contSitPon+
         '<br><hr><b>Quantidade de Outorgas Superficiais Sobrepostos:</b> '+contOutSuper+
         '<br><hr><b>Quantidade de Outorgas Subterrâneas Sobrepostos:</b> '+contOutSub+'<br>';
@@ -197,6 +228,10 @@ function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, 
         document.getElementById('assent').value = JSON.stringify(assentArray);
 
         document.getElementById('saPol').value = JSON.stringify(sitArray);
+
+        document.getElementById('sig').value = JSON.stringify(sigefArray);
+
+        document.getElementById('tit').value = JSON.stringify(tituloArray);
 
         document.getElementById('saPon').value = contSitPon;
 

@@ -2759,6 +2759,8 @@ session_start();
               <input type="hidden" id="osb" name="osb">
               <input type="hidden" id="car2" name="car2">
               <input type="hidden" id="mun" name="mun">
+              <input type="hidden" id="sig" name="sig">
+              <input type="hidden" id="tit" name="tit">
           </form>
 
 

@@ -37,6 +37,8 @@ if (isset($_POST['car1'])) {
     $ap4mf = json_decode($_POST['ap4mf'], true);
     $assent = json_decode($_POST['assent'], true);
     $saPol = json_decode($_POST['saPol'], true);
+    $sig = json_decode($_POST['sig'], true);
+    $tit = json_decode($_POST['tit'], true);
     $saPon = $_POST['saPon'];
     $os = $_POST['os'];
     $osb = $_POST['osb'];
@@ -550,6 +552,77 @@ if (isset($_POST['car1'])) {
     }
     $html .= '</tbody></table><br>';
 
+
+
+    // Sigef Certificados
+    $html .= '<h4>Sigef Certificados</h4>';
+    $html .= '<table style="width: 100%; border-collapse: collapse;">';
+    $html .= '<thead>';
+    $html .= '<tr style="background-color: rgb(28, 132, 83);">';
+    $html .= '<th style="border: 1px solid #dee2e6; padding: 8px; color: white; font-size: 12px;">N°</th>';
+    $html .= '<th style="border: 1px solid #dee2e6; padding: 8px; color: white; font-size: 12px;">Nome da Área</th>';
+    $html .= '<th style="border: 1px solid #dee2e6; padding: 8px; color: white; font-size: 12px;">Código Parcela</th>';
+    $html .= '<th style="border: 1px solid #dee2e6; padding: 8px; color: white; font-size: 12px;">Área de Sobreposição</th>';
+    $html .= '</tr>';
+    $html .= '</thead><tbody>';
+    $cont = 1;
+    // Corpo da tabela
+    for ($i = 0; $i < count($sig); $i += 3) {
+        if (count($sig) == 1) {
+            $html .= '<tr>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">-</td>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">-</td>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">-</td>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">-</td>';
+            $html .= '</tr>';
+        } else {
+            $html .= '<tr>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">' . $cont . '</td>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">' . $sig[$i] . '</td>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">' . $sig[$i+1] . '</td>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">' . $sig[$i+2] . '</td>';
+            $html .= '</tr>';
+            $cont++;
+        }
+    }
+
+    $html .= '</tbody></table><br>';
+
+
+    // Iteraima - Títulos Definitivos
+    $html .= '<h4>Iteraima - Títulos Definitivos</h4>';
+    $html .= '<table style="width: 100%; border-collapse: collapse;">';
+    $html .= '<thead>';
+    $html .= '<tr style="background-color: rgb(28, 132, 83);">';
+    $html .= '<th style="border: 1px solid #dee2e6; padding: 8px; color: white; font-size: 12px;">N°</th>';
+    $html .= '<th style="border: 1px solid #dee2e6; padding: 8px; color: white; font-size: 12px;">Propriedade</th>';
+    $html .= '<th style="border: 1px solid #dee2e6; padding: 8px; color: white; font-size: 12px;">Número Título Definitivo</th>';
+    $html .= '<th style="border: 1px solid #dee2e6; padding: 8px; color: white; font-size: 12px;">Área de Sobreposição</th>';
+    $html .= '</tr>';
+    $html .= '</thead><tbody>';
+    $cont = 1;
+    // Corpo da tabela
+    for ($i = 0; $i < count($tit); $i += 3) {
+        if (count($tit) == 1) {
+            $html .= '<tr>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">-</td>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">-</td>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">-</td>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;">-</td>';
+            $html .= '</tr>';
+        } else {
+            $html .= '<tr>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">' . $cont . '</td>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">' . $tit[$i] . '</td>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">' . $tit[$i+1] . '</td>';
+            $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">' . $tit[$i+2] . '</td>';
+            $html .= '</tr>';
+            $cont++;
+        }
+    }
+
+    $html .= '</tbody></table><br>';
+
     
 
     // Fonte dos dados
@@ -631,6 +704,16 @@ if (isset($_POST['car1'])) {
     $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">Outorgas Subterrâneas</td>';
     $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">ANA</td>';
     $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">Semanal - até as 9:00</td>';
+    $html .= '</tr>';
+    $html .= '<tr>';
+    $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">Sigef Certificados</td>';
+    $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">ITERAIMA</td>';
+    $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">Mensal - até as 9:00</td>';
+    $html .= '</tr>';
+    $html .= '<tr>';
+    $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">Iteraima - Títulos Definitivos</td>';
+    $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">ITERAIMA</td>';
+    $html .= '<td style="border: 1px solid #dee2e6; padding: 8px; font-size: 12px;">Mensal - até as 9:00</td>';
     $html .= '</tr>';
     $html .= '</tbody></table><br>';
 
