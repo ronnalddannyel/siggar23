@@ -677,7 +677,7 @@ var groupLayCar2 = L.layerGroup([]);
   
   
                  var nomeCar = pol28[i].properties.cod_imovel;
-                 var statusCar = pol28[i].properties.status_imovel;
+                 var statusCar = pol28[i].properties.status_imo;
   
                  carArray.push(nomeCar);
                  carArray.push(statusCar);
