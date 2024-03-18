@@ -109,7 +109,7 @@ function onClick1(e) {
    
      if (isInside){
          //selPoly.push(layer.feature);
-         a = '<p><b>Código Imovel:</b> '+layer.feature.properties.cod_imovel+'<br><b>Status:</b> '+layer.feature.properties.status_imovel+'<br><b>Data de Criação:</b> '+layer.feature.properties.dat_criacao+'<br><b>Área:</b> '+layer.feature.properties.area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Condição:</b> '+layer.feature.properties.condicao+'<br><b>UF:</b> '+layer.feature.properties.uf+'<br><b>Município:</b> '+layer.feature.properties.municipio+'<br><b>Código Município:</b> '+layer.feature.properties.cod_municipio_ibge+'<br><b>Módulo Fiscal:</b> '+layer.feature.properties.m_fiscal+'<br><b>Tipo Imóvel:</b> '+layer.feature.properties.tipo_imovel+'</p>';
+         a = '<p><b>Código Imovel:</b> '+layer.feature.properties.cod_imovel+'<br><b>Status:</b> '+layer.feature.properties.status_imo+'<br><b>Data de Criação:</b> '+layer.feature.properties.dat_criaca+'<br><b>Área:</b> '+layer.feature.properties.area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Condição:</b> '+layer.feature.properties.condicao+'<br><b>UF:</b> '+layer.feature.properties.uf+'<br><b>Município:</b> '+layer.feature.properties.municipio+'<br><b>Código Município:</b> '+layer.feature.properties.cod_munici+'<br><b>Módulo Fiscal:</b> '+layer.feature.properties.m_fiscal+'<br><b>Tipo Imóvel:</b> '+layer.feature.properties.tipo_imove+'</p>';
      
          aProj.push(a);
       }
