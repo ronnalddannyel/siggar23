@@ -2273,8 +2273,8 @@ session_start();
 
 
     <script>
-      //var UrlFemarh = "http://extranet.femarh.com";
-      var UrlFemarh = "http://localhost/";
+      var UrlFemarh = "http://extranet.femarh.com";
+      //var UrlFemarh = "http://localhost/";
     </script>
 
     <script>
