@@ -1387,6 +1387,13 @@ session_start();
               
               <h5 style="text-align:center;">LEGENDAS</h5>
 
+              <div id="MoisacoPlanet" style="display: none; padding: 5px; border: 2px;">
+                Recorte da Imagem PlanetScope 4-band Scene XYZ preview <br>
+                Data da Imagem: Mosaico <span id="resultado2">2024_02</span><br>
+                Fonte: RedeMAIS <br>
+                Direitos Autorais: 2020 Planet Labs Inc <br>
+              </div>
+
 
               <div id="sobrepCar" style="display: none; padding: 5px; border: 2px;">
                 

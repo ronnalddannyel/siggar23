@@ -405,9 +405,25 @@ $('input[type=range]').on('change', function(){
 
     
     document.getElementById("resultado1").innerHTML = n;
+    document.getElementById("resultado2").innerHTML = n;
 
     if(t === '1'){
       plan(n);
     }
 
   }
+
+
+  const inputsCoor = document.querySelectorAll('input[name="op"]');
+  const inputCoor5 = document.getElementById("coor5");
+  const divMoisacoPlanet = document.getElementById("MoisacoPlanet");
+
+  inputsCoor.forEach(input => {
+      input.addEventListener('change', function(){
+          if (inputCoor5.checked) {
+              divMoisacoPlanet.style.display = "block";
+          } else {
+              divMoisacoPlanet.style.display = "none";
+          }
+      });
+  });
