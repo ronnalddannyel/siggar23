@@ -62,7 +62,7 @@ function controleQueimadas(el){
       }
 
 
-      layer.bindPopup('<h6><b>Área Licenciada para Uso do Fogo - 2023</b></h6><p><b>Denominação:</b> '+geom.properties.denomina+'<br><b>Endereço:</b> '+geom.properties.endereco+'<br><b>Município:</b> '+geom.properties.Municipio+'<br><b>Instituição:</b> '+geom.properties.instituto+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Atividade da Queimada:</b> '+geom.properties.atividade+'<br><b>Área Licenciada:</b> '+geom.properties.area_lic.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Data Final:</b> '+geom.properties.data_f+'<br><b>Data Início:</b> '+geom.properties.data_i+'<br><b>Número de Autorização:</b> '+geom.properties.n_auto+'<br><b>N° do Processo (SEI):</b> '+geom.properties.proces_sei+'</p>');
+      layer.bindPopup('<h6><b>Área Licenciada para Uso do Fogo - 2023</b></h6><p><b>Denominação:</b> '+geom.properties.denomina+'<br><b>Endereço:</b> '+geom.properties.endereco+'<br><b>Município:</b> '+Municipio+'<br><b>Instituição:</b> '+geom.properties.instituto+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Atividade da Queimada:</b> '+geom.properties.atividade+'<br><b>Área Licenciada:</b> '+geom.properties.area_lic.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Data Final:</b> '+geom.properties.data_f+'<br><b>Data Início:</b> '+geom.properties.data_i+'<br><b>Número de Autorização:</b> '+geom.properties.n_auto+'<br><b>N° do Processo (SEI):</b> '+geom.properties.proces_sei+'</p>');
     },
     });
     groupLayControleQueimada.clearLayers();
@@ -192,7 +192,7 @@ function controleQueimadas2(el){
 
 
 
-      layer.bindPopup('<h6><b>Área Licenciada para Uso do Fogo - 2024</b></h6><p><b>Denominação:</b> '+geom.properties.denomina+'<br><b>Endereço:</b> '+geom.properties.endereco+'<br><b>Município:</b> '+geom.properties.Municipio+'<br><b>Instituição:</b> '+geom.properties.instituto+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Atividade da Queimada:</b> '+geom.properties.atividade+'<br><b>Área Licenciada:</b> '+geom.properties.area_lic.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Data Final:</b> '+geom.properties.data_f+'<br><b>Data Início:</b> '+geom.properties.data_i+'<br><b>Número de Autorização:</b> '+geom.properties.n_auto+'<br><b>N° do Processo (SEI):</b> '+geom.properties.proces_sei+'</p>');
+      layer.bindPopup('<h6><b>Área Licenciada para Uso do Fogo - 2024</b></h6><p><b>Denominação:</b> '+geom.properties.denomina+'<br><b>Endereço:</b> '+geom.properties.endereco+'<br><b>Município:</b> '+Municipio+'<br><b>Instituição:</b> '+geom.properties.instituto+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Atividade da Queimada:</b> '+geom.properties.atividade+'<br><b>Área Licenciada:</b> '+geom.properties.area_lic.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Data Final:</b> '+geom.properties.data_f+'<br><b>Data Início:</b> '+geom.properties.data_i+'<br><b>Número de Autorização:</b> '+geom.properties.n_auto+'<br><b>N° do Processo (SEI):</b> '+geom.properties.proces_sei+'</p>');
     },
     });
     groupLayControleQueimada2.clearLayers();
