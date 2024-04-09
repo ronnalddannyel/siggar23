@@ -26,7 +26,43 @@ function controleQueimadas(el){
       return L.marker(latlng, {icon: contFogo})
     },
     onEachFeature: function (geom, layer) {
-      layer.bindPopup('<h6><b>Área Licenciada para Uso do Fogo - 2023</b></h6><p><b>Denominação:</b> '+geom.properties.denomina+'<br><b>Endereço:</b> '+geom.properties.endereco+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Instituição:</b> '+geom.properties.instituto+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Atividade da Queimada:</b> '+geom.properties.atividade+'<br><b>Área Licenciada:</b> '+geom.properties.area_lic.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Data Final:</b> '+geom.properties.data_f+'<br><b>Data Início:</b> '+geom.properties.data_i+'<br><b>Número de Autorização:</b> '+geom.properties.n_auto+'<br><b>N° do Processo (SEI):</b> '+geom.properties.proces_sei+'</p>');
+
+      if(geom.properties.fk_municip == 1){
+        var Municipio = 'ALTO ALEGRE';
+      }else if(geom.properties.fk_municip == 2){
+        var Municipio = 'AMAJARI';
+      }else if(geom.properties.fk_municip == 3){
+        var Municipio = 'BOA VISTA';
+      }else if(geom.properties.fk_municip == 4){
+        var Municipio = 'BONFIM';
+      }else if(geom.properties.fk_municip == 5){
+        var Municipio = 'CANTÁ';
+      }else if(geom.properties.fk_municip == 6){
+        var Municipio = 'CARACARAÍ';
+      }else if(geom.properties.fk_municip == 7){
+        var Municipio = 'CAROEBE';
+      }else if(geom.properties.fk_municip == 8){
+        var Municipio = 'IRACEMA';
+      }else if(geom.properties.fk_municip == 9){
+        var Municipio = 'MUCAJAÍ';
+      }else if(geom.properties.fk_municip == 10){
+        var Municipio = 'NORMANDIA';
+      }else if(geom.properties.fk_municip == 11){
+        var Municipio = 'PACARAIMA';
+      }else if(geom.properties.fk_municip == 12){
+        var Municipio = 'RORAINÓPOLIS';
+      }else if(geom.properties.fk_municip == 13){
+        var Municipio = 'SÃO JOÃO DA BALIZA';
+      }else if(geom.properties.fk_municip == 14){
+        var Municipio = 'SÃO LUIZ';
+      }else if(geom.properties.fk_municip == 15){
+        var Municipio = 'UIRAMUTÃ';
+      }else{
+          var Municipio = geom.properties.fk_municip;
+      }
+
+
+      layer.bindPopup('<h6><b>Área Licenciada para Uso do Fogo - 2023</b></h6><p><b>Denominação:</b> '+geom.properties.denomina+'<br><b>Endereço:</b> '+geom.properties.endereco+'<br><b>Município:</b> '+geom.properties.Municipio+'<br><b>Instituição:</b> '+geom.properties.instituto+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Atividade da Queimada:</b> '+geom.properties.atividade+'<br><b>Área Licenciada:</b> '+geom.properties.area_lic.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Data Final:</b> '+geom.properties.data_f+'<br><b>Data Início:</b> '+geom.properties.data_i+'<br><b>Número de Autorização:</b> '+geom.properties.n_auto+'<br><b>N° do Processo (SEI):</b> '+geom.properties.proces_sei+'</p>');
     },
     });
     groupLayControleQueimada.clearLayers();
@@ -117,7 +153,46 @@ function controleQueimadas2(el){
       return L.marker(latlng, {icon: contFogo})
     },
     onEachFeature: function (geom, layer) {
-      layer.bindPopup('<h6><b>Área Licenciada para Uso do Fogo - 2024</b></h6><p><b>Denominação:</b> '+geom.properties.denomina+'<br><b>Endereço:</b> '+geom.properties.endereco+'<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Instituição:</b> '+geom.properties.instituto+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Atividade da Queimada:</b> '+geom.properties.atividade+'<br><b>Área Licenciada:</b> '+geom.properties.area_lic.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Data Final:</b> '+geom.properties.data_f+'<br><b>Data Início:</b> '+geom.properties.data_i+'<br><b>Número de Autorização:</b> '+geom.properties.n_auto+'<br><b>N° do Processo (SEI):</b> '+geom.properties.proces_sei+'</p>');
+
+      if(geom.properties.fk_municip == 1){
+        var Municipio = 'ALTO ALEGRE';
+      }else if(geom.properties.fk_municip == 2){
+        var Municipio = 'AMAJARI';
+      }else if(geom.properties.fk_municip == 3){
+        var Municipio = 'BOA VISTA';
+      }else if(geom.properties.fk_municip == 4){
+        var Municipio = 'BONFIM';
+      }else if(geom.properties.fk_municip == 5){
+        var Municipio = 'CANTÁ';
+      }else if(geom.properties.fk_municip == 6){
+        var Municipio = 'CARACARAÍ';
+      }else if(geom.properties.fk_municip == 7){
+        var Municipio = 'CAROEBE';
+      }else if(geom.properties.fk_municip == 8){
+        var Municipio = 'IRACEMA';
+      }else if(geom.properties.fk_municip == 9){
+        var Municipio = 'MUCAJAÍ';
+      }else if(geom.properties.fk_municip == 10){
+        var Municipio = 'NORMANDIA';
+      }else if(geom.properties.fk_municip == 11){
+        var Municipio = 'PACARAIMA';
+      }else if(geom.properties.fk_municip == 12){
+        var Municipio = 'RORAINÓPOLIS';
+      }else if(geom.properties.fk_municip == 13){
+        var Municipio = 'SÃO JOÃO DA BALIZA';
+      }else if(geom.properties.fk_municip == 14){
+        var Municipio = 'SÃO LUIZ';
+      }else if(geom.properties.fk_municip == 15){
+        var Municipio = 'UIRAMUTÃ';
+      }else{
+          var Municipio = geom.properties.fk_municip;
+      }
+
+
+
+
+
+      layer.bindPopup('<h6><b>Área Licenciada para Uso do Fogo - 2024</b></h6><p><b>Denominação:</b> '+geom.properties.denomina+'<br><b>Endereço:</b> '+geom.properties.endereco+'<br><b>Município:</b> '+geom.properties.Municipio+'<br><b>Instituição:</b> '+geom.properties.instituto+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Atividade da Queimada:</b> '+geom.properties.atividade+'<br><b>Área Licenciada:</b> '+geom.properties.area_lic.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4})+' ha.<br><b>Data Final:</b> '+geom.properties.data_f+'<br><b>Data Início:</b> '+geom.properties.data_i+'<br><b>Número de Autorização:</b> '+geom.properties.n_auto+'<br><b>N° do Processo (SEI):</b> '+geom.properties.proces_sei+'</p>');
     },
     });
     groupLayControleQueimada2.clearLayers();
