@@ -727,6 +727,11 @@ body {
     max-height:600px;
   }
 
+  #bbb {
+    overflow:auto;
+    max-height:600px;
+  }
+
   button#aProj {
     color:black;
     background-color: transparent;
@@ -789,6 +794,10 @@ body {
   }
 
   .texto {
+    padding: 0 10px;
+  }
+
+  .texto2 {
     padding: 0 10px;
   }
 

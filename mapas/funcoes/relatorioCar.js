@@ -1,16 +1,16 @@
 function carRelatorio(ucsArray, uceArray, militArray, indigArray, inalienArray, projArray, projArray_4mf, assentArray, embarArray, sitArray, contOutSuper, contOutSub, contSitPon, carArray, tituloArray, sigefArray){
-    let alvo = document.getElementById("aaa");
+    let alvo = document.getElementById("bbb");
     alvo.innerText = "";
 
-    let alvo1 = document.getElementById("text1");
+    let alvo1 = document.getElementById("text3");
     alvo1.innerText = "";
 
-    var element1 = document.querySelector(".text");
+    var element1 = document.querySelector(".text2");
     var newHtml1 = '<h1 class="modal-title fs-5" id="staticBackdropLabel">CAR - Sobreposição</h1>';
     element1.innerHTML += newHtml1;
 
 
-        var element = document.querySelector(".modal-body");
+        var element = document.querySelector(".car-sobreposicao");
 
         // UCE
 
