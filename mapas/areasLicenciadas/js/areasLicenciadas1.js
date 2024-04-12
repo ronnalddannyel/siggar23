@@ -338,15 +338,25 @@
   
       if((check1 === true) || (check2 === true) || (check3 === true) || (check4 === true)){
 
-        map.on('click', onClick);
-  
+        //map.on('click', onClick);
+
+        areaImov.on('click', onClick);
+        areaProjeto.on('click', onClick);
+        areaUos.on('click', onClick);
+        monitor.on('click', onClick);
+
         legMostra();
   
         
     
       }else{
     
-        map.off('click', onClick);
+        //map.off('click', onClick);
+
+        areaImov.off('click', onClick);
+        areaProjeto.off('click', onClick);
+        areaUos.off('click', onClick);
+        monitor.off('click', onClick);
   
         legMostra();
   

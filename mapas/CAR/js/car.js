@@ -18,6 +18,38 @@ function car1(el){
 
         groupLay_car.addLayer(car);
 
+
+
+
+
+
+        var check1 = document.getElementById('54').checked;
+
+
+        if(check1 === true){
+    
+          car.on('click', onClick1);
+    
+          legMostra();
+    
+          
+      
+        }else{
+      
+          car.off('click', onClick1);
+    
+          legMostra();
+    
+        }
+
+
+
+
+
+
+
+
+
         // CAR-RR
 
         var car112 = document.getElementById("teste60");
@@ -45,7 +77,7 @@ function car1(el){
     }else{
         document.getElementById(el).style.display = 'block';
     }
-    clickMap1();
+    //clickMap1();
 }
 
 
@@ -60,7 +92,7 @@ function onClick1(e) {
 
 
 
-
+/*
   function clickMap1 (){
 
     var check1 = document.getElementById('54').checked;
@@ -84,7 +116,7 @@ function onClick1(e) {
   
    }
 
-
+*/
 
    var theMarker;
    var selPoly = [];
