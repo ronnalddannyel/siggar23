@@ -196,6 +196,8 @@ $('input[type=range]').on('change', function(){
       n = "2024_02";
     }else if(document.getElementById('fader').value === '98'){
       n = "2024_03";
+    }else if(document.getElementById('fader').value === '99'){
+      n = "2024_04";
     }
     
     if(document.getElementById('coor5').checked === true){
@@ -404,6 +406,8 @@ $('input[type=range]').on('change', function(){
       n = "2024_02";
     }else if(document.getElementById('fader').value === '98'){
       n = "2024_03";
+    }else if(document.getElementById('fader').value === '99'){
+      n = "2024_04";
     }
 
 
