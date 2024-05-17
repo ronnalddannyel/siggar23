@@ -9,7 +9,7 @@ function qa1(el){
       return L.marker(latlng, {icon: blueIcon})
     },
     onEachFeature: function (geom, layer) {
-      layer.bindPopup('<h6><b>Qualidade da Água</b></h6><p><b>Identificação:</b> '+geom.properties.Identifica+'<br><b>Código Estação:</b> '+geom.properties.cod_estac+'/ANA<br><b>UF:</b> '+geom.properties.uf+'<br><b>Código Estado:</b> '+geom.properties.cod_estad+'<br><b>Latitude:</b> '+geom.properties.latitude+'<br><b>Longitude:</b> '+geom.properties.longitude+'<br><b>Altitude (Metros):</b> '+geom.properties.altitude+'<br><b>Tipo Estação Aquática:</b> '+geom.properties.tipo_et_aq+'<br><b>Tipo Rede Aquática:</b> '+geom.properties.tipo_rd_aq+'<br><b>Descrição do Ponto de Monitoramento:</b> '+geom.properties.desc_p_mon+'<br><b>Entedidade Responsável:</b> '+geom.properties.ent_resp+'<br><b>Corpo DÁgua:</b> '+geom.properties.corp_agua+'<br><b>Ambiente:</b> '+geom.properties.ambiental+'</p>');
+      layer.bindPopup('<h6><b>Qualidade da Água</b></h6><p><b>Estação RR:</b> '+geom.properties.estacao_rr+'<br><b>Código Estação:</b> '+geom.properties.cd_estacao+'/ANA<br><b>Município:</b> '+geom.properties.municipio+'<br><b>Nome da Estação:</b> '+geom.properties.est_nome+'<br><b>Latitude:</b> '+geom.properties.lat_dec+'<br><b>Longitude:</b> '+geom.properties.long_dec+'<br><b>Altitude (Metros):</b> '+geom.properties.altitude+'<br><b>Descrição do Ponto de Monitoramento:</b> '+geom.properties.descricao+'<br><b>Entedidade Responsável:</b> '+geom.properties.entid_resp+'<br><b>Corpo DÁgua:</b> '+geom.properties.corp_dagua+'<br><b>Ambiente:</b> '+geom.properties.ambiente+'</p>');
     },
     });
 
