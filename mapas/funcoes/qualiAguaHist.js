@@ -13,7 +13,7 @@ function test7(teste){
   
     // Use $.when() para esperar o carregamento de todas as requisições AJAX
     $.when(
-        $.getJSON(UrlFemarh+"mapas/Dgph/quali_agua_historico.geojson", function(data) {
+        $.getJSON(UrlFemarh+"/siggarr/mapas/Dgph/quali_agua_historico.geojson", function(data) {
             rty = data.features;
         })
     
