@@ -8,10 +8,7 @@ function cpfOut(){
     //groupLay.clearLayers();
     
     var cpf = document.getElementById('cpf_out').value;
-    var cpf2 = cpf.replace('.', '');
-    var cpf2 = cpf2.replace('.', '');
-    var cpf2 = cpf2.replace('-', '');
-    var cpf2 = cpf2.replace('/', '');
+    var cpf2 = cpf.replace(/\D/g, '');
 
     $.getJSON(UrlFemarh+"/siggarr/mapas/ANA/outorgas.geojson", function(data) { 
 
@@ -20,8 +17,9 @@ function cpfOut(){
                 if(features.properties.EMP_NU_CPF !== null){
                     var cpf1 = features.properties.EMP_NU_CPF;
                     var cpf3 = cpf1.toString();
+                    var cpf4 = cpf3.replace(/\D/g, '');
                 }
-                if (cpf3 === cpf2) {
+                if (cpf4 === cpf2) {
                   return true;
               }
             },
