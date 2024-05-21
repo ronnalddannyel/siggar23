@@ -19,6 +19,35 @@ session_start();
       .leaflet-popup-tip-container {
       }
 
+      .custom-modal .modal-dialog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: none; /* Permitir que o modal tenha qualquer largura */
+        width: auto; /* Largura automática baseada no conteúdo */
+        margin: auto; /* Centralizar o modal */
+      }
+
+      .custom-modal .modal-content {
+        width: fit-content; /* Ajustar a largura ao conteúdo */
+        max-width: none; /* Remover restrição de largura máxima */
+      }
+
+      .custom-modal .modal-body {
+        overflow-x: auto; /* Habilitar rolagem horizontal se o conteúdo for maior que a tela */
+      }
+
+      .filter-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .year-select {
+        width: auto;
+        margin-left: 10px;
+      }
+
     </style>
 
 
