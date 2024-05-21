@@ -2621,7 +2621,9 @@ session_start();
     <script src="mapas/ANA/js/Bacias/outorgaUrariquera.js"></script>
 
 
+    <!-- Mostrar Qualidade da Água Histórico -->
 
+    <script src="mapas/funcoes/qualiAguaHist.js"></script>
 
     <!-- Códigos - Dgph -->
 
@@ -2754,6 +2756,65 @@ session_start();
             <div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
           </div>
           <div class="modal-body car-sobreposicao" id="bbb" >
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+      <!--- Código - Modal para mostrar detalhes da área do projeto e monitoramento -->
+
+      <div class="modal fade custom-modal" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Histórico - Qualidade da Água</h1>
+            </div>
+            <div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          </div>
+          <div class="modal-body">
+          <div class="filter-container">
+          <b>Filtrar por Ano:</b>
+          <select class="form-control year-select" id="yearSelect" onchange="anoQualidade(value)" style="width: 25%;">
+            <option value="">Todos os anos</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </select>
+        </div>
+
+        <div class="table-responsive" style="max-width: 80vh; overflow: auto;">
+          <table class="table" style="font-size: 12px;">
+            <thead>
+              <tr>
+                <th scope="col">Código Estação</th>
+                <th scope="col">Data de Coleta</th>
+                <th scope="col">Observação</th>
+                <th scope="col">PH</th>
+                <th scope="col">PH Status</th>
+                <th scope="col">OD (mg/L)</th>
+                <th scope="col">OD Status</th>
+                <th scope="col">Coliformes Fecais (NMP 100 mg/L)</th>
+                <th scope="col">Coliformes Fecais Status</th>
+                <th scope="col">DBO (mg/L)</th>
+                <th scope="col">DBO Status</th>
+                <th scope="col">Turbidez (NTU)</th>
+                <th scope="col">Turbidez Status</th>
+                <th scope="col">Sólidos Totais (mg/L)</th>
+                <th scope="col">Sólidos Totais Status</th>
+                <th scope="col">E. coli (NMP 100 mg/L)</th>
+                <th scope="col">E. coli Status</th>
+                <th scope="col">Temperatura do ar °C</th>
+                <th scope="col">Condutividade Elétrica Específica (25oC) µS/cm a 25°C</th>
+                <th scope="col">Temperatura da água °C</th>
+              </tr>
+            </thead>
+            <tbody class="qualidadeAgua" id="ccc">
+            </tbody>
+          </table>
+          </div>
+            
           </div>
         </div>
       </div>
