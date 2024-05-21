@@ -2822,12 +2822,12 @@ session_start();
                 <th scope="col">Observação</th>
                 <th scope="col">PH</th>
                 <th scope="col">PH Status</th>
-                <th scope="col">OD (mg/L)</th>
-                <th scope="col">OD Status</th>
+                <th scope="col">Oxigênio Dissolvido (mg/L)</th>
+                <th scope="col">Oxigênio Dissolvido Status</th>
                 <th scope="col">Coliformes Fecais (NMP 100 mg/L)</th>
                 <th scope="col">Coliformes Fecais Status</th>
-                <th scope="col">DBO (mg/L)</th>
-                <th scope="col">DBO Status</th>
+                <th scope="col">Demanda Bioquímica de Oxigênio (mg/L)</th>
+                <th scope="col">Demanda Bioquímica de Oxigênio Status</th>
                 <th scope="col">Turbidez (NTU)</th>
                 <th scope="col">Turbidez Status</th>
                 <th scope="col">Sólidos Totais (mg/L)</th>
