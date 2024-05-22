@@ -938,7 +938,7 @@ session_start();
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <b>DSB</b>
+                      <b>DSB/DRHI</b>
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Barragens <a href="Download/barragens.zip" download="barragens" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="Barragens1('teste74')" id="81"></a></li>
