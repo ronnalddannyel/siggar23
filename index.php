@@ -938,6 +938,14 @@ session_start();
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      DSB
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu">
+                      <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Barragens <a href="Download/barragens.zip" download="barragens" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="Barragens1('teste74')" id="81"></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <b>INPE</b>  
                     </a>
                     <ul class="dropdown-menu dropdown-menu">
@@ -2280,6 +2288,14 @@ session_start();
               <div id="teste61"></div>
 
               <div id="teste62"></div>
+
+              <div id="teste74">
+                <div id="barragens342"></div> 
+                <div style="margin-left:15px;">
+                  <img src="imagens/outorga/pin-de-localizacao-e69800.png" style="max-width:20px;max-height:20px;"> Fundação Estadual do Meio Ambiente e Recursos Hídricos de Roraima - FEMARH <br>
+                  <img src="imagens/outorga/pin-de-localizacao-002673.png" style="max-width:20px;max-height:20px;"> Agência Nacional de Energia Elétrica - ANEEL
+                </div>
+              </div>
 
               <div id="teste25"></div>
 
