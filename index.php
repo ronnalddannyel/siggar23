@@ -1267,6 +1267,72 @@ session_start();
                   </div>
 
 
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading10">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                        <b>Consulte por Finalidade e Município - Outorga</b>  
+                      </button>
+                    </h2>
+                    <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+
+
+                      <label for="fin">Finalidade</label>
+                      <div>
+                      <select name="coord" id="finalidade" class="form-control">
+                      <option value="não selecionado">Escolha uma Opção</option>
+                      <option value="Abastecimento Público">Abastecimento Público</option>
+                      <option value="Esgotamento Sanitário">Esgotamento Sanitário</option>
+                      <option value="Aproveitamento do Potencial Hidrelétrico">Aproveitamento do Potencial Hidrelétrico</option>
+                      <option value="Aquicultura em Tanque Rede">Aquicultura em Tanque Rede</option>
+                      <option value="Consumo Humano">Consumo Humano</option>
+                      <option value="Criação Animal">Criação Animal</option>
+                      <option value="Indústria">Indústria</option>
+                      <option value="Irrigação">Irrigação</option>
+                      <option value="Mineração - Extração de AreiaCascalho em Leito de Rio">Mineração - Extração de AreiaCascalho em Leito de Rio</option>
+                      <option value="Mineração - Outros Processos Extrativos">Mineração - Outros Processos Extrativos</option>
+                      <option value="Obras Hidráulicas">Obras Hidráulicas</option>
+                      <option value="ReservatórioBarramentoRegularização de Vazões para Usos Múltiplos">ReservatórioBarramentoRegularização de Vazões para Usos Múltiplos</option>
+                      <option value="Sem Finalidade">Sem Finalidade</option>
+                      <option value="Serviços">Serviços</option>
+                      <option value="Termoelétrica">Termoelétrica</option>
+                      <option value="Transposição">Transposição</option>
+                      <option value="Outras">Outras</option>
+                      </select>
+                      </div><br>
+
+                      <label for="mun">Município</label>
+                      <div>
+                      <select name="coord" id="municipio" class="form-control">
+                      <option value="não selecionado">Escolha uma Opção</option>
+                      <option value="BOA VISTA">BOA VISTA</option>
+                      <option value="RORAINÓPOLIS">RORAINÓPOLIS</option>
+                      <option value="ALTO ALEGRE">ALTO ALEGRE</option>
+                      <option value="CARACARAÍ">CARACARAÍ</option>
+                      <option value="PACARAIMA">PACARAIMA</option>
+                      <option value="CANTÁ">CANTÁ</option>
+                      <option value="MUCAJAÍ">MUCAJAÍ</option>
+                      <option value="AMAJARI">AMAJARI</option>
+                      <option value="BONFIM">BONFIM</option>
+                      <option value="NORMANDIA">NORMANDIA</option>
+                      <option value="UIRAMUTÃ">UIRAMUTÃ</option>
+                      <option value="IRACEMA">IRACEMA</option>
+                      <option value="CAROEBE">CAROEBE</option>
+                      <option value="SÃO JOÃO DA BALIZA">SÃO JOÃO DA BALIZA</option>
+                      <option value="SÃO LUIZ">SÃO LUIZ</option>
+                      </select>
+                      </div><br>
+
+                      <input type="button" class="btn btn-primary" onclick="OutFinMun()" value="Enviar" id="remLay">
+
+
+
+
+                      </div>
+                    </div>
+                  </div>
+
+
 
                 </div>
 
@@ -2590,6 +2656,9 @@ session_start();
 
 
 
+    <!-- Códigos - Consultar Outorga por CPF -->
+
+    <script src="mapas/funcoes/outorgaFinMun.js"></script>
 
 
 
