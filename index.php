@@ -865,6 +865,93 @@ session_start();
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <b>RECURSOS HÍDRICOS</b>  
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu" style="border: none; padding-left: 10px; margin-top: -10px;">
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          OUTORGA DE RECURSOS HÍDRICOS
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+                          <li><a id="coord"><img src="leaflet/images/pin-de-localizacao-azul1.png" style="max-width:20px;max-height:20px"> Outorgas Emitidas pela ANA <a href="Download/ana_user_corpo_hidrico_uniao.zip" download="Outorgas_emit_ANA" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="ana1('teste27')" id="21"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-azul3.png" style="max-width:20px;max-height:20px;"> Outorgas Superficiais <a href="Download/ana_user_corpo_hidrico_outorgas_superf.zip" download="Outorgas_Superficiais" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outSuper1('teste28')" id="22"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-marrom.png" style="max-width:20px;max-height:20px;"> Outorgas Subterrâneas <a href="Download/ana_user_corpo_hidrico_outorgas_subter.zip" download="Outorgas_Subterraneas" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="outSub1('teste29')" id="23"></a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          OUTORGA POR BACIA
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+                          <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-002673.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Anaua <input type="checkbox" class="coor" value="l" onclick="outAnaua('teste64')" id="71"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-f0566b.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Branco <input type="checkbox" class="coor" value="l" onclick="outBranco('teste65')" id="72"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-38a800.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Catrimani <input type="checkbox" class="coor" value="l" onclick="outCatrimani('teste66')" id="73"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-e60000.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Jatapu <input type="checkbox" class="coor" value="l" onclick="outJatapu('teste67')" id="74"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-a83800.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Jauaperi <input type="checkbox" class="coor" value="l" onclick="outJauaperi('teste68')" id="75"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-005ce6.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Jufari <input type="checkbox" class="coor" value="l" onclick="outJufari('teste69')" id="76"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-8c3849.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Mapuera <input type="checkbox" class="coor" value="l" onclick="outMapuera('teste70')" id="77"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-e69800.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Mucajaí <input type="checkbox" class="coor" value="l" onclick="outMucajai('teste71')" id="78"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-308a3f.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Tacutu <input type="checkbox" class="coor" value="l" onclick="outTacutu('teste72')" id="79"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord"><img src="./imagens/outorga/pin-de-localizacao-00c5ff.png" style="max-width:20px;max-height:20px;"> Outorgas - Bacia Rio Urariquera <input type="checkbox" class="coor" value="l" onclick="outUrariquera('teste73')" id="80"></a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          DGPH 
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+                          <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Qualidade da Água <a href="Download/qa.zip" download="Qualidade_agua" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="qa1('teste61')" id="68"></a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-vermelho.png" style="max-width:20px;max-height:20px"> Estação Telemétrica <a href="Download/estacao_met.zip" download="Estacao_tel" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="Estacao_met1('teste62')" id="69"></a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          DSB
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu">
+                          <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Barragens <a href="Download/barragens.zip" download="barragens" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="Barragens1('teste74')" id="81"></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                </li>
+                <!--<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <b>OUTORGA DE RECURSOS HÍDRICOS</b>  
                     </a>
@@ -943,7 +1030,7 @@ session_start();
                     <ul class="dropdown-menu dropdown-menu">
                       <li><a id="coord" ><img src="leaflet/images/pin-de-localizacao-azul.png" style="max-width:20px;max-height:20px;"> Barragens <a href="Download/barragens.zip" download="barragens" target="_blank"><img src="imagens/downloadnuvem.png" id="coor1"></a><input type="checkbox" class="coor" value="l" onclick="Barragens1('teste74')" id="81"></a></li>
                     </ul>
-                </li>
+                </li>-->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <b>INPE</b>  
