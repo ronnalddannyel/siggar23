@@ -117,7 +117,7 @@
           groupLayPlanet.clearLayers();
           
           var planet = L.tileLayer(
-            'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_'+ano+'_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAKf77b1299522e47b4842a5816bb5ee2a1',
+            'https://tiles.planet.com/basemaps/v1/planet-tiles/global_monthly_'+ano+'_mosaic/gmap/{z}/{x}/{y}.png?api_key=PLAKd3e601c5c0c54dc598ccfdfed2e6e8e3',
             {
               id: 'global_monthly',
             });
