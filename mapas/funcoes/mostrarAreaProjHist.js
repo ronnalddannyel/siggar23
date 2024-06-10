@@ -11,7 +11,7 @@ function test(){
     element1.innerHTML += newHtml1;
 
     var teste = document.getElementById('aProj').value;
-    cont = 1000;
+    cont = 3000;
     var i = 0;
     while(cont != i){
       var teste1 = 'ap.'+arProjHis.features[i].properties.fk_ap;
