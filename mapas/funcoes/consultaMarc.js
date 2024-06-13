@@ -6,9 +6,10 @@
 
       function addMarcador(){
 
-        var latitude = document.getElementById('latitude').value;
-        var longitude = document.getElementById('longitude').value;
+        var latitude = document.getElementById('latitude').value.replace(/,/g, '.');
+        var longitude = document.getElementById('longitude').value.replace(/,/g, '.');
         var vet = L.marker([latitude, longitude]);
+        map.setView([latitude, longitude], 13);
         groupLay1.addLayer(vet);
         map.addLayer(groupLay1);
       }
