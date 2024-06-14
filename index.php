@@ -1214,6 +1214,39 @@ session_start();
                 </div>
 
 
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading11">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                     <b>Consulte por Coordenada (UTM)</b> 
+                    </button>
+                  </h2>
+                  <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+                    <label for="X"><h5>Coordenada UTM X</h5></label><br>
+                    <input type="text" class="form-control" id="utmX" name="utmX" placeholder="ex. 0.0000000000000000">
+
+                    <label for="Y"><h5>Coordenada UTM Y</h5></label><br>
+                    <input type="text" class="form-control" id="utmY" name="utmY" placeholder="ex. -0.0000000000000000"><br>
+
+                    <select name="zone" id="zone" class="form-control">
+                      <option value="20N">20N</option>
+                      <option value="21N">21N</option>
+                      <option value="20S">20S</option>
+                    </select>
+
+                    <input type="submit" class="btn btn-primary" onclick="addUTMToMap()" value="Enviar" id="remLay">
+                    <input class="btn btn-primary" type="button" onclick="removerTemaUtm()"  value="Remover Ponto" id="remLay">
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+
+
 
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="heading5">
@@ -2853,6 +2886,10 @@ session_start();
     <!-- Códigos - Consultar Marcador por Coordenada Decimal -->
     
     <script src="mapas/funcoes/consultaMarc.js"></script>
+
+    <!-- Códigos - Consultar Marcador por Coordenada UTM -->
+    
+    <script src="mapas/funcoes/consultaMarcUtm.js"></script>
 
     <!-- Códigos - Consultar Marcador por Coordenada DMS -->
 
