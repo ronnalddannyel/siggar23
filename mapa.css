@@ -744,6 +744,18 @@ body {
     color:white;
   }
 
+  button#aProj2 {
+    color:black;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 5px
+  }
+
+  button#aProj2:hover {
+    background-color: #729B65;
+    color:white;
+  }
+
   button#mom {
     color:black;
     background-color: transparent;
