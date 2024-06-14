@@ -2947,6 +2947,39 @@ session_start();
     </div>
 
 
+
+        <!--- Código - Modal para mostrar detalhes da área do projeto e monitoramento -->
+
+        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="min-width: 550px;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel">Áreas Licenciadas - 4mf</h5>
+            <div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          </div>
+          <div class="modal-body area-licen" id="ddd">
+
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab2" role="tablist">
+                <button class="nav-link active" id="nav2-home-tab" data-bs-toggle="tab" data-bs-target="#nav2-home" type="button" role="tab" aria-controls="nav2-home" aria-selected="true">Área do Imóvel</button>
+                <button class="nav-link" id="nav2-profile-tab" data-bs-toggle="tab" data-bs-target="#nav2-profile" type="button" role="tab" aria-controls="nav2-profile" aria-selected="false">Área do Projeto</button>
+                <button class="nav-link" id="nav2-contact-tab" data-bs-toggle="tab" data-bs-target="#nav2-contact" type="button" role="tab" aria-controls="nav2-contact" aria-selected="false">AUOS</button>
+                <button class="nav-link" id="nav2-projet-tab" data-bs-toggle="tab" data-bs-target="#nav2-projet" type="button" role="tab" aria-controls="nav2-projet" aria-selected="false">Monitoramento</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent2">
+              <div class="tab-pane fade show active" id="nav2-home" role="tabpanel" aria-labelledby="nav2-home-tab"><span  class="field5" id="fieldE"></span></div>
+              <div class="tab-pane fade" id="nav2-profile" role="tabpanel" aria-labelledby="nav2-profile-tab"><span  class="field6" id="fieldF"></span></div>
+              <div class="tab-pane fade" id="nav2-contact" role="tabpanel" aria-labelledby="nav2-contact-tab"><span  class="field7" id="fieldG"></span></div>
+              <div class="tab-pane fade" id="nav2-projet" role="tabpanel" aria-labelledby="nav2-projet-tab"><span  class="field8" id="fieldH"></span></div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!--- Código - Modal para mostrar detalhes da área do projeto e monitoramento -->
 
     <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
