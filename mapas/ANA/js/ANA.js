@@ -56,7 +56,7 @@
             case 'Aquicultura em Tanque Escavado': return L.marker(latlng, {icon: Icon_00c5ff});
             case 'Aquicultura em Tanque Rede': return L.marker(latlng, {icon: Icon_002673});
             case 'Consumo Humano': return L.marker(latlng, {icon: Icon_f0566b});
-            case 'Criação Animal': return L.marker(latlng, {icon: Icon_38a800});
+            case 'Criaçăo Animal': return L.marker(latlng, {icon: Icon_38a800});
             case 'Indústria': return L.marker(latlng, {icon: Icon_e60000});
             case 'Irrigação': return L.marker(latlng, {icon: Icon_f57ab6});
             case 'Mineração - Extração de AreiaCascalho em Leito de Rio': return L.marker(latlng, {icon: Icon_a83800});
