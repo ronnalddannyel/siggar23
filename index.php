@@ -1399,7 +1399,24 @@ session_start();
 
                       <label for="fin">Finalidade</label>
                       <div>
-                      <select name="coord" id="finalidade" class="form-control">
+                      <?php 
+                        $geojson = file_get_contents('mapas/ANA/outorgas.geojson');
+                        $data = json_decode($geojson, true);
+                        $valores = [];
+                        foreach ($data['features'] as $feature) {
+                          $valor = $feature['properties']['FIN_TFN_DS'];
+                          if (!in_array($valor, $valores)) {
+                            $valores[] = $valor;
+                          }
+                        }
+                        echo '<select name="coord" id="finalidade" class="form-control">';
+                        echo '<option value="não selecionado">Escolha uma Opção</option>';
+                        foreach ($valores as $valor) {
+                          echo '<option value="' . $valor . '">' . $valor . '</option>';
+                        }
+                        echo '</select>';
+                        ?>
+                      <!--<select name="coord" id="finalidade" class="form-control">
                       <option value="não selecionado">Escolha uma Opção</option>
                       <option value="Abastecimento Público">Abastecimento Público</option>
                       <option value="Esgotamento Sanitário">Esgotamento Sanitário</option>
@@ -1418,7 +1435,7 @@ session_start();
                       <option value="Termoelétrica">Termoelétrica</option>
                       <option value="Transposição">Transposição</option>
                       <option value="Outras">Outras</option>
-                      </select>
+                      </select>-->
                       </div><br>
 
                       <label for="mun">Município</label>
