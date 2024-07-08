@@ -8,19 +8,22 @@ var groupLayCar2 = L.layerGroup([]);
         
         function car2(){
 
-          var sigefCert;
+          var sigefCert, titulosDef;
+
+          $.when(
 
           $.getJSON(UrlFemarh+"/siggarr/mapas/propostasAmpliacao/sigef_certificados.geojson", function(data) {  
             sigefCert = data.features;
-          });
+          }),
 
-          var titulosDef;
 
           $.getJSON(UrlFemarh+"/siggarr/mapas/propostasAmpliacao/iteraima_td.geojson", function(data) {  
             titulosDef = data.features.filter(function (feature) {
               return feature.geometry !== null && feature.geometry !== undefined;
             });
-          });
+          })
+
+        ).then(function() {
 
         groupLayCar.clearLayers();
 
@@ -854,7 +857,7 @@ var groupLayCar2 = L.layerGroup([]);
     
         })
 
-
+      });
       }
 
 
