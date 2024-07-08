@@ -247,11 +247,79 @@ map.on('draw:created', function (e) {
   var type = e.layerType,
     layer = e.layer;
 
+
+// Use $.when() para esperar o carregamento de todas as requisições AJAX
+$.when(
+      
+  $.getJSON(UrlFemarh + "/siggarr/mapas/zonas/zona20n.geojson", function(data) {
+    zona20N = data.features[0];
+  }),
+
+  $.getJSON(UrlFemarh+"/siggarr/mapas/zonas/zona21n.geojson", function(data) {  
+    zona21N = data.features[0];
+  }),
+
+  $.getJSON(UrlFemarh+"/siggarr/mapas/zonas/zona20s.geojson", function(data) {  
+    zona20S = data.features[0];
+  })
+
+
+
+).then(function() {
+
+var centroid = turf.centroid(layer.toGeoJSON());
+  
+  var zone20N = turf.booleanWithin(centroid, zona20N);
+  var zone21N = turf.booleanWithin(centroid, zona21N);
+  var zone20S = turf.booleanWithin(centroid, zona20S);
+
+
+    proj4.defs('EPSG:31974', '+proj=utm +zone=20 +ellps=GRS80 +datum=SIRGAS2000 +units=m +no_defs');
+    proj4.defs('EPSG:31975', '+proj=utm +zone=21 +ellps=GRS80 +datum=SIRGAS2000 +units=m +no_defs');
+    proj4.defs('EPSG:31980', '+proj=utm +zone=20+south +ellps=GRS80 +datum=SIRGAS2000 +units=m +no_defs');
+  
+    if(zone20N == true){
+
+      // Faça a conversão das coordenadas para UTM.
+      var utmCoords = layer.toGeoJSON().geometry.coordinates[0].map(function(coord) {
+        return proj4("EPSG:4326", "EPSG:31974", coord);
+      });
+
+      console.log('Zona: 20N');
+
+    }else if(zone21N == true){
+
+      // Faça a conversão das coordenadas para UTM.
+      var utmCoords = layer.toGeoJSON().geometry.coordinates[0].map(function(coord) {
+        return proj4("EPSG:4326", "EPSG:31975", coord);
+      });
+
+      console.log('Zona: 21N');
+
+    }else if(zone20S == true){
+
+      // Faça a conversão das coordenadas para UTM.
+      var utmCoords = layer.toGeoJSON().geometry.coordinates[0].map(function(coord) {
+        return proj4("EPSG:4326", "EPSG:31980", coord);
+      });
+
+      console.log('Zona: 20S');
+
+    }
+
+    // Calcular a área
+    var area6 = calculateArea(utmCoords)/10000;
+
+    console.log(area6);
+
+
+
+
+
     if (type === 'marker') {
       layer.bindPopup('Latitude/Longitude: ' + layer.getLatLng()).openPopup();
     }else if (type === 'polygon') {
-      var area = turf.area(layer.toGeoJSON()) / 10000;
-      layer.bindPopup('Área: ' + area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " ha.");
+      layer.bindPopup('Área: ' + area6.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " ha.");
     }else if (type === 'polyline') {
       var distancia = turf.length(layer.toGeoJSON());
       layer.bindPopup('Comprimento: ' + distancia.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " km");
@@ -263,9 +331,41 @@ map.on('draw:created', function (e) {
   drawnItems.addLayer(layer);
 
   layer.on("edit", function(event) {
+
+
+    if(zone20N == true){
+  
+      // Faça a conversão das coordenadas para UTM.
+      var utmCoords = layer.toGeoJSON().geometry.coordinates[0].map(function(coord) {
+        return proj4("EPSG:4326", "EPSG:31974", coord);
+      });
+
+      console.log('Zona: 20N');
+
+    }else if(zone21N == true){
+
+      // Faça a conversão das coordenadas para UTM.
+      var utmCoords = layer.toGeoJSON().geometry.coordinates[0].map(function(coord) {
+        return proj4("EPSG:4326", "EPSG:31975", coord);
+      });
+
+      console.log('Zona: 21N');
+
+    }else if(zone20S == true){
+
+      // Faça a conversão das coordenadas para UTM.
+      var utmCoords = layer.toGeoJSON().geometry.coordinates[0].map(function(coord) {
+        return proj4("EPSG:4326", "EPSG:31980", coord);
+      });
+
+      console.log('Zona: 20S');
+
+    }
+
+    var area6 = calculateArea(utmCoords)/10000;
+
     if (type === 'polygon') {
-      var area = turf.area(layer.toGeoJSON()) / 10000;
-      layer.bindPopup('Área: ' + area.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " ha.");
+      layer.bindPopup('Área: ' + area6.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " ha.");
     }else if (type === 'polyline') {
       var distancia = turf.length(layer.toGeoJSON());
       layer.bindPopup('Comprimento: ' + distancia.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " km");
@@ -281,8 +381,32 @@ map.on('draw:created', function (e) {
     }
   });
 
-
+})
 });
+
+
+
+
+
+
+// Função para calcular a área de um polígono usando o método de Shoelace
+function calculateArea(coordinates) {
+  var area = 0;
+  var length = coordinates.length;
+
+  for (var i = 0; i < length; i++) {
+      var j = (i + 1) % length;
+      area += coordinates[i][0] * coordinates[j][1];
+      area -= coordinates[j][0] * coordinates[i][1];
+  }
+
+  area = Math.abs(area) / 2;
+  return area;
+}
+
+
+
+
 
 var stateChangingButton = L.easyButton({
   states: [{
