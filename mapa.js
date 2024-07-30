@@ -185,18 +185,6 @@ if(window.screen.width > "500"){
 
 }
 
-var overlayMaps = {};
-var layerControl = L.control.layers(null, overlayMaps, {collapsed: false}).addTo(map);
-
-
-// Barra de escala
-
-var graphicScale = L.control.graphicScale({
-position: 'bottomright',
-doubleLine: false,
-fill: 'fill',
-    showSubunits: false
-}).addTo(map);
 
 map.attributionControl.addAttribution('©<a href="https://www.planet.com/" target="_blank"> Planet</a>');
 
@@ -436,6 +424,17 @@ var printMap = L.easyPrint({
 }).addTo(map);
 
 
+var overlayMaps = {};
+var layerControl = L.control.layers(null, overlayMaps, {collapsed: false}).addTo(map);
+
+// Barra de escala
+
+var graphicScale = L.control.graphicScale({
+  position: 'bottomright',
+  doubleLine: false,
+  fill: 'fill',
+      showSubunits: false
+  }).addTo(map);
 
 
 function generateColor() {
