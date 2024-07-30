@@ -267,6 +267,10 @@ $.when(
 
 ).then(function() {
 
+  if (type === 'marker') {
+    layer.bindPopup('Latitude/Longitude: ' + layer.getLatLng()).openPopup();
+  }else{ 
+
 var centroid = turf.centroid(layer.toGeoJSON());
   
   var zone20N = turf.booleanWithin(centroid, zona20N);
@@ -316,9 +320,7 @@ var centroid = turf.centroid(layer.toGeoJSON());
 
 
 
-    if (type === 'marker') {
-      layer.bindPopup('Latitude/Longitude: ' + layer.getLatLng()).openPopup();
-    }else if (type === 'polygon') {
+    if (type === 'polygon') {
       layer.bindPopup('Área: ' + area6.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " ha.");
     }else if (type === 'polyline') {
       var distancia = turf.length(layer.toGeoJSON());
@@ -327,7 +329,7 @@ var centroid = turf.centroid(layer.toGeoJSON());
       var area1 = turf.area(layer.toGeoJSON()) / 10000;
       layer.bindPopup('Área: ' + area1.toLocaleString('pt-BR', {minimumFractionDigits: 4,maximumFractionDigits: 4}) + " ha.");
     }
-
+  }
   drawnItems.addLayer(layer);
 
   layer.on("edit", function(event) {
