@@ -185,6 +185,10 @@ if(window.screen.width > "500"){
 
 }
 
+var overlayMaps = {};
+var layerControl = L.control.layers(null, overlayMaps, {collapsed: false}).addTo(map);
+
+
 // Barra de escala
 
 var graphicScale = L.control.graphicScale({
@@ -432,8 +436,6 @@ var printMap = L.easyPrint({
 }).addTo(map);
 
 
-var overlayMaps = {};
-var layerControl = L.control.layers(null, overlayMaps, {collapsed: false}).addTo(map);
 
 
 function generateColor() {
